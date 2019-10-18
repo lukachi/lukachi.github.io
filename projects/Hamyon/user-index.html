@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="User-Menu">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="index.html"><span>H</span>Hamyon</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav row justify-content-between">
+                    <li class="col nav-item">
+                        <a href="UzTT.html">
+                            <div class="UzTT-menu-icon"></div>
+                            <h3 class="text-center">UzTT</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="pay-page.html">
+                            <i class="fas fa-coins"></i>
+                            <h3 class="text-center">Оплата</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="money-transfer.html">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3 class="text-center">Переводы с карты на карту</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="monitoring-index.html">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="text-center">Мониторинг</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="my-cards.html">
+                            <i class="far fa-credit-card"></i>
+                            <h3 class="text-center">Мои карты</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="text-center">Настройки</h3>
+                        </a>
+                    </li>
+                    <li class="sign-out col nav-item d-flex">
+                        <div class="row justify-content-start">
+                            <a href="#" class="flex-row">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Выход</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="user-info-place">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-2 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                <img class="qr-code-img" src="img/qr-code.png" alt="qr-code">
+                <p><span class="text-uppercase font-weight-bold">HID:</span>21 110 600</p>
+            </div>
+            <div class="col-10 col-lg-3 col-md-3 col-sm-4 offset-sm-1 d-flex flex-column justify-content-center align-items-start user-balance">
+                <label for="balance">Общий Баланс</label>
+                <input type="password" class="" id="balance" readonly value="10 300 000 сум">
+
+                <label for="rashod">Расход за ноябрь</label>
+                <input type="password" class="" id="rashod" readonly value="50 000 сум">
+                <button type="button" class="show-balance"><i class="fa fa-eye-slash"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="active-pays">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    активные платежи
+                </legend>
+                <div class="row user-pay-operations">
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#modal-pay-info">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-yellow">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">- 10 000 <span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#modal-pay-info">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-yellow">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">- 10 000 <span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#modal-pay-info">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-yellow">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">- 10 000 <span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#modal-pay-info">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-yellow">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">- 10 000 <span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#modal-news">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-yellow">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">- 10 000 <span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-pay-info" tabindex="-1" role="dialog" aria-labelledby="modal-newslabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase mx-auto" id="modal-newslabel">неоплаченные счета</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="schet-info">
+                                        <div class="schet-info-title">
+                                            <div class="row justify-content-between">
+                                                <div class="col-7 ">
+                                                    <h4>Оплата услуги</h4>
+                                                    <small class="schet-time">Вчера 15:10</small>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end align-items-end">
+                                                    <span>№ 566013</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="schet-info-body">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                <tr>
+                                                    <th>Данные получателя</th>
+                                                    <th class="text-right">
+                                                        <img src="img/beeline.png" alt="beeline">
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>HID:</td>
+                                                    <td class="text-right">10 059 960</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Телефон:</td>
+                                                    <td class="text-right">+99893 330 77 01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Владелец:</td>
+                                                    <td class="text-right">Rasulov Oybek rovshanovich</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Сумма запроса:</td>
+                                                    <td class="text-right">5 000 сум</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-cancel text-uppercase">отменить</button></div>
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-success text-uppercase">оплатить</button></div>
+                                    </div>
+                                    <div class="schet-info">
+                                        <div class="schet-info-title">
+                                            <div class="row justify-content-between">
+                                                <div class="col-7 ">
+                                                    <h4>Оплата услуги</h4>
+                                                    <small class="schet-time">Вчера 15:10</small>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end align-items-end">
+                                                    <span>№ 566013</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="schet-info-body">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                <tr>
+                                                    <th>Данные получателя</th>
+                                                    <th class="text-right">
+                                                        <img src="img/beeline.png" alt="beeline">
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>HID:</td>
+                                                    <td class="text-right">10 059 960</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Телефон:</td>
+                                                    <td class="text-right">+99893 330 77 01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Владелец:</td>
+                                                    <td class="text-right">Rasulov Oybek rovshanovich</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Сумма запроса:</td>
+                                                    <td class="text-right">5 000 сум</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-cancel text-uppercase">отменить</button></div>
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-success text-uppercase">оплатить</button></div>
+                                    </div>
+                                    <div class="schet-info">
+                                        <div class="schet-info-title">
+                                            <div class="row justify-content-between">
+                                                <div class="col-7 ">
+                                                    <h4>Оплата услуги</h4>
+                                                    <small class="schet-time">Вчера 15:10</small>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end align-items-end">
+                                                    <span>№ 566013</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="schet-info-body">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                <tr>
+                                                    <th>Данные получателя</th>
+                                                    <th class="text-right">
+                                                        <img src="img/beeline.png" alt="beeline">
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>HID:</td>
+                                                    <td class="text-right">10 059 960</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Телефон:</td>
+                                                    <td class="text-right">+99893 330 77 01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Владелец:</td>
+                                                    <td class="text-right">Rasulov Oybek rovshanovich</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Сумма запроса:</td>
+                                                    <td class="text-right">5 000 сум</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-cancel text-uppercase">отменить</button></div>
+                                        <div class="col-6 col-sm-3 d-flex justify-content-center align-items-center"><button class="btn-pay-success text-uppercase">оплатить</button></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer modal-footer-small-ok">
+                                    <button type="button" class="btn mx-auto " data-dismiss="modal">Ок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal-news" tabindex="-1" role="dialog" aria-labelledby="modal-newslabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase mx-auto" id="exampleModalLabel">Новости</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="statya text-center">
+                                        <div class="row justify-content-center">
+                                            <div class="col-11">
+                                                <a class="navbar-brand logo mx-auto" href="#"><span>H</span>Hamyon</a>
+                                                <p class="date-time-publish text-right">27 минут назад</p>
+                                                <h2 class="text-left">
+                                                    Еврокомиссия планирует возбудить новые дела против Google
+                                                </h2>
+                                                <p class="text-left">
+                                                    Компания Google обучила свой сервис Google Assistant распознавать
+                                                    музыкальные произведения, играющие поблизости, будь то квартира,
+                                                    будь то улица, радио или телевизор. Похожая опция уже существует
+                                                    в стандартном голосовом поиске, теперь же ее добавили в общий
+                                                    набор опций Google Assistant.
+                                                </p>
+                                                <img src="img/statya-img.png" alt="statya" class="mx-auto mt-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="statya text-center">
+                                        <div class="row justify-content-center">
+                                            <div class="col-11">
+                                                <a class="navbar-brand logo mx-auto" href="#"><span>H</span>Hamyon</a>
+                                                <p class="date-time-publish text-right">27 минут назад</p>
+                                                <h2 class="text-left">
+                                                    Еврокомиссия планирует возбудить новые дела против Google
+                                                </h2>
+                                                <p class="text-left">
+                                                    Компания Google обучила свой сервис Google Assistant распознавать
+                                                    музыкальные произведения, играющие поблизости, будь то квартира,
+                                                    будь то улица, радио или телевизор. Похожая опция уже существует
+                                                    в стандартном голосовом поиске, теперь же ее добавили в общий
+                                                    набор опций Google Assistant.
+                                                </p>
+                                                <img src="img/statya-img.png" alt="statya" class="mx-auto mt-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="statya text-center">
+                                        <div class="row justify-content-center">
+                                            <div class="col-11">
+                                                <a class="navbar-brand logo mx-auto" href="#"><span>H</span>Hamyon</a>
+                                                <p class="date-time-publish text-right">27 минут назад</p>
+                                                <h2 class="text-left">
+                                                    Еврокомиссия планирует возбудить новые дела против Google
+                                                </h2>
+                                                <p class="text-left">
+                                                    Компания Google обучила свой сервис Google Assistant распознавать
+                                                    музыкальные произведения, играющие поблизости, будь то квартира,
+                                                    будь то улица, радио или телевизор. Похожая опция уже существует
+                                                    в стандартном голосовом поиске, теперь же ее добавили в общий
+                                                    набор опций Google Assistant.
+                                                </p>
+                                                <img src="img/statya-img.png" alt="statya" class="mx-auto mt-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer modal-footer-small-ok">
+                                    <button type="button" class="btn mx-auto " data-dismiss="modal">Ок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

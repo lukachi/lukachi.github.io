@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="User-Menu">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"><span>H</span>Hamyon</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav row justify-content-between">
+                    <li class="col nav-item">
+                        <a href="UzTT.html">
+                            <!--<img src="img/UzTT.png" alt="">-->
+                            <div class="UzTT-menu-icon"></div>
+                            <h3 class="text-center">UzTT</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="pay-page.html">
+                            <i class="fas fa-coins"></i>
+                            <h3 class="text-center">Оплата</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="money-transfer.html">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3 class="text-center">Переводы с карты на карту</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="monitoring-index.html">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="text-center">Мониторинг</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="#" class="active">
+                            <i class="far fa-credit-card"></i>
+                            <h3 class="text-center">Мои карты</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="text-center">Настройки</h3>
+                        </a>
+                    </li>
+                    <li class="sign-out col nav-item d-flex">
+                        <div class="row justify-content-start">
+                            <a href="#" class="flex-row">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Выход</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="my-cards-collection">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    Мониторинг
+                </legend>
+                <div class="row">
+                    <div class="col-md-6 card-settings-area">
+                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <p>Общий балланс</p>
+                                    <img src="img/zcard.jpg" alt="">
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                    <span>10 310 000 <small>сум</small></span>
+                                    <p>Моя карта 2</p>
+                                </div>
+                            </div>
+                            <div class="row cr-num-info">
+                                <div class="col-7">
+                                    <p>8900 56** **** 3011</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>10/19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-settings">
+                            <button type="button" class="btn-card-settings"><i class="fas fa-cog"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-chart-line"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-lock" data-toggle="modal" data-target="#cards-lock-card"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-trash" data-toggle="modal" data-target="#cards-delete-card"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 card-settings-area">
+                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <p>Общий балланс</p>
+                                    <img src="img/zcard.jpg" alt="">
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                    <span>10 310 000 <small>сум</small></span>
+                                    <p>Моя карта 2</p>
+                                </div>
+                            </div>
+                            <div class="row cr-num-info">
+                                <div class="col-7">
+                                    <p>8900 56** **** 3011</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>10/19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-settings">
+                            <button type="button" class="btn-card-settings"><i class="fas fa-cog"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-chart-line"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-lock" data-toggle="modal" data-target="#cards-lock-card"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-trash" data-toggle="modal" data-target="#cards-delete-card"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 card-settings-area">
+                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <p>Общий балланс</p>
+                                    <img src="img/zcard.jpg" alt="">
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                    <span>10 310 000 <small>сум</small></span>
+                                    <p>Моя карта 2</p>
+                                </div>
+                            </div>
+                            <div class="row cr-num-info">
+                                <div class="col-7">
+                                    <p>8900 56** **** 3011</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>10/19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-settings">
+                            <button type="button" class="btn-card-settings"><i class="fas fa-cog"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-chart-line"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-lock" data-toggle="modal" data-target="#cards-lock-card"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-trash" data-toggle="modal" data-target="#cards-delete-card"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 card-settings-area">
+                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <p>Общий балланс</p>
+                                    <img src="img/zcard.jpg" alt="">
+                                </div>
+                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                    <span>10 310 000 <small>сум</small></span>
+                                    <p>Моя карта 2</p>
+                                </div>
+                            </div>
+                            <div class="row cr-num-info">
+                                <div class="col-7">
+                                    <p>8900 56** **** 3011</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>10/19</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-settings">
+                            <button type="button" class="btn-card-settings"><i class="fas fa-cog"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-chart-line"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-lock" data-toggle="modal" data-target="#cards-lock-card"></i></button>
+                            <button type="button" class="btn-card-settings"><i class="fas fa-trash" data-toggle="modal" data-target="#cards-delete-card"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cards-lock-card" tabindex="-1" role="dialog" aria-labelledby="cards-lock-card-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase mx-auto" id="cards-lock-card-label">настройки карты</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">
+                                        Вы действительно хотите заблокировать карту?
+                                    </p>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/lock.png" alt="lock"></div>
+                                            <div class="col-10">
+                                                <label for="user-password">Пароль</label>
+                                                <input type="password" class="form-control" id="user-password" placeholder="Пароль">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="aliar">
+                                        <p class="text-center">Предупреждение:</p>
+                                        <p class="text-center">
+                                            Карту можно получить только из банка,
+                                            с предоставлением гражданского паспорта
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-around BB-modal-footer">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="cards-delete-card" tabindex="-1" role="dialog" aria-labelledby="cards-delete-card" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase mx-auto" id="cards-delete-card-label">настройки карты</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">
+                                        Вы действительно хотите удалить карту?
+                                    </p>
+                                </div>
+                                <div class="modal-footer justify-content-around BB-modal-footer">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn add-cart-to-collection" data-toggle="modal" data-target="#cards-add-card">
+                            <i class="fas fa-plus"></i>Добавить карту
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cards-add-card" tabindex="-1" role="dialog" aria-labelledby="cards-add-card-label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-uppercase mx-auto" id="mobeile-operator-label">настройки карты</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                                                        <div class="row">
+                                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                                <p>Общий балланс</p>
+                                                                <img src="img/zcard.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                                                <span>10 310 000 <small>сум</small></span>
+                                                                <p>Моя карта 2</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cr-num-info">
+                                                            <div class="col-7">
+                                                                <p>8900 56** **** 3011</p>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <p>10/19</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="user-card-name" placeholder="название карты">
+                                                    </div>
+                                                    <table class="table table-sm">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>Остаток лимита по переводам</td>
+                                                            <td class="text-right">1 500 000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Остаток лимита по запросам</td>
+                                                            <td class="text-right">5 000 000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Состояние карты</td>
+                                                            <td class="text-right"><p class="card-status">активна</p></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Тип расчетного счета:</td>
+                                                            <td class="text-right">Физическое лицо</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 card-options-picker">
+                                                    <small>Цвет карты</small>
+                                                    <div class="row">
+                                                        <div class="col-8 d-flex justify-content-between">
+                                                            <label>
+                                                                <input type="radio" name="card-color-picker">
+                                                                <i class="fas fa-check"></i>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="card-color-picker">
+                                                                <i class="fas fa-check"></i>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="card-color-picker">
+                                                                <i class="fas fa-check"></i>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="card-color-picker">
+                                                                <i class="fas fa-check"></i>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="card-color-picker">
+                                                                <i class="fas fa-check"></i>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="make-card-main">
+                                                                <span class="row">
+                                                                    <div class="col-6 d-flex align-items-center">
+                                                                        <p>сделать основной</p>
+                                                                    </div>
+                                                                    <div class="col-6 d-flex align-items-center justify-content-center">
+                                                                        <input type="checkbox">
+                                                                        <div class="sqr-i">
+                                                                            <i class="fas fa-check"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-around BB-modal-footer">
+                                        <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                        <button type="submit" class="btn btn-sucReg text-uppercase">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

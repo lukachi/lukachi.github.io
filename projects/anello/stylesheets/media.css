@@ -1,0 +1,549 @@
+@media screen and (max-width: 1496px) {
+    .phone-number {
+        font-size: 1rem;
+    }
+
+    footer .nav-link {
+        font-size: 1rem;
+    }
+
+    .reorder-2 {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header .nav-link {
+        font-size: 1rem;
+    }
+
+    footer .nav-link {
+        font-size: .75rem;
+    }
+
+    footer .phone-number {
+        font-size: 1rem;
+    }
+
+    .reorder-2 {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .phone-number {
+        font-size: 1.15rem;
+    }
+
+    .describe {
+        background: none;
+    }
+
+    footer .phone-number {
+        font-size: .75rem;
+    }
+
+    .nav-link {
+        font-size: .75rem;
+    }
+
+    footer .nav-link {
+        font-size: .75rem;
+    }
+
+    footer .callback .row {
+        justify-content: flex-start;
+    }
+
+    .reorder .col-md-6 {
+        margin-top: 5%;
+    }
+
+    .button-reorder {
+        margin-top: 0 !important;
+    }
+
+    .reorder {
+        min-height: 600px;
+    }
+
+    .aboutpack h2 {
+        font-size: 2rem;
+        top: -90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .top .row {
+        flex-direction: column;
+    }
+
+    .success-top .row {
+        flex-direction: row;
+    }
+
+    .button-headphone, .button-headshop {
+        display: none;
+    }
+
+    .phone-order {
+        float: left;
+    }
+
+    .headbody h1 span {
+        font-size: 3rem;
+    }
+
+    .headbody a {
+        padding: 20px 20px;
+    }
+
+    .phone-order {
+        display: block;
+    }
+
+    header .top .row {
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    .callback .phone-number {
+    width: 100%;
+    }
+
+    .thumb-view {
+        margin: 0 auto;
+    }
+
+    .choosecolor {
+        max-width: 100%;
+    }
+
+    .packdescription h2 {
+        margin-bottom: 60px;
+    }
+
+    .reorder h2 {
+        font-size: 1.5rem;
+    }
+
+    .reorder p {
+        font-size: .9rem;
+    }
+
+    .reorder a {
+        font-size: 1.25rem;
+        padding: 20px 20px;
+    }
+
+    .reorder-2 a {
+        padding: 20px 20px;
+    }
+
+    .reorder {
+         min-height: 500px;
+     }
+
+    .aboutpack h2 {
+        top: -75px;
+        font-size: 2rem;
+    }
+
+    .re-ordered h2 {
+        font-size: 2rem;
+    }
+
+    .aboutpack h2 {
+        font-size: 1.75rem;
+    }
+
+    .aboutpack {
+        padding: 25px;
+    }
+
+    .about-item p {
+        font-size: .75rem;
+    }
+
+    .aboutpack .col-md-3 .about-item:first-child {
+        margin-bottom: 75px;
+    }
+
+    .describe {
+        padding: 35px 10px;
+        padding-top: 10px;
+    }
+
+    .describe .col-lg-6:first-child {
+        margin-bottom: 25px;
+    }
+
+    .fast-order h2 {
+        font-size: 1.75rem;
+    }
+
+    .fast-order p {
+        font-size: 1rem;
+    }
+
+    .button-reorder {
+        display: flex;
+        justify-content: center;
+    }
+
+    .style-item span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #ninja-slider li.ns-show {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ninja-slider .ns-img {
+        max-width: 210px;
+        min-height: 260px;
+    }
+
+    .packdescription {
+        padding: 60px 5px;
+    }
+
+    #thumbnail-slider {
+        display: none;
+    }
+
+    .thumbnail-slider {
+        display: block;
+    }
+
+    .practic h2 {
+        font-size: 1.5rem;
+    }
+
+    .gal-item span, .gal-item .text {
+        font-size: .7rem;
+    }
+
+    #longparrent {
+        max-height: 95px;
+    }
+
+    #comfort, #functionality {
+        padding: 50px 0;
+    }
+
+    #long {
+        padding: 40px 0;
+    }
+
+    .practicgallery .row {
+        min-height: 350px;
+    }
+
+    .thelast .row {
+        min-height: 200px;
+    }
+
+    .reorder h2 {
+        font-size: 1rem;
+    }
+
+    .aboutpack h2 {
+        font-size: 1.5rem;
+    }
+
+    .reorder {
+        min-height: 1px;
+    }
+
+    .aboutpack .col-md-3 .about-item:first-child {
+        margin-bottom: 10px;
+    }
+
+    .about-item i {
+        display: inline;
+    }
+
+    .aboutpack h2 {
+        top: 0;
+        position: relative;
+        left: 50%;
+        text-align: center;
+    }
+
+    .reorder-2 .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .history p {
+        margin: 0 auto;
+    }
+
+    .re-ordered {
+        position: relative;
+    }
+
+    .re-ordered .col-md-6:last-child {
+        /*margin-left: 50px;*/
+    }
+
+    .re-ordered .col-md-6:first-child {
+        position: absolute;
+        left: -200px;
+    }
+
+    .reorder-2 a {
+        font-size: .9rem;
+    }
+
+    .head-his {
+        font-size: 2rem;
+    }
+
+    .pulse-border {
+        display: none;
+    }
+
+    .fast-order .col-md-6:first-child {
+        position: absolute;
+        left: -175px;
+    }
+
+    .movement {
+        flex-direction: column-reverse;
+    }
+
+    .forPagination .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .packdescription .prev {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .packdescription .next {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+
+    .style-item .style-text {
+        font-size: 1rem;
+    }
+
+    .packdescription .model {
+        margin-top: 25px;
+    }
+
+    .packdescription .slick-list {
+        min-height: 1px;
+    }
+
+    .describe input[type="submit"] {
+        padding: 10px 20px;
+    }
+
+    .anelloStyle h2, .practic h2 {
+        font-size: 2.25rem;
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .sure label {
+        margin-top: 25px;
+    }
+
+    header {
+        background: url("../images/back1320.jpg") center;
+        background-size: cover;
+    }
+
+    .prices {
+        order: 1;
+    }
+
+    .old-price {
+        font-size: 1.25rem !important;
+    }
+
+    .new-price {
+        font-size: 1.6rem;
+    }
+
+    .order-now {
+        order: 2;
+    }
+
+    .freedate {
+        order: 3;
+    }
+
+    .packdescription .color {
+        order: 4;
+    }
+
+    .choosecolor {
+        order: 5;
+    }
+
+    .features {
+        order: 6;
+    }
+
+    .table {
+        order: 7;
+    }
+
+    .order-now a {
+        width: 100%;
+    }
+
+    .fast-order h2 {
+        font-size: 1.25rem;
+    }
+
+    .headbody {
+        margin: 30px 0;
+    }
+
+    .headbody a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reorder {
+        background-size: cover;
+        min-height: 325px;
+        padding: 15px;
+    }
+
+    .reviews h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .history .col-md-6:last-child {
+        display: none;
+    }
+
+    .re-ordered h2 {
+        font-size: 1.5rem;
+    }
+
+    .describe p {
+        font-size: .75rem;
+    }
+
+    .describe img {
+        width: 90%;
+    }
+
+    .fast-order p {
+        font-size: .75rem;
+    }
+
+    .fast-order h2 {
+        font-size: 1.15rem;
+    }
+
+    .steps .row {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .headbody h1 {
+        font-size: 1.35rem;
+    }
+
+    .headbody p {
+        font-size: .9rem;
+    }
+
+    .packdescription h2 {
+        font-size: 1.5rem;
+    }
+
+    .fast-order p {
+        font-size: .6rem;
+    }
+
+    .practic h2 {
+        font-size: 1.5rem;
+        margin: 25px;
+    }
+
+    .practicgallery .col-12 {
+        padding: 5px;
+    }
+
+    .reorder h2 {
+        font-size: .9rem;
+    }
+
+    .reorder p {
+        font-size: .6rem;
+    }
+
+    .reorder {
+        padding: 5px;
+    }
+
+    .reorder-2 a {
+        font-size: .75rem;
+        padding: 20px 10px;
+    }
+
+    .head-his {
+        font-size: 1.25rem;
+        margin: 25px 0;
+    }
+
+    .callback-success .phone-number {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .reorder {
+        background-position-x: -50px;
+    }
+
+    .headbody h1 span {
+        font-size: 3rem;
+    }
+
+    #long {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .aboutpack h2 {
+        font-size: 1.25rem;
+    }
+
+    .about-item span, .about-item i {
+        font-size: 1.25rem;
+    }
+
+    .re-ordered h2 {
+        font-size: 1.25rem;
+    }
+}

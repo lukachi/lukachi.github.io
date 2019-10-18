@@ -1,0 +1,2774 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../webfonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Halter";
+    src: url("../webfonts/HALTER.ttf");
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto Regular', sans-serif;
+}
+
+section, header, footer {
+    overflow: hidden;
+}
+
+header {
+    padding: 10px 0;
+}
+
+a {
+    color: #2a4688;
+}
+
+/*логотип*/
+
+.logo {
+    color: #5fcbff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.logo:hover {
+    color: #5fcbff;
+}
+
+.navbar-brand span:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.navbar-brand span:after {
+    content: '';
+    background: #5fcbff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*шапка-меню*/
+.head-menu-item {
+    margin: 15px 0;
+}
+
+header ul {
+    overflow: hidden;
+    width: 100%;
+}
+
+header .enter-reg {
+    width: 100%;
+    background-color: #5fcbff;
+    border: none;
+    border-radius: 12.5px;
+    -webkit-box-shadow:  4px 3px 5px #d8d9d9;
+    -moz-box-shadow:  4px 3px 5px #d8d9d9;
+    box-shadow:  4px 3px 5px #d8d9d9;
+    padding: 2.5px 10px;
+}
+
+header .enter-reg:hover {
+    background-color: #5fcbff;
+}
+
+header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-apple-links a {
+    max-width: 125px;
+    max-height: 45px;
+    border: 1.25px solid #d8d9d9;
+    padding: 5px;
+    border-radius: 7.5px;
+    margin-bottom: 10px;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.google-apple-links a:last-child {
+    margin-bottom: 0;
+}
+
+.google-apple-links a:hover {
+    border: 1.25px solid #77d0fb;
+    text-decoration: none;
+    color: #000000;
+}
+
+.google-apple-links a img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-center {
+    height: 100%;
+}
+
+.contact-center div {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-center img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-center p {
+    font-size: .8rem;
+    color: #9aa6c4;
+}
+
+.contact-center span {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #5fcbff;
+    font-weight: bold;
+}
+
+.main-head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-head .main-banner {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main-head .main-banner .slider-item {
+}
+
+.main-head .main-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.operations {
+    padding: 25px 10px;
+}
+
+fieldset {
+    border: 1.5px solid #d8d9d9;
+    padding: 35px 25px;
+}
+
+fieldset legend {
+    color: #2a4688;
+    font-size: 1.15rem;
+    font-weight: bold;
+    width: 35%;
+    position: relative;
+}
+
+fieldset legend:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 35px;
+    background: #5fcbff;
+    border: 2px solid #5fcbff;
+}
+
+.operations .operation-card {
+    cursor: pointer;
+    background: none;
+    border: 2px solid #d8d9d9;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.operation-card:hover {
+    border: 2px solid #5fcbff;
+    -webkit-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+}
+
+.operations .operation-card h3 {
+    margin-top: 25px;
+}
+
+.operations .operation-card a:hover {
+    text-decoration: none;
+}
+
+/*подвал*/
+
+footer .container {
+    padding: 10px;
+    border-top: 2px solid rgba(0, 0, 0, .5);
+}
+
+footer a {
+    font-weight: bold;
+}
+
+footer p {
+    color: #9aa6c4;
+}
+
+.translations button {
+    width: 80%;
+    max-width: 72px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #d8d9d9;
+    border-radius: 5px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.translations button a:hover {
+    text-decoration: none;
+}
+
+.translations button img {
+    margin-right: 10px;
+}
+
+.translations .active, .translations .active img {
+    border-radius: 5px;
+    border: 1px solid #5fcbff;
+}
+
+.translations .active a {
+    color: #5fcbff;
+}
+
+footer .rules {
+    text-align: right;
+}
+
+footer .rules p {
+    font-size: .95rem;
+}
+
+/*меню авторизованного пользователя*/
+
+.User-Menu {
+    padding: 0;
+    -webkit-box-shadow: 0 -5px 35px -5px #000;
+    -moz-box-shadow: 0 -5px 35px -5px #000;
+    box-shadow: 0 -5px 35px -5px #000;
+}
+
+.User-Menu nav {
+    padding: 0;
+}
+
+.User-Menu .nav-item {
+    border-left: 1px solid #d8d9d9;
+    padding: 0;
+}
+
+.User-Menu h3 {
+    font-size: .75rem;
+    color: #5fcbff;
+    margin-top: 15px;
+    font-weight: bold;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.User-Menu .nav-item a {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.User-Menu .nav-item .active {
+    background: #00CCFF;
+}
+
+.User-Menu .nav-item .active i, .User-Menu .nav-item .active h3 {
+    color: #ffffff;
+}
+
+.User-Menu .nav-item .active-UzTT {
+    background: #00CCFF;
+}
+
+.User-Menu .nav-item .active-UzTT .UzTT-menu-icon {
+    background: url("../img/UzTT-hover.jpg") center top / cover;
+}
+
+.User-Menu .nav-item .active-UzTT i, .User-Menu .nav-item .active-UzTT h3 {
+    color: #ffffff;
+}
+
+.User-Menu .nav-item i {
+    font-size: 1.75rem;
+    color: #5fcbff;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+    margin: 0 15px;
+}
+
+.User-Menu .nav-item a .UzTT-menu-icon {
+    background: url("../img/UzTT.png") center top / cover;
+    background-size: 100% 100%;
+    width: 58px;
+    height: 22px;
+    margin: 0 15px;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.User-Menu .sign-out a i {
+    margin-left: 0;
+}
+
+.User-Menu .sign-out ul a {
+    text-align: center;
+}
+
+.User-Menu .sign-out ul a i {
+    color: #b3c1df;
+    margin: 0;
+}
+
+.User-Menu .nav-item a:hover {
+    background: #00CCFF;
+    text-decoration: none;
+}
+
+.User-Menu .nav-item a:hover .UzTT-menu-icon {
+    background: url("../img/UzTT-hover.jpg") center top / cover;
+}
+
+.User-Menu .nav-item a:hover h3 {
+    color: #ffffff;
+}
+
+.User-Menu .nav-item a:hover i {
+    color: #ffffff;
+}
+
+.User-Menu .nav-item img {
+    fill: #5fcbff; !important;
+    max-height: 30px;
+    width: auto;
+}
+
+.User-Menu .sign-out {
+    flex-direction: column;
+}
+
+.sign-out img {
+    max-width: 32px;
+}
+
+.sign-out .row a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-out .row {
+    width: 100%;
+}
+
+.sign-out .row:first-child a {
+    color: #5fcbff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-out .row:first-child a:hover {
+    color: #ffffff;
+}
+
+.User-Menu .navbar-collapse {
+    margin-left: 20px;
+}
+
+.User-Menu .sign-out .fa-credit-card {
+    position: relative;
+}
+
+.User-Menu .sign-out .fa-credit-card:after {
+    content: '7';
+    color: #ffffff;
+    padding: 2px 4px;
+    font-size: 1rem;
+    border-radius: 50%;
+    background: #f8465b;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/*модальные окна*/
+
+.modal-dialog {
+    margin: 8.75rem auto;
+    max-width: 500px;
+}
+
+.modal-header {
+    color: #9aa6c4;
+}
+
+/*шапки модальных окон*/
+
+.modal-header h5 {
+    font-size: 1.5rem;
+}
+
+.step-4 .modal-header h5 {
+    font-size: 1.35rem;
+}
+
+.active-pays .modal .modal-header h5 {
+    color: #5fcbff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#add-money-card .modal-header h5 {
+    font-size: 1rem;
+}
+
+/*общие свойства модальных окон*/
+
+.modal-content {
+    padding: 25px 40px;
+    border-radius: 0;
+}
+.modal-body {
+    margin: 15px 0 100px 0;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+    padding: 0;
+    border: none;
+}
+
+.modal-footer a:hover {
+    text-decoration: none;
+}
+
+.modal-body .form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-size: .7rem;
+    color: #9aa6c4;
+}
+
+.modal-body input, .Settings input {
+    color: #2a4688;
+    font-size: 1.25rem;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #dde5ec;
+}
+
+.standart-modal-footer button {
+    font-size: 1.25rem;
+    max-width: 200px;
+    max-height: 200px;
+    width: 40%;
+    background: none;
+    border-radius: 10px;
+    padding: 10px 35px;
+    color: #2a4688;
+    border: 1px solid #d8d9d9;
+    font-weight: bold;
+    -webkit-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+}
+
+.standart-modal-footer button:hover {
+    border: 1px solid #5fcbff;
+}
+
+.standart-modal-footer .btn-sucReg {
+    padding: 10px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #d1e1e9;
+    color: #ffffff;
+}
+
+.standart-modal-footer .btn-active {
+    background: #66da94;
+}
+
+.modal-footer-small-ok button {
+    width: 60px;
+    padding: 0;
+    -webkit-box-shadow: 0px 0px 0px #000;
+    -moz-box-shadow: 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px #000;
+    height: 50px;
+    background: #70e183;
+    color: #ffffff;
+    border-radius: 1px;
+    border: none;
+}
+
+.BB-modal-footer button {
+    color: #2a4688;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #dde5ec;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.BB-modal-footer button  {
+    max-width: 150px;
+    justify-content: center;
+}
+
+.BB-modal-footer .btn-sucReg  {
+    background: #70e183;
+    border: none;
+    color: #ffffff;
+}
+
+.modal-header span {
+    color: #2a4688;
+    font-size: 2rem;
+}
+
+.modal-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #5fcbff;
+    font-weight: bold;
+}
+
+.user-agree {
+    margin-bottom: 15px;
+    font-size: .8rem;
+    text-align: center;
+    color: #2a4688;
+}
+
+.user-agree a {
+    color: #5fcbff;
+}
+
+/*кредитка UzTT*/
+
+.UzTT-card .form-group input {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.UzTT-card {
+    max-height: 250px;
+    background: url("../img/back-credit-card.jpg") center top / cover;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow:  0px 30px 100px -30px #000;
+    -moz-box-shadow:  0px 30px 100px -30px #000;
+    box-shadow:  0px 30px 100px -30px #000;
+}
+
+.UzTT-card label {
+    color: #ffffff;
+    font-size: .8rem;
+}
+
+.UzTT-card h4 {
+    font-weight: bold;
+    color: #fff7b0;
+    margin-bottom: 30px;
+}
+
+.UzTT-card h4 span {
+    font-size: 2.4rem;
+}
+
+.UzTT-card .form-group .show-balance {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.UzTT-card .transport {
+    margin-top: 40px;
+}
+
+.UzTT-card .transport p {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.UzTT-card .transport i {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.card-number {
+    color: #ffffff;
+    font-family: "Halter";
+}
+
+.show-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.show-password i {
+    color: #d8d9d9;
+    font-size: 1.25rem;
+}
+
+#Password-Help {
+    color: #f74365;
+    font-size: .75rem;
+}
+
+.modal-body #user-key + hr {
+    margin: 0;
+    margin-top: -3px;
+    margin-right: auto;
+    width: 100%;
+    border: 2px solid #5fcbff;
+}
+
+.modal-body .time-to-unncode {
+    font-size: 1.25rem;
+    color: #5fcbff;
+    width: 75px;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#birthday-title {
+    color: #9aa6c4;
+}
+
+.usr-sex {
+    display: none;
+}
+
+.usr-sex + div p {
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.usr-sex:checked + div {
+    background: #5fcbff;
+    color: #ffffff;
+}
+
+.usr-sex:checked + div i {
+    color: #ffffff;
+}
+
+.sumToUzTT + .row {
+    margin-bottom: 10px;
+}
+
+.UzTT-counter input {
+    max-width: 175px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.modal-body .card-back {
+    background: #f3f5fa;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    min-height: 0;
+}
+
+.modal-body .card-back h3 {
+    margin-bottom: 15px;
+    color: #2a4688;
+    font-size: 1.25rem;
+}
+
+.modal-body .card-back small {
+    color: #9aa6c4;
+    line-height: 30px;
+}
+
+.modal-body .card-back .custom-check {
+    width: 40%;
+    position: relative;
+    cursor: pointer;
+}
+
+.modal-body .card-back .custom-check input[type="checkbox"] {
+    display: none;
+}
+
+.modal-body .card-back .custom-check .check-line {
+    width: 100%;
+    border: 5px solid #dde5ec;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.modal-body .card-back .custom-check .check-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #becad4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.modal-body .card-back input[type="checkbox"]:checked+.check-circle {
+    background: #5fcbff;
+    left: 75%;
+}
+
+.modal-body .sumToUzTT {
+    color: #2a4688;
+    font-size: 1.1rem;
+    margin: 25px 0;
+}
+
+.modal-body .UzTT-counter button {
+    cursor: pointer;
+    height: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #dde5ec;
+    color: #5fcbff;
+    font-size: 3rem;
+}
+
+.modal-body .custom-check input {
+    display: none;
+}
+
+/*=============================================================*/
+
+.modal-body .time-to-unncode::-webkit-outer-spin-button,
+.modal-body .time-to-unncode::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modal-body .time-to-unncode {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.step-5 input::placeholder, .step-4 input::placeholder,
+.step-7 input::placeholder, .step-4 input::placeholder, input { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9aa6c4;
+    opacity: 1; /* Firefox */
+    font-size: 1rem;
+}
+
+.step-5 input::placeholder, .step-4 input:-ms-input-placeholder,
+.step-7 input::placeholder, .step-4 input:-ms-input-placeholder, input { /* Internet Explorer 10-11 */
+    color: #9aa6c4;
+    font-size: 1rem
+}
+
+.step-5 input::placeholder, .step-4 input::-ms-input-placeholder,
+.step-7 input::placeholder, .step-4 input::-ms-input-placeholder, input { /* Microsoft Edge */
+    color: #9aa6c4;
+    font-size: 1rem
+}
+
+.pay-search input[type="search"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b3c1df;
+}
+
+.pay-search input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b3c1df;
+}
+
+.pay-search input[type="search"]::-ms-input-placeholder { /* Microsoft Edge */
+    color: #b3c1df;
+}
+
+/*=============================================================*/
+
+/*частные свойства модальных окон*/
+
+.step-1 .modal-body,
+.step-3 .modal-body {
+    margin-bottom: 250px;
+}
+
+.step-1 .modal-body {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.step-1 .modal-body .form-group img,
+.step-2 .modal-body .form-group img,
+.step-7 .modal-body .form-group img,
+.step-8 .modal-body .form-group img {
+    width: 100%;
+    max-width: 24px;
+}
+
+.step-4 .modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+.button-sex-container {
+    justify-content: center;
+}
+
+.step-4 input[type="number"], .Settings input[type="number"] {
+    width: 100%;
+    height: 100%;
+}
+
+.step-4 .modal-body img {
+    max-width: 64px;
+    margin-top: 10px;
+}
+
+.form-group input, .form-group select {
+    color: #2a4688;
+}
+
+.birthday select {
+    color: #9aa6c4;
+    border-radius: 1px;
+    border: none;
+    border-bottom: 2px solid #dde5ec;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#user-name {
+    margin-bottom: 30px;
+}
+
+.step-4 #user-name {
+    margin-bottom: 50px;
+}
+
+.birthday {
+    margin: 0;
+}
+
+.step-4 .birthday img {
+    max-width: 32px;
+}
+
+.step-4 .modal-body {
+    margin-bottom: 0;
+}
+
+.sex {
+    color: #9aa6c4;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.form-group .btn-male i, .form-group .btn-female i {
+    font-size: 1.5rem;
+    color: #2a4688;
+    margin-right: 20px;
+}
+
+.form-group .btn-male, .form-group .btn-female {
+    cursor: pointer;
+    color: #2a4688;
+    padding: 10px;
+    background: none;
+    border: 2px solid #dde5ec;
+}
+
+.step-5 .modal-body {
+    margin-bottom: 0;
+}
+
+.step-5 .card-back {
+    background: #f3f5fa;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    min-height: 260px;
+}
+
+.step-6 .modal-body {
+    margin-bottom: 5px;
+}
+
+.step-7 .custom-check {
+    width: 10%;
+    position: relative;
+    cursor: pointer;
+}
+
+.step-7 .custom-check .check-line {
+    width: 100%;
+    border: 5px solid #dde5ec;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.step-7 .custom-check .check-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #becad4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.step-7 input[type="checkbox"]:checked+.check-circle {
+    background: #5fcbff;
+    left: 75%;
+}
+
+.step-7 .user-agree a {
+    font-size: 1rem;
+}
+
+.step-7 .honest-pc {
+    margin-top: 25px;
+}
+
+.step-8 .modal-body {
+    margin-top: 30px;
+}
+
+.step-8 small a {
+    color: #5fcbff;
+}
+
+
+/*========================================================================================================================*/
+
+.user-info-place {
+    background: #76adff;
+    padding: 45px 0;
+    color: #ffffff;
+}
+
+.user-info-place img {
+    width: 100%;
+}
+
+.user-info-place .qr-code-img {
+    margin-bottom: 20px;
+}
+
+.user-info-place .user-balance input, .user-info-place button {
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.user-info-place .user-balancev label {
+    margin-bottom: 5px;
+}
+
+.user-info-place .user-balance input {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.user-info-place .show-balance {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.active-pays {
+    padding: 60px 5px;
+}
+
+.active-pays .user-pay-operations {
+    justify-content: flex-start;
+}
+
+.active-pays .operation-card {
+    padding: 0;
+    background: none;
+    border: 2px solid #dde5ec;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.active-pays .operation-card:hover {
+    border: 2px solid #5fcbff;
+    -webkit-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+    box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, .3);
+}
+
+.active-pays .operation-card img {
+    width: 100%;
+}
+
+.active-pays .active-pay-info-card,
+.active-pays .active-pay-info-price {
+    padding: 20px 45px;
+}
+
+.active-pays .active-pay-info-price {
+    border-top: 2px solid #dde5ec;
+    background: #fcfcfc;
+    font-size: 2rem;
+    color: #2a4688;
+}
+
+.active-pays .active-pay-info-price span {
+    font-size: 1rem;
+}
+
+.active-pays .buttn-status {
+    font-size: .9rem;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 15px;
+    color: #ffffff;
+    margin: 25px 0;
+    margin-bottom: 15px;
+}
+
+.active-pays .btn-green {
+    background: #70e183;
+}
+
+.active-pays .btn-yellow {
+    background: #f7ca5d;
+}
+
+.active-pays .btn-blue {
+    background: #5fcbff;
+}
+
+.active-pays .date-time {
+    color: #2a4688;
+    font-size: .85rem;
+    margin-bottom: 10px;
+}
+
+#modal-pay-info .schet-info {
+    background: #f0f8ff;
+    padding: 25px 20px;
+}
+
+#modal-pay-info .schet-info-title {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #dde5ec;
+}
+
+#modal-pay-info .schet-info-title h4 {
+    color: #70e183;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+#modal-pay-info .schet-info-title h4 + small {
+    font-size: .75rem;
+    color: #7e9bb5;
+}
+
+.schet-info .schet-info-title span {
+    color: #2a4688;
+}
+
+#modal-pay-info .modal-content {
+    padding: 25px 0;
+}
+
+.schet-info .schet-info-body {
+    padding-top: 20px;
+}
+
+.schet-info .table tr:first-child {
+    margin-bottom: 15px;
+}
+
+.schet-info .table tr:first-child th {
+    color: #2a4688;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.schet-info .table tr td:first-child {
+    color: #7e9bb5;
+}
+
+.schet-info .table tr td:last-child {
+    color: #2a4688;
+}
+
+.schet-info .table thead th {
+    vertical-align: middle;
+}
+
+.schet-info .table td, .table th, .table thead th {
+    border: none;
+    vertical-align: middle;
+}
+
+#modal-pay-info .modal-dialog, #modal-news .modal-dialog {
+    margin: 1.75rem auto;
+}
+
+#modal-pay-info .schet-info + .row button {
+    background: none;
+    border: none;
+    color: #5fcbff;
+    font-weight: bold;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+#modal-news .modal-body,
+#modal-pay-info .modal-body{
+    margin: 15px 0;
+    max-height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+}
+
+#modal-news .modal-body::-webkit-scrollbar,
+#modal-pay-info .modal-body::-webkit-scrollbar,
+#inclBank .modal-body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #d8dfe5;
+    border-radius: 35px;
+}
+
+#modal-news .modal-body::-webkit-scrollbar-track,
+#modal-pay-info .modal-body::-webkit-scrollbar-track,
+#inclBank .modal-body::-webkit-scrollbar-track {
+    border-radius: 35px;
+    background-color: #d8dfe5;
+}
+
+#modal-news .modal-body::-webkit-scrollbar-thumb,
+#modal-pay-info .modal-body::-webkit-scrollbar-thumb,
+#inclBank .modal-body::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+    background-color: #c2c8ce;
+}
+
+#modal-news .modal-content {
+    padding: 25px 0;
+}
+
+#modal-news .statya {
+    border-bottom: 2px solid #dde5ec;
+    padding-bottom: 25px;
+}
+
+#modal-news .statya .date-time-publish {
+    color: #adb7cf;
+    font-size: .9rem;
+    margin: 5px auto;
+}
+
+#modal-news .statya h2 {
+    font-size: 1.25rem;
+    color: #2a4688;
+}
+
+#modal-news .statya h2 + p {
+    color: #576fa6;
+    font-size: 1rem;
+}
+
+/*!*========================================================================================================================*!*/
+
+.green-info-place {
+    padding: 55px 0;
+    background: #3aa83c;
+    position: relative;
+    overflow: visible;
+}
+
+.green-info-place .proezd-pay {
+    cursor: pointer;
+    border: 0;
+    max-width: 210px;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    background: #58c64c;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.user-operations-pays {
+    padding-top: 75px;
+    padding-bottom: 0;
+}
+
+.user-pay-operations p {
+    font-size: .79rem;
+    font-weight: bold;
+    color: #2a4688;
+}
+
+.user-operations-pays i {
+    font-size: 4rem;
+    color: #c1dfee;
+    -webkit-transition: .25s ease;
+    -moz-transition: .25s ease;
+    -ms-transition: .25s ease;
+    -o-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.user-operations-pays .operation-card:hover h3 a {
+    color: #5fcbff;
+}
+
+.user-operations-pays .operation-card:hover i {
+    color: #5fcbff;
+}
+
+.blue {
+    color: #5fcbff;
+}
+
+.green {
+    color: #70e183;
+}
+
+.active-pay-info-card i {
+    font-size: 4rem;
+}
+
+#modal-proezd-pay .modal-body {
+    margin-bottom: 10px;
+}
+
+#modal-proezd-pay i {
+    color: #5fcbff;
+    font-size: 15rem;
+}
+
+#modal-proezd-pay i + p {
+    color: #2a4688;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+#add-money-card .modal-body button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #dde5ec;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-money-card .modal-body button i {
+    font-size: 1.15rem;
+}
+
+#add-money-card .modal-body input {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+.fin-add-pay i {
+    font-size: 12rem;
+    color: #5fcbff;
+}
+
+.fin-add-pay .modal-body {
+    margin-bottom: 0;
+}
+
+.fin-add-pay i + p {
+    color: #2a4688;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.monitoring-options {
+    padding: 25px 0;
+}
+
+.monitoring-options button {
+    width: 100%;
+    cursor: pointer;
+    background: none;
+    padding: 10px 20px;
+    border: 2px solid #dde5ec;
+    color: #2a4688;
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 15px 0;
+}
+
+.monitoring-options .dropdown-menu {
+    border: 1px solid #5fcbff;
+    background: #ffffff;
+    max-width: 320px;
+    max-height: 230px;
+    padding: 20px 30px;
+    padding-top: 40px;
+}
+
+.monitoring-options .drp-calendar-right {
+}
+
+.monitoring-options .drp-calendar table {
+    margin: 0;
+}
+
+.monitoring-options .drp-calendar table tr td {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.monitoring-options .drp-calendar table thead tr th {
+    padding-bottom: 15px;
+    color: #2a4688;
+    font-weight: bold;
+}
+
+.monitoring-options .calendar-up,
+.monitoring-options .calendar-down {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.monitoring-options .calendar-up:hover,
+.monitoring-options .calendar-down:hover {
+    color: #5fcbff;
+}
+
+.monitoring-options .drp-calendar table tr td span {
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 2px;
+    color: #2a4688;
+}
+
+.monitoring-options .drp-calendar table tr td:hover span {
+    border: 1px solid #5fcbff;
+    color: #5fcbff;
+}
+
+.monitoring-page {
+    padding-top: 20px;
+}
+
+.pay-search input[type="search"] {
+    width: 100%;
+    border: 2px solid #5fcbff;
+    padding: 10px;
+    margin: 25px 0;
+    color: #2a4688;
+}
+
+.monitoring-options .dropdown-toggle::after {
+    display: none;
+}
+
+
+
+#dropdowncards + .dropdown-menu,
+#dropdowntime + .dropdown-menu {
+    padding: 15px 5px;
+}
+
+#dropdowncards + .dropdown-menu a,
+#dropdowntime + .dropdown-menu a {
+    color: #2a4688;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#dropdowncards + .dropdown-menu a:hover,
+#dropdowntime + .dropdown-menu a:hover {
+    background: #5fcbff;
+    color: #ffffff;
+}
+
+.monitoring-options #dropdownrashod,
+.monitoring-options #dropdowndohod {
+    padding: 5px 35px;
+    font-size: .75rem;
+}
+
+.monitoring-options #dropdownrashod {
+    border: 2px solid #f8465b;
+    color: #f8465b;
+}
+
+.monitoring-options #dropdowndohod {
+    border: 2px solid #70e183;
+    color: #70e183;
+}
+
+.monitoring-options #dropdownrashod p,
+.monitoring-options #dropdowndohod p{
+    color: #2a4688;
+}
+
+.monitoring-options #dropdownrashod:hover p,
+.monitoring-options #dropdowndohod:hover p {
+    color: #9aa6c4;
+}
+
+.pay-search button[type="submit"] {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.pay-search button[type="submit"] i {
+    color: #b3c1df;
+}
+
+.mobile-operators .active-pay-info-card {
+    padding: 40px;
+}
+
+.mobile-operators .user-pay-operations button,
+.internet-providers .user-pay-operations button {
+    width: 100%;
+    height: 100%;
+}
+
+#mobile-operator .modal-content {
+    padding: 25px;
+}
+
+#mobile-operator .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mobile-operator .modal-body img,
+#internet-providers img {
+    margin-bottom: 25px;
+}
+
+#mobile-operator .col-2 input[type="text"] {
+    width: 75%;
+    text-align: center;
+}
+
+#mobile-operator .modal-body input {
+    color: #2a4688;
+}
+
+#mobile-operator .modal-body {
+    margin: 15px 0;
+}
+
+.pay-finish {
+    padding: 25px 0;
+}
+
+.pay-finish fieldset {
+    padding-bottom: 0;
+}
+
+.pay-finish .user-pay-operations .col-md-6:first-child {
+    border-right: 2px solid #dde5ec;
+}
+
+.credit-pay-card-item {
+    max-width: 380px;
+    height: 225px;
+    margin: 70px auto;
+    background: url("../img/card-1.png") center top / cover;
+    padding: 25px;
+    color: #ffffff;
+    -webkit-box-shadow:  0px 20px 15px -5px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 20px 15px -5px rgba(0, 0, 0, .3);
+    box-shadow:  0px 20px 15px -5px rgba(0, 0, 0, .3);
+}
+
+.credit-pay-card-item p {
+    font-size: .9rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.credit-pay-card-item span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.credit-pay-card-item span small {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.credit-pay-card-item .cr-num-info p {
+    font-size: 1.1rem;
+}
+
+.credit-pay-card-item .cr-money-info {
+    margin-top: 10px;
+}
+
+.caption-pay-info {
+    border: 2px solid #dde5ec;
+    background: #f1f5fc;
+    padding: 25px 20px;
+}
+
+.caption-pay-info td:first-child {
+    color: #9aa6c4;
+}
+
+.caption-pay-info td:last-child {
+    color: #2a4688;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.caption-pay-info td {
+    border: none;
+    padding: 25px 0;
+}
+
+.payError .modal-header h5 {
+    color: #e23549;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.payError p {
+    color: #e23549;
+}
+
+.payError .modal-body {
+    margin: 25px 0;
+}
+
+.pay-save .modal-header h5 {
+    font-size: 1rem;
+    color: #5fcbff;
+}
+
+.btn-money-transfer label {
+    width: 100%;
+}
+
+.btn-money-transfer .btn {
+    border: 2px solid #dde5ec;
+    background: none;
+    color: #2a4688;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.btn-money-transfer .btn i {
+    font-size: 1.15rem;
+    margin-right: 15px;
+}
+
+.btn-money-transfer .btn:hover {
+    border: 2px solid #5fcbff;
+    color: #5fcbff;
+    -webkit-box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+    box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+}
+
+.btn-money-transfer input {
+    display: none;
+}
+
+.btn-money-transfer input:checked + div {
+    border: 2px solid #5fcbff;
+    color: #5fcbff;
+    -webkit-box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+    box-shadow:  0px 5px 7px 1px rgba(0, 0, 0, .3);
+}
+
+.money-transfer-block {
+    padding: 35px 0;
+}
+
+.money-transfer-block h2 {
+    color: #5fcbff;
+    font-size: 1rem;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.input-sum-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.input-sum-block .form-group {
+    margin: 0;
+}
+
+.input-sum-block label {
+    color: #9aa6c4;
+    font-size: .75rem;
+}
+
+.input-sum-block i, .input-sum-block input {
+    border: none;
+    border-bottom: 2px solid #dde5ec;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    color: #2a4688;
+}
+
+.input-sum-block i {
+    font-size: 1.15rem;
+    padding: 20px 10px;
+}
+
+.input-sum-block .bk-iq {
+    color: #5fcbff;
+}
+
+.money-transfer-block .usr-getter {
+    color: #2a4688;
+}
+
+.money-transfer-block table td {
+    border: none;
+    vertical-align: middle;
+}
+
+.money-transfer-block table tr:first-child td:last-child {
+    text-transform: uppercase;
+}
+
+.money-transfer-block table tr td:first-child {
+    color: #9aa6c4;
+}
+
+.money-transfer-block table tr td:last-child {
+    color: #2a4688;
+}
+
+.money-transfer-block .continue i {
+    color: #9aa6c4;
+}
+
+.money-transfer-block .continue span {
+    color: #2a4688;
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+
+.money-transfer-block .continue .modal .modal-content span {
+    color: #ffffff;
+}
+
+.money-transfer-block .continue span small {
+    font-size: .9rem;
+}
+
+.money-transfer-block .continue p {
+    color: #2a4688;
+    margin: 5px 0;
+}
+
+.money-transfer-block .continue button {
+    font-size: 1.25rem;
+    max-width: 200px;
+    background: #70e183;
+    padding: 10px 20px;
+    color: #ffffff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#inclBank .modal-header h5 {
+    font-size: 1rem;
+    color: #5fcbff;
+}
+
+#inclBank .modal-dialog {
+    max-width: 850px;
+}
+
+#inclBank .modal-body {
+    margin: 15px 0;
+    max-height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 -50px 100px -25px rgba(0, 0, 0, 0.5);
+}
+
+#inclBank .modal-content {
+    padding: 25px 0;
+}
+
+#inclBank .modal-body {
+    padding: 0 25px;
+    min-height: 350px;
+}
+
+#inclBank .modal-body ul {
+    color: #2a4688;
+    list-style-type: disc;
+}
+
+#inclBank .bank-item {
+    border-bottom: 2px solid #dde5ec;
+    padding: 10px 0;
+}
+
+#inclBank .bank-item img {
+    margin-bottom: 25px;
+}
+
+#pay-continue .modal-body {
+    margin: 15px 0;
+}
+
+#pay-continue .modal-body p {
+    color: #2a4688;
+    font-size: 1.25rem;
+}
+
+#monitor-transfering .modal-body {
+    margin: 15px 0;
+    text-align: center;
+}
+
+#monitor-transfering .modal-body img {
+    margin-bottom: 25px;
+}
+
+.monitor-transf tr td {
+    vertical-align: middle;
+    border: none;
+    padding: 10px;
+}
+
+.monitor-transf tr td:first-child {
+    color: #9aa6c4;
+    text-align: left;
+}
+
+.monitor-transf tr td:last-child {
+    color: #2a4688;
+    text-align: right;
+}
+
+.my-cards-collection {
+    padding: 35px 0;
+}
+
+.add-cart-to-collection {
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    background: #70e183;
+}
+
+.add-cart-to-collection i {
+    font-size: 1.25rem;
+    margin-right: 15px;
+}
+
+.Settings {
+    padding: 25px 0;
+}
+
+.card-settings {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.card-settings-area:hover .card-settings {
+    left: 90%;
+    z-index: 1;
+}
+
+.btn-card-settings {
+    padding: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 35px;
+    border: none;
+    background: none;
+    color: #5fcbff;
+}
+
+.btn-card-settings .fa-lock,
+.btn-card-settings .fa-trash {
+    color: #f8465b;
+}
+
+.btn-card-settings:hover {
+    background: #5fcbff;
+    color: #ffffff;
+}
+
+.btn-card-settings:hover i {
+    color: #ffffff;
+}
+
+#cards-add-card .modal-body {
+    margin: 10px 0;
+}
+
+#cards-add-card .modal-header h5,
+#cards-lock-card .modal-header h5,
+#delete-avatar-modal .modal-header h5,
+#modal-proezd-pay .modal-header h5,
+#add-money-card .modal-header h5,
+#pay-continue .modal-header h5,
+#true-dev .modal-header h5 {
+    color: #5fcbff;
+    font-size: 1rem;
+}
+
+#cards-add-card .modal-body .form-group{
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+#cards-add-card .modal-body #user-card-name::-ms-input-placeholder,
+#cards-add-card .modal-body #user-card-name::-moz-placeholder,
+#cards-add-card .modal-body #user-card-name::-webkit-input-placeholder {
+    color: #9aa6c4;
+    font-size: 1.25rem;
+}
+
+#cards-add-card table tr td {
+    color: #2a4688;
+    vertical-align: middle;
+    border: none;
+}
+
+#cards-add-card table tr td:last-child {
+    color: #9aa6c4;
+}
+
+#cards-add-card table tr td .card-status {
+    color: #70e183;
+}
+
+#cards-add-card .credit-pay-card-item {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.card-options-picker small {
+    font-size: .75rem;
+    color: #5fcbff;
+}
+
+.card-options-picker small + .row {
+    margin-top: 10px;
+}
+
+.card-options-picker label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/card-1.png") center top / cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card-options-picker label:nth-child(2) {
+    background: url("../img/card-2.png") center top / cover;
+}
+
+.card-options-picker label:nth-child(3) {
+    background: url("../img/card-3.png") center top / cover;
+}
+
+.card-options-picker label:nth-child(4) {
+    background: url("../img/card-4.png") center top / cover;
+}
+
+.card-options-picker label:nth-child(5) {
+    background: url("../img/card-5.png") center top / cover;
+}
+
+.card-options-picker label input {
+    display: none;
+}
+
+.card-options-picker label i {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.card-options-picker label input:checked + i {
+    display: block;
+}
+
+.card-options-picker .make-card-main {
+    background: none;
+    color: #5fcbff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-options-picker .sqr-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #5fcbff;
+    width: 40px;
+    height: 40px;
+}
+
+.card-options-picker input:checked + .sqr-i {
+    background: #5fcbff;
+}
+
+.card-options-picker input:checked + .sqr-i i {
+    display: block;
+    color: #ffffff;
+}
+
+#cards-lock-card .modal-body {
+    margin: 15px 0;
+}
+
+#cards-delete-card .modal-body, #delete-avatar-modal .modal-body {
+    margin-bottom: 45px;
+}
+
+#cards-lock-card .modal-body p {
+    color: #2a4688;
+    margin: 25px 0;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#cards-lock-card .modal-body input {
+    color: #2a4688;
+}
+
+#cards-lock-card .modal-body .aliar p {
+    margin: 0;
+    color: #f8465b;
+}
+
+#cards-lock-card .modal-body .aliar p:last-child {
+    font-weight: normal;
+}
+
+#user-more-phone {
+    margin-top: 30px;
+}
+
+.transl-titles {
+    color: #5fcbff;
+    margin-bottom: 15px;
+}
+
+.Settings input {
+    color: #2a4688;
+}
+
+.Settings .user-avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #2a4688;
+    position: relative;
+}
+
+.Settings .user-avatar-fade {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.Settings .user-avatar-fade:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
+
+.Settings .user-avatar-fade button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.Settings .delete-avatar {
+    background: #f8465b;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 8px;
+    color: #ffffff;
+    position: absolute;
+    top: 4px;
+    right: 12%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Settings .reenter-password #user-password {
+    margin-bottom: 30px;
+}
+
+.Settings .reenter-password label {
+    visibility: hidden;
+}
+
+.Settings .reenter-password .sure-change-btn {
+    color: #ffffff;
+    border-radius: 1px;
+    background: #66da94;
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+
+.Settings .reenter-password i {
+    font-size: 1.75rem;
+    color: #5fcbff;
+}
+
+.change-password-title {
+    color: #5fcbff;
+}
+
+.Settings .btn-true-devices {
+    padding: 10px 20px;
+    background: #5fcbff;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.Settings .btn-true-devices i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.end-settings button {
+    cursor: pointer;
+    border: none;
+    max-width: 180px;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.end-settings button i {
+    font-size: 1.25rem;
+    margin-right: 15px;
+}
+
+.end-settings .delete-acc {
+    background: #fb5568;
+}
+
+.end-settings .save-changes {
+    background: #66da94;
+}
+
+.end-settings .save-changes i {
+    margin: 0;
+}
+
+#true-dev .modal-body {
+    margin: 15px 0;
+}
+
+#true-dev .true-dev-item {
+    margin-bottom: 15px;
+}
+
+#true-dev .true-dev-item span {
+    color: #2a4688;
+    font-size: 1.25rem;
+}
+
+#true-dev .true-dev-item p {
+    color: #9aa6c4;
+    font-size: .75rem;
+    padding: 10px 0;
+    border-bottom: 2px solid #dde5ec;
+}
+
+#true-dev .true-dev-item .delete-true-dev {
+    border: none;
+    background: #f8465b;
+    padding: 15px 17px;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Settings .reenter-password #sure-change-password .modal-body {
+    margin: 15px 0;
+}
+
+.Settings .reenter-password #sure-change-password label {
+    visibility: visible;
+}
+
+.Settings .reenter-password #sure-change-password input {
+    margin: 0;
+}
+
+.modal-content .navbar-brand {
+    margin-bottom: 25px;
+}
+
+.navbar-brand span {
+    background: #76adff;
+    padding: 5px 15px;
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    margin-right: 15px;
+}
+
+.choose-card-pay {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #5fcbff;
+}
+
+#circleG{
+    width:49px;
+    margin:auto;
+}
+
+.circleG{
+    background-color:rgb(255,255,255);
+    float:left;
+    height:10px;
+    margin-left:6px;
+    width:10px;
+    animation-name:bounce_circleG;
+    -o-animation-name:bounce_circleG;
+    -ms-animation-name:bounce_circleG;
+    -webkit-animation-name:bounce_circleG;
+    -moz-animation-name:bounce_circleG;
+    animation-duration:1.4575s;
+    -o-animation-duration:1.4575s;
+    -ms-animation-duration:1.4575s;
+    -webkit-animation-duration:1.4575s;
+    -moz-animation-duration:1.4575s;
+    animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+    border-radius:7px;
+    -o-border-radius:7px;
+    -ms-border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+}
+
+#circleG_1{
+    animation-delay:0.2895s;
+    -o-animation-delay:0.2895s;
+    -ms-animation-delay:0.2895s;
+    -webkit-animation-delay:0.2895s;
+    -moz-animation-delay:0.2895s;
+}
+
+#circleG_2{
+    animation-delay:0.6855s;
+    -o-animation-delay:0.6855s;
+    -ms-animation-delay:0.6855s;
+    -webkit-animation-delay:0.6855s;
+    -moz-animation-delay:0.6855s;
+}
+
+#circleG_3{
+    animation-delay:0.8785s;
+    -o-animation-delay:0.8785s;
+    -ms-animation-delay:0.8785s;
+    -webkit-animation-delay:0.8785s;
+    -moz-animation-delay:0.8785s;
+}
+
+#zagl .modal-body {
+    margin: 15px 0;
+}
+
+#zagl .modal-body p {
+    text-align: center;
+    margin-top: 15px;
+    color: #2a4688;
+    font-weight: bold;
+}
+
+#zagl .modal-footer-small-ok button {
+    width: auto;
+    padding: 10px 25px;
+}
+
+
+
+@keyframes bounce_circleG{
+    0%{}
+
+    50%{
+        background-color:rgb(95,203,255);
+    }
+
+    100%{}
+}
+
+@-o-keyframes bounce_circleG{
+    0%{}
+
+    50%{
+        background-color:rgb(95,203,255);
+    }
+
+    100%{}
+}
+
+@-ms-keyframes bounce_circleG{
+    0%{}
+
+    50%{
+        background-color:rgb(95,203,255);
+    }
+
+    100%{}
+}
+
+@-webkit-keyframes bounce_circleG{
+    0%{}
+
+    50%{
+        background-color:rgb(95,203,255);
+    }
+
+    100%{}
+}
+
+@-moz-keyframes bounce_circleG{
+    0%{}
+
+    50%{
+        background-color:rgb(95,203,255);
+    }
+
+    100%{}
+}
+
+@media only screen and (max-width : 1024px) {
+    .contact-center p {
+        font-size: .75rem;
+    }
+
+    .contact-center span {
+        font-size: 1rem;
+    }
+
+    header ul .btn-primary {
+        font-size: .75rem;
+    }
+
+    .translations button {
+        width: 100%;
+    }
+
+    .User-Menu .sign-out span {
+        font-size: .8rem;
+    }
+
+    .step-4 .button-sex-container {
+        justify-content: space-around;
+    }
+
+    .Settings .button-sex-container {
+        justify-content: space-around;
+    }
+
+    .card-settings-area:hover .card-settings {
+        left: 95%;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    header ul li {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    header ul .btn-primary {
+        font-size: 1rem;
+    }
+
+    .User-Menu nav {
+        padding: 10px 0;
+    }
+
+    .User-Menu .nav-item {
+        padding: 25px 0;
+        border: none;
+        border-bottom: 1px solid #d8d9d9;
+    }
+
+    .User-Menu .nav-item h3 {
+        margin: 0;
+    }
+
+    .User-Menu .nav-item a {
+        padding: 20px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .User-Menu .nav-item a img {
+        margin-right: 10px;
+        max-width: 24px;
+    }
+
+    .sign-out .row:first-child {
+        margin: 0;
+    }
+
+    .User-Menu .navbar-collapse {
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    .User-Menu .navbar-collapse ul {
+        margin: 0;
+    }
+
+    .User-Menu .sign-out {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .User-Menu .sign-out .row {
+        max-width: 100px;
+    }
+
+    .User-Menu .nav-item a .UzTT-menu-icon {
+        max-width: 24px;
+        max-height: 9px;
+    }
+
+    .User-Menu h3 {
+        font-size: 1.15rem;
+    }
+
+    .User-Menu .sign-out span {
+        font-size: 1.15rem;
+    }
+
+    .User-Menu .sign-out a i {
+        margin: 0 15px;
+    }
+
+    .pay-finish .user-pay-operations .col-md-6:first-child {
+        border: none;
+    }
+
+    .button-sex-container {
+        justify-content: space-between;
+    }
+
+    .card-settings-area:hover .card-settings {
+        display: flex;
+        flex-direction: row;
+        left: 50%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    footer .rules {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    footer .rules {
+        text-align: center;
+    }
+
+    footer .rules {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .operations .operation-card {
+        margin-bottom: 10px;
+    }
+
+    .active-pays .user-pay-operations {
+        justify-content: center;
+    }
+
+    .btn-money-transfer button {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    .qr-code-img + p {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    footer .links-info {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width : 525px) {
+    .modal-content{
+        padding: 25px 20px;
+    }
+
+    .modal-header p {
+        font-size: .75rem;
+    }
+
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
+
+    .modal-footer button {
+        font-size: .75rem;
+        padding: 10px 0;
+    }
+
+    .modal-footer .btn-sucReg {
+        padding: 10px 0;
+    }
+
+    .form-group .btn-male, .form-group .btn-female {
+        padding: 15px 10px;
+    }
+
+    .form-group .btn-male i, .form-group .btn-female i {
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+
+    .UzTT-card h4 {
+        font-size: .9rem;
+    }
+
+    .UzTT-card h4 span {
+        font-size: 2.1rem;
+    }
+
+    .UzTT-card .form-group input {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    fieldset legend {
+        width: 75%;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width : 425px) {
+    .modal-header span {
+        font-size: 1.75rem;
+    }
+
+    .UzTT-card .card-number {
+        font-size: .75rem;
+    }
+
+    .green-info-place .UzTT-card .card-number {
+        font-size: .7rem;
+    }
+
+    .green-info-place .proezd-pay {
+        font-size: .5rem;
+    }
+
+    .User-Menu h3 {
+        font-size: 1rem;
+    }
+
+    .button-sex-container {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width : 424px) {
+    .UzTT-card h4 {
+        font-size: .6rem;
+    }
+    .UzTT-card h4 span {
+        font-size: 1.4rem;
+    }
+
+    .step-6 .card-number {
+        font-size: .65rem;
+    }
+
+    .active-pays .active-pay-info-card, .active-pays .active-pay-info-price {
+        padding: 20px;
+    }
+
+    .caption-pay-info td:last-child {
+        font-size: .75rem;
+    }
+
+
+}

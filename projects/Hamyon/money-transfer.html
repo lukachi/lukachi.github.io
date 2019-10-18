@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="User-Menu">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"><span>H</span>Hamyon</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav row justify-content-between">
+                    <li class="col nav-item">
+                        <a href="UzTT.html">
+                            <!--<img src="img/UzTT.png" alt="">-->
+                            <div class="UzTT-menu-icon"></div>
+                            <h3 class="text-center">UzTT</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="pay-page.html">
+                            <i class="fas fa-coins"></i>
+                            <h3 class="text-center">Оплата</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="#" class="active">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3 class="text-center">Переводы с карты на карту</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="monitoring-index.html">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="text-center">Мониторинг</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="my-cards.html">
+                            <i class="far fa-credit-card"></i>
+                            <h3 class="text-center">Мои карты</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="text-center">Настройки</h3>
+                        </a>
+                    </li>
+                    <li class="sign-out col nav-item d-flex">
+                        <div class="row justify-content-start">
+                            <a href="#" class="flex-row">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Выход</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="money-transfer-block">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-5 col-sm-6 btn-money-transfer">
+                <label>
+                    <input type="radio" name="transf-get-money">
+                    <div class="btn text-uppercase">
+                        <i class="fas fa-credit-card"></i>перевод денег
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 btn-money-transfer">
+                <label>
+                    <input type="radio" name="transf-get-money">
+                    <div class="btn text-uppercase">
+                        <i class="fas fa-credit-card"></i>запросить деньги
+                    </div>
+                </label>
+            </div>
+            <div class="col-12">
+                <h2 class="text-center" data-toggle="modal" data-target="#inclBank">Подключенные банки</h2>
+
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="inclBank" tabindex="-1" role="dialog" aria-labelledby="inclBank-label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-uppercase mx-auto" id="inclBank-label">Подключенные банки</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="bank-item">
+                                            <img src="img/comp-logo.png" alt="">
+                                            <ul>
+                                                <li>Стоимость услуги – 1%</li>
+                                                <li>Ежемесячный лимит ден. пер. – 5 000 000 сумов</li>
+                                                <li>Ежемесячный лимит зап. сос. – 5 000 000 сумов</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-small-ok">
+                                <button type="button" class="btn mx-auto " data-dismiss="modal">Ок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-10 input-sum-block">
+                <div class="form-group">
+                    <label for="us-inf">Номер карты, ID или телефон получателя</label>
+                    <input type="text" class="form-control" id="us-inf" placeholder="Номер, ID или телефон">
+                </div>
+                <i class="fas fa-book bk-iq"></i>
+                <div class="form-group">
+                    <label for="us-sum">Сумма перевода</label>
+                    <input type="text" class="form-control" id="us-sum" placeholder="Сумма перевода">
+                </div>
+                <i>сум</i>
+            </div>
+            <div class="col-12">
+                <h2 class="text-center usr-getter">Данные карты получателя</h2>
+            </div>
+            <div class="col-lg-5 col-md-7">
+                <table class="table table-sm">
+                    <tbody>
+                    <tr>
+                        <td>Владелец:</td>
+                        <td class="text-right">Rasulov Oybek rovshanovich</td>
+                    </tr>
+                    <tr>
+                        <td>HID:</td>
+                        <td class="text-right">20000002</td>
+                    </tr>
+                    <tr>
+                        <td>Лимит:</td>
+                        <td class="text-right">7 560 000 сум</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12 continue d-flex flex-column text-center">
+                <i>услуга 1%</i>
+                <span>10 100 <small>сум</small></span>
+                <p>Сума с учётом услуги</p>
+                <button type="button" class="btn" data-toggle="modal" data-target="#pay-continue">Продолжить</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="pay-continue" tabindex="-1" role="dialog" aria-labelledby="pay-continue-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                            <div class="modal-header">
+                                <h5 class="modal-title text-uppercase mx-auto" id="pay-continue-label">Запросить деньги</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                                        <p>Ваш запрос денежных средств
+                                            успешно произведен</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-small-ok">
+                                <button type="button" class="btn mx-auto" data-dismiss="modal">Ок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

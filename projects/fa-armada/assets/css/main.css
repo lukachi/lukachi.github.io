@@ -1,0 +1,426 @@
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url("../fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url("../fonts/Comfortaa/Comfortaa-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url("../fonts/Comfortaa/Comfortaa-Bold.ttf");
+  font-weight: 700; }
+
+section, header, footer {
+  overflow: hidden;
+  position: relative; }
+
+a {
+  color: inherit; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none; }
+
+button:focus {
+  outline: none; }
+
+header {
+  background: url("../img/header-background.jpg") center top/cover; }
+  header .top {
+    padding: 15px 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+    background: rgba(255, 255, 255, 0.75); }
+    header .top ul {
+      font-weight: 400; }
+      header .top ul li a {
+        padding: .5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #000000;
+        font-size: 1.25rem;
+        -webkit-transition: .25s ease;
+        transition: .25s ease; }
+        header .top ul li a img {
+          margin-right: 10px; }
+      header .top ul li a:hover {
+        color: #f33434; }
+    header .top .phone-container {
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      header .top .phone-container .phone-numbers {
+        margin-left: 10px;
+        line-height: 1.5rem; }
+
+section.banner {
+  background: url("../img/header-background.jpg") center top/cover;
+  padding: 50px 0;
+  min-height: 570px; }
+  section.banner .cars-info-slider {
+    max-width: 100%; }
+    section.banner .cars-info-slider .car-info-caption {
+      min-height: 480px;
+      position: relative; }
+      section.banner .cars-info-slider .car-info-caption h1 {
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 700;
+        color: #00c0ea;
+        font-size: 2.5rem; }
+      section.banner .cars-info-slider .car-info-caption h1 + p {
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 700;
+        font-size: 1.75rem;
+        color: #ffffff; }
+        section.banner .cars-info-slider .car-info-caption h1 + p span {
+          color: #f33434; }
+      section.banner .cars-info-slider .car-info-caption .youtube-link {
+        font-family: "Fira Sans Condensed", sans-serif;
+        font-weight: 400;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+        section.banner .cars-info-slider .car-info-caption .youtube-link a {
+          background: rgba(255, 255, 255, 0.75);
+          padding: 12px 0;
+          color: #000000;
+          font-size: 1.4rem; }
+          section.banner .cars-info-slider .car-info-caption .youtube-link a span {
+            padding-right: 10px; }
+            section.banner .cars-info-slider .car-info-caption .youtube-link a span strong {
+              font-weight: 700; }
+      section.banner .cars-info-slider .car-info-caption .header-order {
+        cursor: pointer;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #ffffff;
+        background: #f33434;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 7px;
+        padding-right: 45px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px; }
+        section.banner .cars-info-slider .car-info-caption .header-order i {
+          font-size: 11rem;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  section.banner .change-currency {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    background: #f33434;
+    border-radius: 5px;
+    padding: 3px 2px; }
+
+section.filter {
+  padding: 20px 0;
+  background: #ededed;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400; }
+  section.filter .select {
+    position: relative;
+    font-size: 1.15rem;
+    margin: 10px 0; }
+    section.filter .select img {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    section.filter .select select {
+      min-width: 160px;
+      background: url("../img/down-arrow.png") center right 15px no-repeat #ffffff;
+      cursor: pointer;
+      border: 0px solid #ffffff;
+      outline: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: auto;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px 40px;
+      padding-right: 75px; }
+  section.filter .select:after {
+    content: '';
+    height: 80%;
+    border: .5px solid #ededed;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  section.filter button[type="submit"] {
+    margin: 10px 0;
+    cursor: pointer;
+    width: 180px;
+    padding: 7px;
+    font-size: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background: #f33434;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-weight: 300; }
+    section.filter button[type="submit"] i {
+      color: #f33434;
+      background: #ffffff;
+      padding: 3px;
+      font-size: 1.5rem;
+      margin-left: 25px;
+      border-radius: 5px; }
+  section.filter .filter-clear {
+    color: #f33434;
+    font-size: 1.25rem;
+    font-weight: 400; }
+
+section.cars {
+  padding: 50px 0; }
+  section.cars h2 {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 50px; }
+  section.cars h2:before {
+    content: '';
+    width: 49vw;
+    position: absolute;
+    top: -5px;
+    left: -12.35vw;
+    background-color: #f33434;
+    border: 1px solid #f33434; }
+  section.cars h2:after {
+    content: '';
+    width: 49vw;
+    position: absolute;
+    bottom: 0;
+    right: -12.35vw;
+    background-color: #f33434;
+    border: 1px solid #f33434; }
+  section.cars .new-cars-slider {
+    max-width: 100%;
+    margin: 10px 0; }
+    section.cars .new-cars-slider .slider-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  section.cars .show-more-cars {
+    background: #f33434;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 55px 0;
+    margin-bottom: 100px;
+    z-index: 1; }
+
+section.stock-today {
+  background: #f8f8f8;
+  padding: 50px 0;
+  overflow: visible; }
+  section.stock-today #car-background {
+    max-width: 450px;
+    width: 50%;
+    position: absolute;
+    top: -200px; }
+  section.stock-today .stock-cars-slider {
+    max-width: 100%;
+    margin: 10px 0; }
+    section.stock-today .stock-cars-slider .slider-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  section.stock-today h1 {
+    font-size: 3rem;
+    color: #f33434;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400; }
+  section.stock-today h1 + p {
+    font-size: 2.25rem;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400; }
+  section.stock-today .slider-arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+    transform: none; }
+
+.car-caption {
+  max-width: 260px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75); }
+  .car-caption img {
+    width: 100%;
+    height: auto; }
+  .car-caption .caption-text {
+    padding: 0 10px; }
+    .car-caption .caption-text h1 {
+      font-size: 1.5rem;
+      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 700;
+      padding-top: 25px;
+      padding-bottom: 10px;
+      margin: 0;
+      text-align: left; }
+    .car-caption .caption-text .excerpt-characteristic ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      text-align: left;
+      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 400; }
+    .car-caption .caption-text .price {
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: #f33434;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .car-caption .caption-text .price span {
+        color: #000000;
+        font-size: 1.5rem;
+        margin-left: 5px;
+        font-weight: 600; }
+  .car-caption .buy-btn {
+    background: #f33434;
+    padding: 10px 0; }
+    .car-caption .buy-btn button {
+      font-size: 1.15rem;
+      color: #ffffff;
+      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 500; }
+
+.slider-arrow {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #ffa6a6;
+  border-radius: 50%;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .slider-arrow i {
+    position: absolute;
+    color: #000000;
+    font-size: 4.75rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.slider-arrow.sl-prev {
+  left: -35px; }
+
+.slider-arrow.sl-next {
+  right: -35px; }
+
+section.over-footer {
+  padding: 40px 0; }
+  section.over-footer img {
+    max-width: 75px;
+    height: auto; }
+
+footer {
+  background: #f8f8f8;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  padding: 40px 0;
+  font-size: 1.25rem; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul a {
+      color: #000000;
+      -webkit-transition: .25s ease;
+      transition: .25s ease; }
+    footer ul a:hover {
+      color: #f33434;
+      text-decoration: none; }
+  footer h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #444444; }
+  footer p {
+    margin: 0; }
+
+@media screen and (max-width: 768px) {
+  section.banner .cars-info-slider .car-info-caption .youtube-link {
+    position: relative;
+    margin: 15px 0; }
+  section.banner .cars-info-slider .car-info-caption .header-order {
+    position: relative; }
+  section.banner .change-currency {
+    position: relative;
+    margin: 15px 0; } }

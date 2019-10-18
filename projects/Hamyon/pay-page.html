@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="User-Menu">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"><span>H</span>Hamyon</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav row justify-content-between">
+                    <li class="col nav-item">
+                        <a href="UzTT.html">
+                            <!--<img src="img/UzTT.png" alt="">-->
+                            <div class="UzTT-menu-icon"></div>
+                            <h3 class="text-center">UzTT</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="#" class="active">
+                            <i class="fas fa-coins"></i>
+                            <h3 class="text-center">Оплата</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="money-transfer.html">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3 class="text-center">Переводы с карты на карту</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="monitoring-index.html">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="text-center">Мониторинг</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="my-cards.html">
+                            <i class="far fa-credit-card"></i>
+                            <h3 class="text-center">Мои карты</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="text-center">Настройки</h3>
+                        </a>
+                    </li>
+                    <li class="sign-out col nav-item d-flex">
+                        <div class="row justify-content-start">
+                            <a href="#" class="flex-row">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Выход</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="pay-search">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <form action="">
+                    <input type="search" placeholder="поиск">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="active-pays mobile-operators">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    мобильные операторы
+                </legend>
+                <div class="row user-pay-operations no-gutters">
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#mobile-operator">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="mobile-operator" tabindex="-1" role="dialog" aria-labelledby="mobeile-operator-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                            <div class="modal-header">
+                                <h5 class="modal-title text-uppercase mx-auto" id="mobeile-operator-label">оплатить</h5>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/comp-logo.png" alt="" class="mx-auto text-center">
+                                <div class="form-group">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex justify-content-center align-items-end">
+                                            <input type="text" class="form-control" name="user-phone" id="user-pre-phone" maxlength="4" placeholder="+988">
+                                        </div>
+                                        <div class="col-10">
+                                            <label for="user-phone">Номер телефона</label>
+                                            <input type="tel" class="form-control" name="user-phone" id="user-phone" maxlength="10" placeholder="Номер телефона">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-10 offset-2">
+                                            <label for="user-sum">Сумма</label>
+                                            <input type="number" class="form-control" id="user-sum" placeholder="Сумма">
+                                            <small id="Password-Help" class="form-text">Минимальная сумма 500 сум</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-around BB-modal-footer">
+                                <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<section class="active-pays internet-providers">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    интернет провайдеры
+                </legend>
+                <div class="row user-pay-operations no-gutters">
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#internet-providers">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="internet-providers" tabindex="-1" role="dialog" aria-labelledby="internet-providers-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                            <div class="modal-header">
+                                <h5 class="modal-title text-uppercase mx-auto" id="internet-providers-label">оплатить</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex justify-content-center align-items-end">
+                                            <input type="text" class="form-control" name="user-phone" id="user-pre-phone" maxlength="4" placeholder="+988">
+                                        </div>
+                                        <div class="col-10">
+                                            <label for="user-phone">Номер телефона</label>
+                                            <input type="tel" class="form-control" name="user-phone" id="user-phone" maxlength="10" placeholder="Номер телефона">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-10 offset-2">
+                                            <label for="user-sum">Сумма</label>
+                                            <input type="number" class="form-control" id="user-sum" placeholder="Сумма">
+                                            <small id="Password-Help" class="form-text">Минимальная сумма 500 сум</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-around BB-modal-footer">
+                                <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<section class="pay-finish">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    оплатить
+                </legend>
+                <div class="row user-pay-operations no-gutters">
+                    <div class="col-md-6">
+
+                        <div class="row justify-content-between">
+                            <div class="col-12 text-center">
+                                <h3 class="text-center">
+                                    <button class="choose-card-pay">выберите карту для оплаты</button>
+                                </h3>
+                            </div>
+                            <div class="col-12">
+                                <div class="credit-card-pay-slider">
+                                    <div class="slider-item">
+                                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                                    <p>Общий балланс</p>
+                                                    <img src="img/zcard.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                                    <span>10 310 000 <small>сум</small></span>
+                                                    <p>Моя карта 2</p>
+                                                </div>
+                                            </div>
+                                            <div class="row cr-num-info">
+                                                <div class="col-7">
+                                                    <p>8900 56** **** 3011</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>10/19</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                                    <p>Общий балланс</p>
+                                                    <img src="img/zcard.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                                    <span>10 310 000 <small>сум</small></span>
+                                                    <p>Моя карта 2</p>
+                                                </div>
+                                            </div>
+                                            <div class="row cr-num-info">
+                                                <div class="col-7">
+                                                    <p>8900 56** **** 3011</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>10/19</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                                            <div class="row">
+                                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                                    <p>Общий балланс</p>
+                                                    <img src="img/zcard.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                                    <span>10 310 000 <small>сум</small></span>
+                                                    <p>Моя карта 2</p>
+                                                </div>
+                                            </div>
+                                            <div class="row cr-num-info">
+                                                <div class="col-7">
+                                                    <p>8900 56** **** 3011</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>10/19</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row justify-content-around BB-modal-footer">
+                                    <button type="button" class="btn btn-cancel text-uppercase">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-between flex-column">
+                        <div class="row flex-column align-items-center">
+                            <div class="col-12 col-sm-10">
+                                <div class="company-logo-pay d-flex justify-content-center">
+                                    <img src="img/comp-logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-10">
+                                <div class="caption-pay-info">
+                                    <table class="table table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <td>Номер телефона</td>
+                                            <td class="text-right">+99897 700 10 01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сумма</td>
+                                            <td class="text-right">10 000 сум</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-around BB-modal-footer">
+                            <button type="button" class="btn btn-cancel text-uppercase">Отмена</button>
+                            <button type="submit" class="btn btn-sucReg text-uppercase" data-toggle="modal" data-target="#PayResult">оплатить</button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade bd-example-modal-sm" id="PayResult" tabindex="-1" role="dialog" aria-labelledby="PayResult-label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                <div class="modal-content payError">
+                                    <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-uppercase mx-auto" id="PayResult-label">ошибка</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-10 d-flex flex-column justify-content-center align-items-center">
+                                                <p>Этот номер недоступен в системе Hamyon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer modal-footer-small-ok">
+                                        <button type="button" class="btn mx-auto" data-dismiss="modal">Ок</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-dialog modal-dialog-centered fin-add-pay" role="document">
+                                <div class="modal-content pay-success">
+                                    <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                    <div class="modal-body">
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+                                                <i class="far fa-check-circle"></i>
+                                                <p>Оплата проведена успешно</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-around BB-modal-footer">
+                                        <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">сохранить</button>
+                                        <button type="submit" class="btn btn-sucReg text-uppercase">На главную</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-dialog modal-dialog-centered fin-add-pay" role="document">
+                                <div class="modal-content pay-save">
+                                    <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-uppercase mx-auto" id="add-money-card-label">добавить название</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <div class="row justify-content-center">
+                                                <div class="col-10">
+                                                    <label for="user-call-cred">Название</label>
+                                                    <input type="tel" class="form-control" name="user-phone" id="user-call-cred" placeholder="Название">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-around BB-modal-footer">
+                                        <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">отмена</button>
+                                        <button type="submit" class="btn btn-sucReg text-uppercase">сохранить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

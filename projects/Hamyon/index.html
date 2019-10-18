@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <a href="user-index.html">User page</a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 head-menu-item col-sm-6 col-12 d-flex justify-content-md-start align-items-center">
+                <div class="logo navbar-brand"><span>H</span>Hamyon</div>
+            </div>
+            <div class="col-lg-3 head-menu-item col-sm-6 col-12 offset-lg-1 d-flex justify-content-center align-items-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary enter-reg" data-toggle="modal" data-target="#log-sign-in">
+                    Вход / Регистрация
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="log-sign-in" tabindex="-1" role="dialog" aria-labelledby="log-sign-in-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <!--Шаг 1-->
+                        <div class="modal-content modal-step step-1">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-center align-items-center flex-column">
+                                    <h5 class="modal-title text-center">Вход / Регистрация</h5>
+                                    <p class="">Авторизация и регистрация в едином окне</p>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="img/telephone-handle-silhouette.png" alt="phone">
+                                            </div>
+                                            <div class="col-10">
+                                                <label for="user-phone">телефон</label>
+                                                <input type="tel" class="form-control" name="user-phone"
+                                                       id="user-phone" value="+998" maxlength="14" placeholder="+998">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="circleG">
+                                        <div id="circleG_1" class="circleG"></div>
+                                        <div id="circleG_2" class="circleG"></div>
+                                        <div id="circleG_3" class="circleG"></div>
+                                    </div>
+                                </div>
+                                <!--<div class="user-agree">-->
+                                    <!--<p class="text-center">Нажимая кнопку “Регистрация” Вы принимаете</p>-->
+                                    <!--<a href="#">пользовательское соглашение</a>-->
+                                <!--</div>-->
+                                <!--<div class="modal-footer standart-modal-footer justify-content-around">-->
+                                    <!--<button type="submit" class="btn btn-sucReg text-uppercase">регистрация</button>-->
+                                <!--</div>-->
+                            </form>
+                        </div>
+                        <!--Шаг 2-->
+                        <div class="modal-content modal-step step-2">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-center flex-column align-items-center">
+                                    <h5 class="modal-title text-center">Регистрация</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/telephone-handle-silhouette.png" alt="phone"></div>
+                                            <div class="col-10"><label for="user-phone">телефон</label><input type="tel" class="form-control" name="user-phone" id="user-phone" value="+988" maxlength="14" placeholder="+988"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/lock.png" alt="lock"></div>
+                                            <div class="col-10">
+                                                <input type="password" class="form-control" id="user-password" placeholder="Пароль">
+                                                <small id="Password-Help" class="form-text">Не менее 6 знаков</small>
+                                                <button type="button" class="show-password"><i class="fa fa-eye-slash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-agree">
+                                    <p class="text-center">Нажимая кнопку “Регистрация” Вы принимаете</p>
+                                    <a href="#">пользовательское соглашение</a>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">регистрация</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 3-->
+                        <div class="modal-content modal-step step-3">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-center align-items-center flex-column">
+                                    <h5 class="modal-title text-center">Регистрация</h5>
+                                    <p class="">Введите код присланный вам в сообщении</p>
+                                    <span>+988 97 *** ** 02</span>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" name="user-key" id="user-key" placeholder="Код">
+                                                <hr>
+                                                <input type="text" class="time-to-unncode" value="100 сек" readonly>
+                                                <button type="button" id="testAnimate">проверка анимации!!!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg btn-active text-uppercase">регистрация</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 4-->
+                        <div class="modal-content modal-step step-4">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-between align-items-center">
+                                    <h5 class="modal-title text-left">Регистрация</h5>
+                                    <button>Пропустить</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-start"><img src="img/man-user.png" alt="phone"></div>
+                                            <div class="col-10">
+                                                <label for="user-name">Имя</label>
+                                                <input type="text" class="form-control" name="user-name" id="user-name" placeholder="Имя">
+                                                <input type="text" class="form-control" name="user-surname" id="user-surname" placeholder="Фамилия">
+                                                <small id="birthday-title" class="form-text">День рождения</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group birthday">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-start"><img src="img/birthday-cake-piece.png" alt="lock"></div>
+                                            <div class="col-10">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <input type="number" max="31" maxlength="2" placeholder="День">
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <select class="form-control" id="month">
+                                                                <option value="">Месяц</option>
+                                                                <option value="">Январь</option>
+                                                                <option value="">Февраль</option>
+                                                                <option value="">Март</option>
+                                                                <option value="">Апрель</option>
+                                                                <option value="">Май</option>
+                                                                <option value="">Июнь</option>
+                                                                <option value="">Июль</option>
+                                                                <option value="">Август</option>
+                                                                <option value="">Сентябрь</option>
+                                                                <option value="">Октябрь</option>
+                                                                <option value="">Ноябрь</option>
+                                                                <option value="">Декабрь</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <select class="form-control" id="year">
+                                                                <option value="">1950</option>
+                                                                <option value="">1951</option>
+                                                                <option value="">1952</option>
+                                                                <option value="">1953</option>
+                                                                <option value="">1954</option>
+                                                                <option value="">1955</option>
+                                                                <option value="">1956</option>
+                                                                <option value="">1957</option>
+                                                                <option value="">1958</option>
+                                                                <option value="">1959</option>
+                                                                <option value="">1960</option>
+                                                                <option value="">1961</option>
+                                                                <option value="">1962</option>
+                                                                <option value="">1963</option>
+                                                                <option value="">1964</option>
+                                                                <option value="">1965</option>
+                                                                <option value="">1966</option>
+                                                                <option value="">1967</option>
+                                                                <option value="">1968</option>
+                                                                <option value="">1969</option>
+                                                                <option value="">1970</option>
+                                                                <option value="">1971</option>
+                                                                <option value="">1972</option>
+                                                                <option value="">1973</option>
+                                                                <option value="">1974</option>
+                                                                <option value="">1975</option>
+                                                                <option value="">1976</option>
+                                                                <option value="">1977</option>
+                                                                <option value="">1978</option>
+                                                                <option value="">1979</option>
+                                                                <option value="">1980</option>
+                                                                <option value="">1981</option>
+                                                                <option value="">1982</option>
+                                                                <option value="">1983</option>
+                                                                <option value="">1984</option>
+                                                                <option value="">1985</option>
+                                                                <option value="">1986</option>
+                                                                <option value="">1987</option>
+                                                                <option value="">1988</option>
+                                                                <option value="">1989</option>
+                                                                <option value="">1990</option>
+                                                                <option value="">1991</option>
+                                                                <option value="">1992</option>
+                                                                <option value="">1993</option>
+                                                                <option value="">1994</option>
+                                                                <option value="">1995</option>
+                                                                <option value="">1996</option>
+                                                                <option value="">1997</option>
+                                                                <option value="">1998</option>
+                                                                <option value="">1999</option>
+                                                                <option value="">2000</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5 class="text-center sex">Пол</h5>
+                                        <div class="row button-sex-container">
+                                            <div class="col-4 d-flex align-items-center justify-content-center">
+                                                <label>
+                                                    <input type="radio" name="user-sex" class="usr-sex">
+                                                    <div class="btn-male d-flex align-items-center justify-content-around">
+                                                        <i class="fa fa-user"></i>
+                                                        <p class="text-uppercase">мужчина</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 d-flex align-items-center justify-content-center">
+                                                <label>
+                                                    <input type="radio" name="user-sex" class="usr-sex">
+                                                    <div class="btn-female d-flex align-items-center justify-content-around">
+                                                        <i class="fa fa-user"></i>
+                                                        <p class="text-uppercase">женщина</p>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 5-->
+                        <div class="modal-content modal-step step-5"1>
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-between align-items-center">
+                                    <h5 class="modal-title text-left">Добавление карты</h5>
+                                    <button>Пропустить</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 card-back">
+                                            <div class="card-vertical-slider">
+                                                <div class="slider-item">
+                                                    <div class="credit-pay-card-item d-flex flex-column justify-content-between">
+                                                        <div class="row">
+                                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                                <p>Общий балланс</p>
+                                                                <img src="img/zcard.jpg" alt="">
+                                                            </div>
+                                                            <div class="col-12 d-flex justify-content-between align-items-center cr-money-info">
+                                                                <span>10 310 000 <small>сум</small></span>
+                                                                <p>Моя карта 2</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row cr-num-info">
+                                                            <div class="col-7">
+                                                                <p>8900 56** **** 3011</p>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <p>10/19</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="user-card" id="user-card" placeholder="Название карты">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" maxlength="19" name="user-number-card" id="user-number-card" placeholder="номер карты">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" maxlength="5" name="user-date-card" id="user-date-card" placeholder="Срок действия карты">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 6-->
+                        <div class="modal-content modal-step step-6">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-between align-items-center">
+                                    <h5 class="modal-title text-left">Услуга UzTT</h5>
+                                    <button>Пропустить</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 card-back">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <h3>Активировать услугу UzTT</h3>
+                                                    <small>Услуга позволяет оплачивать в общественном транспорте
+                                                        при помощь QR кода</small>
+                                                </div>
+                                                <div class="col-4 d-flex justify-content-end align-items-start">
+                                                    <label class="custom-check">
+                                                        <input type="checkbox">
+                                                        <div class="check-circle"></div>
+                                                        <hr class="check-line">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 UzTT-card">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-10">
+                                                                <label for="balance">Общий Баланс</label>
+                                                                <input type="password" class="form-control" id="balance" readonly value="123456">
+                                                                <label for="rashod">Расход за ноябрь</label>
+                                                                <input type="password" class="form-control" id="rashod" readonly value="123456">
+                                                                <button class="show-balance"><i class="fa fa-eye-slash"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="text-uppercase">transport to'lov<br><span class="text-uppercase">kartasi</span></h4>
+                                                    <span class="text-center card-number">10 050 600</span>
+                                                    <div class="row transport">
+                                                        <div class="col-6 d-flex justify-content-center align-items-center flex-column">
+                                                            <i class="fas fa-bus"></i>
+                                                            <p class="text-center">Avtobus</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-center align-items-center flex-column">
+                                                            <i class="fas fa-subway"></i>
+                                                            <p class="text-center">Metro</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-center sumToUzTT">Сумма для авто пополнения услуги UzTT</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 d-flex justify-content-around align-items-center UzTT-counter">
+                                            <button type="button" class="minus-UzTT">-</button>
+                                            <input type="number" align="center" class="UzTT-value" placeholder="0">
+                                            <button type="button" class="plus-UzTT">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg btn-active text-uppercase">подтвердить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 7-->
+                        <div class="modal-content modal-step step-7">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-center">
+                                    <h5 class="modal-title text-center">Вход</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/telephone-handle-silhouette.png" alt="phone"></div>
+                                            <div class="col-10"><label for="user-phone">телефон</label><input type="tel" class="form-control" name="user-phone" id="user-phone" value="+988" maxlength="14" placeholder="+988"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/lock.png" alt="lock"></div>
+                                            <div class="col-10">
+                                                <input type="password" class="form-control" id="user-password" placeholder="Пароль">
+                                                <button type="button" class="show-password"><i class="fa fa-eye-slash"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row honest-pc">
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <p>
+                                                    Доверять этому устройству
+                                                </p>
+                                                <label class="custom-check">
+                                                    <input type="checkbox">
+                                                    <div class="check-circle"></div>
+                                                    <hr class="check-line">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-agree">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg text-uppercase">подтвердить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Шаг 8-->
+                        <div class="modal-content modal-step step-8">
+                            <form class="d-flex flex-column justify-content-center">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header justify-content-center align-items-center flex-column">
+                                    <h5 class="modal-title text-center">Восстановление пароля</h5>
+                                    <p class="">Код активации отправлен на номер</p>
+                                    <span>+988 97 *** ** 01</span>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="row justify-content-center">
+                                            <div class="col-11 d-flex flex-column">
+                                                <input type="text" class="form-control" name="user-key" id="user-key" placeholder="Код">
+                                                <hr>
+                                                <small class="text-center mx-auto"><a href="#">Отправить код заново</a></small>
+                                                <input type="text" class="time-to-unncode" value="100 сек" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row justify-content-center">
+                                            <div class="col-2 d-flex justify-content-center align-items-center"><img src="img/lock.png" alt="lock"></div>
+                                            <div class="col-9">
+                                                <input type="password" class="form-control" id="user-password" placeholder="Пароль">
+                                                <button class="show-password"><i class="fa fa-eye-slash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer standart-modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>
+                                    <button type="submit" class="btn btn-sucReg btn-active text-uppercase">регистрация</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 head-menu-item col-sm-9 col-7">
+                <a href="tel:+99871000000" class="row contact-center">
+                    <div class="col-4 d-flex justify-content-center align-items-center"><img src="img/headset.png" alt="apple-icon"></div>
+                    <div class="col-8 text-left">
+                        <p>+998 71</p>
+                        <span>200-00-00</span>
+                        <p>Контакт-центр</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 head-menu-item col-sm-3 col-5 google-apple-links">
+                <a href="#" class="row no-gutters apple-link justify-content-center">
+                    <img src="img/apple-link.png" alt="aple-link">
+                </a>
+                <a href="#" class="row no-gutters google-link justify-content-center">
+                    <img src="img/google-play-link.png" alt="google-play-link">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main-head">
+    <div class="main-banner">
+        <div class="slider-item">
+            <img src="img/banner1.jpg" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="img/banner2.jpg" alt="">
+        </div>
+        <div class="slider-item">
+            <img src="img/banner3.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="operations">
+    <fieldset class="container">
+        <legend class="text-center text-uppercase">
+            операции без регистрации
+        </legend>
+        <div class="row justify-content-around">
+            <button type="button" class="col-md-3 col-9 operation-card">
+                <img src="img/UzTT.png" alt="">
+                <h3 class="text-center"><a href="#">UzTT</a></h3>
+            </button>
+            <button type="button" class="col-md-3 col-9 operation-card">
+                <img src="img/MoneyPay.png" alt="">
+                <h3 class="text-center"><a href="#">Оплата услуг</a></h3>
+            </button>
+            <button type="button" class="col-md-3 col-9 operation-card">
+                <img src="img/CardTransfer.png" alt="">
+                <h3 class="text-center"><a href="#">Переводы с карты на карту</a></h3>
+            </button>
+        </div>
+    </fieldset>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-2 d-flex justify-content-center align-items-center links-info">
+                <a href="#">О нас</a><br>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center align-items-center links-info">
+                <a href="#">Об услуги</a>
+            </div>
+            <div class="col-md-5">
+                <div class="row justify-content-between translations">
+                    <div class="col">
+                        <button>
+                            <img src="img/uzbekistan.png" alt="Uz"><a href="#">Uz</a>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="active">
+                            <img src="img/russia.png" alt="rus"><a href="#">Ру</a>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button>
+                            <img src="img/great-britain.png" alt="Us"><a href="#">En</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 rules">
+                <p>© 2017 ООО «Milliy To’lov Tizimlari»</p>
+                <p>Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

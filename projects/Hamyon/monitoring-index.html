@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/all-fontawesome.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="User-Menu">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"><span>H</span>Hamyon</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav row justify-content-between">
+                    <li class="col nav-item">
+                        <a href="UzTT.html">
+                            <!--<img src="img/UzTT.png" alt="">-->
+                            <div class="UzTT-menu-icon"></div>
+                            <h3 class="text-center">UzTT</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="pay-page.html">
+                            <i class="fas fa-coins"></i>
+                            <h3 class="text-center">Оплата</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="money-transfer.html">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3 class="text-center">Переводы с карты на карту</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="#" class="active">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="text-center">Мониторинг</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="my-cards.html">
+                            <i class="far fa-credit-card"></i>
+                            <h3 class="text-center">Мои карты</h3>
+                        </a>
+                    </li>
+                    <li class="col nav-item">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <h3 class="text-center">Настройки</h3>
+                        </a>
+                    </li>
+                    <li class="sign-out col nav-item d-flex">
+                        <div class="row justify-content-start">
+                            <a href="#" class="flex-row">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Выход</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#"><i class="far fa-credit-card"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<sector class="monitoring-options">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownCalendar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                Выберите дату
+                            </button>
+                            <div class="dropdown-menu drp-calendar" aria-labelledby="dropdownCalendar">
+                                <div class="row justify-content-between">
+                                    <div class="col-7 offset-1 d-flex justify-content-center align-items-center">Декабря 2017</div>
+                                    <div class="col-4 d-flex justify-content-around">
+                                        <button type="button" class="calendar-up"><i class="fas fa-chevron-up"></i></button>
+                                        <button type="button" class="calendar-down"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                </div>
+                                <table class="table table-sm">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">пн</th>
+                                        <th scope="col">вт</th>
+                                        <th scope="col">ср</th>
+                                        <th scope="col">чт</th>
+                                        <th scope="col">пт</th>
+                                        <th scope="col">сб</th>
+                                        <th scope="col">вс</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><span>01</span></td>
+                                        <td><span>02</span></td>
+                                        <td><span>03</span></td>
+                                        <td><span>04</span></td>
+                                        <td><span>05</span></td>
+                                        <td><span>06</span></td>
+                                        <td><span>07</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>08</span></td>
+                                        <td><span>09</span></td>
+                                        <td><span>10</span></td>
+                                        <td><span>11</span></td>
+                                        <td><span>12</span></td>
+                                        <td><span>13</span></td>
+                                        <td><span>14</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>15</span></td>
+                                        <td><span>16</span></td>
+                                        <td><span>17</span></td>
+                                        <td><span>18</span></td>
+                                        <td><span>19</span></td>
+                                        <td><span>20</span></td>
+                                        <td><span>21</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>22</span></td>
+                                        <td><span>23</span></td>
+                                        <td><span>24</span></td>
+                                        <td><span>25</span></td>
+                                        <td><span>26</span></td>
+                                        <td><span>27</span></td>
+                                        <td><span>28</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>29</span></td>
+                                        <td><span>30</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownCalendarAfter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            по 20.07.17
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right drp-calendar drp-calendar-right" aria-labelledby="dropdownCalendarAfter">
+                            <div class="row justify-content-between">
+                                <div class="col-7 offset-1 d-flex justify-content-center align-items-center">Декабря 2017</div>
+                                <div class="col-4 d-flex justify-content-around">
+                                    <button type="button" class="calendar-up"><i class="fas fa-chevron-up"></i></button>
+                                    <button type="button" class="calendar-down"><i class="fas fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <table class="table table-sm">
+                                <thead>
+                                <tr>
+                                    <th scope="col">пн</th>
+                                    <th scope="col">вт</th>
+                                    <th scope="col">ср</th>
+                                    <th scope="col">чт</th>
+                                    <th scope="col">пт</th>
+                                    <th scope="col">сб</th>
+                                    <th scope="col">вс</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span>01</span></td>
+                                    <td><span>02</span></td>
+                                    <td><span>03</span></td>
+                                    <td><span>04</span></td>
+                                    <td><span>05</span></td>
+                                    <td><span>06</span></td>
+                                    <td><span>07</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>08</span></td>
+                                    <td><span>09</span></td>
+                                    <td><span>10</span></td>
+                                    <td><span>11</span></td>
+                                    <td><span>12</span></td>
+                                    <td><span>13</span></td>
+                                    <td><span>14</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>15</span></td>
+                                    <td><span>16</span></td>
+                                    <td><span>17</span></td>
+                                    <td><span>18</span></td>
+                                    <td><span>19</span></td>
+                                    <td><span>20</span></td>
+                                    <td><span>21</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>22</span></td>
+                                    <td><span>23</span></td>
+                                    <td><span>24</span></td>
+                                    <td><span>25</span></td>
+                                    <td><span>26</span></td>
+                                    <td><span>27</span></td>
+                                    <td><span>28</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>29</span></td>
+                                    <td><span>30</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <button class="btn dropdown-toggle" type="button" id="dropdowntime" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            За месяц
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdowntime">
+                            <a class="dropdown-item">За сегодня</a>
+                            <a class="dropdown-item">За неделю</a>
+                            <a class="dropdown-item">За месяц</a>
+                            <a class="dropdown-item">За год</a>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <button class="btn dropdown-toggle" type="button" id="dropdowncards" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Все карты
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdowncards">
+                            <a class="dropdown-item">Ipoteka Bank</a>
+                            <a class="dropdown-item">Trast Bank</a>
+                            <a class="dropdown-item">Aloqa Bank</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <button class="btn" type="button" id="dropdownrashod">
+                            <span class="text-uppercase">расход</span>
+                            <p>480 000</p>
+                        </button>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <button class="btn" type="button" id="dropdowndohod">
+                            <span class="text-uppercase">расход</span>
+                            <p>480 000</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sector>
+<!--<section class="active-pays">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<fieldset class="container">-->
+                <!--<legend class="text-center text-uppercase">-->
+                    <!--активные платежи-->
+                <!--</legend>-->
+                <!--<div class="row user-pay-operations">-->
+                    <!--<div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">-->
+                        <!--<button type="button" class="operation-card" data-toggle="modal" data-target="#onUzTT">-->
+                            <!--<div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">-->
+                                <!--<i class="fas fa-subway blue"></i>-->
+                                <!--<p class="buttn-status btn-blue">метро</p>-->
+                                <!--<span class="date-time">12.11 16:09</span>-->
+                                <!--<p class="">Станция Мустакиллик</p>-->
+                            <!--</div>-->
+                            <!--<div class="active-pay-info-price">-->
+                                <!--<h3 class="text-center">- 1 200 <span>сум</span></h3>-->
+                            <!--</div>-->
+                        <!--</button>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">-->
+                        <!--<button type="button" class="operation-card" data-toggle="modal" data-target="#onUzTT">-->
+                            <!--<div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">-->
+                                <!--<i class="fas fa-subway blue"></i>-->
+                                <!--<p class="buttn-status btn-blue">метро</p>-->
+                                <!--<span class="date-time">12.11 16:09</span>-->
+                                <!--<p class="">Станция Мустакиллик</p>-->
+                            <!--</div>-->
+                            <!--<div class="active-pay-info-price">-->
+                                <!--<h3 class="text-center">- 1 200 <span>сум</span></h3>-->
+                            <!--</div>-->
+                        <!--</button>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">-->
+                        <!--<button type="button" class="operation-card" data-toggle="modal" data-target="#onUzTT">-->
+                            <!--<div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">-->
+                                <!--<i class="fas fa-subway blue"></i>-->
+                                <!--<p class="buttn-status btn-blue">метро</p>-->
+                                <!--<span class="date-time">12.11 16:09</span>-->
+                                <!--<p class="">Станция Мустакиллик</p>-->
+                            <!--</div>-->
+                            <!--<div class="active-pay-info-price">-->
+                                <!--<h3 class="text-center">- 1 200 <span>сум</span></h3>-->
+                            <!--</div>-->
+                        <!--</button>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">-->
+                        <!--<button type="button" class="operation-card" data-toggle="modal" data-target="#onUzTT">-->
+                            <!--<div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">-->
+                                <!--<i class="fas fa-subway blue"></i>-->
+                                <!--<p class="buttn-status btn-blue">метро</p>-->
+                                <!--<span class="date-time">12.11 16:09</span>-->
+                                <!--<p class="">Станция Мустакиллик</p>-->
+                            <!--</div>-->
+                            <!--<div class="active-pay-info-price">-->
+                                <!--<h3 class="text-center">- 1 200 <span>сум</span></h3>-->
+                            <!--</div>-->
+                        <!--</button>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash; Modal &ndash;&gt;-->
+                    <!--<div class="modal fade" id="onUzTT" tabindex="-1" role="dialog" aria-labelledby="log-sign-in-label" aria-hidden="true">-->
+                        <!--<div class="modal-dialog" role="document">-->
+                            <!--<div class="modal-content modal-step step-6">-->
+                                <!--<form class="d-flex flex-column justify-content-center">-->
+                                    <!--<div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>-->
+                                    <!--<div class="modal-header justify-content-between align-items-center">-->
+                                        <!--<h5 class="modal-title text-left">Услуга UzTT</h5>-->
+                                        <!--<button>Пропустить</button>-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-body">-->
+                                        <!--<div class="row no-gutters">-->
+                                            <!--<div class="col-12 card-back">-->
+                                                <!--<div class="row">-->
+                                                    <!--<div class="col-8">-->
+                                                        <!--<h3>Активировать услугу UzTT</h3>-->
+                                                        <!--<small>Услуга позволяет оплачивать в общественном транспорте-->
+                                                            <!--при помощь QR кода</small>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-4 d-flex justify-content-end align-items-start">-->
+                                                        <!--<label class="custom-check">-->
+                                                            <!--<input type="checkbox">-->
+                                                            <!--<div class="check-circle"></div>-->
+                                                            <!--<hr class="check-line">-->
+                                                        <!--</label>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="row justify-content-center">-->
+                                            <!--<div class="col-10 UzTT-card">-->
+                                                <!--<div class="row">-->
+                                                    <!--<div class="col-6">-->
+                                                        <!--<div class="form-group">-->
+                                                            <!--<div class="row">-->
+                                                                <!--<div class="col-10">-->
+                                                                    <!--<label for="balance">Общий Баланс</label>-->
+                                                                    <!--<input type="password" class="form-control" id="balance" readonly value="123456">-->
+                                                                    <!--<label for="rashod">Расход за ноябрь</label>-->
+                                                                    <!--<input type="password" class="form-control" id="rashod" readonly value="123456">-->
+                                                                    <!--<button class="show-balance"><i class="fa fa-eye-slash"></i></button>-->
+                                                                <!--</div>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-6">-->
+                                                        <!--<h4 class="text-uppercase">transport to'lov<br><span class="text-uppercase">kartasi</span></h4>-->
+                                                        <!--<span class="text-center card-number">10 050 600</span>-->
+                                                        <!--<div class="row transport">-->
+                                                            <!--<div class="col-6 d-flex justify-content-center align-items-center flex-column">-->
+                                                                <!--<i class="fas fa-bus"></i>-->
+                                                                <!--<p class="text-center">Avtobus</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-6 d-flex justify-content-center align-items-center flex-column">-->
+                                                                <!--<i class="fas fa-subway"></i>-->
+                                                                <!--<p class="text-center">Metro</p>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<h4 class="text-center sumToUzTT">Сумма для авто пополнения услуги UzTT</h4>-->
+                                        <!--<div class="row justify-content-center">-->
+                                            <!--<div class="col-10 d-flex justify-content-around align-items-center UzTT-counter">-->
+                                                <!--<button type="button" class="minus-UzTT">-</button>-->
+                                                <!--<input type="number" align="center" class="UzTT-value">-->
+                                                <!--<button type="button" class="plus-UzTT">+</button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-footer standart-modal-footer justify-content-around">-->
+                                        <!--<button type="button" class="btn btn-cancel text-uppercase" data-dismiss="modal">Отмена</button>-->
+                                        <!--<button type="submit" class="btn btn-sucReg btn-active text-uppercase">подтвердить</button>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</fieldset>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<section class="active-pays monitoring-page">
+    <div class="container">
+        <div class="row">
+            <fieldset class="container">
+                <legend class="text-center text-uppercase">
+                    Мониторинг
+                </legend>
+                <div class="row user-pay-operations">
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#monitor-transfering">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-green">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">-100 200<span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#monitor-transfering">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-green">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">-100 200<span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#monitor-transfering">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-green">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">-100 200<span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-9 d-flex justify-content-center align-items-center">
+                        <button type="button" class="operation-card" data-toggle="modal" data-target="#monitor-transfering">
+                            <div class="active-pay-info-card d-flex flex-column justify-content-center align-items-center">
+                                <img src="img/comp-logo.png" alt="">
+                                <p class="buttn-status btn-green">перевод</p>
+                                <span class="date-time">12.11 16:09</span>
+                            </div>
+                            <div class="active-pay-info-price">
+                                <h3 class="text-center">-100 200<span>сум</span></h3>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="monitor-transfering" tabindex="-1" role="dialog" aria-labelledby="monitor-transfering-label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="logo navbar-brand mx-auto"><span>H</span>Hamyon</div>
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-uppercase mx-auto" id="monitor-transfering-label">перевод</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/comp-logo.png" alt="" class="mx-auto">
+                                    <table class="table table-sm monitor-transf">
+                                        <tbody>
+                                        <tr>
+                                            <td>Номер карты</td>
+                                            <td>8900 5600 4510 0313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Владелец</td>
+                                            <td>Rasulov Oybek rovshanovich</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Лимит</td>
+                                            <td>7 560 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сумма перевода</td>
+                                            <td>10 000 сум</td>
+                                        </tr>
+                                        <tr>
+                                            <td>За услуги</td>
+                                            <td>100 сум</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Время</td>
+                                            <td>12.11 16:09</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer modal-footer-small-ok">
+                                    <button type="button" class="btn mx-auto" data-dismiss="modal">Ок</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

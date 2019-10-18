@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/slick.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slick-theme.css">
+    <link rel="stylesheet" href="stylesheets/magnific-popup.css">
+    <link rel="stylesheet" href="stylesheets/preloaders.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/media.css">
+
+    <title>anello&reg;</title>
+</head>
+<body>
+<div class="preloader">
+    <div class='loader loader2'>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="top">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light col-md-8">
+                    <button style="border: 2px solid #fb5012;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">anello<sup><span>&reg;</span></sup></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="row justify-content-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link buyNow" href="#BuyNow">Как выбрать рюкзак</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fasterbuy" href="#fasters">Как заказать</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link haiped" href="#practs">Хайп сезона 2018</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="callback col-md-4 d-flex">
+                    <div class="row">
+                        <div class="phone-number"><a href="tel://+74952302048">+7 (495) 230-20-48</a></div>
+                        <button type="button" data-toggle="modal" data-target="#exampleModalorder" class="btn button-headphone CallOrder"><img src="images/headphone.png" alt="Связяться с нами"></button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="post" class="CallOrd">
+                                            <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+											<input type="hidden" name="formName" value="Заказать звонок">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="input-name-phone" placeholder="Ваше имя" name="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="input-phone-phone" placeholder="Ваш телефон*" name="Phone" required>
+                                            </div>
+                                            <input type="submit" class="btn send-order" value="Отправить">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn button-headshop ToMail"><img src="images/headshop.png" alt="Онлайн покупка"></button>
+                        <div class="phone-order"><a href="#" data-toggle="modal" data-target="#exampleModalorder" class="CallOrder">заказать звонок</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headbody">
+            <div class="row">
+                <div class="col-9 col-md-7">
+                    <h1 class="h1"> Учись, гуляй, путешествуй <br> <span>с Anello!</span></h1>
+                    <p>Носить все вещи в одном рюкзаке Anello удобно. <br>
+                        Можно достать любую вещь не только сверху, но и с боку, <br>
+                        не снимая рюкзака с плеч.</p>
+                </div>
+                <div class="col-12 col-md-7">
+                    <a href="#BuyNow" class="badge buyNow badge-success">заказать прямо сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="packdescription">
+    <div class="container">
+        <h2 class="h2 text-center">Описание рюкзака</h2>
+        <div class="row no-gutters">
+            <div class="col-lg-5 col-12">
+                <div class="row movement">
+                    <div class="col-md-2 forPag">
+                        <div class="forPagination">
+                            <div class="row no-gutters">
+                                <div class="slide-prev col-md-12 col-1">
+                                    <i class="fa fa-chevron-left prev" aria-hidden="true"></i>
+                                </div>
+                                <div class="slider-thumber col-md-12 col-10">
+                                    <div class="slider-item">
+                                        <img src="images/backpacks/black/front.png" alt="">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="images/backpacks/black/back.png" alt="">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="images/backpacks/black/open.png" alt="">
+                                    </div>
+                                    <div class="slider-item">
+                                        <img src="images/backpacks/black/front.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slide-next col-md-12 col-1">
+                                    <i class="fa fa-chevron-right next" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="slider-pack">
+                            <div class="slider-item">
+                                <img src="images/backpacks/black/front.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="images/backpacks/black/back.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="images/backpacks/black/open.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="images/backpacks/black/front.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-12 d-flex flex-column">
+                <h3 class="model">Mini Backpack</h3>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td id="BuyNow">Материал:</td>
+                        <td>Полиэстиер</td>
+                    </tr>
+                    <tr>
+                        <td>Вес:</td>
+                        <td>460 гр</td>
+                    </tr>
+                    <tr>
+                        <td>Глубина:</td>
+                        <td>19 см</td>
+                    </tr>
+                    <tr>
+                        <td>Высота:</td>
+                        <td>40 см</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина:</td>
+                        <td>26 см</td>
+                    </tr>
+                    <tr>
+                        <td>Объем:</td>
+                        <td>10 л</td>
+                    </tr>
+                    <tr>
+                        <td>Карман:</td>
+                        <td>1 на молнии спереди, 2 сбоку, 2 внутри</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="color">Выберите цвет: <span class="colorname">UN Blue</span></p>
+                <div class="choosecolor">
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="blue"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item Crazy-Color" data-coloritem="crazy color"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="shoking pink"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="khaki"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="light green"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="salmon pink"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="sax blue"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="wine"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item White-Red" data-coloritem="white red"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="navy"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="black"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="natutal"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="Dgreen"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="white"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="lightgray"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="red"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="Egreen"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item Pink-Purple" data-coloritem="pink purple"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="yellow"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item" data-coloritem="orange"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item camouflage" data-coloritem="camouflage"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="colorpack">
+                        <div class="color-item lightcamouflage" data-coloritem="lightcamouflage"></div>
+                    </label>
+                </div>
+                <div class="row no-gutters features">
+                    <div class="col-sm-4">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4"><img src="images/truck.png" alt="free Deliver"></div>
+                            <div class="col-sm-8"><p>бесплатная доставка</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4"><img src="images/creditcard.png" alt="pay type"></div>
+                            <div class="col-sm-8"><p>любой вид оплаты</p></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row no-gutters">
+                            <div class="col-sm-3"><img src="images/shield.png" alt="garanty"></div>
+                            <div class="col-sm-9"><p>гарантия возврата в течение 14 дней</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4 old-price d-flex align-items-center"><span>5 390 руб.</span></div>
+                        <div class="col-6 col-md-8 new-price d-flex align-items-center"><span>2 999 руб.</span></div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <div class="order-now" id="OrderBtn">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal" class="badge badge-success">купить в 1 клик</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-center">Купить в один клик</h3>
+                                <p class="text-center">* - поля обязательные для заполнения</p>
+                                <form method="post" class="YayBuy">
+                                    <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+									<input type="hidden" name="formName" value="Купить в один клик">
+                                    <input type="text" id="colorUser" name="Color" style="visibility: hidden; display: none;">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="input-name" placeholder="Ваше имя*" name="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="input-phone" placeholder="Ваш телефон*" name="Phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="input-mail" aria-describedby="emailHelp" name="Email" placeholder="Ваш email*" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control address-input" id="input-adres" name="Address" placeholder="Адрес доставки*">
+                                    </div>
+                                    <input type="submit" class="btn send-order" value="Отправить">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required checked>
+                                        <label class="form-check-label" for="exampleCheck1"><a href="sure.php">Согласие на обработку персональных данных</a></label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="freedate">
+                    <p>Бесплатная доставка за один день</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="practic" id="practs">
+    <div class="container">
+        <h2 class="h2">Рюкзак Anello отлично дополнит любой образ — яркий, молодёжный, спортивный.</h2>
+        <div class="practicgallery">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="gal-item" id="strange">
+                                <div class="text">Мода на рюкзаки только пришла, поэтому с Anello всегда будете в центре внимания своих сверстников.</div>
+                                <span>Новый модный тренд</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="gal-item" id="large">
+                                <div class="text">Фотографии с рюкзаком в Инстаграм, Фейсбук всегда вызовут бурю положительных эмоций и лайки подписчиков.</div>
+                                <span>Хайп сезона 2018 года</span></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="gal-item" id="style">
+                                <div class="text">В рюкзак поместится спортивная форма, роликовые коньки, пляжное полотенце и купальник. Абсолютно все нужные вещи в одном месте – удиви друзей.</div>
+                                <span>Будь в гуще событий</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 thelast">
+                    <div class="row">
+                        <div class="col-12" id="longparrent">
+                            <div class="gal-item" id="long">
+                                <div class="text">Через боковой карман легко достать документы, билет, пластиковые карты.
+                                </div>
+                                <span>С Anello  просто путешествовать</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="gal-item" id="comfort">
+                                <div class="text">Стильный рюкзак поможет обратить на себя внимание и завести новых друзей.
+                                </div>
+                                <span>Стильный</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-12">
+                            <div class="gal-item" id="functionality">
+                                <div class="text">Красивый рюкзак станет предметом зависти и восхищения подружек.
+                                </div>
+                                <span>Восхищение</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="anelloStyle">
+    <div class="container">
+        <h2>Носите рюкзак каждый день. Берите с собой больше вещей и оставляйте руки свободными</h2>
+        <div class="row">
+            <div class="col-6 col-md-3 style-item for-girl">
+                <div class="style-text">Крепкий материал отлично сохранит вещи, качественные молнии случайно не расстегнутся</div>
+                <span>Сверхпрочность</span>
+            </div>
+            <div class="col-6 col-md-3 style-item learn">
+                <div class="style-text">Вы сможете без труда взять с собой все, что нужно для учёбы, работы, отдыха или прогулки. Ноутбук, книги, любимый напиток и еда всегда будут с собой</div>
+                <span>Большая вместительност</span>
+            </div>
+            <div class="col-6 col-md-3 style-item walking">
+                <div class="style-text">Красивые, модные расцветки, которые выделят вас из толпы. Можно носить с повседневной и спортивной одеждой. Отлично смотрится в школе, институте, на работе, на отдыхе</div>
+                <span>Стильный</span>
+            </div>
+            <div class="col-6 col-md-3 style-item in-command">
+                <div class="style-text">Рюкзак будет как новый через годы, даже если вы будете носить его каждый день</div>
+                <span>Долговечный</span>
+            </div>
+        </div>
+        <div class="row st-sl">
+            <div class="col-12">
+                <div class="style-slider">
+                    <div class="style-gallery">
+                        <a href="images/style1.jpg" class="magnific-item">
+                            <img src="images/style1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style2.jpg" class="magnific-item">
+                            <img src="images/style2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style3.jpg" class="magnific-item">
+                            <img src="images/style3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style4.jpg" class="magnific-item">
+                            <img src="images/style4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style1.jpg" class="magnific-item">
+                            <img src="images/style1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style2.jpg" class="magnific-item">
+                            <img src="images/style2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style3.jpg" class="magnific-item">
+                            <img src="images/style3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style4.jpg" class="magnific-item">
+                            <img src="images/style4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style1.jpg" class="magnific-item">
+                            <img src="images/style1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style2.jpg" class="magnific-item">
+                            <img src="images/style2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style3.jpg" class="magnific-item">
+                            <img src="images/style3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="style-gallery">
+                        <a href="images/style4.jpg" class="magnific-item">
+                            <img src="images/style4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reorder">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-6">
+                <h2>Удивляй и наслаждайся вместе с рюкзаками Anello</h2>
+                <p>Самые лучшие предложения для Вас по очень низкой
+                    цене только сегодня ... </p>
+            </div>
+
+            <div class="col-md-6 offset-md-6 button-reorder">
+                <a href="#BuyNow" class="badge buyNow badge-success">заказать прямо сейчас</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aboutpack">
+    <div class="container">
+        <h2>Преимущество рюкзака</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="about-item ab-i1"><i>1</i><span>Надёжный каркас</span>
+                    <p>Он защитит от повреждений вещи внутри рюкзака</p>
+                </div>
+                <div class="about-item ab-i3"><i>2</i><span>Прочный материал</span>
+                    <p>Сумка пошита из очень прочного материла от кутюр. Вещи внутри не промокнут,
+                        на них не попадёт пыль, осадки. Сочные краски
+                        не выгорят под солнцем.</p>
+                </div>
+            </div>
+            <div class="col-md-6 pulsecontainer">
+                <div class="pulse-border">
+                    <div class="numbar">1</div>
+                    <hr>
+                </div>
+                <div class="pulse-border">
+                    <div class="numbar">2</div>
+                    <hr>
+                </div>
+                <div class="pulse-border">
+                    <div class="numbar">3</div>
+                    <hr>
+                </div>
+                <div class="pulse-border">
+                    <div class="numbar">4</div>
+                    <hr>
+                </div>
+                <img src="images/backpulse.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <div class="about-item ab-i2"><i>3</i><span>Оригинальная подкладка</span>
+                    <p>Оригинальная подкладка
+                        из натурального нейлона
+                        с дизайнерским узором.</p>
+                </div>
+                <div class="about-item ab-i4"><i>4</i><span>Качество молний</span>
+                    <p>Они плавно, без усилий открываются и прослужат много лет. Для удобства
+                        на каждой молнии есть бегунок из натуральной
+                        кожи. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h2>Отзывы наших покупателей</h2>
+        <div class="row">
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="row no-gutters">
+                        <div class="user-img col-3">
+                            <img src="images/girl3.jpeg" alt="">
+                        </div>
+                        <div class="description col-9">
+                            <p>
+                                Слышала что рюкзаки Анелло очень модные. Зашла на сайт и купила. Реально классный рюкзак
+                                все подружки начали спрашивать где купила. Теперь вместе ходим и фоткаемся. Девочки покупайте супер рюкзак.
+                                Такой милый. Очень нравиться. Сейчас еще закажу сестренке путь будет модная!
+                            </p>
+                            <span class="name">Ирина Коваленко, 17 лет</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="row no-gutters">
+                        <div class="user-img col-3">
+                            <img src="images/girl1.jpg" alt="">
+                        </div>
+                        <div class="description col-9">
+                            <p>
+                                Я всегда искала вещи отличающие меня от топлы. Эти рюкзаки только появились на нашем
+                                рынке. Купила и осталось очень довольна. Он такой яркий молодежный.
+                                Подружки сразу захотели себе. Качество лучшее. А главное моему парню тоже очень понравился.
+                            </p>
+                            <span class="name">Иванова Надежда, 19 лет</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="row no-gutters">
+                        <div class="user-img col-3">
+                            <img src="images/girl4.jpg" alt="">
+                        </div>
+                        <div class="description col-9">
+                            <p>
+                                Моя 14-летняя дочка очень любит яркий желтый цвет. Закомандовала: хочу яркий желтый
+                                рюкзак. Думала, его купить не проблема, а оказалось - еще какая. Сначала купили дешевый,
+                                на второй день он упал и запачкался. Еле отмыли, потом то нитки полезут, то швы разойдутся. И цвет уже не такой яркий...
+                                Выброшенные деньги. А тут случайно увидела Анелло на сайте, показала ребенку и купила. Очень довольны.
+                            </p>
+                            <span class="name">Евгения Федоренко, 33 года</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="row no-gutters">
+                        <div class="user-img col-3">
+                            <img src="images/girl2.jpg" alt="">
+                        </div>
+                        <div class="description col-9">
+                            <p>
+                                У меня две девочки-близняшки, поэтому нагрузка на семейный бюджет двойная. Они просят,
+                                что бы вещи им покупали одинаковые. Одежду и обувь такую можно еще найти, а вот с
+                                рюкзаками и сумками сложновато. Да и стоят они недешево. Каждые 2-3 месяца выбрасывать
+                                двойную сумму накладно. Случайно нашла рюкзаки Анелло в интернете, а тут акция. Ой,
+                                спасибо, порадовали и доставили очень быстро. Я буду всем знакомым советовать.
+                            </p>
+                            <span class="name">Марина Алексеенко, 28 лет</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="action">
+            <input type="range" min="1" max="5"  value="0" step="1">
+        </div>
+    </div>
+</section>
+
+<section class="reorder-2">
+    <div class="container">
+        <div class="row align-items-center re-ordered">
+            <div class="col-md-6">
+                <img src="images/reorderimg.png" alt="">
+            </div>
+            <div class="col-9 offset-3 offset-sm-0 col-md-6">
+                <h2>Еще не передумали? Скорее заказывай рюкзак</h2>
+                <p>Самые лучшие предложения для Вас по очень низкой
+                    цене только сегодня ... </p>
+                <a href="#BuyNow" class="badge buyNow badge-success">заказать прямо сейчас</a>
+            </div>
+        </div>
+        <h2 class="text-center head-his h2">История первого рюкзака</h2>
+        <div class="row align-items-center history">
+            <div class="col-md-6">
+                <div>
+                    <p>
+                        Взяв своё начало от военных ранцев, рюкзаки снова пользуются огромной популярностью. Сегодня рюкзаки включены даже
+                        в такие легендарные бренды как Chanel и Christian Dior.
+                    </p>
+                    <p>
+                        В них гораздо удобнее, чем в сумках, переносить свои вещи. Кроме того, они оставляют свободными обе руки. Уже не только молодые девушки оценили всю прелесть рюкзаков, даже взрослые стильные женщины стали их носить.
+                    </p>
+                    <p>
+                        Красивый синий рюкзак был замечен у Рианны, у её коллеги
+                        по цеху Ванессы Хадженс есть черный рюкзак с заклепками. Стильный красный рюкзак носит голливудская актриса Зоуи Дешанель.
+                    </p>
+                    <p>
+                        Покупайте рюкзак, надевайте его и очаровывайте всех вместе
+                        с нами!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/history.png" alt="">
+            </div>
+        </div>
+        <div class="row align-items-center fast-order" id="fasters">
+            <div class="col-md-6">
+                <img src="images/fastorder.png" alt="">
+            </div>
+            <div class="col-8 offset-4 offset-md-0 col-md-6">
+                <h2>Заказать рюкзак у нас -
+                    быстро и просто</h2>
+                <div class="steps">
+                    <div class="row">
+                        <div class="col-3 col-md-2"><img src="images/onlinecart.png" alt="online"></div>
+                        <div class="col-9 col-md-10 d-flex align-items-center"><p>Оставляете <br> заявку</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-md-2"><img src="images/phone.png" alt="phone"></div>
+                        <div class="col-9 col-md-10 d-flex align-items-center"><p>Наш менеджер свяжется с Вами <br> для уточнения деталей</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-md-2"><img src="images/box.png" alt="box"></div>
+                        <div class="col-9 col-md-10 d-flex align-items-center"><p>Оплата и бесплатная доставка в течении 1-3 дней</p></div>
+                    </div>
+                </div>
+                <a href="#BuyNow" class="badge buyNow badge-success">заказать прямо сейчас</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="describe" id="DescrSection">
+    <form method="post" class="subscribing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center justify-content-between">
+                    <div><img src="images/mail.png" alt="mail"></div>
+                    <div>
+                        <p>Узнайте первым о спецпредложениях
+                            и праздничных рапспродажах - подпишитесь на рассылку</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+							<input type="hidden" name="formName" value="Подписка">
+                            <input type="email" name="Email" aria-describedby="emailHelp" placeholder="Оставить email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thankModal">
+                <p>Ваша заявка отправлена</p>
+            </div>
+            <div class="row justify-content-end sure">
+                <div class="col-md-6 offset-md-6">
+                    <label for="surecheck" class="d-flex align-items-center">
+                        <input type="checkbox" id="surecheck" required>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <a href="sure.php">Согласие на обработку персональных данных</a></label>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="top">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark col-lg-8">
+                    <button style="border: 2px solid #fb5012;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav-footer" aria-controls="navbarNav-footer" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="logo logo-footer">
+                        <div class="row">
+                            <a class="navbar-brand" href="https://anelloshop.ru">anello <span>&reg;</span></a>
+                            <p>&copy;2018.Anello. Все права защищены.</p>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav-footer">
+                        <div class="row justify-content-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link buyNow" href="#">Как выбрать рюкзак</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fasterbuy" href="#fasters">Как заказать</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link haiped" href="#practs">Хайп сезона 2018</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="callback col-lg-4 d-flex">
+                    <div class="row">
+                        <div class="phone-number"><a href="tel://+74952302048">+7 (495) 230-20-48</a></div>
+                        <button class="btn button-headphone"><img src="images/fooerphone.png" alt="Связяться с нами"></button>
+                        <button class="btn button-headshop"><img src="images/footershop.png" alt="Онлайн покупка"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script type="text/javascript" src="javascript/slick.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+
+<script src="dist/inputmask/inputmask.js"></script>
+<script src="dist/inputmask/inputmask.extensions.js"></script>
+<script src="dist/inputmask/inputmask.numeric.extensions.js"></script>
+<script src="dist/inputmask/inputmask.date.extensions.js"></script>
+<script src="dist/inputmask/inputmask.phone.extensions.js"></script>
+<script src="dist/inputmask/jquery.inputmask.js"></script>
+<script src="dist/inputmask/phone-codes/phone.js"></script>
+<script src="dist/inputmask/phone-codes/phone-be.js"></script>
+<script src="dist/inputmask/phone-codes/phone-ru.js"></script>
+
+<script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

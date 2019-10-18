@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fa Armada</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/libs/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-start justify-content-lg-center align-items-center">
+                    <ul class="nav flex-column flex-sm-row">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/img/i-icon.png" alt=""><span>О нас</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/img/ship-icon.png" alt=""><span>Доставка</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/img/tax-icon.png" alt=""><span>Растаможка</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/img/contact-icon.png" alt=""><span>Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-lg-end align-items-center">
+                    <div class="phone-container">
+                        <div class="img-phone"><img src="assets/img/phone-icon.png" alt=""></div>
+                        <div class="phone-numbers d-flex flex-column flex-sm-row flex-lg-column">
+                            <span>+38 096 056 34 70</span>
+                            <span>+38 099 227 55 67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cars-info-slider">
+                    <div class="slider-item">
+                        <div class="car-info-caption">
+                            <h1 class="text-center">Доставка машин из Америки, Канады и Европы</h1>
+                            <p class="text-center">более <span>150</span> машин во фри-зоне украины с доставкой за <span>5</span> дней</p>
+                            <div class="youtube-link">
+                                <a href="#">
+                                    <img src="assets/img/youtube-link.png" alt="">
+                                    <span>Наш промо ролик. <strong>Посмотреть?</strong></span>
+                                </a>
+                            </div>
+                            <button type="button" class="header-order">Заказать <i class="fal fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="currency-change">
+                    <button type="button" class="change-currency">
+                        <img src="assets/img/curr-change.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="filter">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="select">
+                        <img src="assets/img/manufacturer-icon.png" alt="">
+                        <select class="custom-select">
+                            <option value="1">Производитель</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <img src="assets/img/model-icon.png" alt="">
+                        <select class="custom-select">
+                            <option value="1">Модель</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <img src="assets/img/calendar-icon.png" alt="">
+                        <select class="custom-select">
+                            <option value="1">Год</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <img src="assets/img/price-icon.png" alt="">
+                        <select class="custom-select">
+                            <option value="1">Цена</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button type="submit">Найти <i class="far fa-search"></i></button>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <a href="#" class="filter-clear">Сбросить параметры фильтра</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cars">
+    <div class="container">
+        <h2 class="text-center text-uppercase">новые машины</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="new-cars-slider">
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="#" class="show-more-cars">Показать все новые машины</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stock-today">
+    <img src="assets/img/car-back.png" alt="car-back" id="car-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="stock-cars-slider">
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="car-caption">
+                            <img src="assets/img/car-product.jpg" alt="">
+                            <div class="caption-text">
+                                <h1 class="text-uppercase">
+                                    FORD FUSION S 2015 2.5
+                                </h1>
+                                <div class="excerpt-characteristic">
+                                    <ul>
+                                        <li>Пробег: 101,863км</li>
+                                        <li>Цвет: зелёный</li>
+                                        <li>Растаможен</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    24 000 <span>$</span>
+                                </div>
+                            </div>
+                            <div class="buy-btn">
+                                <button class="buy-this">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 flex-column d-flex justify-content-end align-items-center">
+                <h1 class="text-sm-left text-center">ЛУЧШИЕ
+                    АВТО</h1>
+                <p class="text-sm-left text-center">
+                    В НАЛИЧИИ
+                    СЕГОДНЯ
+                </p>
+                <div class="d-flex justify-content-between container mt-4">
+                    <button class="slider-arrow sl-prev"><i class="fal fa-angle-left"></i></button>
+                    <button class="slider-arrow sl-next"><i class="fal fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="company-map-marker">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.9387606461733!2d30.708377015407294!3d46.41026977783814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6336a69ded737%3A0x12a9e7dc24b0d6de!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA2LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1534834086433" width="100%" height="535" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+<section class="over-footer">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <img src="assets/img/car-logo-chevrolet.png" alt="">
+            <img src="assets/img/car-logo-cadilac.png" alt="">
+            <img src="assets/img/car-logo-bmw.png" alt="">
+            <img src="assets/img/car-logo-audi.png" alt="">
+            <img src="assets/img/car-logo-chrysler.png" alt="">
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="logo">
+                </div>
+                <div class="under-logo">
+                    <span>© 2018 Автосалон Fa-Armada</span>
+                </div>
+                <div class="soc-links">
+                    <a href="#"><img src="assets/img/whats-up-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/YouTube-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/pinterest-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/tumblr-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/twitter-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/LinkedIn-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/dribble-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/facebook-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/google-plus-icon.png" alt="soc-icon"></a>
+                    <a href="#"><img src="assets/img/instagram-icon.png" alt="soc-icon"></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <h4 class="text-uppercase">информация</h4>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Растаможка</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <h4 class="text-uppercase">Наши контакты</h4>
+                <p>
+                    г. Одесса, пр. Небесной Сотни
+                    (бывш. Маршала Жукова), 6/2
+                </p>
+                <p>
+                    (096) 056 34 70
+                </p>
+                <p>
+                    ‎(099) 227 55 67
+                </p>
+                <p>
+                    info@fa-armada.com.ua
+                </p>
+            </div>
+            <div class="col-md-4 pl-md-5">
+                <h4 class="text-uppercase">
+                    МЫ МОЖЕМ <br>
+                    ГАРАНТИРОВАТЬ КАЧЕСТВО!
+                </h4>
+                <span>
+                    Самые лучше автомобиле из Америки и Европы
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--<script src="assets/libs/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="assets/libs/slick/slick.min.js"></script>
+<!--<script src="assets/libs/bootstrap.min.js"></script>-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
