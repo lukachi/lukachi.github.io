@@ -1,0 +1,26 @@
+/*------------------------
+	icons
+-------------------------*/
+.icon-body::before {
+  content: "\ea01"; }
+
+.icon-coaches::before {
+  content: "\ea02"; }
+
+.icon-cup::before {
+  content: "\ea03"; }
+
+.icon-emotions::before {
+  content: "\ea04"; }
+
+.icon-happiness::before {
+  content: "\ea05"; }
+
+.icon-photos::before {
+  content: "\ea06"; }
+
+.icon-rooms::before {
+  content: "\ea07"; }
+
+.icon-star::before {
+  content: "\ea08"; }
