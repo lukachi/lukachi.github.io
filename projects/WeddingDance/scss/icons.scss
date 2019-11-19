@@ -1,0 +1,48 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-body: unicode(ea01);
+$icon-coaches: unicode(ea02);
+$icon-cup: unicode(ea03);
+$icon-emotions: unicode(ea04);
+$icon-happiness: unicode(ea05);
+$icon-photos: unicode(ea06);
+$icon-rooms: unicode(ea07);
+$icon-star: unicode(ea08);
+
+.icon-body::before {
+  content: $icon-body;
+}
+
+.icon-coaches::before {
+  content: $icon-coaches;
+}
+
+.icon-cup::before {
+  content: $icon-cup;
+}
+
+.icon-emotions::before {
+  content: $icon-emotions;
+}
+
+.icon-happiness::before {
+  content: $icon-happiness;
+}
+
+.icon-photos::before {
+  content: $icon-photos;
+}
+
+.icon-rooms::before {
+  content: $icon-rooms;
+}
+
+.icon-star::before {
+  content: $icon-star;
+}
+
