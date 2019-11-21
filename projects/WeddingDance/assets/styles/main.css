@@ -428,9 +428,9 @@ Generated using nucleoapp.com
         height: 2px;
         background: #000; }
       .header__nav .nav__menu-toggler.show .line {
-        -webkit-transition: 0.35s ease;
-        -o-transition: 0.35s ease;
-        transition: 0.35s ease; }
+        -webkit-transition: 0.35s ease-in-out;
+        -o-transition: 0.35s ease-in-out;
+        transition: 0.35s ease-in-out; }
         .header__nav .nav__menu-toggler.show .line:nth-child(1) {
           -webkit-transform: rotate(45deg) translateY(320%);
               -ms-transform: rotate(45deg) translateY(320%);
@@ -471,9 +471,9 @@ Generated using nucleoapp.com
           -webkit-transform: translateY(-2px);
               -ms-transform: translateY(-2px);
                   transform: translateY(-2px);
-          -webkit-transition: 0.35s ease;
-          -o-transition: 0.35s ease;
-          transition: 0.35s ease; }
+          -webkit-transition: 0.35s ease-in-out;
+          -o-transition: 0.35s ease-in-out;
+          transition: 0.35s ease-in-out; }
           .header__nav .nav__menu .menu__item:last-child .menu__link:hover {
             border-color: #FF699F;
             color: #FF699F;
@@ -520,9 +520,9 @@ Generated using nucleoapp.com
     -webkit-transform: translateY(-2px);
         -ms-transform: translateY(-2px);
             transform: translateY(-2px);
-    -webkit-transition: 0.35s ease;
-    -o-transition: 0.35s ease;
-    transition: 0.35s ease; }
+    -webkit-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out; }
     .main .section-banner__action:hover {
       border-color: #FF699F;
       color: #FF699F;
@@ -678,9 +678,9 @@ Generated using nucleoapp.com
           -ms-flex-direction: column;
               flex-direction: column;
       z-index: 5;
-      -webkit-transition: 0.35s ease;
-      -o-transition: 0.35s ease;
-      transition: 0.35s ease; }
+      -webkit-transition: 0.35s ease-in-out;
+      -o-transition: 0.35s ease-in-out;
+      transition: 0.35s ease-in-out; }
       .header .header__nav .nav__menu.show {
         top: 78px; }
       .header .header__nav .nav__menu .menu__item {
