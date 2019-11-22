@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "MilgurtIcons";
+	src: url('../fonts/MilgurtIcons.eot');
+	src: url('../fonts/MilgurtIcons.eot?#iefix') format('eot'),
+		url('../fonts/MilgurtIcons.woff2') format('woff2'),
+		url('../fonts/MilgurtIcons.woff') format('woff'),
+		url('../fonts/MilgurtIcons.ttf') format('truetype'),
+		url('../fonts/MilgurtIcons.svg#MilgurtIcons') format('svg');
+}
+
+.icon:before {
+	font-family: "MilgurtIcons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-blob:before {
+	content: "\E001";
+}
+
+.icon-global:before {
+	content: "\E002";
+}
+
+.icon-instagram-logo:before {
+	content: "\E003";
+}
+
+.icon-mail:before {
+	content: "\E004";
+}
+
+.icon-phone:before {
+	content: "\E005";
+}
+
+.icon-pin:before {
+	content: "\E006";
+}
+
+.icon-youtube:before {
+	content: "\E007";
+}

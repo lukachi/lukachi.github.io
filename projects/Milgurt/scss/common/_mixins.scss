@@ -1,0 +1,67 @@
+@font-face {
+  src: url("../fonts/helios-regular.otf");
+  font-family: "Helios";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/helios-bold.ttf");
+  font-family: "Helios";
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/HeliosBlack.otf");
+  font-family: "Helios";
+  font-weight: 900;
+}
+
+
+@font-face {
+  src: url("../fonts/FranklinGothicBookXCmpITC-Reg.otf");
+  font-family: "Franklin Gothic Book";
+  font-weight: 400;
+}
+
+
+@font-face {
+  src: url("../fonts/FranklinGothicBookXCmpITC-Bold.otf");
+  font-family: "Franklin Gothic Book";
+  font-weight: 900;
+}
+
+@mixin section-Title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow: hidden;
+  .section-title__logo {
+    max-width: 150px;
+    margin-right: 40px;
+    img {
+      transform: translateY(-3.5px);
+    }
+  }
+  .section-title__text {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+  }
+}
+
+@mixin section-Title-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .section-title__logo {
+    max-width: 150px;
+    margin-right: 0;
+    img {
+      transform: translateY(-3.5px);
+    }
+  }
+  .section-title__text {
+    margin-top: 15px;
+    font-size: 5.25vw;
+    text-align: center;
+  }
+}
