@@ -500,14 +500,25 @@ Generated using nucleoapp.com
     max-width: 35%; }
   .main .section-banner__title {
     font-size: 4.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-animation: fade_in 3s ease-in;
+            animation: fade_in 3s ease-in; }
   .main .section-banner__subtitle {
     font-size: 1.5rem;
     font-weight: 500;
-    margin: 16px 0 40px 0; }
+    margin: 16px 0 40px 0;
+    -webkit-animation: fade_in 3s ease-in;
+            animation: fade_in 3s ease-in; }
   .main .section-banner__description {
     line-height: 1.5rem;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    opacity: 0;
+    -webkit-animation: fade_in 2s ease-in;
+            animation: fade_in 2s ease-in;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
   .main .section-banner__action {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
@@ -522,7 +533,14 @@ Generated using nucleoapp.com
             transform: translateY(-2px);
     -webkit-transition: 0.35s ease-in-out;
     -o-transition: 0.35s ease-in-out;
-    transition: 0.35s ease-in-out; }
+    transition: 0.35s ease-in-out;
+    opacity: 0;
+    -webkit-animation: fade_in 1s ease-in;
+            animation: fade_in 1s ease-in;
+    -webkit-animation-delay: 2.75s;
+            animation-delay: 2.75s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
     .main .section-banner__action:hover {
       border-color: #FF699F;
       color: #FF699F;
@@ -538,13 +556,21 @@ Generated using nucleoapp.com
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .main .section-banner__img .section-banner__img-wrapper img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: top right;
-         object-position: top right; }
+    .main .section-banner__img .section-banner__img-wrapper {
+      opacity: 0;
+      -webkit-animation: fade_in 2s ease-in;
+              animation: fade_in 2s ease-in;
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      .main .section-banner__img .section-banner__img-wrapper img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: top right;
+           object-position: top right; }
   .main .section-ourServices {
     padding: 100px 0; }
     .main .section-ourServices .section-title {
@@ -774,3 +800,45 @@ Generated using nucleoapp.com
       position: absolute;
       bottom: 0;
       left: 0; } }
+
+@media screen and (max-width: 525px) {
+  .main .section-banner__title {
+    opacity: 0;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .main .section-banner__subtitle {
+    opacity: 0;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .main .section-banner__description {
+    opacity: 0;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s; }
+  .main .section-banner__action {
+    opacity: 0;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s; }
+  .main .section-banner__img .section-banner__img-wrapper {
+    opacity: 0;
+    -webkit-animation: fade_in 3s ease-in;
+            animation: fade_in 3s ease-in;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; } }
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
