@@ -44,4 +44,6 @@ $(document).ready(function () {
             scrollTop: $(event.target.getAttribute("href")).offset().top + Number.parseInt($(event.target.getAttribute("href")).css("padding-top").toString().replace(/[^0-9]/g,''))
         }, 1000);
     });
+    const wow = new WOW();
+    wow.init();
 });

@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto&display=swap" rel="stylesheet">
     <style>
         /* http://meyerweb.com/eric/tools/css/reset/
            v2.0-modified | 20110126
@@ -373,8 +374,101 @@
             color: #000;
             padding: 0.2em 0;
         }
+
+        .header {
+            font-family: 'Montserrat', sans-serif; }
+        .header__nav {
+            padding: 30px 0;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .header__nav .nav__logo {
+            font-weight: bold;
+            font-size: 1.125rem; }
+        .header__nav .nav__menu-toggler {
+            cursor: pointer;
+            width: 32px;
+            height: 14px;
+            display: none;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+        .header__nav .nav__menu-toggler .line {
+            height: 2px;
+            background: #000; }
+        .header__nav .nav__menu-toggler.show .line {
+            -webkit-transition: 0.35s ease-in-out;
+            -o-transition: 0.35s ease-in-out;
+            transition: 0.35s ease-in-out; }
+        .header__nav .nav__menu-toggler.show .line:nth-child(1) {
+            -webkit-transform: rotate(45deg) translateY(320%);
+            -ms-transform: rotate(45deg) translateY(320%);
+            transform: rotate(45deg) translateY(320%); }
+        .header__nav .nav__menu-toggler.show .line:nth-child(2) {
+            opacity: 0; }
+        .header__nav .nav__menu-toggler.show .line:nth-child(3) {
+            -webkit-transform: rotate(-45deg) translateY(-320%);
+            -ms-transform: rotate(-45deg) translateY(-320%);
+            transform: rotate(-45deg) translateY(-320%); }
+        .header__nav .nav__menu {
+            font-family: 'Roboto', sans-serif;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+        .header__nav .nav__menu .menu__item {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+        .header__nav .nav__menu .menu__item:not(:last-child) {
+            padding-right: 25px; }
+        .header__nav .nav__menu .menu__item:not(:last-child) .menu__link {
+            font-size: .875rem; }
+        .header__nav .nav__menu .menu__item:not(:last-child) .menu__link:hover {
+            text-decoration: underline; }
+        .header__nav .nav__menu .menu__item:last-child .menu__link {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            font-weight: 600;
+            padding: 10px 35px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+            -webkit-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
+            -webkit-transition: 0.35s ease-in-out;
+            -o-transition: 0.35s ease-in-out;
+            transition: 0.35s ease-in-out; }
+        .header__nav .nav__menu .menu__item:last-child .menu__link:hover {
+            border-color: #FF699F;
+            color: #FF699F;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0); }
+
+
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/animate.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 <body>
@@ -488,50 +582,50 @@
                     Our goal is not only to teach you how to dance but also give the best unforgettable memories about preparing to your event
                 </p>
                 <div class="section-offer__wrapper">
-                    <div class="offer__item">
+                    <div class="offer__item wow bounceInUp">
                         <i class="icon icon-coaches"></i>
                         <div class="offer__title">
                             Talented Coaches
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow fadeInLeft">
                         <i class="icon icon-rooms"></i>
                         <div class="offer__title">
                             Cozy rooms for training
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow fadeInDownBig">
                         <i class="icon icon-cup"></i>
                         <div class="offer__title">
                             Coffee, tea, and cookies
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow zoomIn">
                         <i class="icon icon-body"></i>
                         <div class="offer__title">
                             Good physical form
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow zoomInLeft">
                         <i class="icon icon-star"></i>
                         <div class="offer__title">
                             Self Confidence and success on your event
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow jackInTheBox">
                         <i class="icon icon-emotions"></i>
                         <div class="offer__title">
                             Exciting emotions and a lot of fun
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow rollIn">
                         <i class="icon icon-photos"></i>
                         <div class="offer__title">
                             Great photos from
                             your event
                         </div>
                     </div>
-                    <div class="offer__item">
+                    <div class="offer__item wow lightSpeedIn">
                         <i class="icon icon-happiness"></i>
                         <div class="offer__title">
                             Spend hours together
