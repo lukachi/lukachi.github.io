@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/inst.png" alt="item">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/vk.png" alt="item">
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <img src="./assets/images/smartphone.png" alt="phone">
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<section class="section-eventParty">
+    <div class="section-inner">
+        <h2 class="section-title">
+            Мероприятие
+        </h2>
+        <div class="eventParty__wrapper">
+            <div class="container--tabs">
+                <section class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-tabs__item active">
+                            <a href="#tab-1">Площадки (5)</a>
+                        </li>
+                        <li class="nav-tabs__item">
+                            <a href="#tab-2">Аниматоры (45)</a>
+                        </li>
+                        <li class="nav-tabs__item">
+                            <a href="#tab-3">Мастер-классы (45)</a>
+                        </li>
+                        <li class="nav-tabs__item">
+                            <a href="#tab-4">Абонементы (1)</a>
+                        </li>
+                        <li class="nav-tabs__item">
+                            <a href="#tab-5">Шоу-программы (1)</a>
+                        </li>
+                    </ul>
+                    <div class="filter-actions">
+                        <div class="filter__title">
+                            Сортировать:
+                        </div>
+                        <div class="filter__item">
+                            <a href="#">По названию</a>
+                        </div>
+                        <div class="filter__item active">
+                            <a href="#">По цене</a>
+                        </div>
+                        <div class="filter__item">
+                            <a href="#">По рейтингу</a>
+                        </div>
+                        <div class="filter__item">
+                            <a href="#">По новизне</a>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane">
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane">
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane">
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие lorem ipsum dolor sit amet”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane__card">
+                                <div class="card__img">
+                                    <img src="./assets/images/card-img.jpg" alt="card">
+                                </div>
+                                <div class="card__text">
+                                    <div class="card__title">
+                                        Пакет “Волшебное путешествие”
+                                    </div>
+                                    <div class="card__price">
+                                        3999 p.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="section-inner">
+        <div class="wrapper">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__title">
+                Разделы сайта:
+            </div>
+            <div class="footer__menu">
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Фотоальбомы</a>
+                    <a href="#" class="menu__item">Новости</a>
+                    <a href="#" class="menu__item">О парке</a>
+                    <a href="#" class="menu__item">Аттракционы</a>
+                </div>
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Цены</a>
+                    <a href="#" class="menu__item">Мероприятие</a>
+                    <a href="#" class="menu__item">Дни рождения</a>
+                    <a href="#" class="menu__item">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__socials">
+                <div class="socials__title">
+                    Мы в соц. сетях
+                </div>
+                <div class="socials__wrapper">
+                    <a href="#" class="socials__item">
+                        <img src="./assets/images/inst.png" alt="item">
+                    </a>
+                    <a href="#" class="socials__item">
+                        <img src="./assets/images/vk.png" alt="item">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__schedule">
+                <div class="schedule__title">
+                    Время работы:
+                </div>
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__phone">
+                <a href="#" class="phone__icon">
+                    <img src="./assets/images/smartphone.png" alt="phone">
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/vendors/vendors.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+</html>
