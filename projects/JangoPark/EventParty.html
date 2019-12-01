@@ -8,9 +8,108 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
 <body>
 <header class="header">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-instagram"></i>
+                </a>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-vk"></i>
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<header class="header header-fixed">
     <div class="header__top">
         <div class="section-inner">
             <div class="header__logo">
@@ -75,7 +174,7 @@
             </div>
             <div class="header__phone">
                 <a href="#" class="phone__icon">
-                    <img src="./assets/images/smartphone.png" alt="phone">
+                    <i class="icon icon-smartphone"></i>
                 </a>
                 <a class="phone__title">
                     8 800 201-56-86
@@ -751,10 +850,10 @@
                 </div>
                 <div class="socials__wrapper">
                     <a href="#" class="socials__item">
-                        <img src="./assets/images/inst.png" alt="item">
+                        <i class="icon icon-instagram-only"></i>
                     </a>
                     <a href="#" class="socials__item">
-                        <img src="./assets/images/vk.png" alt="item">
+                        <i class="icon icon-vk-only"></i>
                     </a>
                 </div>
             </div>
@@ -773,7 +872,7 @@
         <div class="wrapper">
             <div class="footer__phone">
                 <a href="#" class="phone__icon">
-                    <img src="./assets/images/smartphone.png" alt="phone">
+                    <i class="icon icon-smartphone"></i>
                 </a>
                 <a class="phone__title">
                     8 800 201-56-86

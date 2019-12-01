@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-instagram"></i>
+                </a>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-vk"></i>
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<header class="header header-fixed">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/inst.png" alt="item">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/vk.png" alt="item">
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<main class="home-page">
+    <section class="first-section__wrapper">
+        <div class="section-banner">
+            <div class="section-inner">
+                <h1 class="section-title">
+                    Добро пожаловать <br>
+                    <b>в развлекательный семейный парк <br>
+                        для активных развлечений и отдыха</b>
+                </h1>
+                <div class="banner__video__wrapper">
+                    <div class="banner__video">
+                        <img src="./assets/images/banner-video.jpg" alt="video">
+                    </div>
+                    <div class="video__subtitle">
+                        Познакомьтесь с нашим парком
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section-pricesInfo">
+            <div class="section-inner">
+                <img src="./assets/images/offer-elephant.png" alt="" class="price-elephant">
+                <div class="price-info__wrapper">
+                    <p class="price-info__item">
+                        Вы платите после входа на территорию. Сопровождающие старше 18 лет, проходят с ребенком бесплатно.
+                    </p>
+                    <p class="price-info__item">
+                        Для детей с инвалидностью вход в парк развлечений Джанго бесплатный. <br>
+                        Многодетным семьям предоставляется скидка* в 50% от цены входного билета полного дня (для получения скидки предъявляется свидетельство). *не распространяется на выходные и праздничные дни.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="section-pricesList">
+        <div class="section-inner">
+            <div class="price-list__wrapper">
+                <div class="price-list__item">
+                    <div class="title">Будние дни</div>
+                    <div class="list__item-type">
+                        <div class="type-name">
+                            1 час
+                        </div>
+                        <div class="type-price">
+                            250 руб.
+                        </div>
+                    </div>
+                    <div class="list__item-type">
+                        <div class="type-name">
+                            Весь день
+                        </div>
+                        <div class="type-price">
+                            400 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <div class="title">Выходные и праздники</div>
+                    <div class="list__item-type">
+                        <div class="type-name">
+                            1 час
+                        </div>
+                        <div class="type-price">
+                            400 руб.
+                        </div>
+                    </div>
+                    <div class="list__item-type">
+                        <div class="type-name">
+                            Весь день
+                        </div>
+                        <div class="type-price">
+                            600 руб.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-price__birthday-info">
+        <div class="section-inner">
+            <div class="text-info">
+                <div class="title">Дни рождения детей</div>
+                <div class="description">
+                    Ни один праздник по ожидаемости не сравнится с днем рождения.Малыши ждут его больше всего, потому что будет
+                    много сладостей и внимания. Мы счастливы, когда отмечаем день рождения детей, и делаем это с полной отдачей.
+                    Гигантское пространство с играми, аттракционами, героями из мультфильмов и шоу-программами. Уточните стоимость услуг с нашим
+                    менеджером. Ждем вас отмечать праздник в Джанго :)
+                </div>
+                <div class="action__wrapper">
+                    <div class="link__wrapper">
+                        <a href="#">Устроить праздник</a>
+                    </div>
+                    <img src="./assets/images/price-birthday-gift.png" alt="">
+                </div>
+            </div>
+            <div class="img-info">
+                <img src="./assets/images/birthday-girl.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section-priceAnimators">
+        <div class="section-inner">
+            <h2 class="section-title">
+                Аниматоры на праздник
+            </h2>
+            <div class="animators__wrapper">
+                <div class="animators__slider">
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item__wrapper">
+                            <div class="img__wrapper">
+                                <img src="./assets/images/price-luntik.jpg" alt="">
+                            </div>
+                            <div class="text__wrapper">
+                                <div class="title">Лунтик</div>
+                                <div class="subtitle">2500 р. / ч.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-gameRooms">
+        <div class="section-inner">
+            <h2 class="section-title">
+                <b>Игровые комнаты</b>
+                <span>Стоимость аренды комнаты: 1000 рублей час</span>
+            </h2>
+            <div class="rooms__wrapper">
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+                <div class="room__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-price/game-room-5.jpg" alt="">
+                    </div>
+                    <div class="room-title">Пиратская комната</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-akvaGrimm">
+        <div class="section-inner">
+            <div class="text__wrapper">
+                <img src="./assets/images/page-price/left-lenta.png" alt="" class="left-lenta">
+                <h2 class="section-title">
+                    Аквагрим
+                </h2>
+                <div class="description">
+                    <p>
+                        Аквагрим — это отличная возможность сделать любой праздник ярче! Наши художники настоящие профессионалы своего дела, ведь они имеют высшее художественное образование, и каждый их рисунок это произведение искусства. За считанные минуты любой гость сможет превратиться в фантастического персонажа, наши художники воссоздадут любой придуманный Вами образ.
+                    </p>
+                    <p>
+                        Все краски гипоаллергенные, безопасные и являются средством декоративной косметики для детей. Аквагрим гарантирует не только незабываемые эмоции, но и уникальные фотографии. Ведь краска смоется водой, а запечатленное на фото и видео настроение останется с Вами навсегда!
+                    </p>
+                </div>
+            </div>
+            <div class="grim-price">
+                <div class="wrapper">
+                    <img src="./assets/images/page-price/boy.png" alt="boy" class="bg-boy">
+                    <div class="price-info__wrapper">
+                        <div class="title">
+                            В стоимость входит:
+                        </div>
+                        <ul class="grim-priceList">
+                            <li class="grim-priceList__item">Профессиональный художник</li>
+                            <li class="grim-priceList__item">Гипоаллергенные краски и весь необходимый инвентарь</li>
+                            <li class="grim-priceList__item">Каталог с выбором рисунка</li>
+                            <li class="grim-priceList__item">Яркие фотографии и отличное настроение</li>
+                        </ul>
+                        <div class="price-count">
+                            от 150 до 350 рублей
+                        </div>
+                        <small class="for-count">
+                            в зависимости от рисунка
+                        </small>
+                    </div>
+                </div>
+                <img src="./assets/images/page-price/right-lenta.png" alt="" class="right-lenta">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="section-inner">
+        <div class="wrapper">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__title">
+                Разделы сайта:
+            </div>
+            <div class="footer__menu">
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Фотоальбомы</a>
+                    <a href="#" class="menu__item">Новости</a>
+                    <a href="#" class="menu__item">О парке</a>
+                    <a href="#" class="menu__item">Аттракционы</a>
+                </div>
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Цены</a>
+                    <a href="#" class="menu__item">Мероприятие</a>
+                    <a href="#" class="menu__item">Дни рождения</a>
+                    <a href="#" class="menu__item">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__socials">
+                <div class="socials__title">
+                    Мы в соц. сетях
+                </div>
+                <div class="socials__wrapper">
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-instagram-only"></i>
+                    </a>
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-vk-only"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__schedule">
+                <div class="schedule__title">
+                    Время работы:
+                </div>
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/vendors/vendors.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+</html>

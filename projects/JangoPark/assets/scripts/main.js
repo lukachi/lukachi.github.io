@@ -107,4 +107,37 @@ $(document).ready(function (event) {
             header.removeClass('show');
         }
     });
+
+    $(".animators__slider").slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: "<i class=\"slick-prev slick-arrow icon icon-arrow\"></i>",
+        nextArrow: "<i class=\"slick-next slick-arrow icon icon-arrow\"></i>",
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 });
