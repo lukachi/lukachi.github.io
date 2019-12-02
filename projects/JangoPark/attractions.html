@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-instagram"></i>
+                </a>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-vk"></i>
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<header class="header header-fixed">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/inst.png" alt="item">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/vk.png" alt="item">
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<main class="home-page">
+    <section class="first-section__wrapper">
+        <div class="section-banner">
+            <div class="section-inner">
+                <h1 class="section-title">
+                    Добро пожаловать <br>
+                    <b>в развлекательный семейный парк <br>
+                        для активных развлечений и отдыха</b>
+                </h1>
+                <div class="banner__video__wrapper">
+                    <div class="banner__video">
+                        <img src="./assets/images/banner-video.jpg" alt="video">
+                    </div>
+                    <div class="video__subtitle">
+                        Познакомьтесь с нашим парком
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-attractionsList">
+        <div class="section-inner">
+            <h2 class="section-title">
+                <span>Для детей и их родителей парк аттракционов</span>
+                <b class="special-underline">"Джанго Парк" подготовил сегодня:</b>
+            </h2>
+            <div class="attractions__wrapper">
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Огромный игровой лабиринт с горками</div>
+                    <div class="img__wrapper scaling">
+                        <img src="./assets/images/page-attractions/attraction-item-1.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Аэрохокей</div>
+                    <div class="img__wrapper scaling">
+                        <img src="./assets/images/page-attractions/attraction-item-2.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Аквагрим</div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-3.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Сумасшедшие гонки на ватрушках
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-4.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Воздушные пушки & пулеметы</div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-5.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Большая игровая зона для малышей
+                    </div>
+                    <div class="img__wrapper scaling">
+                        <img src="./assets/images/page-attractions/attraction-item-6.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Детский скалодром
+                    </div>
+                    <div class="img__wrapper scaling">
+                        <img src="./assets/images/page-attractions/attraction-item-7.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Футбольное поле и баскетбол
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-8.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Тарзанка
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-9.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Поролоновый бассейн и батутный комплекс
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-10.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Семейные фотографы
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-11.png" alt="">
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <div class="circle"></div>
+                    <div class="name">Анимационные программы для детей и квесты
+                    </div>
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/attraction-item-12.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-whyFeatures">
+        <div class="section-inner">
+            <h2 class="section-title">Почему у нас всегда <b>хорошее настроение</b></h2>
+            <div class="title-description">
+                <p>
+                    Дети просто обожают играть: бегать, озорничать и веселиться. Разве можно в полной мере выплеснуть энергию дома?
+                </p>
+                <p>
+                    Ничто не сможет заменить новые впечатления и простор для игр, который можно получить в нашем парке! К вашим услугам огромный центр, где есть все для активного отдыха всей семьей!
+                </p>
+            </div>
+            <h2 class="section-title">В парке ваш ребенок и вы получите <br>новые эмоции, ведь у нас:</h2>
+            <div class="whyFeatures__wrapper">
+                <div class="whyFeatures__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/whyFeatures-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Самые смешные развлечения для детей
+                    </div>
+                    <div class="subtitle">
+                        от тюбингов до аэрохоккея
+                    </div>
+                </div>
+                <div class="whyFeatures__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/whyFeatures-2.png" alt="">
+                    </div>
+                    <div class="title">
+                        Нескончаемый выбор аттракционов
+                    </div>
+                    <div class="subtitle">
+                        как для малышей, так и для взрослых
+                    </div>
+                </div>
+                <div class="whyFeatures__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-attractions/whyFeatures-3.png" alt="">
+                    </div>
+                    <div class="title">
+                        Захватывающие приключения
+                    </div>
+                    <div class="subtitle">
+                        почувствуйте себя Маугли и прокатись <br>на тарзанке
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">Вы запомните надолго выходные с Джанго</h2>
+        </div>
+    </section>
+    <section class="section-attractioinsAlbum">
+        <div class="section-inner">
+            <div class="album-intro">
+                <div class="wrapper">
+                    <h2 class="section-title">
+                        Посмотрите, как развлекаются <b class="special-underline">ваши дети в нашем парке отдыха</b>
+                    </h2>
+                    <div class="album-title__description">
+                        <p>
+                            Хотите увидеть, насколько у нас весело и интересно? <br>
+                            Посмотрите фотографии с парка!
+                        </p>
+                        <p>
+                            В нашем центре есть все необходимое для отдыха с семьей. А еще все аттракционы состоят из экологически чистых материалов, которые полностью безопасны.
+                        </p>
+                    </div>
+                </div>
+                <div class="album-instruction">
+                    <img src="./assets/images/album-cursor.png" alt="">
+                    <div class="text">
+                        Кликайте на фото, <br>
+                        чтобы посмотреть детальнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="album__wrapper">
+            <div class="album-gallery">
+                <a href="./assets/images/photo1.jpg" class="gallery__item">
+                    <img src="./assets/images/photo1.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo2.jpg" class="gallery__item">
+                    <img src="./assets/images/photo2.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo3.jpg" class="gallery__item">
+                    <img src="./assets/images/photo3.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo4.jpg" class="gallery__item">
+                    <img src="./assets/images/photo4.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo5.jpg" class="gallery__item">
+                    <img src="./assets/images/photo5.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo6.jpg" class="gallery__item">
+                    <img src="./assets/images/photo6.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo7.jpg" class="gallery__item">
+                    <img src="./assets/images/photo7.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo8.jpg" class="gallery__item">
+                    <img src="./assets/images/photo8.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo9.jpg" class="gallery__item">
+                    <img src="./assets/images/photo9.jpg" alt="">
+                </a>
+                <a href="./assets/images/photo10.jpg" class="gallery__item">
+                    <img src="./assets/images/photo10.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="section-inner">
+        <div class="wrapper">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__title">
+                Разделы сайта:
+            </div>
+            <div class="footer__menu">
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Фотоальбомы</a>
+                    <a href="#" class="menu__item">Новости</a>
+                    <a href="#" class="menu__item">О парке</a>
+                    <a href="#" class="menu__item">Аттракционы</a>
+                </div>
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Цены</a>
+                    <a href="#" class="menu__item">Мероприятие</a>
+                    <a href="#" class="menu__item">Дни рождения</a>
+                    <a href="#" class="menu__item">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__socials">
+                <div class="socials__title">
+                    Мы в соц. сетях
+                </div>
+                <div class="socials__wrapper">
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-instagram-only"></i>
+                    </a>
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-vk-only"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__schedule">
+                <div class="schedule__title">
+                    Время работы:
+                </div>
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/vendors/vendors.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+</html>
