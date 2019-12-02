@@ -635,17 +635,20 @@ img.mfp-img {
 .icon-instagram:before {
   content: "\E003"; }
 
-.icon-smartphone:before {
+.icon-plus:before {
   content: "\E004"; }
 
-.icon-vk-only:before {
+.icon-smartphone:before {
   content: "\E005"; }
 
-.icon-vk:before {
+.icon-vk-only:before {
   content: "\E006"; }
 
-.icon-zoom-zursor:before {
+.icon-vk:before {
   content: "\E007"; }
+
+.icon-zoom-zursor:before {
+  content: "\E008"; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -752,11 +755,11 @@ header, section, main, footer {
                   transform: translateX(-50%);
           background: #ffffff;
           z-index: 1;
-          height: 0;
+          max-height: 0;
           overflow: hidden;
-          -webkit-transition: height .35s ease-in-out, width .7s ease-in-out;
-          -o-transition: height .35s ease-in-out, width .7s ease-in-out;
-          transition: height .35s ease-in-out, width .7s ease-in-out;
+          -webkit-transition: .35s ease-in-out;
+          -o-transition: .35s ease-in-out;
+          transition: .35s ease-in-out;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -768,8 +771,6 @@ header, section, main, footer {
               -ms-flex-align: stretch;
                   align-items: stretch;
           border-radius: 5px; }
-          .header__cities .cities__head .cities__list-wrapper .list-wrapper__list.show {
-            height: 140px; }
           .header__cities .cities__head .cities__list-wrapper .list-wrapper__list .list-item {
             background: #ffffff;
             width: 130px; }
@@ -1985,12 +1986,14 @@ header, section, main, footer {
     .home-page .section-aboutFeatures .aboutFeatures__item:nth-child(2) {
       background: rgba(255, 255, 255, 0.15); }
     .home-page .section-aboutFeatures .aboutFeatures__item .item__title {
+      text-align: center;
       font-size: 30px;
       font-weight: bold;
       padding-bottom: 15px;
       text-shadow: 1px 1px 30px rgba(255, 255, 255, 0.75), 1px 1px 30px rgba(255, 255, 255, 0.75), 1px 1px 30px rgba(255, 255, 255, 0.75); }
     .home-page .section-aboutFeatures .aboutFeatures__item .item__subtitle {
-      font-size: 18px; }
+      font-size: 18px;
+      text-align: center; }
 
 .home-page .section-aboutAdvantages {
   background: url("../images/bg-about-advantages.jpg") no-repeat center top/cover;
@@ -2662,6 +2665,565 @@ header, section, main, footer {
       .home-page .section-akvaGrimm .grim-price .price-info__wrapper .for-count {
         font-size: 14px; }
 
+.home-page .birthday-page {
+  overflow-x: hidden;
+  background: #ffffff;
+  padding: 250px 0;
+  padding-top: 0; }
+  .home-page .birthday-page .section-inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .home-page .birthday-page .text-info {
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .home-page .birthday-page .text-info .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 25px;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 32px;
+      border-bottom: 2px solid #fc7d00;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+      .home-page .birthday-page .text-info .title b {
+        font-weight: bold; }
+    .home-page .birthday-page .text-info .description {
+      color: #2e465f;
+      line-height: 130%;
+      margin-bottom: 25px; }
+    .home-page .birthday-page .text-info .action__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #ffffff; }
+      .home-page .birthday-page .text-info .action__wrapper img {
+        max-width: 75px; }
+    .home-page .birthday-page .text-info .link__wrapper {
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-top: auto;
+      background: #d95e20;
+      border-radius: 100px;
+      -webkit-box-shadow: 0 5px 15px -3px rgba(237, 115, 52, 0.6);
+              box-shadow: 0 5px 15px -3px rgba(237, 115, 52, 0.6); }
+      .home-page .birthday-page .text-info .link__wrapper a {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f2a140), to(#ed7234));
+        background: -o-linear-gradient(top, #f2a140 0%, #ed7234 100%);
+        background: linear-gradient(180deg, #f2a140 0%, #ed7234 100%);
+        width: 340px;
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 100px; }
+  .home-page .birthday-page .img-info {
+    max-height: 275px;
+    overflow: hidden; }
+    .home-page .birthday-page .img-info img {
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .home-page .birthday-page .bottom-img {
+    position: absolute;
+    max-width: 550px;
+    bottom: 0;
+    left: 45%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.home-page .section-whatBusy {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  overflow-x: hidden; }
+  .home-page .section-whatBusy .section-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+  .home-page .section-whatBusy .baloons {
+    position: absolute;
+    right: -300px;
+    bottom: 0;
+    max-width: 335px; }
+  .home-page .section-whatBusy .section-title {
+    color: #18334e;
+    font-size: 32px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .home-page .section-whatBusy .section-title .special-underline {
+      border-bottom: 2px solid #f19b41; }
+    .home-page .section-whatBusy .section-title b {
+      font-weight: bold;
+      font-style: italic; }
+  .home-page .section-whatBusy .whatBusy__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .home-page .section-whatBusy .whatBusy__wrapper .whatBusy__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 250px;
+      margin: 15px; }
+    .home-page .section-whatBusy .whatBusy__wrapper .img__wrapper {
+      max-width: 200px;
+      margin-bottom: 10px; }
+    .home-page .section-whatBusy .whatBusy__wrapper .title {
+      text-align: center; }
+
+.home-page .section-birthdayAdvantages {
+  padding: 50px 0; }
+  .home-page .section-birthdayAdvantages .section-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+  .home-page .section-birthdayAdvantages .birthday-bunny {
+    position: absolute;
+    max-width: 275px;
+    bottom: -150px;
+    left: -225px; }
+  .home-page .section-birthdayAdvantages .section-title {
+    color: #18334e;
+    font-size: 32px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+    .home-page .section-birthdayAdvantages .section-title .special-underline {
+      border-bottom: 2px solid #f19b41; }
+    .home-page .section-birthdayAdvantages .section-title b {
+      font-weight: bold;
+      font-style: italic; }
+    .home-page .section-birthdayAdvantages .section-title.our-prices {
+      -ms-flex-item-align: center;
+          align-self: center; }
+  .home-page .section-birthdayAdvantages .about-adv__list-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .home-page .section-birthdayAdvantages .about-adv__list-wrapper .items-left {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 10px; }
+    .home-page .section-birthdayAdvantages .about-adv__list-wrapper .items-right {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 10px; }
+    .home-page .section-birthdayAdvantages .about-adv__list-wrapper .list__item {
+      margin-bottom: 20px;
+      max-width: 480px; }
+      .home-page .section-birthdayAdvantages .about-adv__list-wrapper .list__item .item__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 18px; }
+      .home-page .section-birthdayAdvantages .about-adv__list-wrapper .list__item .item__description {
+        color: #002945; }
+
+.home-page .section-birthdayOurPrices .section-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.home-page .section-birthdayOurPrices .section-title {
+  color: #18334e;
+  font-size: 32px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-style: italic; }
+  .home-page .section-birthdayOurPrices .section-title .special-underline {
+    border-bottom: 2px solid #f19b41; }
+  .home-page .section-birthdayOurPrices .section-title b {
+    font-weight: bold;
+    font-style: italic; }
+
+.home-page .section-birthdayOurPrices .section-subtitle {
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 1120px;
+  text-align: left;
+  line-height: 130%;
+  margin-bottom: 50px; }
+  .home-page .section-birthdayOurPrices .section-subtitle b {
+    font-weight: bold; }
+
+.home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items {
+    width: 50%; }
+    .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .title {
+        margin-bottom: 20px;
+        font-weight: 300;
+        color: #18334e;
+        font-size: 23px; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .title .counter {
+          color: rgba(24, 51, 78, 0.5);
+          font-size: 20px; }
+      .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type {
+        max-width: 570px;
+        width: 100%;
+        min-height: 180px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 10px 70px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-shadow: -1px 1px 15px -5px rgba(0, 0, 0, 0.25);
+                box-shadow: -1px 1px 15px -5px rgba(0, 0, 0, 0.25);
+        color: #18334e;
+        margin-bottom: 50px; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type:before {
+          content: '';
+          background: #afda92;
+          border-radius: 50%;
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          top: 0;
+          left: 0;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          -webkit-transition: .35s ease-in-out;
+          -o-transition: .35s ease-in-out;
+          transition: .35s ease-in-out; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type:hover:before {
+          -webkit-transform: translate(-50%, -50%) scale(1.5);
+              -ms-transform: translate(-50%, -50%) scale(1.5);
+                  transform: translate(-50%, -50%) scale(1.5); }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type .type-name {
+          font-size: 25px; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type .type-price {
+          font-style: italic;
+          font-size: 32px;
+          font-weight: 500; }
+
+.home-page .section-birthdayOurPrices .remember {
+  color: #18334e;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center; }
+
+.home-page .section-booking {
+  padding: 90px 0; }
+  .home-page .section-booking .section-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .home-page .section-booking .section-title {
+    color: #18334e;
+    font-size: 32px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-transform: uppercase; }
+    .home-page .section-booking .section-title .special-underline {
+      border-bottom: 2px solid #f19b41; }
+    .home-page .section-booking .section-title b {
+      font-weight: bold;
+      font-style: italic; }
+  .home-page .section-booking .booking__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .home-page .section-booking .booking__wrapper .booking-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 250px;
+      padding: 0 10px; }
+      .home-page .section-booking .booking__wrapper .booking-item:nth-child(2) {
+        margin-top: 170px; }
+        .home-page .section-booking .booking__wrapper .booking-item:nth-child(2) .booking-header .img__wrapper {
+          max-width: 170px; }
+      .home-page .section-booking .booking__wrapper .booking-item:nth-child(3) {
+        margin-top: 130px; }
+        .home-page .section-booking .booking__wrapper .booking-item:nth-child(3) .booking-header .img__wrapper {
+          max-width: 170px;
+          margin-left: 75px; }
+    .home-page .section-booking .booking__wrapper .booking-header {
+      position: relative;
+      min-height: 300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .home-page .section-booking .booking__wrapper .booking-header .booking__counter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 250px;
+        color: #f0f2f4;
+        font-weight: 700;
+        z-index: -1; }
+    .home-page .section-booking .booking__wrapper .booking__text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .home-page .section-booking .booking__wrapper .booking__text .title {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #18334e; }
+      .home-page .section-booking .booking__wrapper .booking__text .subtitle {
+        font-size: 15px;
+        font-weight: 300;
+        color: #18334e; }
+  .home-page .section-booking .recall-me {
+    margin-top: 15px;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    background: #d95e20;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 5px 15px -3px rgba(237, 115, 52, 0.6);
+            box-shadow: 0 5px 15px -3px rgba(237, 115, 52, 0.6); }
+    .home-page .section-booking .recall-me a {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 5px;
+      color: #ffffff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#f2a140), to(#ed7234));
+      background: -o-linear-gradient(top, #f2a140 0%, #ed7234 100%);
+      background: linear-gradient(180deg, #f2a140 0%, #ed7234 100%);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 100px; }
+
+.home-page .section-questions {
+  padding: 50px 0 50px; }
+  .home-page .section-questions .section-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .home-page .section-questions .section-title {
+    color: #18334e;
+    font-size: 32px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .home-page .section-questions .section-title .special-underline {
+      border-bottom: 2px solid #f19b41; }
+    .home-page .section-questions .section-title b {
+      font-weight: bold;
+      font-style: italic; }
+  .home-page .section-questions .section-questions__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .home-page .section-questions .section-questions__wrapper .section-questions__question-items {
+      max-width: 570px;
+      min-height: 400px;
+      width: 100%; }
+    .home-page .section-questions .section-questions__wrapper .question-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer; }
+      .home-page .section-questions .section-questions__wrapper .question-header .the-question {
+        color: #18334e;
+        font-weight: 500;
+        padding: 13px 0;
+        padding-right: 50px;
+        margin-right: 25px;
+        border-bottom: 2px solid rgba(128, 197, 237, 0.33);
+        margin-bottom: 13px;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+      .home-page .section-questions .section-questions__wrapper .question-header .icon {
+        color: #ffcf2e; }
+    .home-page .section-questions .section-questions__wrapper .question-answer {
+      color: #18334e;
+      font-size: 16px;
+      max-height: 0;
+      -webkit-transition: .35s ease-in-out;
+      -o-transition: .35s ease-in-out;
+      transition: .35s ease-in-out;
+      overflow: hidden; }
+
 .footer {
   background: #75acd2;
   padding: 50px 0 65px;
@@ -2733,11 +3295,11 @@ header, section, main, footer {
                   transform: translateX(-50%);
           background: #ffffff;
           z-index: 1;
-          height: 0;
+          max-height: 0;
           overflow: hidden;
-          -webkit-transition: height .35s ease-in-out, width .7s ease-in-out;
-          -o-transition: height .35s ease-in-out, width .7s ease-in-out;
-          transition: height .35s ease-in-out, width .7s ease-in-out;
+          -webkit-transition: .35s ease-in-out;
+          -o-transition: .35s ease-in-out;
+          transition: .35s ease-in-out;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2749,8 +3311,6 @@ header, section, main, footer {
               -ms-flex-align: stretch;
                   align-items: stretch;
           border-radius: 5px; }
-          .footer__cities .cities__head .cities__list-wrapper .list-wrapper__list.show {
-            height: 140px; }
           .footer__cities .cities__head .cities__list-wrapper .list-wrapper__list .list-item {
             background: #ffffff;
             width: 130px; }
@@ -3027,6 +3587,47 @@ header, section, main, footer {
         -webkit-transform: scale(1);
             -ms-transform: scale(1);
                 transform: scale(1); }
+  .home-page .birthday-page .section-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .home-page .birthday-page .text-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 25px; }
+  .home-page .section-aboutAdvantages .section-title {
+    text-align: center; }
+  .home-page .section-aboutAdvantages .about-adv__list-wrapper .list__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home-page .section-aboutAdvantages .about-adv__list-wrapper .list__item .item__title {
+      text-align: center; }
+  .home-page .section-aboutFeatures .aboutFeatures__item {
+    width: 100%; }
+  .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items {
+      width: 100%; }
+    .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices-form {
+      width: 100%;
+      text-align: center;
+      padding: 50px 0; }
+  .home-page .section-booking .booking__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .footer {
     padding: 30px 0; }
     .footer .section-inner {
@@ -3071,7 +3672,50 @@ header, section, main, footer {
     .home-page .section-price__birthday-info .text-info .action__wrapper {
       -webkit-transform: scale(0.5);
           -ms-transform: scale(0.5);
-              transform: scale(0.5); } }
+              transform: scale(0.5); }
+  .home-page .birthday-page .section-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .home-page .birthday-page .text-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 25px;
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85); }
+    .home-page .birthday-page .text-info .action__wrapper {
+      -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+              transform: scale(0.75); }
+  .home-page .section-birthdayAdvantages .about-adv__list-wrapper .items-left {
+    max-width: 480px;
+    width: 100%; }
+  .home-page .section-birthdayAdvantages .about-adv__list-wrapper .items-right {
+    max-width: 480px;
+    width: 100%; }
+  .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items {
+      width: 100%; }
+      .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .title {
+        font-size: 16px; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .title .counter {
+          font-size: 16px; }
+      .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type {
+        min-height: 120px; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type .type-name {
+          font-size: 5vw; }
+        .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices__wrapper-items .birthdayOurPrices__item .birthdayOurPrices__item-type .type-price {
+          font-size: 6vw; }
+    .home-page .section-birthdayOurPrices .birthdayOurPrices__wrapper .birthdayOurPrices-form {
+      width: 100%;
+      text-align: center;
+      padding: 50px 0; } }
 
 @media screen and (max-width: 375px) {
   .home-page .section-offer .offer__wrapper .offer__offer-item {

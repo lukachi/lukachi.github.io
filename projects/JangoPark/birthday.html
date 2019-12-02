@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-instagram"></i>
+                </a>
+                <a href="#" class="socials__item">
+                    <i class="icon icon-vk"></i>
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<header class="header header-fixed">
+    <div class="header__top">
+        <div class="section-inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+            <div class="header__menu-toggler">
+                <button type="button" class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="header__socials">
+                <div class="socials__title">
+                    Мы в социальных сетях
+                </div>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/inst.png" alt="item">
+                </a>
+                <a href="#" class="socials__item">
+                    <img src="./assets/images/vk.png" alt="item">
+                </a>
+            </div>
+            <div class="header__schedule">
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+            <div class="header__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="section-inner">
+            <a href="#" class="menu__item">
+                <div class="header__menu-toggler">
+                    <button type="button" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="menu__item">О парке</a>
+            <a href="#" class="menu__item">Аттракционы</a>
+            <a href="#" class="menu__item">Цены</a>
+            <a href="#" class="menu__item">Мероприятие</a>
+            <a href="#" class="menu__item">Фотоальбомы</a>
+            <a href="#" class="menu__item">Дни рождения</a>
+            <a href="#" class="menu__item">Новости</a>
+            <a href="#" class="menu__item">Контакты</a>
+        </div>
+    </div>
+</header>
+<main class="home-page">
+    <section class="first-section__wrapper">
+        <div class="section-banner">
+            <div class="section-inner">
+                <h1 class="section-title">
+                    Добро пожаловать <br>
+                    <b>в развлекательный семейный парк <br>
+                        для активных развлечений и отдыха</b>
+                </h1>
+                <div class="banner__video__wrapper">
+                    <div class="banner__video">
+                        <img src="./assets/images/banner-video.jpg" alt="video">
+                    </div>
+                    <div class="video__subtitle">
+                        Познакомьтесь с нашим парком
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="birthday-page">
+        <div class="section-inner">
+            <div class="text-info">
+                <div class="title"><span>Незабываемое место</span> <b class="special-underline">для проведения праздника</b></div>
+                <div class="description">
+                    Джанго - детский центр для проведения дня рождения, ведь тут разнообразный отдых, и всегда весело. Гигантское пространство с аттракционами, аниматорами, шоу-программами уже ждут вас в своих стенах!
+                    Выбирайте фантастическое представление для виновника торжества и гостей для фееричного праздника или события.
+                </div>
+                <div class="action__wrapper">
+                    <div class="link__wrapper">
+                        <a href="#">Устроить праздник</a>
+                    </div>
+                    <img src="./assets/images/price-birthday-gift.png" alt="">
+                </div>
+            </div>
+            <div class="img-info">
+                <img src="./assets/images/page-birthday/first-block.jpg" alt="">
+            </div>
+            <img src="./assets/images/page-birthday/bottom-img.png" alt="" class="bottom-img">
+        </div>
+    </section>
+    <section class="section-whatBusy">
+        <div class="section-inner">
+            <h2 class="section-title">
+                Чем занять детей на дне рождения? <b class="special-underline">Что мы можем Вам предложить</b>
+            </h2>
+            <div class="whatBusy__wrapper">
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+                <div class="whatBusy__item">
+                    <div class="img__wrapper">
+                        <img src="./assets/images/page-birthday/whatBusy-item-1.png" alt="">
+                    </div>
+                    <div class="title">
+                        Отдельная комната, расписанную художниками вручную.
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/page-birthday/baloons.png" alt="" class="baloons">
+        </div>
+    </section>
+    <section class="section-birthdayAdvantages">
+        <div class="section-inner">
+            <img src="./assets/images/team-bunny.png" alt="" class="birthday-bunny">
+            <h2 class="section-title">
+                Почему праздничные развлечения для детей будут <br>
+                по настоящему незабываемыми:
+            </h2>
+            <div class="about-adv__list-wrapper">
+                <div class="items-left">
+                    <div class="list__item">
+                        <div class="item__title">Большие залы</div>
+                        <p class="item__description">
+                            Для своего праздника вы можете выбрать 1 из 6 больших залов.
+                            Затем мы украсим и приготовим комнату для торжества. Проведите
+                            день рождения в детской комнатой и необычной атмосферой внутри неё.
+                        </p>
+                    </div>
+                    <div class="list__item">
+                        <div class="item__title">Аниматоры</div>
+                        <p class="item__description">
+                            Вы всегда можете воспользоваться услугами наших виртуозных аниматоров, чтобы раскрасить свой праздник. Они смогут погрузить малышей в атмосферу сказки и не дадут ни одному ребенку заскучать! С нашими аниматорами малыши погружаются в сказочный мир приключений.
+                        </p>
+                    </div>
+                    <div class="list__item">
+                        <div class="item__title">Тематические программы <br>для различных мероприятий</div>
+                        <p class="item__description">
+                            К вашему вниманию 50 программ для красочного  праздника. Если желаете что-то особенное, то мы устроим праздник специально под ваши запросы с новым сценарием и одеждой героев. Провести в детском центре ивент для ребенка - выгодно и просто.
+                        </p>
+                    </div>
+                </div>
+                <div class="items-right">
+                    <div class="list__item">
+                        <div class="item__title">Костюмы</div>
+                        <p class="item__description">
+                            Созданы с точностью до мелочей. На любой вкус: будь то человек-паук или кукла ЛОЛ. Ваше чадо выберет того, кто ему ближе из обширной линейки в 100 персонажей.
+                        </p>
+                    </div>
+                    <div class="list__item">
+                        <div class="item__title">Служба заботы</div>
+                        <p class="item__description">
+                            В команде 25 человек, которые будут рядом с вашим ребенком в парке и сделают отдых максимально комфортным и безопасным.
+                        </p>
+                    </div>
+                    <div class="list__item">
+                        <div class="item__title">Декорирование помещений</div>
+                        <p class="item__description">
+                            Все декорации сделаны нашими профессиональными бутафорами. Атмосфера с такими декорациями легко погружает в сказку.. Джанго-парк - лучшее место проведения детских праздников.
+                        </p>
+                    </div>
+                    <div class="list__item">
+                        <div class="item__title">Собственная кухня</div>
+                        <p class="item__description">
+                            Все угощения созданы шеф-поварами и разработаны при консультации профессиональных диетологов. Кексики, пирожные и торты на площадке для праздника можно заказать в персональной кондитерской парка.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-birthdayOurPrices">
+        <div class="section-inner">
+            <h2 class="section-title">
+                Наши цены
+            </h2>
+            <div class="section-subtitle">
+                <b>Для всех детей</b> самым главным и ожидаемым праздником является День рождения! В этот день они чувствуют его магию и особенность, ведь быть именинником - большая радость и ответственность.
+            </div>
+            <div class="birthdayOurPrices__wrapper">
+                <div class="birthdayOurPrices__wrapper-items">
+                    <div class="birthdayOurPrices__item">
+                        <div class="title">Будние дни <span class="counter">( 1 ребенок )</span></div>
+                        <div class="birthdayOurPrices__item-type">
+                            <div class="type-name">
+                                Весь день
+                            </div>
+                            <div class="type-price">
+                                400 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="birthdayOurPrices__item">
+                        <div class="title">Выходные и праздники <span class="counter">( 1 ребенок )</span></div>
+                        <div class="birthdayOurPrices__item-type">
+                            <div class="type-name">
+                                Весь день
+                            </div>
+                            <div class="type-price">
+                                600 руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                Надо решить что с формой-->
+                <div class="birthdayOurPrices-form">
+                    здесь будет старая форма
+                </div>
+            </div>
+            <small class="remember">
+                Мы сделаем этот праздник по-настоящему запоминающимся и неповторимым.
+            </small>
+        </div>
+    </section>
+    <section class="section-booking">
+        <div class="section-inner">
+            <h2 class="section-title">
+                <b class="special-underline">как забрнировать праздничное развлечение</b>
+            </h2>
+            <div class="booking__wrapper">
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <div class="booking__counter">1</div>
+                        <div class="img__wrapper">
+                            <img src="./assets/images/page-birthday/to-book_item-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="booking__text">
+                        <div class="title">Заявка или звонок</div>
+                        <div class="subtitle">
+                            Вы оставляете заявку на сайте или звоните нам: 254-04-88
+                        </div>
+                        <div class="recall-me">
+                            <a href="#">
+                                Перезвоните мне
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <div class="booking__counter">2</div>
+                        <div class="img__wrapper">
+                            <img src="./assets/images/page-birthday/to-book_item-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="booking__text">
+                        <div class="title">ОБЗОРНАЯ ЭКСКУРСИЯ</div>
+                        <div class="subtitle">
+                            Наш менеджер связывается с Вами
+                            для уточнения деталей, назначает
+                            встречу и обзорную экскурсию. Или
+                            мы приезжаем в удобное для Вас
+                            место и проводим презентацию.
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <div class="booking__counter">3</div>
+                        <div class="img__wrapper">
+                            <img src="./assets/images/page-birthday/to-book_item-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="booking__text">
+                        <div class="title">Записываем Вас</div>
+                        <div class="subtitle">
+                            Оговариваем дату,
+                            время и условия проведения события.
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-item">
+                    <div class="booking-header">
+                        <div class="booking__counter">4</div>
+                        <div class="img__wrapper">
+                            <img src="./assets/images/page-birthday/to-book_item-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="booking__text">
+                        <div class="title">ПРОВЕДЕНИЕ СОБЫТИЯ</div>
+                        <div class="subtitle">
+                            В нашей уникальной локации, которая запомнится Вам на всю жизнь.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-testimonials">
+        <div class="section-inner">
+            <div class="testimonials-top__wrapper">
+                <h2 class="section-title">
+                    <b class="special-underline">
+                        Ваши отзывы
+                    </b>
+                </h2>
+                <div class="testimonials-slider__controls">
+                    <button type="button" class="btn-control control-prev">
+                        <span class="arrow arrow-left"></span>
+                    </button>
+                    <button type="button" class="btn-control control-next">
+                        <span class="arrow arrow-right"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="slider__item">
+                    <img src="./assets/images/testimonial-1.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/testimonial-1.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/testimonial-1.png" alt="">
+                </div>
+            </div>
+            <div class="link__more-testimonials">
+                <a href="#">Посмотреть все</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-questions">
+        <div class="section-inner">
+            <div class="section-title">
+                <span>Часто задаваемые</span>
+                <b class="special-underline">вопросы</b>
+            </div>
+            <div class="section-questions__wrapper">
+                <div class="section-questions__question-items">
+                    <div class="question__item">
+                        <div class="question-header">
+                            <div class="the-question">Сколько есть времени на выкуп бронирования?</div>
+                            <i class="icon icon-plus"></i>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Бронирование необходимо выкупить в течение 3 рабочих дней. Если этого не происходит, бронь автоматически снимается.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question__item">
+                        <div class="question-header">
+                            <div class="the-question">Можно ли оставить ребенка младше
+                                7 лет без присмотра родителей?</div>
+                            <i class="icon icon-plus"></i>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Дети до 14 лет могут находиться в ДРЦ "Джанго-парк" только в присутствие родителей и сопровождающих. Сотрудники ДРЦ совершают общий присмотр за детьми и не выполняют обязанности воспитателя.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question__item">
+                        <div class="question-header">
+                            <div class="the-question">Можно ли принести торт с собой?</div>
+                            <i class="icon icon-plus"></i>
+                        </div>
+                        <div class="question-answer">
+                            <p>
+                                Приносить еду и напитки, приобретенные вне ДРЦ «Джанго-парк» запрещено;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-questions__form">
+                    здесь будет форма
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="section-inner">
+        <div class="wrapper">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__cities">
+                <div class="cities__head">
+                    <div class="cities__title">
+                        Ваш город:
+                    </div>
+                    <div class="cities__list-wrapper">
+                        <div class="list-wrapper__title">
+                            Тольятти
+                        </div>
+                        <div class="list-wrapper__list">
+                            <div class="list-item">
+                                <a href="#">Нижний Новгород</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Тольятти</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Екатеринбург</a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#">Липецк</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cities__address">
+                    Льва Яшина, 14 ТРК «Мадагаскар», 4 эт.
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="wrapper__title">
+                Разделы сайта:
+            </div>
+            <div class="footer__menu">
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Фотоальбомы</a>
+                    <a href="#" class="menu__item">Новости</a>
+                    <a href="#" class="menu__item">О парке</a>
+                    <a href="#" class="menu__item">Аттракционы</a>
+                </div>
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__item">Цены</a>
+                    <a href="#" class="menu__item">Мероприятие</a>
+                    <a href="#" class="menu__item">Дни рождения</a>
+                    <a href="#" class="menu__item">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__socials">
+                <div class="socials__title">
+                    Мы в соц. сетях
+                </div>
+                <div class="socials__wrapper">
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-instagram-only"></i>
+                    </a>
+                    <a href="#" class="socials__item">
+                        <i class="icon icon-vk-only"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__schedule">
+                <div class="schedule__title">
+                    Время работы:
+                </div>
+                <div class="schedule__item">
+                    пн-пт 10:00 - 22:00
+                </div>
+                <div class="schedule__item">
+                    сб-вс 10:00 - 20:00
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer__phone">
+                <a href="#" class="phone__icon">
+                    <i class="icon icon-smartphone"></i>
+                </a>
+                <a class="phone__title">
+                    8 800 201-56-86
+                </a>
+                <div class="phone__subtitle">
+                    звонок бесплатный
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/vendors/vendors.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+</html>

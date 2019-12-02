@@ -1,6 +1,12 @@
 $(document).ready(function (event) {
-    $(".list-wrapper__title").on("click", function (e) {
-        $("." + $(this).parent().parent().parent().attr("class") + "  .list-wrapper__list").toggleClass("show");
+    $(".cities__list-wrapper .list-wrapper__title").on("click", function (e) {
+        $(this).next().toggleClass("show");
+        const panel = $(this).next()[0];
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
     });
     $(".header__menu-toggler").on("click", function (e) {
         $(".header__menu").toggleClass("show");
@@ -139,5 +145,15 @@ $(document).ready(function (event) {
                 }
             }
         ]
+    });
+
+    $(".question-header").on("click", function (e) {
+        $(this).next().toggleClass("show");
+        const panel = $(this).next()[0];
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
     });
 });
