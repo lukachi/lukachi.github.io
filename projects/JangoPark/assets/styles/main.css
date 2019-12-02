@@ -759,7 +759,7 @@ header, section, main, footer {
         position: relative; }
         .header__cities .cities__head .cities__list-wrapper .list-wrapper__title {
           cursor: pointer;
-          font-weight: bold;
+          font-weight: 900;
           border-bottom: 1px dotted #000000; }
         .header__cities .cities__head .cities__list-wrapper .list-wrapper__list {
           position: absolute;
@@ -869,8 +869,9 @@ header, section, main, footer {
       font-size: 25px; }
     .header__phone .phone__title {
       font-size: 14.75px;
-      font-weight: bold; }
+      font-weight: 900; }
     .header__phone .phone__subtitle {
+      font-weight: bold;
       font-size: 12px; }
   .header__menu {
     background: #75acd2;
@@ -928,7 +929,7 @@ header, section, main, footer {
             flex-direction: column; }
   .section-eventParty .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1088,7 +1089,8 @@ header, section, main, footer {
               align-items: flex-start; }
     .home-page .first-section__wrapper .section-banner .section-title {
       color: #ffffff;
-      font-size: 36px;
+      font-size: 44px;
+      line-height: 50px;
       font-weight: 400;
       border-bottom: 1px solid #f19b41;
       margin-bottom: 10px; }
@@ -1135,7 +1137,7 @@ header, section, main, footer {
       color: #18334e; }
       .home-page .first-section__wrapper .section-about .about__text-wrapper .section-title {
         color: #18334e;
-        font-size: 32px;
+        font-size: 36px;
         font-weight: 500;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1145,12 +1147,19 @@ header, section, main, footer {
             -ms-flex-direction: column;
                 flex-direction: column;
         margin-bottom: 40px;
+        line-height: 46px;
         margin-bottom: 25px; }
         .home-page .first-section__wrapper .section-about .about__text-wrapper .section-title .special-underline {
           border-bottom: 2px solid #f19b41; }
         .home-page .first-section__wrapper .section-about .about__text-wrapper .section-title b {
           font-weight: bold;
           font-style: italic; }
+        .home-page .first-section__wrapper .section-about .about__text-wrapper .section-title .special-underline {
+          font-weight: bold; }
+      .home-page .first-section__wrapper .section-about .about__text-wrapper .description {
+        font-size: 14px;
+        line-height: 25px;
+        opacity: .75; }
 
 .home-page .section-advantages .section-inner {
   -webkit-box-orient: vertical;
@@ -1160,7 +1169,7 @@ header, section, main, footer {
 
 .home-page .section-advantages .section-title {
   color: #18334e;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1250,9 +1259,9 @@ header, section, main, footer {
     width: 50%;
     padding-right: 15%; }
     .home-page .section-advantages .advantages__list .list__image img {
-      -webkit-transform: translateY(-10%);
-          -ms-transform: translateY(-10%);
-              transform: translateY(-10%); }
+      -webkit-transform: translateY(-5%) scale(1.25);
+          -ms-transform: translateY(-5%) scale(1.25);
+              transform: translateY(-5%) scale(1.25); }
   .home-page .section-advantages .advantages__list .list__items-wrapper {
     z-index: 2; }
     .home-page .section-advantages .advantages__list .list__items-wrapper .list__item {
@@ -1288,7 +1297,7 @@ header, section, main, footer {
     max-width: 190px; }
   .home-page .section-offer .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1334,7 +1343,8 @@ header, section, main, footer {
               align-items: stretch;
       border-radius: 15px;
       margin: 0 10px;
-      margin-top: 25px; }
+      margin-top: 25px;
+      margin-left: 0; }
       .home-page .section-offer .offer__wrapper .offer__offer-item .offer-item__wrapper {
         border: 2px solid #e3eef6;
         border-radius: 15px;
@@ -1424,7 +1434,8 @@ header, section, main, footer {
       border-radius: 25px;
       position: relative;
       overflow: hidden;
-      margin: 20px 15px; }
+      margin: 20px 15px;
+      margin-left: 0; }
       .home-page .section-offer .advertising-program__wrapper .advertising-program__item .advertising-program__img-wrapper {
         position: absolute;
         top: 0;
@@ -1510,7 +1521,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-features .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1567,6 +1578,7 @@ header, section, main, footer {
           -ms-flex-align: center;
               align-items: center;
       padding: 0 10px;
+      padding-left: 0;
       margin: 15px 0; }
     .home-page .section-features .features__wrapper .features__title {
       margin: 0 0 20px;
@@ -1591,7 +1603,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .second-section__wrapper .section-offer__second .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1636,7 +1648,8 @@ header, section, main, footer {
               align-items: stretch;
       border-radius: 15px;
       margin: 0 10px;
-      margin-top: 25px; }
+      margin-top: 25px;
+      margin-left: 0; }
       .home-page .second-section__wrapper .section-offer__second .offer__wrapper .offer__offer-item .offer-item__wrapper {
         border: 2px solid #e3eef6;
         border-radius: 15px;
@@ -1796,7 +1809,7 @@ header, section, main, footer {
         flex-wrap: wrap; }
   .home-page .section-testimonials .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1914,7 +1927,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-ourTeam .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2023,7 +2036,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-aboutAdvantages .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2099,7 +2112,7 @@ header, section, main, footer {
     max-width: 240px; }
   .home-page .section-partyType .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2415,7 +2428,7 @@ header, section, main, footer {
             align-items: stretch; }
   .home-page .section-priceAnimators .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2530,7 +2543,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-gameRooms .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2686,9 +2699,8 @@ header, section, main, footer {
 
 .home-page .birthday-page {
   overflow-x: hidden;
-  background: #ffffff;
-  padding: 250px 0;
-  padding-top: 0; }
+  padding: 40px 0;
+  padding-bottom: 175px; }
   .home-page .birthday-page .section-inner {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2795,7 +2807,7 @@ header, section, main, footer {
     max-width: 335px; }
   .home-page .section-whatBusy .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2864,7 +2876,7 @@ header, section, main, footer {
     left: -225px; }
   .home-page .section-birthdayAdvantages .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2942,7 +2954,7 @@ header, section, main, footer {
 
 .home-page .section-birthdayOurPrices .section-title {
   color: #18334e;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3060,7 +3072,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-booking .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3179,7 +3191,7 @@ header, section, main, footer {
             flex-direction: column; }
   .home-page .section-questions .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3254,7 +3266,7 @@ header, section, main, footer {
 
 .home-page .section-attractionsList .section-title {
   color: #18334e;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3356,7 +3368,7 @@ header, section, main, footer {
 
 .home-page .section-whyFeatures .section-title {
   color: #18334e;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3429,7 +3441,7 @@ header, section, main, footer {
     right: 10%; }
   .home-page .section-attractioinsAlbum .section-title {
     color: #18334e;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3701,7 +3713,7 @@ header, section, main, footer {
         position: relative; }
         .footer__cities .cities__head .cities__list-wrapper .list-wrapper__title {
           cursor: pointer;
-          font-weight: bold;
+          font-weight: 900;
           border-bottom: 1px dotted #000000; }
         .footer__cities .cities__head .cities__list-wrapper .list-wrapper__list {
           position: absolute;
@@ -3821,6 +3833,8 @@ header, section, main, footer {
       color: rgba(255, 255, 255, 0.65); }
 
 @media screen and (min-width: 1201px) {
+  .header .header__menu .menu__item:first-child {
+    display: none; }
   .home-page .section-offer .offer__wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3836,7 +3850,28 @@ header, section, main, footer {
   .home-page .second-section__wrapper .section-offer__second .offer__wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between; }
+  .home-page .section-birthdayOurPrices .section-subtitle {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .home-page .section-booking .booking__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .home-page .on-main_between {
+    overflow: hidden; }
+  .home-page .section-offer .offer-elephant {
+    position: absolute;
+    top: -185px;
+    right: -75px;
+    z-index: 0;
+    max-width: 250px; } }
 
 @media screen and (max-width: 1200px) {
   .home-page .second-section__wrapper .section-offer__second .offer__wrapper .offer__offer-item {
