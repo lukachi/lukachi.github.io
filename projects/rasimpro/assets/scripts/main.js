@@ -1,5 +1,8 @@
 $(document).ready(function () {
+    // Инициализация анимаций для плагина AOS
     AOS.init();
+
+    // ресайз элементов при деформации окна
     $(window).on("resize", function (e) {
         if ($(".reviews-slider").length) {
             $(".reviews-slider").slick('resize');
@@ -10,10 +13,10 @@ $(document).ready(function () {
         $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
     });
 
+    // Скроллер для сео блока
     setTimeout(function () {
         $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
     }, 500);
-
     $(".second-text__scroller").on("propertychange input", function (e) {
         $(".second-text .content").scrollTop(e.target.value);
     });
@@ -26,45 +29,15 @@ $(document).ready(function () {
         }, 1000);
     });
 
-
-    let goAllPortfolioBtn_originalOffsetY = $(".go-all-portfolio").offset().top;
-
     // центр элемента
     let goAllPortfolioBtn_element_center_original = {
         x: $(".go-all-portfolio").offset().left + ($(".go-all-portfolio").width() / 2),
         y: $(".go-all-portfolio").offset().top + ($(".go-all-portfolio").height() / 2)
     };
     $(window).on("scroll", function (e) {
-        // отсчёт от начала окна + центр экрана
-        let centerScreen = $([document.documentElement, document.body]).scrollTop() + ($(window).height() / 2);
 
-        // конец секции с портфолио
-        let wrapper_endpoints_Y = $(".portfolio__wrapper").offset().top + $(".portfolio__wrapper").height();
-
-        if (centerScreen >= goAllPortfolioBtn_element_center_original.y &&
-            centerScreen <= wrapper_endpoints_Y - ($(".portfolio__wrapper .portfolio-item").height() / 2)) {
-            if (!$(".go-all-portfolio").hasClass("fixing")) {
-                $(".go-all-portfolio").addClass("fixing");
-            }
-        } else {
-            if (centerScreen <= goAllPortfolioBtn_element_center_original.y) {
-                //over
-                if ($(".go-all-portfolio").hasClass("fixing")) {
-                    $(".go-all-portfolio").removeClass("fixing");
-                }
-                if ($(".go-all-portfolio-wrapper").hasClass("end")) {
-                    $(".go-all-portfolio-wrapper").removeClass("end");
-                }
-            } else if (centerScreen >= wrapper_endpoints_Y - ($(".portfolio__wrapper .portfolio-item").height() / 2)) {
-                //under
-                if ($(".go-all-portfolio").hasClass("fixing")) {
-                    $(".go-all-portfolio").removeClass("fixing");
-                }
-                if (!$(".go-all-portfolio_wrapper").hasClass("end")) {
-                    $(".go-all-portfolio-wrapper").addClass("end");
-                }
-            }
-        }
+        //ссылка на все портфолио
+        portfolioSlidering(goAllPortfolioBtn_element_center_original);
     });
 
     // header-menu
@@ -73,6 +46,7 @@ $(document).ready(function () {
         $(".header-menu__wrapper .header-menu__burger.close").toggleClass("show");
         $(".main-content__article").toggleClass("cropped");
     });
+
     // sliders
     $(".reviews-slider").slick({
         arrows: false,
@@ -98,6 +72,7 @@ $(document).ready(function () {
     $(".facts-about__wrapper .arrow-next").on("click", function (e) {
         $(".facts-about-slider").slick('next');
     });
+
     // parallax effect on elements
     $(window).on("mousemove", function (e) {
         if ($(".parallaxing").length) {
@@ -131,8 +106,10 @@ $(document).ready(function () {
     //Scramble text
     ScramblingElement($(".first-screen .scramble-element"));
 
-    // fadeRightTextLetterByLetter($(".overtitle"));
+    //SplittedTextShow
+    fadeRightTextLetterByLetter($(".splittext_show"));
 
+    //Tilting Portfolio
     $('.portfolio-item__img-wrapper').tilt({
         glare: true,
         maxGlare: .25,
@@ -143,42 +120,54 @@ $(document).ready(function () {
 });
 
 function ScramblingElement(DOMElement) {
-    const jumbler = scramble(DOMElement[0]);
-    jumbler.run();
-    const words = DOMElement.attr("data-textInsteads").split(",");
-    let wordsScrumbletCounter = 0;
-    setInterval(function () {
-        if (jumbler.finished()) {
-            $(".first-screen .scramble-element").text(words[wordsScrumbletCounter]);
-            wordsScrumbletCounter = (wordsScrumbletCounter === words.length - 1) ? 0 : ++wordsScrumbletCounter;
-            scramble(DOMElement[0]).run();
-        }
-    }, 9000);
+    setTimeout(function () {
+        const jumbler = scramble(DOMElement[0]);
+        jumbler.run();
+        const words = DOMElement.attr("data-textInsteads").split(",");
+        let wordsScrumbletCounter = 0;
+        setInterval(function () {
+            if (jumbler.finished()) {
+                $(".first-screen .scramble-element").text(words[wordsScrumbletCounter]);
+                wordsScrumbletCounter = (wordsScrumbletCounter === words.length - 1) ? 0 : ++wordsScrumbletCounter;
+                scramble(DOMElement[0]).run();
+            }
+        }, 9000);
+    }, 0);
 }
 
 function fadeRightTextLetterByLetter(DOMElement) {
-    var wh = window.innerHeight;
-    var $split = $('.is-splited');
 
-// init
-    var ctrl = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave',
-            addIndicators: true
+}
+
+function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
+    // отсчёт от начала окна + центр экрана
+    let centerScreen = $([document.documentElement, document.body]).scrollTop() + ($(window).height() / 2);
+
+    // конец секции с портфолио
+    let wrapper_endpoints_Y = $(".portfolio__wrapper").offset().top + $(".portfolio__wrapper").height();
+
+    if (centerScreen >= goAllPortfolioBtn_element_center_original.y &&
+        centerScreen <= wrapper_endpoints_Y - ($(".portfolio__wrapper .portfolio-item").height() / 2)) {
+        if (!$(".go-all-portfolio").hasClass("fixing")) {
+            $(".go-all-portfolio").addClass("fixing");
         }
-    });
-
-// Create scenes
-    $(".slide").each(function (i) {
-        var splitone = new SplitText($split[i], {type: 'chars, words'});
-        var tl = new TimelineMax();
-        tl.staggerFrom(splitone.chars, 0.5, {y: 80, opacity: 0, ease: Power4.easeOut}, 0.01);
-
-        new ScrollMagic.Scene({
-            triggerElement: this,
-        })
-            .setTween(tl)
-            .addTo(ctrl);
-
-    });
+    } else {
+        if (centerScreen <= goAllPortfolioBtn_element_center_original.y) {
+            //over
+            if ($(".go-all-portfolio").hasClass("fixing")) {
+                $(".go-all-portfolio").removeClass("fixing");
+            }
+            if ($(".go-all-portfolio-wrapper").hasClass("end")) {
+                $(".go-all-portfolio-wrapper").removeClass("end");
+            }
+        } else if (centerScreen >= wrapper_endpoints_Y - ($(".portfolio__wrapper .portfolio-item").height() / 2)) {
+            //under
+            if ($(".go-all-portfolio").hasClass("fixing")) {
+                $(".go-all-portfolio").removeClass("fixing");
+            }
+            if (!$(".go-all-portfolio_wrapper").hasClass("end")) {
+                $(".go-all-portfolio-wrapper").addClass("end");
+            }
+        }
+    }
 }
