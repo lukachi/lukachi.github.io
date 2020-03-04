@@ -2,6 +2,10 @@ $(document).ready(function () {
     // Инициализация анимаций для плагина AOS
     AOS.init();
 
+    $(window).on("load", function () {
+        AOS.refresh();
+    });
+
     // ресайз элементов при деформации окна
     $(window).on("resize", function (e) {
         if ($(".reviews-slider").length) {
