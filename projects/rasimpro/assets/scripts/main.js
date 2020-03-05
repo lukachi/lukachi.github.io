@@ -123,22 +123,22 @@ $(document).ready(function () {
     });
 
     // waypont a titles | SplittedTextShow
-    const waypoint = $(".first-screen .splittext_show").waypoint({
-        handler: function (direction) {
-            console.log(this.element.classList.toString().includes("first-screen"));
-            fadeRightTextLetterByLetter(this.element, 1500);
-        },
-        offset: "90%"
-    });
+    // const waypoint = $(".first-screen .splittext_show").waypoint({
+    //     handler: function (direction) {
+    //         console.log(this.element.classList.toString().includes("first-screen"));
+    //         fadeRightTextLetterByLetter(this.element, 1500);
+    //     },
+    //     offset: "90%"
+    // });
 
     //waypont a titles | SplittedTextShow
-    const waypointElseTitles = $(".splittext_show").waypoint({
-        handler: function (direction) {
-            console.log(this);
-            fadeRightTextLetterByLetter(this.element, 800);
-        },
-        offset: "90%"
-    });
+    // const waypointElseTitles = $(".splittext_show").waypoint({
+    //     handler: function (direction) {
+    //         console.log(this);
+    //         fadeRightTextLetterByLetter(this.element, 800);
+    //     },
+    //     offset: "90%"
+    // });
 
 });
 
