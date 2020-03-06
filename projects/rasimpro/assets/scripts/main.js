@@ -88,13 +88,31 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 525,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
     $(".facts-about-slider").slick({
         arrows: false,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 525,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
     $(".reviews__wrapper .arrow-prev").on("click", function (e) {
         $(".reviews-slider").slick('prev');
