@@ -124,21 +124,30 @@ function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
 function toggleMenu() {
     const menu_wrapper = $(".header-menu__wrapper");
     menu_wrapper.css({
-        "transition": "none",
         "height": window.innerHeight
     });
+
+    let img_expressions = $(".header-menu__img-wrapper").attr("data-menu-expression").split(",");
+    if ($(window).width() <= 525) {
+        $(".header-menu__img-wrapper").text(img_expressions[2]);
+    } else if ($(window).width() > 525 && $(window).width() <= 768) {
+        $(".header-menu__img-wrapper").text(img_expressions[1]);
+    } else {
+        $(".header-menu__img-wrapper").text(img_expressions[0]);
+    }
 
     menu_wrapper.toggleClass("show");
     $(".header-menu__wrapper .header-menu__burger.close").toggleClass("show");
 }
 
 $(document).ready(function () {
-    window.onload = function() {
+    window.onload = function () {
         new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve();
-            }, 3500);
+            }, 0);
         }).then(res => {
+
 
             $(".preloader").css({
                 "top": "-5000%",
@@ -192,7 +201,6 @@ $(document).ready(function () {
 
                     const menu_wrapper = $(".header-menu__wrapper");
                     menu_wrapper.css({
-                        "transition": "none",
                         "height": window.innerHeight
                     });
                 }
@@ -232,11 +240,15 @@ $(document).ready(function () {
             setTimeout(function () {
                 $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
             }, 500);
+            const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+            if (isTouch) {
+                $(".second-text__scroller")[0].disabled = true;
+            }
             $(".second-text__scroller").on("propertychange input", function (e) {
                 $(".second-text .content").scrollTop(e.target.value);
             });
             $(".second-text .content").on("scroll", function (e) {
-                $(".second-text__scroller").attr("value", $(this).scrollTop());
+                $(".second-text__scroller")[0].value = $(this).scrollTop();
             });
             $(".go-top__btn").on("click", function (e) {
                 $([document.documentElement, document.body]).animate({
