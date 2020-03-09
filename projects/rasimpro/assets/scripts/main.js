@@ -145,7 +145,7 @@ $(document).ready(function () {
         new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve();
-            }, 0);
+            }, 3500);
         }).then(res => {
 
 
@@ -170,6 +170,24 @@ $(document).ready(function () {
             // ресайз элементов при деформации окна
             $(window).on("resize", function (e) {
 
+                $(".header-menu__wrapper").css({
+                    "height": window.innerHeight
+                });
+                if ($(".reviews-slider").length) {
+                    $(".reviews-slider").slick('resize');
+                }
+                if ($(".facts-about-slider").length) {
+                    $(".facts-about-slider").slick('resize');
+                }
+                if ($(".recent-posts__wrapper").length) {
+                    $(".recent-posts__wrapper").slick('resize');
+                }
+                $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+            });
+
+            // ресайз элементов при деформации окна
+            $(window).on("orientationchange", function (e) {
+                console.log("changed!");
                 $(".header-menu__wrapper").css({
                     "height": window.innerHeight
                 });
