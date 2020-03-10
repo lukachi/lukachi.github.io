@@ -182,12 +182,13 @@ $(document).ready(function () {
                 if ($(".recent-posts__wrapper").length) {
                     $(".recent-posts__wrapper").slick('resize');
                 }
-                $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+                if ($(".second-text__scroller").length) {
+                    $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+                }
             });
 
             // ресайз элементов при деформации окна
             $(window).on("orientationchange", function (e) {
-                console.log("changed!");
                 $(".header-menu__wrapper").css({
                     "height": window.innerHeight
                 });
@@ -200,14 +201,16 @@ $(document).ready(function () {
                 if ($(".recent-posts__wrapper").length) {
                     $(".recent-posts__wrapper").slick('resize');
                 }
-                $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+                if ($(".second-text__scroller").length) {
+                    $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+                }
             });
 
             // центр элемента
-            let goAllPortfolioBtn_element_center_original = {
+            let goAllPortfolioBtn_element_center_original = ($(".go-all-portfolio").length) ? {
                 x: $(".go-all-portfolio").offset().left + ($(".go-all-portfolio").width() / 2),
                 y: $(".go-all-portfolio").offset().top + ($(".go-all-portfolio").height() / 2)
-            };
+            } : undefined;
             $(window).on("scroll", function (e) {
 
                 // движ ссылки на архив - портфолио
