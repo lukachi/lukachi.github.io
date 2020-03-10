@@ -214,8 +214,9 @@ $(document).ready(function () {
             $(window).on("scroll", function (e) {
 
                 // движ ссылки на архив - портфолио
-                portfolioSlidering(goAllPortfolioBtn_element_center_original);
-
+                if (goAllPortfolioBtn_element_center_original) {
+                    portfolioSlidering(goAllPortfolioBtn_element_center_original);
+                }
 
                 if ($(".header-menu__wrapper").hasClass("show")) {
                     $(window).scrollTop(0);
@@ -258,102 +259,133 @@ $(document).ready(function () {
             });
 
             // Скроллер для сео блока
-            setTimeout(function () {
-                $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
-            }, 500);
+            if ($(".second-text__scroller").length) {
+                setTimeout(function () {
+                    $(".second-text__scroller").attr("max", ($(".second-text .content")[0].scrollHeight - $(".second-text .content").outerHeight()));
+                }, 500);
+            }
             const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
             if (isTouch) {
                 $(".second-text__scroller")[0].disabled = true;
             }
-            $(".second-text__scroller").on("propertychange input", function (e) {
-                $(".second-text .content").scrollTop(e.target.value);
-            });
-            $(".second-text .content").on("scroll", function (e) {
-                $(".second-text__scroller")[0].value = $(this).scrollTop();
-            });
-            $(".go-top__btn").on("click", function (e) {
-                $([document.documentElement, document.body]).animate({
-                    scrollTop: $("header.header").offset().top
-                }, 1000);
-            });
+            if ($(".second-text__scroller").length) {
+                $(".second-text__scroller").on("propertychange input", function (e) {
+                    $(".second-text .content").scrollTop(e.target.value);
+                });
+            }
+            if ($(".second-text .content").length) {
+                $(".second-text .content").on("scroll", function (e) {
+                    $(".second-text__scroller")[0].value = $(this).scrollTop();
+                });
+            }
+            if ($(".go-top__btn").length) {
+                $(".go-top__btn").on("click", function (e) {
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $("header.header").offset().top
+                    }, 1000);
+                });
+            }
 
             // sliders
-            $(".reviews-slider").slick({
-                arrows: false,
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 525,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                ]
-            });
-            $(".facts-about-slider").slick({
-                arrows: false,
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                responsive: [
-                    {
-                        breakpoint: 525,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                ]
-            });
-            $(".recent-posts__wrapper").slick({
-                arrows: false,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                    {
-                        breakpoint: 525,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                ]
-            });
-            $(".reviews__wrapper .arrow-prev").on("click", function (e) {
-                $(".reviews-slider").slick('prev');
-            });
-            $(".reviews__wrapper .arrow-next").on("click", function (e) {
-                $(".reviews-slider").slick('next');
-            });
-            $(".facts-about__wrapper .arrow-prev").on("click", function (e) {
-                $(".facts-about-slider").slick('prev');
-            });
-            $(".facts-about__wrapper .arrow-next").on("click", function (e) {
-                $(".facts-about-slider").slick('next');
-            });
-            $(".recent-posts .arrow-prev").on("click", function (e) {
-                $(".recent-posts__wrapper").slick('prev');
-            });
-            $(".recent-posts .arrow-next").on("click", function (e) {
-                $(".recent-posts__wrapper").slick('next');
-            });
+            if ($(".reviews-slider").length) {
+                $(".reviews-slider").slick({
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 525,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                            }
+                        },
+                    ]
+                });
+            }
+            if ($(".facts-about-slider").length) {
+                $(".facts-about-slider").slick({
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    responsive: [
+                        {
+                            breakpoint: 525,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                            }
+                        },
+                    ]
+                });
+            }
+            if ($(".recent-posts__wrapper").length) {
+                $(".recent-posts__wrapper").slick({
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    responsive: [
+                        {
+                            breakpoint: 525,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                            }
+                        },
+                    ]
+                });
+            }
+            if ($(".reviews__wrapper .arrow-prev").length) {
+                $(".reviews__wrapper .arrow-prev").on("click", function (e) {
+                    $(".reviews-slider").slick('prev');
+                });
+            }
+            if ($(".reviews__wrapper .arrow-next").length) {
+                $(".reviews__wrapper .arrow-next").on("click", function (e) {
+                    $(".reviews-slider").slick('next');
+                });
+            }
+            if ($(".facts-about__wrapper .arrow-prev").length) {
+                $(".facts-about__wrapper .arrow-prev").on("click", function (e) {
+                    $(".facts-about-slider").slick('prev');
+                });
+            }
+            if ($(".facts-about__wrapper .arrow-next").length) {
+                $(".facts-about__wrapper .arrow-next").on("click", function (e) {
+                    $(".facts-about-slider").slick('next');
+                });
+            }
+            if ($(".recent-posts .arrow-prev").length) {
+                $(".recent-posts .arrow-prev").on("click", function (e) {
+                    $(".recent-posts__wrapper").slick('prev');
+                });
+            }
+            if ($(".recent-posts .arrow-next").length) {
+                $(".recent-posts .arrow-next").on("click", function (e) {
+                    $(".recent-posts__wrapper").slick('next');
+                });
+            }
 
-            //Scramble text
-            setTimeout(function () {
-                ScramblingElement($(".first-screen .scramble-element"))
-            }, 1500);
+            if ($(".first-screen .scramble-element").length) {
+                //Scramble text
+                setTimeout(function () {
+                    ScramblingElement($(".first-screen .scramble-element"))
+                }, 1500);
+            }
 
-            //Tilting Portfolio
-            $('.portfolio-item__img-wrapper').tilt({
-                glare: true,
-                maxGlare: .25,
-                maxTilt: 2,
-                scale: 1.05
-            });
+            if ($('.portfolio-item__img-wrapper').length) {
+                //Tilting Portfolio
+                $('.portfolio-item__img-wrapper').tilt({
+                    glare: true,
+                    maxGlare: .25,
+                    maxTilt: 2,
+                    scale: 1.05
+                });
+            }
+
 
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({
