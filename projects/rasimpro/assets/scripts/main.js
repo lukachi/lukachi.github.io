@@ -526,6 +526,58 @@ $(document).ready(function () {
                     "padding-top": $(".first-section__description").outerHeight() / 2
                 })
             }
+            if ($("section.experience").length) {
+                if ($("section.experience .experience__item").length) {
+                    $("section.experience .experience__item").each(function (index) {
+                        let steps_container = $(this).find($(".experience-item__step"));
+                        if (steps_container.length >= 2) {
+                            steps_container.each(function (i) {
+                                $(this).find($(".experience-item__block-title .title")).toggleClass("connected");
+                            });
+                            $(this).find($(".experience-item__step:not(:last-child)")).each(function (i) {
+                                $(this).toggleClass("connected");
+                            });
+                        }
+                        // $(this).find($(".experience-item__step.connected:not(:last-child)")).each(function (i) {
+                        //     let title = $(this).find($(".experience-item__block-title .title"));
+                        //     let title_begin = {
+                        //         x: title.offset().left + title.width() / 2,
+                        //         y: title.offset().top + title.height() / 2
+                        //     };
+                        // });
+                    });
+                }
+            }
+
+            //section-about -- recommendations
+            if ($(".recommendations").length) {
+
+                $(".recommendations .recommendations__item").each(function (i) {
+                    const total_rows = $(this).find(".recommendations__body .text p").outerHeight() / parseFloat($(this).find(".recommendations__body .text p").css("line-height"));
+
+                    $(this).find(".recommendations__body .btn-show")[0].disabled = Math.floor(total_rows - (total_rows / 100 * 15)) < 5;
+                });
+
+                $(".recommendations__item .btn-show").on("click", function (e) {
+                    const textElem = $(this).prev();
+                    textElem.toggleClass("show");
+                });
+            }
+
+            //section-about -- rank & awards
+            if ($(".ranks-awards").length) {
+
+                $(".ranks-awards__item").each(function (i) {
+                    const total_rows = $(this).find(".ranks-awards__body .text p").outerHeight() / parseFloat($(this).find(".ranks-awards__body .text p").css("line-height"));
+
+                    $(this).find(".btn__show-more")[0].disabled = Math.round(total_rows) < 4;
+                });
+
+                $(".ranks-awards__body .btn__show-more").on("click", function (e) {
+                    const textElem = $(this).prev();
+                    textElem.toggleClass("show");
+                });
+            }
 
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({
