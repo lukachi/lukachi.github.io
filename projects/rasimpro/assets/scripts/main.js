@@ -186,8 +186,8 @@ $(document).ready(function () {
                 }
                 if ($(".overview").length) {
                     $(".overview").css({
-                        "padding-top": $(".first-section__description").outerHeight() / 2
-                    })
+                        "padding-top": ($(".first-section__description").outerHeight() / 2) - 2
+                    });
                 }
                 if ($(".experience-item__img-wrapper").length) {
                     $(".experience-item__img-wrapper").slick("resize");
