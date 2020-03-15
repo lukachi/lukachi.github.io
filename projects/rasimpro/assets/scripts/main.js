@@ -122,11 +122,13 @@ function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
 }
 
 function toggleMenu() {
+
     const menu_wrapper = $(".header-menu__wrapper");
     menu_wrapper.css({
         "height": window.innerHeight
     });
 
+    //set NRJ phrase
     let img_expressions = $(".header-menu__img-wrapper").attr("data-menu-expression").split(",");
     if ($(window).width() <= 525) {
         $(".header-menu__img-wrapper").text(img_expressions[2]);
@@ -136,8 +138,23 @@ function toggleMenu() {
         $(".header-menu__img-wrapper").text(img_expressions[0]);
     }
 
+    if (menu_wrapper.hasClass("show")) {
+        TweenLite.to(menu_wrapper, .15, {
+            left: "500%",
+            ease: Linear.easeInOut
+        });
+    } else {
+        TweenLite.set(menu_wrapper, {
+            left: "0%",
+            ease: Linear.easeInOut
+        });
+        TweenLite.from(menu_wrapper, .15, {
+            left: "500%",
+            ease: Linear.easeInOut
+        });
+    }
+
     menu_wrapper.toggleClass("show");
-    $(".header-menu__wrapper .header-menu__burger.close").toggleClass("show");
 }
 
 $(document).ready(function () {
@@ -145,14 +162,8 @@ $(document).ready(function () {
         new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve();
-            }, 3500);
+            }, 0);
         }).then(res => {
-
-            $(".preloader").css({
-                "top": "-5000%",
-                "bottom": "auto",
-                "opacity": "0"
-            });
             // header-menu
             $(".header-menu__label").on("click", function (e) {
                 toggleMenu();
@@ -162,9 +173,6 @@ $(document).ready(function () {
             $(".footer-menu__label").on("click", function (e) {
                 toggleMenu();
             });
-
-            // Инициализация анимаций для плагина AOS
-            AOS.init();
 
             // ресайз элементов при деформации окна
             $(window).on("resize", function (e) {
@@ -382,6 +390,16 @@ $(document).ready(function () {
                         $(".recent-posts__wrapper").slick('next');
                     });
                 }
+                if ($(".other-publications .arrow-prev").length) {
+                    $(".other-publications .arrow-prev").on("click", function (e) {
+                        $(".recent-posts__wrapper").slick('prev');
+                    });
+                }
+                if ($(".other-publications .arrow-next").length) {
+                    $(".other-publications .arrow-next").on("click", function (e) {
+                        $(".recent-posts__wrapper").slick('next');
+                    });
+                }
             }
             if ($(".RN-gallery").length) {
                 $(".RN-gallery").slick({
@@ -460,12 +478,12 @@ $(document).ready(function () {
                 });
                 if ($(".volunteer-gallery__slider-wrapper .arrow-prev").length) {
                     $(".volunteer-gallery__slider-wrapper .arrow-prev").on("click", function (e) {
-                        $(".RN-gallery").slick('prev');
+                        $(".volunteer-gallery").slick('prev');
                     });
                 }
                 if ($(".volunteer-gallery__slider-wrapper .arrow-next").length) {
                     $(".volunteer-gallery__slider-wrapper .arrow-next").on("click", function (e) {
-                        $(".RN-gallery").slick('next');
+                        $(".volunteer-gallery").slick('next');
                     });
                 }
             }
@@ -475,6 +493,8 @@ $(document).ready(function () {
                     infinite: true,
                     slidesToShow: 4,
                     slidesToScroll: 4,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
                     responsive: [
                         {
                             breakpoint: 768,
@@ -488,6 +508,7 @@ $(document).ready(function () {
                             settings: {
                                 slidesToShow: 1,
                                 slidesToScroll: 1,
+                                dots: true
                             }
                         },
                     ]
@@ -551,30 +572,59 @@ $(document).ready(function () {
 
             //section-about -- recommendations
             if ($(".recommendations").length) {
+                const max_container_height = 5 * parseFloat($(".recommendations .recommendations__item").find(".recommendations__body .text p").css("line-height"));
 
                 $(".recommendations .recommendations__item").each(function (i) {
-                    const total_rows = $(this).find(".recommendations__body .text p").outerHeight() / parseFloat($(this).find(".recommendations__body .text p").css("line-height"));
-
-                    $(this).find(".recommendations__body .btn-show")[0].disabled = Math.floor(total_rows - (total_rows / 100 * 15)) < 5;
+                    $(this).find(".recommendations__body .text").css({
+                        height: max_container_height
+                    });
+                    $(this).find(".recommendations__body .btn-show")[0].disabled = $(this).find(".recommendations__body .text p").outerHeight() <= max_container_height;
                 });
 
                 $(".recommendations__item .btn-show").on("click", function (e) {
                     const textElem = $(this).prev();
+                    if (textElem.hasClass("show")) {
+                        TweenLite.to(textElem, .25, {
+                            height: max_container_height
+                        });
+                    } else {
+                        TweenLite.set(textElem, {
+                            height: "auto"
+                        });
+                        TweenLite.from(textElem, .25, {
+                            height: max_container_height
+                        });
+                    }
                     textElem.toggleClass("show");
                 });
             }
 
             //section-about -- rank & awards
             if ($(".ranks-awards").length) {
+                const max_container_height = 5 * parseFloat($(".ranks-awards__item").find(".text p").css("line-height"));
 
                 $(".ranks-awards__item").each(function (i) {
-                    const total_rows = $(this).find(".ranks-awards__body .text p").outerHeight() / parseFloat($(this).find(".ranks-awards__body .text p").css("line-height"));
+                    $(this).find(".text").css({
+                        height: max_container_height
+                    });
 
-                    $(this).find(".btn__show-more")[0].disabled = Math.round(total_rows) < 4;
+                    $(this).find(".btn__show-more")[0].disabled = $(this).find(".text p").outerHeight() < max_container_height;
                 });
 
                 $(".ranks-awards__body .btn__show-more").on("click", function (e) {
                     const textElem = $(this).prev();
+                    if (textElem.hasClass("show")) {
+                        TweenLite.to(textElem, .25, {
+                            height: max_container_height
+                        });
+                    } else {
+                        TweenLite.set(textElem, {
+                            height: "auto"
+                        });
+                        TweenLite.from(textElem, .25, {
+                            height: max_container_height
+                        });
+                    }
                     textElem.toggleClass("show");
                 });
             }
@@ -596,6 +646,15 @@ $(document).ready(function () {
             //     },
             //     offset: "90%"
             // });
+        }).then(res => {
+            $(".preloader").css({
+                "top": "-5000%",
+                "bottom": "auto",
+                "opacity": "0"
+            });
+
+            // Инициализация анимаций для плагина AOS
+            AOS.init();
         });
     };
 });
