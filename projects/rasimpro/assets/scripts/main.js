@@ -639,14 +639,22 @@ $(document).ready(function () {
                 });
             }
 
-            //filters on blog archive page
-            $(".blog-filters .filter-item input[type='checkbox']").on("change", function (e) {
-                if (e.target.checked || !$(this).parent().hasClass("checked")) {
-                    $(this).parent().addClass("checked");
-                } else {
-                    $(this).parent().removeClass("checked");
+            //filters on blog archive & categories page
+            if ($(".blog-filters").length) {
+                if ($(window).width() <= 525) {
+                    const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin"));
+                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 3;
+
+                    $(".filter-wrapper__container").css({
+                        width: container_width
+                    });
                 }
-            });
+
+                if ($(".blog-filters .guide").length) {
+
+                }
+
+            }
 
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({
