@@ -400,6 +400,16 @@ $(document).ready(function () {
                         $(".recent-posts__wrapper").slick('next');
                     });
                 }
+                if ($(".more-articles-posts .arrow-prev").length) {
+                    $(".more-articles-posts .arrow-prev").on("click", function (e) {
+                        $(".recent-posts__wrapper").slick('prev');
+                    });
+                }
+                if ($(".more-articles-posts .arrow-next").length) {
+                    $(".more-articles-posts .arrow-next").on("click", function (e) {
+                        $(".recent-posts__wrapper").slick('next');
+                    });
+                }
             }
             if ($(".RN-gallery").length) {
                 $(".RN-gallery").slick({
@@ -628,6 +638,15 @@ $(document).ready(function () {
                     textElem.toggleClass("show");
                 });
             }
+
+            //filters on blog archive page
+            $(".blog-filters .filter-item input[type='checkbox']").on("change", function (e) {
+                if (e.target.checked || !$(this).parent().hasClass("checked")) {
+                    $(this).parent().addClass("checked");
+                } else {
+                    $(this).parent().removeClass("checked");
+                }
+            });
 
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({
