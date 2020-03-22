@@ -176,7 +176,6 @@ $(document).ready(function () {
 
             // ресайз элементов при деформации окна
             $(window).on("resize", function (e) {
-
                 $(".header-menu__wrapper").css({
                     "height": window.innerHeight
                 });
@@ -199,6 +198,17 @@ $(document).ready(function () {
                 }
                 if ($(".experience-item__img-wrapper").length) {
                     $(".experience-item__img-wrapper").slick("resize");
+                }
+                //filters on blog archive & categories page
+                if ($(".blog-filters").length) {
+                    if ($(window).width() <= 525) {
+                        const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin"));
+                        const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 3;
+
+                        $(".filter-wrapper__container").css({
+                            width: container_width
+                        });
+                    }
                 }
             });
 
@@ -226,6 +236,17 @@ $(document).ready(function () {
                 }
                 if ($(".experience-item__img-wrapper").length) {
                     $(".experience-item__img-wrapper").slick("resize");
+                }
+                //filters on blog archive & categories page
+                if ($(".blog-filters").length) {
+                    if ($(window).width() <= 525) {
+                        const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin"));
+                        const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 3;
+
+                        $(".filter-wrapper__container").css({
+                            width: container_width
+                        });
+                    }
                 }
             });
 
@@ -365,21 +386,54 @@ $(document).ready(function () {
                 }
             }
             if ($(".recent-posts__wrapper").length) {
-                $(".recent-posts__wrapper").slick({
-                    arrows: false,
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    responsive: [
-                        {
-                            breakpoint: 525,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                            }
-                        },
-                    ]
-                });
+                if ($(".other-publications .recent-posts__wrapper").length) {
+                    $(".recent-posts__wrapper").slick({
+                        arrows: true,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                        prevArrow: "<button type=\"button\" class=\"slider-arrow arrow-prev\">\n" +
+            "                            <span class=\"icon-wrapper\">\n" +
+            "                                <i class=\"icon icon-arrow\"></i>\n" +
+            "                            </span>\n" +
+            "                        </button>",
+                        nextArrow: "<button type=\"button\" class=\"slider-arrow arrow-next\">\n" +
+            "                            <span class=\"icon-wrapper\">\n" +
+            "                                <i class=\"icon icon-arrow\"></i>\n" +
+            "                            </span>\n" +
+            "                        </button>",
+                        responsive: [
+                            {
+                                breakpoint: 525,
+                                settings: {
+                                    arrows: false,
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                }
+                            },
+                        ]
+                    });
+                } else {
+                    $(".recent-posts__wrapper").slick({
+                        arrows: false,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                        responsive: [
+                            {
+                                breakpoint: 525,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                }
+                            },
+                        ]
+                    });
+                }
                 if ($(".recent-posts .arrow-prev").length) {
                     $(".recent-posts .arrow-prev").on("click", function (e) {
                         $(".recent-posts__wrapper").slick('prev');
@@ -649,11 +703,6 @@ $(document).ready(function () {
                         width: container_width
                     });
                 }
-
-                if ($(".blog-filters .guide").length) {
-
-                }
-
             }
 
             // waypont a titles | SplittedTextShow

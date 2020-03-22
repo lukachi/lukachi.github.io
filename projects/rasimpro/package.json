@@ -1,0 +1,31 @@
+{
+  "name": "rasimpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lukachi_sama",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "@ignatiusmb/scramble": "^3.0.1",
+    "animejs": "^3.1.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.4.1",
+    "gsap": "^3.2.4",
+    "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1",
+    "tilt.js": "^1.2.1"
+  }
+}

@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "rasimpro-icons";
+	src: url('../fonts/rasimpro-icons/rasimpro-icons.eot');
+	src: url('../fonts/rasimpro-icons/rasimpro-icons.eot?#iefix') format('eot'),
+		url('../fonts/rasimpro-icons/rasimpro-icons.woff2') format('woff2'),
+		url('../fonts/rasimpro-icons/rasimpro-icons.woff') format('woff'),
+		url('../fonts/rasimpro-icons/rasimpro-icons.ttf') format('truetype'),
+		url('../fonts/rasimpro-icons/rasimpro-icons.svg#rasimpro-icons') format('svg');
+}
+
+.icon:before {
+	font-family: "rasimpro-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-arrow:before {
+	content: "\E001";
+}
+
+.icon-burger:before {
+	content: "\E002";
+}
+
+.icon-close:before {
+	content: "\E003";
+}
+
+.icon-load-more:before {
+	content: "\E004";
+}
+
+.icon-long-arrow:before {
+	content: "\E005";
+}
+
+.icon-mail:before {
+	content: "\E006";
+}
+
+.icon-user:before {
+	content: "\E007";
+}
+
+.icon-video:before {
+	content: "\E008";
+}
+
+.icon-zoom:before {
+	content: "\E009";
+}
