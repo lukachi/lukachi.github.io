@@ -10037,489 +10037,489 @@ table {
 
 @-webkit-keyframes shaking {
   0% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   2% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   4% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
   6% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   8% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  10% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  12% {
     -webkit-transform: translate(5px, 3px);
             transform: translate(5px, 3px); }
+  10% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  12% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
   14% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   16% {
     -webkit-transform: translate(3px, 3px);
             transform: translate(3px, 3px); }
   18% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
   20% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
   22% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   24% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   26% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   28% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   30% {
     -webkit-transform: translate(3px, 5px);
             transform: translate(3px, 5px); }
   32% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
   34% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(2px, 5px);
+            transform: translate(2px, 5px); }
   36% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
   38% {
     -webkit-transform: translate(2px, 3px);
             transform: translate(2px, 3px); }
   40% {
-    -webkit-transform: translate(1px, 3px);
-            transform: translate(1px, 3px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   42% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
   44% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
   46% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   48% {
     -webkit-transform: translate(3px, 2px);
             transform: translate(3px, 2px); }
   50% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  52% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
-  54% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  56% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  58% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
-  60% {
-    -webkit-transform: translate(3px, 4px);
-            transform: translate(3px, 4px); }
-  62% {
-    -webkit-transform: translate(1px, 3px);
-            transform: translate(1px, 3px); }
-  64% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
-  66% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  68% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
-  70% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
-  72% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  74% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
-  76% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  78% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  80% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
-  82% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  84% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
-  86% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
-  88% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  90% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  92% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  94% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  96% {
     -webkit-transform: translate(4px, 1px);
             transform: translate(4px, 1px); }
-  98% {
+  52% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  54% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
+  56% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  58% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  60% {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
+  62% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  64% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  66% {
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
+  68% {
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
+  70% {
     -webkit-transform: translate(5px, 1px);
             transform: translate(5px, 1px); }
+  72% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  74% {
+    -webkit-transform: translate(3px, 5px);
+            transform: translate(3px, 5px); }
+  76% {
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
+  78% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  80% {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
+  82% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  84% {
+    -webkit-transform: translate(2px, 3px);
+            transform: translate(2px, 3px); }
+  86% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  88% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px); }
+  90% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  92% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  94% {
+    -webkit-transform: translate(3px, 5px);
+            transform: translate(3px, 5px); }
+  96% {
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
+  98% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
   100% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); } }
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px); } }
 
 @keyframes shaking {
   0% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   2% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   4% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
   6% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   8% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  10% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  12% {
     -webkit-transform: translate(5px, 3px);
             transform: translate(5px, 3px); }
+  10% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  12% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
   14% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   16% {
     -webkit-transform: translate(3px, 3px);
             transform: translate(3px, 3px); }
   18% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
   20% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
   22% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   24% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   26% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   28% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   30% {
     -webkit-transform: translate(3px, 5px);
             transform: translate(3px, 5px); }
   32% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
   34% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(2px, 5px);
+            transform: translate(2px, 5px); }
   36% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
   38% {
     -webkit-transform: translate(2px, 3px);
             transform: translate(2px, 3px); }
   40% {
-    -webkit-transform: translate(1px, 3px);
-            transform: translate(1px, 3px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   42% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
   44% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
   46% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   48% {
     -webkit-transform: translate(3px, 2px);
             transform: translate(3px, 2px); }
   50% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  52% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
-  54% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  56% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  58% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
-  60% {
-    -webkit-transform: translate(3px, 4px);
-            transform: translate(3px, 4px); }
-  62% {
-    -webkit-transform: translate(1px, 3px);
-            transform: translate(1px, 3px); }
-  64% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
-  66% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  68% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
-  70% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
-  72% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  74% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
-  76% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  78% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  80% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
-  82% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  84% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
-  86% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
-  88% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  90% {
-    -webkit-transform: translate(5px, 4px);
-            transform: translate(5px, 4px); }
-  92% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  94% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  96% {
     -webkit-transform: translate(4px, 1px);
             transform: translate(4px, 1px); }
-  98% {
+  52% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  54% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
+  56% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  58% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  60% {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
+  62% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  64% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  66% {
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
+  68% {
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
+  70% {
     -webkit-transform: translate(5px, 1px);
             transform: translate(5px, 1px); }
+  72% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  74% {
+    -webkit-transform: translate(3px, 5px);
+            transform: translate(3px, 5px); }
+  76% {
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
+  78% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  80% {
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
+  82% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  84% {
+    -webkit-transform: translate(2px, 3px);
+            transform: translate(2px, 3px); }
+  86% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  88% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px); }
+  90% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  92% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
+  94% {
+    -webkit-transform: translate(3px, 5px);
+            transform: translate(3px, 5px); }
+  96% {
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
+  98% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px); }
   100% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); } }
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px); } }
 
 @-webkit-keyframes glitch-before {
   0% {
-    clip: rect(70px, 9999px, 80px, 0); }
+    clip: rect(98px, 9999px, 70px, 0); }
   5% {
-    clip: rect(23px, 9999px, 49px, 0); }
+    clip: rect(100px, 9999px, 75px, 0); }
   10% {
-    clip: rect(17px, 9999px, 35px, 0); }
+    clip: rect(57px, 9999px, 98px, 0); }
   15% {
-    clip: rect(83px, 9999px, 19px, 0); }
+    clip: rect(37px, 9999px, 4px, 0); }
   20% {
-    clip: rect(90px, 9999px, 53px, 0); }
+    clip: rect(83px, 9999px, 25px, 0); }
   25% {
-    clip: rect(11px, 9999px, 37px, 0); }
+    clip: rect(58px, 9999px, 81px, 0); }
   30% {
-    clip: rect(60px, 9999px, 89px, 0); }
+    clip: rect(51px, 9999px, 90px, 0); }
   35% {
-    clip: rect(42px, 9999px, 12px, 0); }
+    clip: rect(23px, 9999px, 28px, 0); }
   40% {
-    clip: rect(31px, 9999px, 74px, 0); }
+    clip: rect(15px, 9999px, 48px, 0); }
   45% {
-    clip: rect(38px, 9999px, 89px, 0); }
+    clip: rect(86px, 9999px, 50px, 0); }
   50% {
-    clip: rect(35px, 9999px, 14px, 0); }
+    clip: rect(18px, 9999px, 41px, 0); }
   55% {
-    clip: rect(99px, 9999px, 79px, 0); }
+    clip: rect(59px, 9999px, 61px, 0); }
   60% {
-    clip: rect(100px, 9999px, 61px, 0); }
+    clip: rect(14px, 9999px, 62px, 0); }
   65% {
-    clip: rect(64px, 9999px, 18px, 0); }
+    clip: rect(98px, 9999px, 11px, 0); }
   70% {
-    clip: rect(87px, 9999px, 86px, 0); }
+    clip: rect(90px, 9999px, 46px, 0); }
   75% {
-    clip: rect(38px, 9999px, 55px, 0); }
+    clip: rect(44px, 9999px, 35px, 0); }
   80% {
-    clip: rect(72px, 9999px, 89px, 0); }
+    clip: rect(78px, 9999px, 72px, 0); }
   85% {
-    clip: rect(42px, 9999px, 94px, 0); }
+    clip: rect(98px, 9999px, 37px, 0); }
   90% {
-    clip: rect(22px, 9999px, 29px, 0); }
+    clip: rect(56px, 9999px, 44px, 0); }
   95% {
-    clip: rect(57px, 9999px, 90px, 0); }
+    clip: rect(19px, 9999px, 42px, 0); }
   100% {
-    clip: rect(26px, 9999px, 42px, 0); } }
+    clip: rect(10px, 9999px, 62px, 0); } }
 
 @keyframes glitch-before {
   0% {
-    clip: rect(70px, 9999px, 80px, 0); }
+    clip: rect(98px, 9999px, 70px, 0); }
   5% {
-    clip: rect(23px, 9999px, 49px, 0); }
+    clip: rect(100px, 9999px, 75px, 0); }
   10% {
-    clip: rect(17px, 9999px, 35px, 0); }
+    clip: rect(57px, 9999px, 98px, 0); }
   15% {
-    clip: rect(83px, 9999px, 19px, 0); }
+    clip: rect(37px, 9999px, 4px, 0); }
   20% {
-    clip: rect(90px, 9999px, 53px, 0); }
+    clip: rect(83px, 9999px, 25px, 0); }
   25% {
-    clip: rect(11px, 9999px, 37px, 0); }
+    clip: rect(58px, 9999px, 81px, 0); }
   30% {
-    clip: rect(60px, 9999px, 89px, 0); }
+    clip: rect(51px, 9999px, 90px, 0); }
   35% {
-    clip: rect(42px, 9999px, 12px, 0); }
+    clip: rect(23px, 9999px, 28px, 0); }
   40% {
-    clip: rect(31px, 9999px, 74px, 0); }
+    clip: rect(15px, 9999px, 48px, 0); }
   45% {
-    clip: rect(38px, 9999px, 89px, 0); }
+    clip: rect(86px, 9999px, 50px, 0); }
   50% {
-    clip: rect(35px, 9999px, 14px, 0); }
+    clip: rect(18px, 9999px, 41px, 0); }
   55% {
-    clip: rect(99px, 9999px, 79px, 0); }
+    clip: rect(59px, 9999px, 61px, 0); }
   60% {
-    clip: rect(100px, 9999px, 61px, 0); }
+    clip: rect(14px, 9999px, 62px, 0); }
   65% {
-    clip: rect(64px, 9999px, 18px, 0); }
+    clip: rect(98px, 9999px, 11px, 0); }
   70% {
-    clip: rect(87px, 9999px, 86px, 0); }
+    clip: rect(90px, 9999px, 46px, 0); }
   75% {
-    clip: rect(38px, 9999px, 55px, 0); }
+    clip: rect(44px, 9999px, 35px, 0); }
   80% {
-    clip: rect(72px, 9999px, 89px, 0); }
+    clip: rect(78px, 9999px, 72px, 0); }
   85% {
-    clip: rect(42px, 9999px, 94px, 0); }
+    clip: rect(98px, 9999px, 37px, 0); }
   90% {
-    clip: rect(22px, 9999px, 29px, 0); }
+    clip: rect(56px, 9999px, 44px, 0); }
   95% {
-    clip: rect(57px, 9999px, 90px, 0); }
+    clip: rect(19px, 9999px, 42px, 0); }
   100% {
-    clip: rect(26px, 9999px, 42px, 0); } }
+    clip: rect(10px, 9999px, 62px, 0); } }
 
 @-webkit-keyframes glitch-after {
   0% {
-    clip: rect(17px, 9999px, 55px, 0); }
+    clip: rect(6px, 9999px, 56px, 0); }
   5% {
-    clip: rect(35px, 9999px, 60px, 0); }
+    clip: rect(96px, 9999px, 60px, 0); }
   10% {
-    clip: rect(95px, 9999px, 53px, 0); }
+    clip: rect(14px, 9999px, 68px, 0); }
   15% {
-    clip: rect(31px, 9999px, 49px, 0); }
+    clip: rect(14px, 9999px, 23px, 0); }
   20% {
-    clip: rect(44px, 9999px, 13px, 0); }
+    clip: rect(4px, 9999px, 100px, 0); }
   25% {
-    clip: rect(20px, 9999px, 14px, 0); }
+    clip: rect(20px, 9999px, 51px, 0); }
   30% {
-    clip: rect(1px, 9999px, 62px, 0); }
+    clip: rect(74px, 9999px, 24px, 0); }
   35% {
-    clip: rect(26px, 9999px, 92px, 0); }
+    clip: rect(74px, 9999px, 19px, 0); }
   40% {
-    clip: rect(27px, 9999px, 91px, 0); }
+    clip: rect(71px, 9999px, 92px, 0); }
   45% {
-    clip: rect(93px, 9999px, 78px, 0); }
+    clip: rect(3px, 9999px, 42px, 0); }
   50% {
-    clip: rect(52px, 9999px, 47px, 0); }
+    clip: rect(4px, 9999px, 53px, 0); }
   55% {
-    clip: rect(88px, 9999px, 3px, 0); }
+    clip: rect(23px, 9999px, 94px, 0); }
   60% {
-    clip: rect(3px, 9999px, 70px, 0); }
+    clip: rect(37px, 9999px, 40px, 0); }
   65% {
-    clip: rect(8px, 9999px, 50px, 0); }
+    clip: rect(71px, 9999px, 13px, 0); }
   70% {
-    clip: rect(95px, 9999px, 97px, 0); }
+    clip: rect(84px, 9999px, 37px, 0); }
   75% {
-    clip: rect(69px, 9999px, 50px, 0); }
+    clip: rect(6px, 9999px, 52px, 0); }
   80% {
-    clip: rect(35px, 9999px, 43px, 0); }
+    clip: rect(51px, 9999px, 21px, 0); }
   85% {
-    clip: rect(69px, 9999px, 95px, 0); }
+    clip: rect(73px, 9999px, 32px, 0); }
   90% {
-    clip: rect(50px, 9999px, 98px, 0); }
+    clip: rect(99px, 9999px, 65px, 0); }
   95% {
-    clip: rect(72px, 9999px, 52px, 0); }
+    clip: rect(26px, 9999px, 7px, 0); }
   100% {
-    clip: rect(56px, 9999px, 77px, 0); } }
+    clip: rect(26px, 9999px, 65px, 0); } }
 
 @keyframes glitch-after {
   0% {
-    clip: rect(17px, 9999px, 55px, 0); }
+    clip: rect(6px, 9999px, 56px, 0); }
   5% {
-    clip: rect(35px, 9999px, 60px, 0); }
+    clip: rect(96px, 9999px, 60px, 0); }
   10% {
-    clip: rect(95px, 9999px, 53px, 0); }
+    clip: rect(14px, 9999px, 68px, 0); }
   15% {
-    clip: rect(31px, 9999px, 49px, 0); }
+    clip: rect(14px, 9999px, 23px, 0); }
   20% {
-    clip: rect(44px, 9999px, 13px, 0); }
+    clip: rect(4px, 9999px, 100px, 0); }
   25% {
-    clip: rect(20px, 9999px, 14px, 0); }
+    clip: rect(20px, 9999px, 51px, 0); }
   30% {
-    clip: rect(1px, 9999px, 62px, 0); }
+    clip: rect(74px, 9999px, 24px, 0); }
   35% {
-    clip: rect(26px, 9999px, 92px, 0); }
+    clip: rect(74px, 9999px, 19px, 0); }
   40% {
-    clip: rect(27px, 9999px, 91px, 0); }
+    clip: rect(71px, 9999px, 92px, 0); }
   45% {
-    clip: rect(93px, 9999px, 78px, 0); }
+    clip: rect(3px, 9999px, 42px, 0); }
   50% {
-    clip: rect(52px, 9999px, 47px, 0); }
+    clip: rect(4px, 9999px, 53px, 0); }
   55% {
-    clip: rect(88px, 9999px, 3px, 0); }
+    clip: rect(23px, 9999px, 94px, 0); }
   60% {
-    clip: rect(3px, 9999px, 70px, 0); }
+    clip: rect(37px, 9999px, 40px, 0); }
   65% {
-    clip: rect(8px, 9999px, 50px, 0); }
+    clip: rect(71px, 9999px, 13px, 0); }
   70% {
-    clip: rect(95px, 9999px, 97px, 0); }
+    clip: rect(84px, 9999px, 37px, 0); }
   75% {
-    clip: rect(69px, 9999px, 50px, 0); }
+    clip: rect(6px, 9999px, 52px, 0); }
   80% {
-    clip: rect(35px, 9999px, 43px, 0); }
+    clip: rect(51px, 9999px, 21px, 0); }
   85% {
-    clip: rect(69px, 9999px, 95px, 0); }
+    clip: rect(73px, 9999px, 32px, 0); }
   90% {
-    clip: rect(50px, 9999px, 98px, 0); }
+    clip: rect(99px, 9999px, 65px, 0); }
   95% {
-    clip: rect(72px, 9999px, 52px, 0); }
+    clip: rect(26px, 9999px, 7px, 0); }
   100% {
-    clip: rect(56px, 9999px, 77px, 0); } }
+    clip: rect(26px, 9999px, 65px, 0); } }
 
 @-webkit-keyframes is-off {
   0% {
@@ -17016,6 +17016,472 @@ img {
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg); }
+
+.welcome-screen-case {
+  background: #161616;
+  padding: 2.75vw 0 0; }
+  .welcome-screen-case .first-section__wrapper {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .welcome-screen-case .breadcrumbs {
+    z-index: 3;
+    margin-bottom: 2vw; }
+  .welcome-screen-case .categories-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5vw;
+    z-index: 3; }
+    .welcome-screen-case .categories-wrapper .categories__item {
+      background: #0737E2;
+      border-radius: 6px 6px 0px 0px;
+      color: #ffffff;
+      padding: .85vw 1.25vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1vw; }
+      .welcome-screen-case .categories-wrapper .categories__item:not(:last-child) {
+        margin-right: 1.5vw; }
+  .welcome-screen-case .decor-text__bg {
+    z-index: 0;
+    font-weight: bold;
+    font-size: 30vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.02;
+    position: absolute;
+    bottom: 0;
+    left: -1.5vw;
+    -webkit-transform: translateY(55%);
+        -ms-transform: translateY(55%);
+            transform: translateY(55%); }
+  .welcome-screen-case .section-title {
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .welcome-screen-case .section-title .title {
+      font-weight: bold;
+      font-size: 5.3vw;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 1.5vw; }
+    .welcome-screen-case .section-title .subtitle {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.05vw;
+      line-height: 125%;
+      color: #FFFFFF; }
+  .welcome-screen-case .actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 3.5vw; }
+    .welcome-screen-case .actions .standard-btn {
+      border: 1px solid #474747;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #ffffff;
+      padding: .75vw 2.5vw .75vw 1vw;
+      position: relative;
+      -webkit-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      padding: .9vw 3.5vw .9vw 4vw;
+      margin-left: 4vw; }
+      .welcome-screen-case .actions .standard-btn .btn-blink {
+        z-index: 5;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+        .welcome-screen-case .actions .standard-btn .btn-blink:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 7%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.5);
+          -webkit-transform: translateX(-4em) skewX(-45deg);
+              -ms-transform: translateX(-4em) skewX(-45deg);
+                  transform: translateX(-4em) skewX(-45deg);
+          -webkit-animation: move-light 4s infinite;
+                  animation: move-light 4s infinite; }
+      .welcome-screen-case .actions .standard-btn .btn-hover__bg {
+        z-index: 2;
+        overflow: hidden;
+        width: 96%;
+        height: 90%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        -webkit-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out; }
+        .welcome-screen-case .actions .standard-btn .btn-hover__bg:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: -500%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          background: #0737E2;
+          -webkit-transition: .5s ease-in-out;
+          -o-transition: .5s ease-in-out;
+          transition: .5s ease-in-out; }
+      .welcome-screen-case .actions .standard-btn:after {
+        content: "";
+        width: 35%;
+        height: 2px;
+        background: #0737E2;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translate(75%, -50%);
+            -ms-transform: translate(75%, -50%);
+                transform: translate(75%, -50%);
+        z-index: 3;
+        -webkit-transition: .5s ease .25s;
+        -o-transition: .5s ease .25s;
+        transition: .5s ease .25s; }
+      .welcome-screen-case .actions .standard-btn:hover {
+        border-color: #ffffff; }
+        .welcome-screen-case .actions .standard-btn:hover .btn-hover__bg:before {
+          left: 50%; }
+        .welcome-screen-case .actions .standard-btn:hover:after {
+          opacity: 0; }
+      .welcome-screen-case .actions .standard-btn .icon {
+        color: #ffffff;
+        font-size: 1.35vw;
+        margin-right: 10px;
+        z-index: 3; }
+      .welcome-screen-case .actions .standard-btn .btn-text {
+        z-index: 3;
+        font-size: 1vw;
+        font-weight: bold;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .welcome-screen-case .actions .standard-btn .btn-text {
+        font-size: .975vw; }
+  .welcome-screen-case .first-section__description {
+    z-index: 3;
+    width: 100%;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin-top: -2vw; }
+    .welcome-screen-case .first-section__description:after {
+      content: "";
+      background: #0737E2;
+      width: 100%;
+      height: .5vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 3; }
+    .welcome-screen-case .first-section__description img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
+
+.overview.portfolio-case-page {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(93%, rgba(255, 255, 255, 0)), color-stop(7%, #161616));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 93%, #161616 7%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 93%, #161616 7%); }
+  .overview.portfolio-case-page .overview__wrapper {
+    padding-top: 4.75vw;
+    padding-bottom: 6vw; }
+  .overview.portfolio-case-page .section-title .title {
+    font-size: 1.8vw; }
+  .overview.portfolio-case-page .content {
+    font-size: 1vw;
+    line-height: 140%; }
+
+.overview .overview__img-wrapper {
+  margin-top: -2vw;
+  background: #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .overview .overview__img-wrapper .overview__img-item {
+    width: 49%; }
+
+.dark-block {
+  background: #161616;
+  padding: 7vw 0 4.5vw; }
+  .dark-block.second {
+    padding: 8.5vw 0 9.25vw; }
+  .dark-block .section-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4.25vw; }
+    .dark-block .section-title .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.15vw;
+      line-height: 125%;
+      letter-spacing: .001px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 1vw; }
+    .dark-block .section-title .subtitle {
+      text-align: center;
+      font-size: 1.25vw;
+      line-height: 130%;
+      color: #000000; }
+    .dark-block .section-title .title {
+      font-size: 1.9vw;
+      color: #ffffff;
+      margin-bottom: 0; }
+  .dark-block__wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .dark-block__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .dark-block__item:not(:last-child) {
+      margin-bottom: 4vw; }
+    .dark-block__item .img-wrapper {
+      width: 51%; }
+    .dark-block__item .text-wrapper {
+      width: 40.5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.25vw;
+      padding: 3.5vw 5.25vw 3.75vw;
+      color: #c6c6c6;
+      background: #161616;
+      border: 0.5px solid #626262;
+      line-height: 155%;
+      font-style: italic; }
+    .dark-block__item.reverse .img-wrapper {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .dark-block__item.reverse .text-wrapper {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+
+.case__img-section {
+  padding: 5vw 0 5.25vw; }
+  .case__img-section.first-img-case-section {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(85%, rgba(255, 255, 255, 0)), color-stop(15%, #161616));
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 85%, #161616 15%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 85%, #161616 15%); }
+  .case__img-section .case__img-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .case__img-section .case__img-wrapper .case__img-item {
+      width: 49%; }
+      .case__img-section .case__img-wrapper .case__img-item:first-child {
+        width: 100%;
+        margin-bottom: 1.25vw; }
+
+.project-details .project-details__wrapper {
+  background: #F8F8F8;
+  padding: 4vw 5vw;
+  border: 0.5px solid #0737E2;
+  -webkit-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .project-details .project-details__wrapper .section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.8vw; }
+    .project-details .project-details__wrapper .section-title .title {
+      font-weight: bold;
+      font-size: 1.9vw;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #000000; }
+  .project-details .project-details__wrapper .content {
+    font-size: 1vw;
+    line-height: 135%;
+    color: #000000; }
+
+.last-img-block {
+  padding: 6vw 0; }
+  .last-img-block .last-img-wrapper {
+    width: 100%; }
+
+.next-case {
+  background: #161616;
+  padding: 5vw 0; }
+  .next-case .next-case__wrapper {
+    position: relative;
+    width: 100%;
+    padding: 3vw 5vw;
+    -webkit-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+    border: 0.5px solid #626262;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .next-case .next-case__wrapper .text-decor__bg {
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-style: italic;
+      font-weight: bold;
+      font-size: 31vw;
+      line-height: 91.5%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 0.02; }
+    .next-case .next-case__wrapper .categories-wrapper {
+      z-index: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 1.5vw; }
+      .next-case .next-case__wrapper .categories-wrapper .categories__item {
+        background: #0737E2;
+        border-radius: 6px 6px 0px 0px;
+        color: #ffffff;
+        padding: .85vw 1.25vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1vw; }
+        .next-case .next-case__wrapper .categories-wrapper .categories__item:not(:last-child) {
+          margin-right: 1.5vw; }
+    .next-case .next-case__wrapper .title {
+      z-index: 2;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 5.25vw;
+      font-weight: bold;
+      margin-bottom: 1.5vw; }
+    .next-case .next-case__wrapper .next-case__link {
+      z-index: 2;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 1vw;
+      font-weight: bold; }
 
 @media screen and (max-width: 525px) {
   .section-inner {

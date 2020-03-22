@@ -193,7 +193,7 @@ $(document).ready(function () {
                 }
                 if ($(".overview").length) {
                     $(".overview").css({
-                        "padding-top": ($(".first-section__description").outerHeight() / 2) - 2
+                        "padding-top": ($(".first-section__description").outerHeight() / 2) - 3
                     });
                 }
                 if ($(".experience-item__img-wrapper").length) {
@@ -242,7 +242,7 @@ $(document).ready(function () {
                 }
                 if ($(".overview").length) {
                     $(".overview").css({
-                        "padding-top": $(".first-section__description").outerHeight() / 2
+                        "padding-top": ($(".first-section__description").outerHeight() / 2) - 3
                     })
                 }
                 if ($(".experience-item__img-wrapper").length) {
@@ -630,7 +630,7 @@ $(document).ready(function () {
             //section-about
             if ($(".overview").length) {
                 $(".overview").css({
-                    "padding-top": $(".first-section__description").outerHeight() / 2
+                    "padding-top": ($(".first-section__description").outerHeight() / 2) - 3
                 })
             }
             if ($("section.experience").length) {
