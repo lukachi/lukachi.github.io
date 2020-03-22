@@ -210,6 +210,17 @@ $(document).ready(function () {
                         });
                     }
                 }
+                //filters on portfolio archive page
+                if ($(".portfolio-filter").length) {
+                    if ($(window).width() <= 525) {
+                        const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
+                        const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+                        $(".filter-wrapper__container").css({
+                            width: container_width
+                        });
+                    }
+                }
             });
 
             // ресайз элементов при деформации окна
@@ -242,6 +253,17 @@ $(document).ready(function () {
                     if ($(window).width() <= 525) {
                         const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin"));
                         const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 3;
+
+                        $(".filter-wrapper__container").css({
+                            width: container_width
+                        });
+                    }
+                }
+                //filters on portfolio archive page
+                if ($(".portfolio-filter").length) {
+                    if ($(window).width() <= 525) {
+                        const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
+                        const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue);
 
                         $(".filter-wrapper__container").css({
                             width: container_width
@@ -703,6 +725,32 @@ $(document).ready(function () {
                         width: container_width
                     });
                 }
+            }
+
+            //filters on portfolio archive page
+            if ($(".portfolio-filter").length) {
+                if ($(window).width() <= 525) {
+                    const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
+                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+                    $(".filter-wrapper__container").css({
+                        width: container_width
+                    });
+                }
+            }
+
+            let checked_portfolio_cat = ($(".portfolio-filter").length) ? $('input[name="portfolio_category"]:checked').val() : undefined;
+            if ($(".portfolio-filter").length) {
+                $("section.portfolio").css({
+                    "padding-top": $(".portfolio-filter").outerHeight()
+                });
+                $('input[name="portfolio_category"]').on("click", function(e) {
+                    if ($(this).val().toString().includes(checked_portfolio_cat)) {
+                        $(".filter-item:first-child").find('input[name="portfolio_category"]')[0].checked = true;
+                    } else {
+                        checked_portfolio_cat = $(this).val();
+                    }
+                });
             }
 
             // waypont a titles | SplittedTextShow

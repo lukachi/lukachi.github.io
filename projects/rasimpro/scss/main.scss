@@ -3949,6 +3949,163 @@ img {
 	min-height: 5vw;
 }
 
+//Portfolio pages
+
+// - archive
+
+.welcome-screen-portfolio-archive {
+	@include welcome-screen;
+	padding-bottom: 0;
+
+	.decor-text__bg {
+		right: auto;
+		left: -1.75vw;
+	}
+
+	.section-title {
+
+		.title {
+			margin-left: -.4vw;
+		}
+	}
+
+	.portfolio-filter {
+		z-index: 3;
+		background: url("../images/bg-welcome-screen.png") no-repeat center center / cover;
+		padding: 5.5vw 4.25vw;
+		width: 100%;
+		font-weight: bold;
+		font-size: 1.875vw;
+		line-height: 125%;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		transform: translateY(50%);
+		border-bottom: 5px solid $theme-color;
+		box-shadow: 0 7px 7px rgba(0, 0, 0, 0.25);
+
+		.filter-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			&:not(:last-child) {
+				margin-right: 1.25vw;
+			}
+
+			.filter__label {
+				position: relative;
+
+				.text {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					position: relative;
+					padding: .75vw 2.65vw;
+					border-radius: 6px;
+					transition: .35s ease-in-out;
+					background: $theme-color;
+
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: .85vw;
+					line-height: 130%;
+					color: #ffffff;
+				}
+
+				.icon-wrapper {
+					$icon_size: 1.5vw;
+					width: $icon_size;
+					height: $icon_size;
+					cursor: pointer;
+					background: #C4C4C4;
+					border: 1px solid #000000;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					right: 0;
+					transform: translate(50%, -50%);
+					opacity: 0;
+					transition: .35s ease-in-out .15s;
+
+					.icon {
+						font-size: .5vw;
+						color: #000000;
+						transform: translateY(2.5%);
+					}
+				}
+			}
+
+			input[type="radio"] {
+				display: none;
+				position: absolute;
+				top: 50%;
+				left: 1vw;
+				transform: translate(0, -50%);
+				z-index: 3;
+
+				&:checked {
+					& ~ .filter__label .text {
+						background: #ffffff;
+						color: #000000;
+					}
+
+					& ~ .filter__label .icon-wrapper {
+						opacity: 1;
+					}
+				}
+			}
+
+			&:first-child {
+				display: none;
+			}
+		}
+
+		.filter-wrapper__container-scroll {
+			width: 100%;
+		}
+
+		.filter-wrapper__container {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			//flex-wrap: wrap;
+		}
+
+		.guide {
+			align-self: center;
+			margin: 10vw auto 0;
+			display: none;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.guide-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+
+			.text {
+				font-size: 5vw;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			.icon {
+				margin-left: 3vw;
+				transform: rotate(-90deg);
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 525px) {
 
 	.section-inner {
@@ -6800,5 +6957,88 @@ img {
 
 	.between-footer {
 		min-height: 20vw;
+	}
+
+	//portfolio pages
+
+	.welcome-screen-portfolio-archive {
+		padding-top: 25vw;
+
+		.filter-inner {
+			width: 100%;
+		}
+
+		.decor-text__bg {
+			font-size: 100vw;
+		}
+
+		.section-title {
+
+			.title {
+				font-size: 20vw;
+				margin-bottom: 7vw;
+			}
+
+			.subtitle {
+				font-size: 5vw;
+			}
+		}
+
+		.portfolio-filter {
+			padding: 10vw 0;
+
+			.filter-item {
+
+				&:not(:last-child) {
+					margin-right: 1.5rem;
+				}
+
+				.filter__label {
+
+					.text {
+						padding: .75rem 2.65rem;
+						font-size: 1.5rem;
+						text-align: center;
+					}
+
+					.icon-wrapper {
+						$icon_size: 1.5rem;
+						width: $icon_size;
+						height: $icon_size;
+
+						.icon {
+							font-size: .5rem;
+						}
+					}
+				}
+			}
+
+			.filter-wrapper__container-scroll {
+				overflow: scroll;
+			}
+
+			.filter-wrapper__container {
+				width: auto;
+				padding: 5vw;
+			}
+
+			.guide {
+				display: flex;
+				margin-bottom: 5vw;
+
+				.text {
+					font-size: 10vw;
+				}
+
+				.icon {
+					font-size: 5vw;
+					margin-left: 5vw;
+				}
+			}
+
+			.guide-wrapper {
+				overflow: visible;
+			}
+		}
 	}
 }
