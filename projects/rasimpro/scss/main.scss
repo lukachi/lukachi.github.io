@@ -4258,9 +4258,20 @@ img {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 
 		.overview__img-item {
 			width: 49%;
+			margin: 1vw 0 0;
+
+			&.fullwidth {
+				width: 100%;
+			}
+
+			video {
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
