@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rasim pro</title>
+    <style>
+        .sk-cube-grid {
+            width: 40px;
+            height: 40px;
+            margin: 100px auto;
+        }
+
+        .sk-cube-grid .sk-cube {
+            width: 33%;
+            height: 33%;
+            background-color: #333;
+            float: left;
+            -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        }
+
+        .sk-cube-grid .sk-cube1 {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+
+        .sk-cube-grid .sk-cube2 {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+
+        .sk-cube-grid .sk-cube3 {
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+
+        .sk-cube-grid .sk-cube4 {
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+        }
+
+        .sk-cube-grid .sk-cube5 {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+
+        .sk-cube-grid .sk-cube6 {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+
+        .sk-cube-grid .sk-cube7 {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        .sk-cube-grid .sk-cube8 {
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+        }
+
+        .sk-cube-grid .sk-cube9 {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+
+        @-webkit-keyframes sk-cubeGridScaleDelay {
+            0%, 70%, 100% {
+                -webkit-transform: scale3D(1, 1, 1);
+                transform: scale3D(1, 1, 1);
+            }
+            35% {
+                -webkit-transform: scale3D(0, 0, 1);
+                transform: scale3D(0, 0, 1);
+            }
+        }
+
+        @keyframes sk-cubeGridScaleDelay {
+            0%, 70%, 100% {
+                -webkit-transform: scale3D(1, 1, 1);
+                transform: scale3D(1, 1, 1);
+            }
+            35% {
+                -webkit-transform: scale3D(0, 0, 1);
+                transform: scale3D(0, 0, 1);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+<div class="preloader">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+</div>
+<header class="header section-outer" id="header">
+    <div class="section-inner">
+        <nav class="nav">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div class="mobile-menu__phone">
+                <a href="#">
+                    +380 98 721 29 29
+                </a>
+            </div>
+            <div class="header-menu">
+                <div class="header-menu__phone">
+                    <a href="#">
+                        +380 98 721 29 29
+                    </a>
+                </div>
+                <div class="header-menu__toggler">
+                    <div class="header-menu__label">
+                        <div class="label-text">menu</div>
+                        <button type="button" class="header-menu__burger">
+                            <i class="icon icon-burger"></i>
+                        </button>
+                    </div>
+                    <div class="header-menu__wrapper">
+                        <div class="header-menu__header">
+                            <div class="section-inner">
+
+                                <nav class="nav">
+                                    <div class="logo">
+                                        <img src="./assets/images/logo.png" alt="">
+                                    </div>
+                                    <div class="mobile-menu__languages">
+                                        <a href="#" class="language-item active">
+                                            EN
+                                        </a>
+                                        <a href="#" class="language-item">
+                                            RU
+                                        </a>
+                                        <a href="#" class="language-item">
+                                            UA
+                                        </a>
+                                    </div>
+                                    <div class="header-menu">
+                                        <div class="header-menu__languages">
+                                            <a href="#" class="language-item active">
+                                                EN
+                                            </a>
+                                            <a href="#" class="language-item">
+                                                RU
+                                            </a>
+                                            <a href="#" class="language-item">
+                                                UA
+                                            </a>
+                                        </div>
+                                        <div class="header-menu__toggler">
+                                            <div class="header-menu__label">
+                                                <button type="button" class="header-menu__burger close">
+                                                    <i class="icon icon-close"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </div>
+                        <div class="header-menu__body">
+                            <div class="section-inner">
+                                <div class="header-menu__img-wrapper" data-menu-expression="nrj,nr,r">
+                                    nrj
+                                </div>
+                                <ul class="header-menu__menu-list">
+                                    <li class="menu-list__item">
+                                        <a href="#" class="item__link" data-text="Home">Home</a>
+                                    </li>
+                                    <li class="menu-list__item">
+                                        <a href="#" class="item__link" data-text="Portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="menu-list__item">
+                                        <a href="./page-about.html" class="item__link" data-text="ABOUT ME">ABOUT ME</a>
+                                    </li>
+                                    <li class="menu-list__item">
+                                        <a href="#" class="item__link" data-text="SERVICES">SERVICES</a>
+                                    </li>
+                                    <li class="menu-list__item">
+                                        <a href="#" class="item__link" data-text="blog">blog</a>
+                                    </li>
+                                    <li class="menu-list__item">
+                                        <a href="#" class="item__link" data-text="Contacts">Contacts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-menu__footer">
+                            <div class="section-inner">
+                                <div class="socials">
+                                    <a href="#" class="socials__link" target="_blank">
+                                        <img src="./assets/images/menu-social-1-hover.svg" alt="social"
+                                             class="menu-social-hover">
+                                        <img src="./assets/images/menu-social-1.svg" alt="social"
+                                             class="menu-social-front">
+                                    </a>
+                                    <a href="#" class="socials__link" target="_blank">
+                                        <img src="./assets/images/menu-social-2-hover.svg" alt="social"
+                                             class="menu-social-hover">
+                                        <img src="./assets/images/menu-social-2.svg" alt="social"
+                                             class="menu-social-front">
+                                    </a>
+                                    <a href="#" class="socials__link" target="_blank">
+                                        <img src="./assets/images/menu-social-3-hover.svg" alt="social"
+                                             class="menu-social-hover">
+                                        <img src="./assets/images/menu-social-3.svg" alt="social"
+                                             class="menu-social-front">
+                                    </a>
+                                    <a href="#" class="socials__link" target="_blank">
+                                        <img src="./assets/images/menu-social-4-hover.svg" alt="social"
+                                             class="menu-social-hover">
+                                        <img src="./assets/images/menu-social-4.svg" alt="social"
+                                             class="menu-social-front">
+                                    </a>
+                                    <a href="#" class="socials__link" target="_blank">
+                                        <img src="./assets/images/menu-social-5-hover.svg" alt="social"
+                                             class="menu-social-hover">
+                                        <img src="./assets/images/menu-social-5.svg" alt="social"
+                                             class="menu-social-front">
+                                    </a>
+                                </div>
+                                <div class="header-menu__wrapper-phone">
+                                    <a href="#">
+                                        +380 98 721 29 29
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main-content section-outer">
+    <article class="main-content__article">
+        <section class="welcome-screen-services-archive section-outer">
+            <div class="section-inner">
+                <div class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__item">
+                        Home
+                    </a>
+                    <a href="#" class="breadcrumbs__item">
+                        Services
+                    </a>
+                </div>
+                <div class="first-section__wrapper">
+                    <div class="decor-text__bg">
+                        Services
+                    </div>
+                    <div class="section-title">
+                        <h2 class="title">
+                            Services
+                        </h2>
+                        <div class="subtitle">
+                            I help my clients create value-added digital web solutions using strategy, design and best
+                            practices.
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button type="button" class="standard-btn consultation-popup">
+                            <div class="btn-blink"></div>
+                            <span class="btn-hover__bg"></span>
+                            <span class="btn-text">get free consultation</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="first-section__wrapper">
+                    <div class="first-section__description">
+                        Focus on the whole - from strategy to operations
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services-list section-outer">
+            <div class="services-list__wrapper">
+                <div class="services-list__item">
+                    <div class="item-marquee">
+                        <div class="marquee-mover">
+                            <div class="marquee-item">
+                                Promo landing&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Promo landing&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Promo landing&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Promo landing&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <div class="services-list__container">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/services-item-1.jpg" alt="">
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container">
+                                    <div class="title">
+                                        Promo landing
+                                    </div>
+                                    <div class="excerpt">
+                                        Landing is a one-page site, sharpened for specific requests and target audience.
+                                        Its goal is to turn ordinary visitors into customers. Often, people fall on
+                                        landing from search systems like Google and Yandex, email-mailings and social
+                                        networks like Facebook, VK, Instagram and others. The landing page contains a
+                                        unique shopping offer that motivates the visitor to make a targeted action on
+                                        the site, whether it's buying, subscribing or filing an application.
+                                    </div>
+                                    <a href="#" class="standard-btn">
+                                        <div class="btn-blink"></div>
+                                        <span class="btn-hover__bg"></span>
+                                        <span class="btn-text">more details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-list__item reverse">
+                    <div class="item-marquee">
+                        <div class="marquee-mover">
+                            <div class="marquee-item">
+                                ecommerce&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                ecommerce&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                ecommerce&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                ecommerce&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <div class="services-list__container">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/services-item-2.jpg" alt="">
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container">
+                                    <div class="title">
+                                        Ecommerce
+                                    </div>
+                                    <div class="excerpt">
+                                        The main purpose of the online store - the transformation of site visitors in the buyers through various marketing gadgets and effective structure, which significantly increases additional sales from the site. All elements of the site lead the potential client to the target action, motivate buying. Tired of losing potential customers from the Internet, other cities and countries? Start your store in online and it will be available for everyone, regardless of region or country.
+                                    </div>
+                                    <a href="#" class="standard-btn">
+                                        <div class="btn-blink"></div>
+                                        <span class="btn-hover__bg"></span>
+                                        <span class="btn-text">more details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-list__item">
+                    <div class="item-marquee">
+                        <div class="marquee-mover">
+                            <div class="marquee-item">
+                                Corporate website&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Corporate website&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Corporate website&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Corporate website&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <div class="services-list__container">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/services-item-3.jpg" alt="">
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container">
+                                    <div class="title">
+                                        Corporate website
+                                    </div>
+                                    <div class="excerpt">
+                                        A corporate site is a website, implemented in the corporate style of the company, which increases the recognition of the enterprise on the Internet. This site creates an image of the company, in fact - it's your face on the Internet. On it you can promote your services, philosophy, tell your story and share your success.
+                                    </div>
+                                    <a href="#" class="standard-btn">
+                                        <div class="btn-blink"></div>
+                                        <span class="btn-hover__bg"></span>
+                                        <span class="btn-text">more details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-list__item reverse">
+                    <div class="item-marquee">
+                        <div class="marquee-mover">
+                            <div class="marquee-item">
+                                Individual IT project&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Individual IT project&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Individual IT project&nbsp;
+                            </div>
+                            <div class="marquee-item">
+                                Individual IT project&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <div class="services-list__container">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/services-item-4.jpg" alt="">
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container">
+                                    <div class="title">
+                                        Individual IT project
+                                    </div>
+                                    <div class="excerpt">
+                                        A project with multi-level infrastructure, complex logic and many interconnections.
+                                    </div>
+                                    <div class="item-features-list">
+                                        <div class="feature-item">
+                                            marketplace
+                                        </div>
+                                        <div class="feature-item">
+                                            dating site
+                                        </div>
+                                        <div class="feature-item">
+                                            web service
+                                        </div>
+                                    </div>
+                                    <a href="#" class="standard-btn">
+                                        <div class="btn-blink"></div>
+                                        <span class="btn-hover__bg"></span>
+                                        <span class="btn-text">more details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-block section-outer">
+            <div class="section-inner">
+                <div class="seo-block__wrapper">
+                    <h2 class="title">
+                        Lorem ipsum
+                    </h2>
+                    <div class="first-text">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div class="seo-img__wrapper">
+                        <div class="seo-img__item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="450">
+                            <img src="./assets/images/seo-img-1.jpg" alt="">
+                        </div>
+                        <div class="seo-img__item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="450">
+                            <img src="./assets/images/seo-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="second-text">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <input type="range" class="second-text__scroller" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<footer class="footer section-outer" id="footer">
+    <nav class="nav">
+        <div class="section-inner">
+            <div class="footer-menu">
+                <div class="footer-menu__label">
+                    menu
+                    <button type="button" class="footer-menu__burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+                <ul class="footer-menu__menu-list">
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">Home</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">Portfolio</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">ABOUT ME</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">SERVICES</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">Rasim's blog</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#" class="item__link">Contacts</a>
+                    </li>
+                </ul>
+                <button type="button" class="go-top__btn">
+                    <span class="icon-wrapper">
+                        <i class="icon icon-long-arrow"></i>
+                    </span>
+                    <span class="text">go to the top</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="section-inner">
+        <div class="footer__wrapper">
+            <div class="logo">
+                <img src="./assets/images/footer-logo.png" alt="logo">
+            </div>
+            <div class="footer-contact-info__block">
+                <div class="title">email</div>
+                <div class="footer-contact__info">
+                    <div class="text"><a href="#">info@rasimpro.com</a></div>
+                </div>
+            </div>
+            <div class="footer-contact-info__block">
+                <div class="title">Phone</div>
+                <div class="footer-contact__info">
+                    <div class="text"><a href="#">+380 (98) 721 29 29</a></div>
+                </div>
+            </div>
+            <div class="footer-contact-info__block">
+                <div class="title">Social & messengers</div>
+                <div class="footer-contact__info">
+                    <div class="messengers-wrapper">
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-1.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-2.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-3.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-4.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-5.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-6.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-7.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                        <a href="#" class="messengers-item">
+                            <img src="./assets/images/footer-social-8.svg" alt="" class="front">
+                            <img src="./assets/images/menu-social-1-hover.svg" alt="" class="hover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="first-info info-text">
+                © 2019. All rights reserved
+            </div>
+            <div class="second-info info-text">
+                Developed and designed by Rasim Nadzhafov & Bastard Studio
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="consultation-form">
+    <div class="consultation-form__wrapper">
+        <div class="img-wrapper">
+            <img src="./assets/images/bg-consultation-form.png" alt="">
+        </div>
+        <div class="text-wrapper">
+            <button type="button" class="btn-close">
+                <i class="icon icon-close"></i>
+            </button>
+            <div class="title">SUBMIT YOUR APPLICATION</div>
+            <div class="form-container">
+                <form action="" class="callback-form">
+                    <div class="callback-form__group">
+                        <label for="username">
+                            <input type="text" id="username" name="username" placeholder=" ">
+                            <span class="text">Your name</span>
+                            <span class="icon icon-user"></span>
+                        </label>
+                        <label for="userphone">
+                            <input type="text" id="userphone" name="userphone" placeholder=" ">
+                            <span class="text">Your phone</span>
+                            <span class="icon icon-phone"></span>
+                        </label>
+                        <label for="useremail">
+                            <input type="text" id="useremail" name="useremail" placeholder=" ">
+                            <span class="text">Your email</span>
+                            <span class="icon icon-mail"></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="standard-btn">
+                        <span class="btn-blink"></span>
+                        <span class="btn-hover__bg"></span>
+                        <span class="btn-text">send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/vendors/vendors.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+</html>

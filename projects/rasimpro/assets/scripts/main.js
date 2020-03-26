@@ -221,6 +221,11 @@ $(document).ready(function () {
                         });
                     }
                 }
+                if ($(".services-list").length && $(".welcome-screen-services-archive").length) {
+                    $(".services-list").css({
+                        "padding-top": ($(".welcome-screen-services-archive .first-section__description").outerHeight() / 2)
+                    });
+                }
             });
 
             // ресайз элементов при деформации окна
@@ -269,6 +274,11 @@ $(document).ready(function () {
                             width: container_width
                         });
                     }
+                }
+                if ($(".services-list").length && $(".welcome-screen-services-archive").length) {
+                    $(".services-list").css({
+                        "padding-top": ($(".welcome-screen-services-archive .first-section__description").outerHeight() / 2)
+                    });
                 }
             });
 
@@ -719,7 +729,7 @@ $(document).ready(function () {
             if ($(".blog-filters").length) {
                 if ($(window).width() <= 525) {
                     const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin"));
-                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 3;
+                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue) / 2.5;
 
                     $(".filter-wrapper__container").css({
                         width: container_width
@@ -728,17 +738,6 @@ $(document).ready(function () {
             }
 
             //filters on portfolio archive page
-            if ($(".portfolio-filter").length) {
-                if ($(window).width() <= 525) {
-                    const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
-                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue);
-
-                    $(".filter-wrapper__container").css({
-                        width: container_width
-                    });
-                }
-            }
-
             let checked_portfolio_cat = ($(".portfolio-filter").length) ? $('input[name="portfolio_category"]:checked').val() : undefined;
             if ($(".portfolio-filter").length) {
                 $("section.portfolio").css({
@@ -751,7 +750,59 @@ $(document).ready(function () {
                         checked_portfolio_cat = $(this).val();
                     }
                 });
+                if ($(window).width() <= 525) {
+                    const item_margin = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
+                    const container_width = Array.from($(".filter-wrapper__container .filter-item")).map(el => el.clientWidth + (item_margin * 3)).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+                    $(".filter-wrapper__container").css({
+                        width: container_width
+                    });
+                }
             }
+
+            //services archive page marquee
+            if ($(".item-marquee").length) {
+                $(".marquee-mover").slick({
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 0,
+                    speed: 6000,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    cssEase: "linear",
+                    variableWidth: true,
+                    draggable: false,
+                    arrows: false,
+                    dots: false,
+                    swipeToSlide: false,
+                    swipe: false,
+                    touchMove: false,
+                });
+            }
+
+            if ($(".services-list").length && $(".welcome-screen-services-archive").length) {
+                $(".services-list").css({
+                    "padding-top": ($(".welcome-screen-services-archive .first-section__description").outerHeight() / 2)
+                });
+            }
+
+            if ($(".contact-form__section").length) {
+                $(".contact-form__section").css({
+                    "padding-top": ($(".welcome-screen-contacts .first-section__description").outerHeight() / 2) + 75
+                });
+            }
+
+            if ($(".consultation-form").length) {
+                $(".consultation-popup").on("click", function (e) {
+                    $(".consultation-form").toggleClass("show");
+                    $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+                });
+                $(".consultation-form .btn-close").on("click", function (e) {
+                    $(".consultation-form").toggleClass("show");
+                    $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+                });
+            }
+
 
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({

@@ -116,6 +116,12 @@
 	}
 }
 
+@keyframes marquee {
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
 @mixin standard-btn {
 	border: 1px solid #474747;
 	display: flex;
