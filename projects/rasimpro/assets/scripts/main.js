@@ -601,6 +601,13 @@ $(document).ready(function () {
                 })
             }
 
+            //section-portfolio case
+            if ($(".portfolio-case-page").length && $(".welcome-screen-case").length) {
+                $(".overview").css({
+                    "padding-top": ($(".first-section__description").outerHeight() / 2) - 3
+                })
+            }
+
             if ($("section.experience").length) {
                 if ($("section.experience .experience__item").length) {
                     $("section.experience .experience__item").each(function (index) {
@@ -761,7 +768,6 @@ $(document).ready(function () {
                 });
             }
 
-
             // waypont a titles | SplittedTextShow
             // const waypoint = $(".first-screen .splittext_show").waypoint({
             //     handler: function (direction) {
@@ -781,10 +787,9 @@ $(document).ready(function () {
             // });
         }).then(res => {
             $(".preloader").css({
-                // "opacity": "0",
-                // "top": "-5000%",
-                // "bottom": "auto",
-                "transform": "scale(0)",
+                "opacity": "0",
+                "top": "-5000%",
+                "bottom": "auto",
             });
 
             // Инициализация анимаций для плагина AOS
