@@ -3979,6 +3979,7 @@ img {
 	.decor-text__bg {
 		right: auto;
 		left: -1.75vw;
+		transform: translateY(-30%);
 	}
 
 	.section-title {
@@ -4633,7 +4634,7 @@ img {
 					-webkit-text-stroke: 1.5px #000000;
 					color: transparent;
 					font-size: 7.5vw;
-					line-height: 91.5%;
+					line-height: 100%;
 					opacity: 0.25;
 					white-space: nowrap;
 					outline: none;
@@ -8242,11 +8243,11 @@ img {
 				margin: 15px;
 
 				.filter__link {
-					padding: 20px 30px 16px;
+					padding: .75rem 2.65rem .5rem;
 
 					.text {
 						display: block;
-						font-size: 1.75rem;
+						font-size: 1.5rem;
 					}
 				}
 			}
