@@ -133,7 +133,7 @@
 	transition: .5s ease-in-out;
 
 	.btn-blink {
-		z-index: 5;
+		z-index: 2;
 		overflow: hidden;
 		position: absolute;
 		top: 0;
@@ -155,7 +155,7 @@
 	}
 
 	.btn-hover__bg {
-		z-index: 2;
+		z-index: 1;
 		overflow: hidden;
 		width: 96%;
 		height: 90%;

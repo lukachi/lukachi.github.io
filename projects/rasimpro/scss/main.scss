@@ -1,4 +1,4 @@
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+//@import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/slick-carousel/slick/slick.scss";
 @import "../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "../node_modules/aos/src/sass/aos.scss";
@@ -183,7 +183,7 @@ img {
 				text-transform: uppercase;
 				cursor: pointer;
 				display: flex;
-				align-items: flex-start;
+				align-items: center;
 				transition: .5s ease-in-out 0s;
 
 				&:hover {
@@ -511,7 +511,7 @@ img {
 					justify-content: center;
 					align-items: center;
 					font-weight: bold;
-					font-size: 1.5vw;
+					font-size: 1.25vw;
 					line-height: 120%;
 					margin-bottom: 1vw;
 					box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.25);
@@ -2171,6 +2171,21 @@ img {
 
 		.img-wrapper {
 			width: 49%;
+			position: relative;
+
+			.decoration-bg-text {
+				font-weight: bold;
+				font-size: 16vw;
+				line-height: 91.5%;
+				letter-spacing: 0.015em;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				opacity: 0.02;
+				position: absolute;
+				left: -.5vw;
+				bottom: -17vw;
+				transform: translate(0, 50%);
+			}
 		}
 
 		.text-wrapper {
@@ -2988,9 +3003,9 @@ img {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			width: 25.5vw;
+			width: 32%;
 			padding-right: 0;
-			margin: 0 7px 3.5vw;
+			margin: 0 .5% 3.5vw;
 
 			.date {
 				background: $theme-color;
@@ -5573,10 +5588,10 @@ img {
 }
 
 .socials-section {
-	padding: 0 0 5vw;
+	max-height: 18vw;
 
 	.section-inner {
-		align-items: flex-end;
+		align-items: flex-start;
 	}
 
 	&__wrapper {
@@ -5663,7 +5678,7 @@ img {
 	.thanks-video {
 		z-index: 3;
 		width: 57.75%;
-		margin-top: -20%;
+		transform: translateY(-52.75%);
 		min-height: 28.25vw;
 		display: flex;
 		align-items: flex-end;
@@ -5701,12 +5716,27 @@ img {
 	align-items: center;
 	transition: .35s ease-in-out;
 
+	.bg-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		display: none;
+	}
+
 	&.show {
 		width: 100vw;
 		height: 100vh;
+
+		.bg-close {
+			display: block;
+		}
 	}
 
 	&__wrapper {
+		z-index: 3;
 		width: 30%;
 		position: relative;
 		transform: scale(.25) translateY(15%);
@@ -5922,6 +5952,8 @@ img {
 				}
 
 				.mobile-menu__languages {
+					display: flex;
+					align-items: center;
 					font-weight: bold;
 					font-size: 5vw;
 					line-height: 125%;
@@ -5931,7 +5963,7 @@ img {
 
 					.language-item {
 						&:not(:last-child) {
-							margin-right: 1vw;
+							margin-right: 3vw;
 						}
 
 						&.active {
@@ -5951,9 +5983,12 @@ img {
 				&__burger {
 					transform: translateY(-2px);
 					margin-left: 5vw;
+					font-size: 5.25vw;
 					justify-content: space-between;
 
 					&.close {
+						padding-right: 3vw;
+
 						.icon {
 							font-size: 3.5vw;
 						}
@@ -6425,7 +6460,7 @@ img {
 
 				.touch-info {
 					display: block;
-					transition: .75s ease-in-out;
+					transition: .15s ease-in-out;
 				}
 
 				.title {
@@ -6639,8 +6674,10 @@ img {
 				}
 
 				.slider-nav {
+					margin: 0 auto;
 
 					.nav-info {
+						display: none;
 						font-size: 5vw;
 						margin-bottom: 5vw;
 
@@ -8040,6 +8077,10 @@ img {
 				font-size: 15vw;
 				margin-bottom: 7.5vw;
 
+				.theme-color {
+					margin-right: 3vw;
+				}
+
 				.text {
 					margin-left: -2vw;
 				}
@@ -8263,6 +8304,7 @@ img {
 					.guide {
 						font-size: 5.5vw;
 						margin-right: 6.5vw;
+						transform: translateY(10%);
 					}
 
 					.socials__wrapper {
@@ -8791,7 +8833,7 @@ img {
 				.filter__label {
 
 					.text {
-						padding: .75rem 2.65rem;
+						padding: .75rem 2.65rem .5rem;
 						font-size: 1.5rem;
 						text-align: center;
 					}
@@ -8819,15 +8861,17 @@ img {
 
 			.guide {
 				display: flex;
+				min-height: 10vw;
 				margin-bottom: 5vw;
 
 				.text {
-					font-size: 10vw;
+					font-size: 5vw;
 				}
 
 				.icon {
 					font-size: 5vw;
 					margin-left: 5vw;
+					transform: rotate(-90deg) translateX(5%);
 				}
 			}
 
