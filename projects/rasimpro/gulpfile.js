@@ -26,7 +26,8 @@ gulp.task('vendors', function() {
         "./node_modules/aos/dist/aos.js",
         "./node_modules/tilt.js/dest/tilt.jquery.js",
         "./node_modules/animejs/lib/anime.min.js",
-        "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"
+        "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "./node_modules/lazyload/lazyload.min.js"
     ])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('./assets/vendors/'));

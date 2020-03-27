@@ -781,13 +781,14 @@ $(document).ready(function () {
             // });
         }).then(res => {
             $(".preloader").css({
-                "top": "-5000%",
-                "bottom": "auto",
-                "opacity": "0"
+                // "opacity": "0",
+                // "top": "-5000%",
+                // "bottom": "auto",
+                "transform": "scale(0)",
             });
 
             // Инициализация анимаций для плагина AOS
-            AOS.init();
+            // AOS.init();
         });
     };
 });
