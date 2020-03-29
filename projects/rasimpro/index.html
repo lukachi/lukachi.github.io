@@ -254,18 +254,25 @@
                     <div class="first-screen__img-wrapper">
                         <div class="img-wrapper__bg parallaxing" data-radius="15px"></div>
                         <img src="./assets/images/rasim-photo.png" alt="rasim" class="front-img">
+                        <div class="glitch glitch--style-1">
+                            <div class="glitch__img"></div>
+                            <div class="glitch__img"></div>
+                            <div class="glitch__img"></div>
+                            <div class="glitch__img"></div>
+                            <div class="glitch__img"></div>
+                        </div>
                     </div>
                     <div class="first-screen__text-wrapper">
-                        <div class="overtitle splittext_show">
+                        <div class="overtitle">
                             Hi, my name is RASIM NADZHAFOV and I provide
                         </div>
                         <div class="title">
-                            <div class="accent splittext_show">Successful</div>
-                            <span class="splittext_show">Full-Cycle Product Project & Brand</span> <span
-                                class="scramble-element splittext_show"
+                            <div class="accent">Successful</div>
+                            <span class=>Full-Cycle Product Project & Brand</span> <span
+                                class="scramble-element"
                                 data-textInsteads="management,improvement,Development">Development</span>
                         </div>
-                        <div class="subtitle splittext_show">
+                        <div class="subtitle">
                             Multiple teams management. Each up to 50. Complex implementation of IT solutions
                         </div>
                         <div class="video-popup__toggle">
@@ -448,7 +455,7 @@
                             </a>
                         </div>
                         <div class="portfolio-item__img-wrapper">
-                            <img src="./assets/images/portfolio-3.jpg" alt="">
+                            <img class="lazy" src="./assets/images/thumb-img.gif" data-src="./assets/images/portfolio-3.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -466,7 +473,7 @@
         <section class="mini-about section-outer">
             <div class="section-inner">
                 <div class="mini-about__wrapper">
-                    <h2 class="title splittext_show">About me</h2>
+                    <h2 class="title split-text">About me</h2>
                     <div class="excerpt">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim.
@@ -604,13 +611,13 @@
         <section class="reviews section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title">
+                    <h2 class="title split-text">
                         reviews
                     </h2>
                 </div>
                 <div class="reviews__wrapper">
                     <div class="nav__wrapper">
-                        <h2 class="title-section splittext_show">reviews</h2>
+                        <h2 class="title-section split-text">reviews</h2>
                         <div class="slider-nav">
                             <div class="nav-info">You can scroll or drag and drop</div>
                             <div class="actions">
@@ -954,7 +961,7 @@
         <section class="recent-posts section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title">blog</h2>
+                    <h2 class="title split-text">blog</h2>
                     <a href="#" class="all-posts__link">
                         go to all articles
                     </a>
@@ -965,7 +972,7 @@
                             10.04.19
                         </div>
                         <a href="#" class="img-wrapper">
-                            <img src="./assets/images/recent-post-1.jpg" alt="">
+                            <img class="lazy" src="./assets/images/thumb-img.gif" data-src="./assets/images/recent-post-1.jpg" alt="">
                         </a>
                         <div class="text-wrapper">
                             <div class="text-wrapper__container show">
@@ -991,7 +998,7 @@
                             10.04.19
                         </div>
                         <a href="#" class="img-wrapper">
-                            <img src="./assets/images/recent-post-2.jpg" alt="">
+                            <img class="lazy" src="./assets/images/thumb-img.gif" data-src="./assets/images/recent-post-2.jpg" alt="">
                         </a>
                         <div class="text-wrapper">
                             <div class="text-wrapper__container show">
@@ -1017,7 +1024,7 @@
                             10.04.19
                         </div>
                         <a href="#" class="img-wrapper">
-                            <img src="./assets/images/recent-post-3.jpg" alt="">
+                            <img class="lazy" src="./assets/images/thumb-img.gif" data-src="./assets/images/recent-post-3.jpg" alt="">
                         </a>
                         <div class="text-wrapper">
                             <div class="text-wrapper__container show">
@@ -1280,6 +1287,21 @@
         </div>
     </div>
 </footer>
+<div class="cookie-accept" style="display: none">
+    <div class="text-wrapper">
+        <div class="title">we use cookies</div>
+        <div class="message">
+            to give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
+        </div>
+    </div>
+    <div class="actions">
+        <button type="button" class="standard-btn">
+            <span class="btn-blink"></span>
+            <span class="btn-hover__bg"></span>
+            <span class="btn-text">got it</span>
+        </button>
+    </div>
+</div>
 <script src="./assets/vendors/vendors.js"></script>
 <script src="./assets/scripts/main.js"></script>
 </body>

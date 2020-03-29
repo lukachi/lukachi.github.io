@@ -75,16 +75,17 @@ function ScramblingElement(DOMElement) {
 }
 
 function fadeRightTextLetterByLetter(DOMElement, duration) {
-    var textWrapper = DOMElement;
+    const textWrapper = DOMElement.element;
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    const elements = textWrapper.querySelectorAll(":scope .letter");
 
-    anime.timeline({loop: false})
+    anime.timeline({})
         .add({
-            targets: textWrapper,
-            opacity: [0, 1],
+            targets: elements,
+            opacity: [0,1],
             easing: "easeInOutQuad",
-            duration: duration,
-            delay: (el, i) => 25 * (i + 1)
+            duration: 2250,
+            delay: (el, i) => 150 * (i+1)
         });
 }
 
@@ -210,7 +211,40 @@ function onWindowDeformResize() {
     }
 }
 
+function lazyVideo() {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+    lazyload($("img.lazy"), {
+        root: null,
+        rootMargin: "500px",
+        threshold: .5
+    });
+
+    if ("IntersectionObserver" in window) {
+        var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video) {
+                if (video.isIntersecting) {
+                    for (var source in video.target.children) {
+                        var videoSource = video.target.children[source];
+                        if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                            videoSource.src = videoSource.dataset.src;
+                        }
+                    }
+
+                    video.target.load();
+                    video.target.classList.remove("lazy");
+                    lazyVideoObserver.unobserve(video.target);
+                }
+            });
+        });
+
+        lazyVideos.forEach(function (lazyVideo) {
+            lazyVideoObserver.observe(lazyVideo);
+        });
+    }
+}
+
 $(document).ready(function () {
+    lazyVideo();
     window.onload = function () {
         new Promise(function (resolve, reject) {
             setTimeout(function () {
@@ -380,15 +414,15 @@ $(document).ready(function () {
                         autoplay: true,
                         autoplaySpeed: 5000,
                         prevArrow: "<button type=\"button\" class=\"slider-arrow arrow-prev\">\n" +
-            "                            <span class=\"icon-wrapper\">\n" +
-            "                                <i class=\"icon icon-arrow\"></i>\n" +
-            "                            </span>\n" +
-            "                        </button>",
+                            "                            <span class=\"icon-wrapper\">\n" +
+                            "                                <i class=\"icon icon-arrow\"></i>\n" +
+                            "                            </span>\n" +
+                            "                        </button>",
                         nextArrow: "<button type=\"button\" class=\"slider-arrow arrow-next\">\n" +
-            "                            <span class=\"icon-wrapper\">\n" +
-            "                                <i class=\"icon icon-arrow\"></i>\n" +
-            "                            </span>\n" +
-            "                        </button>",
+                            "                            <span class=\"icon-wrapper\">\n" +
+                            "                                <i class=\"icon icon-arrow\"></i>\n" +
+                            "                            </span>\n" +
+                            "                        </button>",
                         responsive: [
                             {
                                 breakpoint: 525,
@@ -701,7 +735,7 @@ $(document).ready(function () {
                 $("section.portfolio").css({
                     "padding-top": $(".portfolio-filter").outerHeight()
                 });
-                $('input[name="portfolio_category"]').on("click", function(e) {
+                $('input[name="portfolio_category"]').on("click", function (e) {
                     if ($(this).val().toString().includes(checked_portfolio_cat)) {
                         $(".filter-item:first-child").find('input[name="portfolio_category"]')[0].checked = true;
                     } else {
@@ -768,23 +802,16 @@ $(document).ready(function () {
                 });
             }
 
-            // waypont a titles | SplittedTextShow
-            // const waypoint = $(".first-screen .splittext_show").waypoint({
-            //     handler: function (direction) {
-            //         console.log(this.element.classList.toString().includes("first-screen"));
-            //         fadeRightTextLetterByLetter(this.element, 1500);
-            //     },
-            //     offset: "90%"
-            // });
+            // waypont a titles | split-text
+            const waypointBigTitles = $(".split-text").waypoint({
+                handler: function (direction) {
+                    if (direction == "down") {
+                        fadeRightTextLetterByLetter(this);
+                    }
+                },
+                offset: "115%"
+            });
 
-            //waypont a titles | SplittedTextShow
-            // const waypointElseTitles = $(".splittext_show").waypoint({
-            //     handler: function (direction) {
-            //         console.log(this);
-            //         fadeRightTextLetterByLetter(this.element, 800);
-            //     },
-            //     offset: "90%"
-            // });
         }).then(res => {
             $(".preloader").css({
                 "opacity": "0",
