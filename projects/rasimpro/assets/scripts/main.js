@@ -89,6 +89,21 @@ function fadeRightTextLetterByLetter(DOMElement, duration) {
         });
 }
 
+function HideRightTextLetterByLetter(DOMElement, duration) {
+    const textWrapper = DOMElement.element;
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    const elements = textWrapper.querySelectorAll(":scope .letter");
+
+    anime.timeline({})
+        .add({
+            targets: elements,
+            opacity: [1,0],
+            easing: "easeInOutQuad",
+            duration: 500,
+            delay: (el, i) => 150 * (i+1)
+        });
+}
+
 function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
     // отсчёт от начала окна + центр экрана
     let centerScreen = $([document.documentElement, document.body]).scrollTop() + ($(window).height() / 2);
@@ -807,9 +822,11 @@ $(document).ready(function () {
                 handler: function (direction) {
                     if (direction == "down") {
                         fadeRightTextLetterByLetter(this);
+                    } else {
+                        HideRightTextLetterByLetter(this);
                     }
                 },
-                offset: "115%"
+                offset: "90%"
             });
 
         }).then(res => {
