@@ -79,14 +79,23 @@ function fadeRightTextLetterByLetter(DOMElement, duration) {
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     const elements = textWrapper.querySelectorAll(":scope .letter");
 
-    anime.timeline({})
-        .add({
-            targets: elements,
-            opacity: [0,1],
-            easing: "easeInOutQuad",
-            duration: 2250,
-            delay: (el, i) => 150 * (i+1)
-        });
+    const tlm = new TimelineMax();
+
+    tlm.staggerFrom(elements, 1, {
+        opacity: 0,
+        x: "70%",
+        // ease: Back.easeIn
+    }, 0.2);
+    // tlm.timeScale(.25);
+}
+
+function fadeDownText(DOMElement, duration) {
+    const textWrapper = DOMElement;
+
+    TweenLite.from(textWrapper, duration, {
+        opacity: 0,
+        transform: "translateY(-50%)",
+    });
 }
 
 function HideRightTextLetterByLetter(DOMElement, duration) {
@@ -94,14 +103,23 @@ function HideRightTextLetterByLetter(DOMElement, duration) {
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     const elements = textWrapper.querySelectorAll(":scope .letter");
 
-    anime.timeline({})
-        .add({
-            targets: elements,
-            opacity: [1,0],
-            easing: "easeInOutQuad",
-            duration: 500,
-            delay: (el, i) => 150 * (i+1)
-        });
+    const tlm = new TimelineMax();
+
+    tlm.staggerTo(elements, 1, {
+        opacity: 0,
+        x: "70%",
+        // ease: Back.easeIn
+    }, 0.1);
+    // tlm.timeScale(.25);
+
+    // anime.timeline({})
+    //     .add({
+    //         targets: elements,
+    //         opacity: [1,0],
+    //         easing: "easeInOutQuad",
+    //         duration: 500,
+    //         delay: (el, i) => 150 * (i+1)
+    //     });
 }
 
 function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
@@ -826,7 +844,7 @@ $(document).ready(function () {
                         HideRightTextLetterByLetter(this);
                     }
                 },
-                offset: "90%"
+                offset: "115%"
             });
 
         }).then(res => {
@@ -837,7 +855,9 @@ $(document).ready(function () {
             });
 
             // Инициализация анимаций для плагина AOS
-            // AOS.init();
+            AOS.init();
+
+            fadeDownText($(".portfolio .section-title")[0], 1);
         });
     };
 });
