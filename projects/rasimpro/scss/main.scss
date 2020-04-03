@@ -123,8 +123,11 @@ img {
 		}
 
 		.logo {
-			img {
+			height: 2.5vw;
 
+			img {
+				height: 100%;
+				width: auto;
 			}
 		}
 
@@ -465,10 +468,18 @@ img {
 			line-height: 100%;
 			text-transform: uppercase;
 			margin-bottom: 1.2vw;
+			max-width: 44.27vw;
+			max-height: 5vw;
+			overflow: hidden;
 
 			.accent {
 				color: $theme-color;
 				display: inline;
+			}
+
+			.scramble-element {
+				overflow: hidden;
+				white-space: nowrap;
 			}
 		}
 
@@ -582,8 +593,12 @@ img {
 			font-size: 1.2125vw;
 			line-height: 130%;
 			color: #FFFFFF;
-			max-width: 87%;
 			margin-bottom: 2vw;
+			max-width: 31.5vw;
+
+			.anim-row {
+				white-space: nowrap;
+			}
 		}
 
 		.actions {
@@ -6014,8 +6029,13 @@ img {
 	}
 
 	.header {
+
 		.nav {
 			padding: 10vw 0 2vw;
+
+			.logo {
+				height: 5vw;
+			}
 
 			.mobile-menu__phone {
 				display: block;
@@ -6241,6 +6261,7 @@ img {
 			.title {
 				font-size: 8vw;
 				margin-bottom: 5vw;
+				max-width: 100vw;
 			}
 
 			.subtitle {

@@ -74,8 +74,8 @@ function ScramblingElement(DOMElement) {
     next();
 }
 
-function fadeRightTextLetterByLetter(DOMElement, duration) {
-    const textWrapper = DOMElement.element;
+function fadeRightTextLetterByLetter(DOMElement, duration = 1, delay = 0) {
+    const textWrapper = DOMElement;
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     const elements = textWrapper.querySelectorAll(":scope .letter");
 
@@ -84,22 +84,15 @@ function fadeRightTextLetterByLetter(DOMElement, duration) {
     tlm.staggerFrom(elements, 1, {
         opacity: 0,
         x: "70%",
-        // ease: Back.easeIn
-    }, 0.2);
-    // tlm.timeScale(.25);
-}
-
-function fadeDownText(DOMElement, duration) {
-    const textWrapper = DOMElement;
-
-    TweenLite.from(textWrapper, duration, {
-        opacity: 0,
-        transform: "translateY(-50%)",
+        stagger: {
+            amount: parseFloat(duration)
+        },
+        delay: parseFloat(delay)
     });
 }
 
-function HideRightTextLetterByLetter(DOMElement, duration) {
-    const textWrapper = DOMElement.element;
+function HideRightTextLetterByLetter(DOMElement, duration = 1, delay = 0) {
+    const textWrapper = DOMElement;
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     const elements = textWrapper.querySelectorAll(":scope .letter");
 
@@ -108,18 +101,82 @@ function HideRightTextLetterByLetter(DOMElement, duration) {
     tlm.staggerTo(elements, 1, {
         opacity: 0,
         x: "70%",
-        // ease: Back.easeIn
-    }, 0.1);
+        stagger: {
+            amount: parseFloat(duration)
+        },
+        delay: parseFloat(delay)
+    });
     // tlm.timeScale(.25);
 
-    // anime.timeline({})
-    //     .add({
-    //         targets: elements,
-    //         opacity: [1,0],
-    //         easing: "easeInOutQuad",
-    //         duration: 500,
-    //         delay: (el, i) => 150 * (i+1)
-    //     });
+}
+
+function textBlockFragmentation(DOMElement) {
+    let rowsArr = [];
+
+    const spanElements = DOMElement.textContent.split(" ").map(el => {
+        const newSpan = document.createElement("span");
+        newSpan.innerText = el + " ";
+        return newSpan;
+    });
+    DOMElement.innerHTML = null;
+    spanElements.forEach(el => {
+        DOMElement.append(el);
+    });
+    let offsetTop = 0;
+    DOMElement.querySelectorAll(":scope span").forEach(el => {
+        const prop = 'line_' + el['offsetTop'];
+        if (!rowsArr[prop]) {
+            rowsArr[prop] = [];
+            rowsArr[prop].push(el);
+        } else {
+            rowsArr[prop].push(el);
+        }
+    });
+    DOMElement.innerHTML = null;
+    for (let row in rowsArr) {
+        const line = document.createElement("div");
+        line.classList.add("anim-row");
+
+        for (let word of rowsArr[row]) {
+            line.append(word);
+        }
+        line.innerHTML = line.textContent;
+        DOMElement.append(line);
+    }
+
+    return DOMElement;
+}
+
+function fadeDownText(DOMElement, duration = 1, delay = 0) {
+    const textWrapper = DOMElement;
+    const elements = textBlockFragmentation(textWrapper).querySelectorAll(":scope .anim-row");
+
+    const tlm = new TimelineMax();
+
+    tlm.staggerFrom(elements, 1, {
+        opacity: 0,
+        y: "-150%",
+        stagger: {
+            amount: parseFloat(duration)
+        },
+        delay: parseFloat(delay)
+    });
+}
+
+function fadeUpText(DOMElement, duration = 1, delay = 0) {
+    const textWrapper = DOMElement;
+    const elements = textBlockFragmentation(textWrapper).querySelectorAll(":scope .anim-row");
+
+    const tlm = new TimelineMax();
+
+    tlm.staggerTo(elements, 1, {
+        opacity: 0,
+        y: "-150%",
+        stagger: {
+            amount: parseFloat(duration)
+        },
+        delay: parseFloat(delay)
+    });
 }
 
 function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
@@ -642,6 +699,13 @@ $(document).ready(function () {
 
             //Main Page Scramble Text on first screen
             if ($(".first-screen .scramble-element").length) {
+                const tlm = new TimelineMax();
+
+                tlm.from($(".first-screen .scramble-element"), 1.5, {
+                    opacity: 0,
+                    delay: 3.5
+                });
+
                 //Scramble text
                 setTimeout(function () {
                     ScramblingElement($(".first-screen .scramble-element"))
@@ -839,9 +903,21 @@ $(document).ready(function () {
             const waypointBigTitles = $(".split-text").waypoint({
                 handler: function (direction) {
                     if (direction == "down") {
-                        fadeRightTextLetterByLetter(this);
+                        fadeRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
                     } else {
-                        HideRightTextLetterByLetter(this);
+                        HideRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
+                    }
+                },
+                offset: "115%"
+            });
+
+            // waypont a simple text
+            const waypointSimpleText = $(".split-block-rows").waypoint({
+                handler: function (direction) {
+                    if (direction == "down") {
+                        fadeDownText(this.element);
+                    } else {
+                        fadeUpText(this.element);
                     }
                 },
                 offset: "115%"
@@ -856,8 +932,6 @@ $(document).ready(function () {
 
             // Инициализация анимаций для плагина AOS
             AOS.init();
-
-            fadeDownText($(".portfolio .section-title")[0], 1);
         });
     };
 });
