@@ -74,14 +74,14 @@ function ScramblingElement(DOMElement) {
     next();
 }
 
-function fadeRightTextLetterByLetter(DOMElement, duration = 1, delay = 0) {
+function fadeRightTextLetterByLetter(DOMElement, duration = "1", delay = "0") {
     const textWrapper = DOMElement;
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     const elements = textWrapper.querySelectorAll(":scope .letter");
 
     const tlm = new TimelineMax();
 
-    tlm.staggerFrom(elements, 1, {
+    tlm.staggerFrom(elements, 2, {
         opacity: 0,
         x: "70%",
         stagger: {
@@ -147,7 +147,7 @@ function textBlockFragmentation(DOMElement) {
     return DOMElement;
 }
 
-function fadeDownText(DOMElement, duration = 1, delay = 0) {
+function fadeDownText(DOMElement, duration = "1", delay = "0") {
     const textWrapper = DOMElement;
     const elements = textBlockFragmentation(textWrapper).querySelectorAll(":scope .anim-row");
 
@@ -159,6 +159,18 @@ function fadeDownText(DOMElement, duration = 1, delay = 0) {
         stagger: {
             amount: parseFloat(duration)
         },
+        delay: parseFloat(delay)
+    });
+}
+
+function fadeDownBlock(DOMElement, duration = "1", delay = "0") {
+    const textWrapper = DOMElement;
+    const tlm = new TimelineMax();
+
+    tlm.from(textWrapper, parseFloat(duration), {
+        y: "-50px",
+        opacity: 0,
+        scaleY: .7,
         delay: parseFloat(delay)
     });
 }
@@ -213,7 +225,7 @@ function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
 }
 
 function toggleMenu() {
-
+    const tlm = new TimelineMax();
     const menu_wrapper = $(".header-menu__wrapper");
     menu_wrapper.css({
         "height": window.innerHeight
@@ -230,18 +242,14 @@ function toggleMenu() {
     }
 
     if (menu_wrapper.hasClass("show")) {
-        TweenLite.to(menu_wrapper, .15, {
-            left: "500%",
-            ease: Linear.easeInOut
+        tlm.to(menu_wrapper, .15, {
+            left: "500%"
         });
     } else {
-        TweenLite.set(menu_wrapper, {
-            left: "0%",
-            ease: Linear.easeInOut
-        });
-        TweenLite.from(menu_wrapper, .15, {
-            left: "500%",
-            ease: Linear.easeInOut
+        tlm.fromTo(menu_wrapper, .15, {
+            left: "500%"
+        }, {
+            left: "0"
         });
     }
 
@@ -699,13 +707,6 @@ $(document).ready(function () {
 
             //Main Page Scramble Text on first screen
             if ($(".first-screen .scramble-element").length) {
-                const tlm = new TimelineMax();
-
-                tlm.from($(".first-screen .scramble-element"), 1.5, {
-                    opacity: 0,
-                    delay: 3.5
-                });
-
                 //Scramble text
                 setTimeout(function () {
                     ScramblingElement($(".first-screen .scramble-element"))
@@ -900,7 +901,7 @@ $(document).ready(function () {
             }
 
             // waypont a titles | split-text
-            const waypointBigTitles = $(".split-text").waypoint({
+            const wayPointBigTitles = $(".split-text").waypoint({
                 handler: function (direction) {
                     if (direction == "down") {
                         fadeRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
@@ -912,15 +913,24 @@ $(document).ready(function () {
             });
 
             // waypont a simple text
-            const waypointSimpleText = $(".split-block-rows").waypoint({
+            const wayPointSimpleText = $(".split-block-rows").waypoint({
                 handler: function (direction) {
                     if (direction == "down") {
-                        fadeDownText(this.element);
+                        fadeDownText(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
                     } else {
                         fadeUpText(this.element);
                     }
                 },
                 offset: "115%"
+            });
+
+            const wayPointFirstScreenMain = $(".first-screen .first-section__wrapper .title").waypoint({
+                handler: function (direction) {
+                    if (direction == "down") {
+                        fadeDownBlock(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
+                    }
+                },
+                offset: "100%"
             });
 
         }).then(res => {
