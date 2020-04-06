@@ -924,7 +924,7 @@ $(document).ready(function () {
                 offset: "115%"
             });
 
-            const wayPointFirstScreenMain = $(".first-screen .first-section__wrapper .title").waypoint({
+            const wayPointBlockDown = $(".fade-block-down").waypoint({
                 handler: function (direction) {
                     if (direction == "down") {
                         fadeDownBlock(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
