@@ -1752,489 +1752,489 @@ table {
 
 @-webkit-keyframes shaking {
   0% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   2% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   4% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   6% {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   8% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
   10% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
+    -webkit-transform: translate(1px, 4px);
+            transform: translate(1px, 4px); }
   12% {
     -webkit-transform: translate(1px, 1px);
             transform: translate(1px, 1px); }
   14% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
   16% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px); }
   18% {
-    -webkit-transform: translate(2px, 3px);
-            transform: translate(2px, 3px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   20% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
-  22% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  24% {
-    -webkit-transform: translate(3px, 4px);
-            transform: translate(3px, 4px); }
-  26% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
-  28% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  30% {
-    -webkit-transform: translate(2px, 3px);
-            transform: translate(2px, 3px); }
-  32% {
-    -webkit-transform: translate(5px, 1px);
-            transform: translate(5px, 1px); }
-  34% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  36% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  38% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
-  40% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
-  42% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
-  44% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  46% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
-  48% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
-  50% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  52% {
     -webkit-transform: translate(1px, 1px);
             transform: translate(1px, 1px); }
-  54% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  56% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  58% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  60% {
+  22% {
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
+  24% {
     -webkit-transform: translate(5px, 2px);
             transform: translate(5px, 2px); }
-  62% {
+  26% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  28% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  30% {
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
+  32% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  34% {
+    -webkit-transform: translate(1px, 4px);
+            transform: translate(1px, 4px); }
+  36% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
+  38% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  40% {
     -webkit-transform: translate(2px, 5px);
             transform: translate(2px, 5px); }
+  42% {
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
+  44% {
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
+  46% {
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
+  48% {
+    -webkit-transform: translate(2px, 3px);
+            transform: translate(2px, 3px); }
+  50% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  52% {
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
+  54% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  56% {
+    -webkit-transform: translate(2px, 5px);
+            transform: translate(2px, 5px); }
+  58% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
+  60% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  62% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   64% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   66% {
     -webkit-transform: translate(1px, 4px);
             transform: translate(1px, 4px); }
   68% {
-    -webkit-transform: translate(5px, 1px);
-            transform: translate(5px, 1px); }
-  70% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  72% {
     -webkit-transform: translate(4px, 4px);
             transform: translate(4px, 4px); }
+  70% {
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
+  72% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
   74% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   76% {
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
+  78% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
+  80% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  82% {
     -webkit-transform: translate(2px, 4px);
             transform: translate(2px, 4px); }
-  78% {
-    -webkit-transform: translate(2px, 1px);
-            transform: translate(2px, 1px); }
-  80% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
-  82% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
   84% {
-    -webkit-transform: translate(5px, 2px);
-            transform: translate(5px, 2px); }
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
   86% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
+    -webkit-transform: translate(3px, 2px);
+            transform: translate(3px, 2px); }
   88% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
   90% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   92% {
     -webkit-transform: translate(3px, 4px);
             transform: translate(3px, 4px); }
   94% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
   96% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(3px, 2px);
+            transform: translate(3px, 2px); }
   98% {
-    -webkit-transform: translate(4px, 5px);
-            transform: translate(4px, 5px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   100% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); } }
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); } }
 
 @keyframes shaking {
   0% {
-    -webkit-transform: translate(3px, 3px);
-            transform: translate(3px, 3px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   2% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   4% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
   6% {
-    -webkit-transform: translate(1px, 1px);
-            transform: translate(1px, 1px); }
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
   8% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); }
   10% {
-    -webkit-transform: translate(2px, 4px);
-            transform: translate(2px, 4px); }
+    -webkit-transform: translate(1px, 4px);
+            transform: translate(1px, 4px); }
   12% {
     -webkit-transform: translate(1px, 1px);
             transform: translate(1px, 1px); }
   14% {
-    -webkit-transform: translate(3px, 1px);
-            transform: translate(3px, 1px); }
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
   16% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px); }
   18% {
-    -webkit-transform: translate(2px, 3px);
-            transform: translate(2px, 3px); }
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
   20% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
-  22% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  24% {
-    -webkit-transform: translate(3px, 4px);
-            transform: translate(3px, 4px); }
-  26% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
-  28% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  30% {
-    -webkit-transform: translate(2px, 3px);
-            transform: translate(2px, 3px); }
-  32% {
-    -webkit-transform: translate(5px, 1px);
-            transform: translate(5px, 1px); }
-  34% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  36% {
-    -webkit-transform: translate(1px, 4px);
-            transform: translate(1px, 4px); }
-  38% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
-  40% {
-    -webkit-transform: translate(5px, 3px);
-            transform: translate(5px, 3px); }
-  42% {
-    -webkit-transform: translate(3px, 2px);
-            transform: translate(3px, 2px); }
-  44% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  46% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
-  48% {
-    -webkit-transform: translate(4px, 1px);
-            transform: translate(4px, 1px); }
-  50% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px); }
-  52% {
     -webkit-transform: translate(1px, 1px);
             transform: translate(1px, 1px); }
-  54% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  56% {
-    -webkit-transform: translate(4px, 2px);
-            transform: translate(4px, 2px); }
-  58% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
-  60% {
+  22% {
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
+  24% {
     -webkit-transform: translate(5px, 2px);
             transform: translate(5px, 2px); }
-  62% {
+  26% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  28% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  30% {
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
+  32% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  34% {
+    -webkit-transform: translate(1px, 4px);
+            transform: translate(1px, 4px); }
+  36% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
+  38% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  40% {
     -webkit-transform: translate(2px, 5px);
             transform: translate(2px, 5px); }
+  42% {
+    -webkit-transform: translate(5px, 1px);
+            transform: translate(5px, 1px); }
+  44% {
+    -webkit-transform: translate(1px, 3px);
+            transform: translate(1px, 3px); }
+  46% {
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px); }
+  48% {
+    -webkit-transform: translate(2px, 3px);
+            transform: translate(2px, 3px); }
+  50% {
+    -webkit-transform: translate(2px, 4px);
+            transform: translate(2px, 4px); }
+  52% {
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
+  54% {
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
+  56% {
+    -webkit-transform: translate(2px, 5px);
+            transform: translate(2px, 5px); }
+  58% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
+  60% {
+    -webkit-transform: translate(5px, 4px);
+            transform: translate(5px, 4px); }
+  62% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   64% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px); }
   66% {
     -webkit-transform: translate(1px, 4px);
             transform: translate(1px, 4px); }
   68% {
-    -webkit-transform: translate(5px, 1px);
-            transform: translate(5px, 1px); }
-  70% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); }
-  72% {
     -webkit-transform: translate(4px, 4px);
             transform: translate(4px, 4px); }
+  70% {
+    -webkit-transform: translate(3px, 4px);
+            transform: translate(3px, 4px); }
+  72% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
   74% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
   76% {
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
+  78% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px); }
+  80% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px); }
+  82% {
     -webkit-transform: translate(2px, 4px);
             transform: translate(2px, 4px); }
-  78% {
-    -webkit-transform: translate(2px, 1px);
-            transform: translate(2px, 1px); }
-  80% {
-    -webkit-transform: translate(3px, 5px);
-            transform: translate(3px, 5px); }
-  82% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
   84% {
-    -webkit-transform: translate(5px, 2px);
-            transform: translate(5px, 2px); }
+    -webkit-transform: translate(3px, 1px);
+            transform: translate(3px, 1px); }
   86% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px); }
+    -webkit-transform: translate(3px, 2px);
+            transform: translate(3px, 2px); }
   88% {
-    -webkit-transform: translate(1px, 5px);
-            transform: translate(1px, 5px); }
+    -webkit-transform: translate(1px, 1px);
+            transform: translate(1px, 1px); }
   90% {
-    -webkit-transform: translate(4px, 4px);
-            transform: translate(4px, 4px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   92% {
     -webkit-transform: translate(3px, 4px);
             transform: translate(3px, 4px); }
   94% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px); }
   96% {
-    -webkit-transform: translate(1px, 2px);
-            transform: translate(1px, 2px); }
+    -webkit-transform: translate(3px, 2px);
+            transform: translate(3px, 2px); }
   98% {
-    -webkit-transform: translate(4px, 5px);
-            transform: translate(4px, 5px); }
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px); }
   100% {
-    -webkit-transform: translate(2px, 5px);
-            transform: translate(2px, 5px); } }
+    -webkit-transform: translate(4px, 1px);
+            transform: translate(4px, 1px); } }
 
 @-webkit-keyframes glitch-before {
   0% {
-    clip: rect(23px, 9999px, 15px, 0); }
+    clip: rect(4px, 9999px, 51px, 0); }
   5% {
-    clip: rect(35px, 9999px, 76px, 0); }
+    clip: rect(10px, 9999px, 16px, 0); }
   10% {
-    clip: rect(62px, 9999px, 48px, 0); }
+    clip: rect(83px, 9999px, 53px, 0); }
   15% {
-    clip: rect(100px, 9999px, 75px, 0); }
+    clip: rect(26px, 9999px, 5px, 0); }
   20% {
-    clip: rect(70px, 9999px, 6px, 0); }
+    clip: rect(12px, 9999px, 66px, 0); }
   25% {
-    clip: rect(16px, 9999px, 53px, 0); }
+    clip: rect(15px, 9999px, 45px, 0); }
   30% {
-    clip: rect(37px, 9999px, 26px, 0); }
+    clip: rect(76px, 9999px, 1px, 0); }
   35% {
-    clip: rect(26px, 9999px, 94px, 0); }
+    clip: rect(6px, 9999px, 95px, 0); }
   40% {
-    clip: rect(12px, 9999px, 22px, 0); }
+    clip: rect(19px, 9999px, 24px, 0); }
   45% {
-    clip: rect(9px, 9999px, 37px, 0); }
+    clip: rect(82px, 9999px, 99px, 0); }
   50% {
-    clip: rect(90px, 9999px, 29px, 0); }
+    clip: rect(95px, 9999px, 35px, 0); }
   55% {
-    clip: rect(44px, 9999px, 55px, 0); }
+    clip: rect(75px, 9999px, 1px, 0); }
   60% {
-    clip: rect(27px, 9999px, 75px, 0); }
+    clip: rect(94px, 9999px, 41px, 0); }
   65% {
-    clip: rect(83px, 9999px, 61px, 0); }
+    clip: rect(2px, 9999px, 78px, 0); }
   70% {
-    clip: rect(40px, 9999px, 47px, 0); }
+    clip: rect(44px, 9999px, 47px, 0); }
   75% {
-    clip: rect(98px, 9999px, 9px, 0); }
+    clip: rect(83px, 9999px, 62px, 0); }
   80% {
-    clip: rect(42px, 9999px, 31px, 0); }
+    clip: rect(23px, 9999px, 19px, 0); }
   85% {
-    clip: rect(37px, 9999px, 71px, 0); }
+    clip: rect(8px, 9999px, 35px, 0); }
   90% {
-    clip: rect(9px, 9999px, 91px, 0); }
+    clip: rect(99px, 9999px, 60px, 0); }
   95% {
-    clip: rect(44px, 9999px, 6px, 0); }
+    clip: rect(19px, 9999px, 37px, 0); }
   100% {
-    clip: rect(29px, 9999px, 3px, 0); } }
+    clip: rect(41px, 9999px, 35px, 0); } }
 
 @keyframes glitch-before {
   0% {
-    clip: rect(23px, 9999px, 15px, 0); }
+    clip: rect(4px, 9999px, 51px, 0); }
   5% {
-    clip: rect(35px, 9999px, 76px, 0); }
+    clip: rect(10px, 9999px, 16px, 0); }
   10% {
-    clip: rect(62px, 9999px, 48px, 0); }
+    clip: rect(83px, 9999px, 53px, 0); }
   15% {
-    clip: rect(100px, 9999px, 75px, 0); }
+    clip: rect(26px, 9999px, 5px, 0); }
   20% {
-    clip: rect(70px, 9999px, 6px, 0); }
+    clip: rect(12px, 9999px, 66px, 0); }
   25% {
-    clip: rect(16px, 9999px, 53px, 0); }
+    clip: rect(15px, 9999px, 45px, 0); }
   30% {
-    clip: rect(37px, 9999px, 26px, 0); }
+    clip: rect(76px, 9999px, 1px, 0); }
   35% {
-    clip: rect(26px, 9999px, 94px, 0); }
+    clip: rect(6px, 9999px, 95px, 0); }
   40% {
-    clip: rect(12px, 9999px, 22px, 0); }
+    clip: rect(19px, 9999px, 24px, 0); }
   45% {
-    clip: rect(9px, 9999px, 37px, 0); }
+    clip: rect(82px, 9999px, 99px, 0); }
   50% {
-    clip: rect(90px, 9999px, 29px, 0); }
+    clip: rect(95px, 9999px, 35px, 0); }
   55% {
-    clip: rect(44px, 9999px, 55px, 0); }
+    clip: rect(75px, 9999px, 1px, 0); }
   60% {
-    clip: rect(27px, 9999px, 75px, 0); }
+    clip: rect(94px, 9999px, 41px, 0); }
   65% {
-    clip: rect(83px, 9999px, 61px, 0); }
+    clip: rect(2px, 9999px, 78px, 0); }
   70% {
-    clip: rect(40px, 9999px, 47px, 0); }
+    clip: rect(44px, 9999px, 47px, 0); }
   75% {
-    clip: rect(98px, 9999px, 9px, 0); }
+    clip: rect(83px, 9999px, 62px, 0); }
   80% {
-    clip: rect(42px, 9999px, 31px, 0); }
+    clip: rect(23px, 9999px, 19px, 0); }
   85% {
-    clip: rect(37px, 9999px, 71px, 0); }
+    clip: rect(8px, 9999px, 35px, 0); }
   90% {
-    clip: rect(9px, 9999px, 91px, 0); }
+    clip: rect(99px, 9999px, 60px, 0); }
   95% {
-    clip: rect(44px, 9999px, 6px, 0); }
+    clip: rect(19px, 9999px, 37px, 0); }
   100% {
-    clip: rect(29px, 9999px, 3px, 0); } }
+    clip: rect(41px, 9999px, 35px, 0); } }
 
 @-webkit-keyframes glitch-after {
   0% {
-    clip: rect(65px, 9999px, 96px, 0); }
+    clip: rect(11px, 9999px, 31px, 0); }
   5% {
-    clip: rect(65px, 9999px, 13px, 0); }
+    clip: rect(34px, 9999px, 33px, 0); }
   10% {
-    clip: rect(76px, 9999px, 55px, 0); }
+    clip: rect(79px, 9999px, 99px, 0); }
   15% {
-    clip: rect(67px, 9999px, 47px, 0); }
+    clip: rect(68px, 9999px, 92px, 0); }
   20% {
-    clip: rect(24px, 9999px, 83px, 0); }
+    clip: rect(92px, 9999px, 10px, 0); }
   25% {
-    clip: rect(53px, 9999px, 67px, 0); }
+    clip: rect(66px, 9999px, 40px, 0); }
   30% {
-    clip: rect(93px, 9999px, 35px, 0); }
+    clip: rect(12px, 9999px, 28px, 0); }
   35% {
-    clip: rect(87px, 9999px, 49px, 0); }
+    clip: rect(46px, 9999px, 8px, 0); }
   40% {
-    clip: rect(89px, 9999px, 33px, 0); }
+    clip: rect(16px, 9999px, 23px, 0); }
   45% {
-    clip: rect(21px, 9999px, 70px, 0); }
+    clip: rect(86px, 9999px, 56px, 0); }
   50% {
-    clip: rect(60px, 9999px, 80px, 0); }
+    clip: rect(46px, 9999px, 47px, 0); }
   55% {
-    clip: rect(27px, 9999px, 31px, 0); }
+    clip: rect(23px, 9999px, 69px, 0); }
   60% {
-    clip: rect(74px, 9999px, 82px, 0); }
+    clip: rect(50px, 9999px, 98px, 0); }
   65% {
-    clip: rect(99px, 9999px, 90px, 0); }
+    clip: rect(75px, 9999px, 55px, 0); }
   70% {
-    clip: rect(1px, 9999px, 3px, 0); }
+    clip: rect(14px, 9999px, 99px, 0); }
   75% {
-    clip: rect(55px, 9999px, 87px, 0); }
+    clip: rect(39px, 9999px, 13px, 0); }
   80% {
-    clip: rect(63px, 9999px, 5px, 0); }
+    clip: rect(15px, 9999px, 47px, 0); }
   85% {
-    clip: rect(72px, 9999px, 75px, 0); }
+    clip: rect(55px, 9999px, 45px, 0); }
   90% {
-    clip: rect(67px, 9999px, 8px, 0); }
+    clip: rect(17px, 9999px, 16px, 0); }
   95% {
-    clip: rect(91px, 9999px, 83px, 0); }
+    clip: rect(70px, 9999px, 22px, 0); }
   100% {
-    clip: rect(28px, 9999px, 18px, 0); } }
+    clip: rect(42px, 9999px, 90px, 0); } }
 
 @keyframes glitch-after {
   0% {
-    clip: rect(65px, 9999px, 96px, 0); }
+    clip: rect(11px, 9999px, 31px, 0); }
   5% {
-    clip: rect(65px, 9999px, 13px, 0); }
+    clip: rect(34px, 9999px, 33px, 0); }
   10% {
-    clip: rect(76px, 9999px, 55px, 0); }
+    clip: rect(79px, 9999px, 99px, 0); }
   15% {
-    clip: rect(67px, 9999px, 47px, 0); }
+    clip: rect(68px, 9999px, 92px, 0); }
   20% {
-    clip: rect(24px, 9999px, 83px, 0); }
+    clip: rect(92px, 9999px, 10px, 0); }
   25% {
-    clip: rect(53px, 9999px, 67px, 0); }
+    clip: rect(66px, 9999px, 40px, 0); }
   30% {
-    clip: rect(93px, 9999px, 35px, 0); }
+    clip: rect(12px, 9999px, 28px, 0); }
   35% {
-    clip: rect(87px, 9999px, 49px, 0); }
+    clip: rect(46px, 9999px, 8px, 0); }
   40% {
-    clip: rect(89px, 9999px, 33px, 0); }
+    clip: rect(16px, 9999px, 23px, 0); }
   45% {
-    clip: rect(21px, 9999px, 70px, 0); }
+    clip: rect(86px, 9999px, 56px, 0); }
   50% {
-    clip: rect(60px, 9999px, 80px, 0); }
+    clip: rect(46px, 9999px, 47px, 0); }
   55% {
-    clip: rect(27px, 9999px, 31px, 0); }
+    clip: rect(23px, 9999px, 69px, 0); }
   60% {
-    clip: rect(74px, 9999px, 82px, 0); }
+    clip: rect(50px, 9999px, 98px, 0); }
   65% {
-    clip: rect(99px, 9999px, 90px, 0); }
+    clip: rect(75px, 9999px, 55px, 0); }
   70% {
-    clip: rect(1px, 9999px, 3px, 0); }
+    clip: rect(14px, 9999px, 99px, 0); }
   75% {
-    clip: rect(55px, 9999px, 87px, 0); }
+    clip: rect(39px, 9999px, 13px, 0); }
   80% {
-    clip: rect(63px, 9999px, 5px, 0); }
+    clip: rect(15px, 9999px, 47px, 0); }
   85% {
-    clip: rect(72px, 9999px, 75px, 0); }
+    clip: rect(55px, 9999px, 45px, 0); }
   90% {
-    clip: rect(67px, 9999px, 8px, 0); }
+    clip: rect(17px, 9999px, 16px, 0); }
   95% {
-    clip: rect(91px, 9999px, 83px, 0); }
+    clip: rect(70px, 9999px, 22px, 0); }
   100% {
-    clip: rect(28px, 9999px, 18px, 0); } }
+    clip: rect(42px, 9999px, 90px, 0); } }
 
 @-webkit-keyframes is-off {
   0% {
@@ -2694,25 +2694,19 @@ img {
             -ms-flex-align: stretch;
                 align-items: stretch; }
       .header .nav .header-menu__img-wrapper {
+        display: inline;
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/menu-bg.jpg") no-repeat 1.25vw center/cover;
         background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/menu-bg.jpg") no-repeat 1.25vw center/cover;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/menu-bg.jpg") no-repeat 1.25vw center/cover;
+        background-clip: text;
         -webkit-background-clip: text;
-                background-clip: text;
+        color: transparent;
         text-transform: uppercase;
         font-style: normal;
         font-weight: bold;
+        vertical-align: middle;
         font-size: 33vw;
-        line-height: 80%;
-        color: transparent; }
-        .header .nav .header-menu__img-wrapper:before {
-          content: "";
-          display: block;
-          margin-bottom: -1vw; }
-        .header .nav .header-menu__img-wrapper:after {
-          content: "";
-          display: block;
-          margin-top: 0vw; }
+        line-height: 100%; }
       .header .nav .header-menu__menu-list {
         -webkit-box-flex: .55;
             -ms-flex-positive: .55;
@@ -11448,7 +11442,9 @@ img {
     .header .nav .header-menu__burger.close .icon {
       font-size: 1.5vw; }
   .header .nav .header-menu__img-wrapper {
-    font-size: 37vw; }
+    font-size: 37vw;
+    background-clip: text;
+    -webkit-background-clip: text; }
   .header .nav .header-menu__footer {
     padding-bottom: 3.5vw; }
     .header .nav .header-menu__footer .socials__link {
@@ -12390,22 +12386,14 @@ img {
           width: 100%; }
       .header .nav .header-menu__img-wrapper {
         background: url("../images/menu-bg-mobile.jpg") no-repeat left top/cover;
-        line-height: 97%;
+        line-height: 100%;
         vertical-align: center;
+        background-clip: text;
         -webkit-background-clip: text;
-                background-clip: text;
         opacity: .5;
         font-size: 100vw;
         color: transparent;
         overflow: hidden; }
-        .header .nav .header-menu__img-wrapper:before {
-          content: "";
-          display: block;
-          margin-bottom: 0vw; }
-        .header .nav .header-menu__img-wrapper:after {
-          content: "";
-          display: block;
-          margin-top: -15vw; }
       .header .nav .header-menu__menu-list {
         min-height: 55vw;
         -webkit-transform: translateX(0);
