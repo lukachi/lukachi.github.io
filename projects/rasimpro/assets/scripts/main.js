@@ -909,7 +909,7 @@ $(document).ready(function () {
                         HideRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
                     }
                 },
-                offset: "115%"
+                offset: "125%"
             });
 
             // waypont a simple text
@@ -930,7 +930,23 @@ $(document).ready(function () {
                         fadeDownBlock(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
                     }
                 },
-                offset: "100%"
+                offset: "125%"
+            });
+
+            if (Cookies.get("acceptedCookie")) {
+                $(".cookie-accept").css({
+                    "display": "none"
+                })
+            }
+
+            $(".cookie-accept .actions button").on("click", function(e) {
+                Cookies.set("acceptedCookie", 1, {
+                    expires: 7,
+                    path: "/"
+                });
+                $(".cookie-accept").css({
+                    "display": "none"
+                })
             });
 
         }).then(res => {

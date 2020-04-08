@@ -19,13 +19,12 @@ function styles() {
 gulp.task('vendors', function() {
     return gulp.src([
         "./node_modules/jquery/dist/jquery.min.js",
-        // "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./node_modules/js-cookie/src/js.cookie.js",
         "./node_modules/slick-carousel/slick/slick.min.js",
         "./node_modules/gsap/dist/gsap.min.js",
         "./libs/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js",
         "./node_modules/aos/dist/aos.js",
         "./node_modules/tilt.js/dest/tilt.jquery.js",
-        "./node_modules/animejs/lib/anime.min.js",
         "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
         "./node_modules/lazyload/lazyload.min.js"
     ])

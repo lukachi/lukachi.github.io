@@ -2455,14 +2455,12 @@ img {
 			position: relative;
 
 			.bg-decor {
-				content: "”";
-				font-size: 25vw;
-				line-height: 130%;
-				color: $theme-color;
 				position: absolute;
-				top: 72%;
-				right: 4.1%;
-				transform: translate(0, 0);
+				bottom: 0;
+				right: 10%;
+				width: 6vw;
+				transform: translate(0, 75%);
+				z-index: 2;
 			}
 		}
 
@@ -5633,12 +5631,15 @@ img {
 	&__wrapper {
 		width: 42.25%;
 		z-index: 3;
-		display: flex;
-		flex-direction: column;
-		background: #F8F8F8;
-		border: 0.5px solid #0C41FF;
-		box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
-		padding: 3.25vw 3vw;
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			background: #F8F8F8;
+			border: 0.5px solid #0C41FF;
+			box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+			padding: 3.25vw 3vw;
+		}
 
 		.title {
 			display: flex;
@@ -9408,10 +9409,8 @@ img {
 				margin-bottom: 25vw;
 
 				.bg-decor {
-					font-size: 90vw;
 					top: 82.5%;
-					right: 4.1%;
-					transform: translate(0, 0);
+					width: 20vw;
 				}
 			}
 
@@ -11685,7 +11684,10 @@ img {
 
 		&__wrapper {
 			width: 100%;
-			padding: 15vw 10vw 10vw;
+
+			&-container {
+				padding: 15vw 10vw 10vw;
+			}
 
 			.title {
 				flex-direction: column;
