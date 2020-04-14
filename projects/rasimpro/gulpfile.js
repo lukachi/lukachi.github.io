@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const server = require('browser-sync').create();
 const iconfont = require('gulp-iconfont');
 const iconfontCss = require('gulp-iconfont-css');
+const babel = require('gulp-babel');
 
 function styles() {
     return gulp.src('./scss/main.scss')
@@ -16,15 +17,38 @@ function styles() {
         .pipe(server.stream());
 }
 
-gulp.task('vendors', function() {
+function scripts() {
+    return gulp.src('scripts/**/main.js')
+        .pipe(babel())
+        .pipe(gulp.dest('assets/scripts'))
+        .pipe(server.stream());
+}
+
+function allScripts() {
+    return gulp.src('scripts/**/*.js')
+        .pipe(babel())
+        .pipe(gulp.dest('assets/scripts'))
+        .pipe(server.stream());
+}
+
+function noReloadScript() {
+    return gulp.src('scripts/**/no-reload-script.js')
+        .pipe(babel())
+        .pipe(gulp.dest('assets/scripts'))
+        .pipe(server.stream());
+}
+
+gulp.task('vendors', function () {
     return gulp.src([
         "./node_modules/jquery/dist/jquery.min.js",
         "./node_modules/js-cookie/src/js.cookie.js",
+        "./node_modules/swup/dist/swup.min.js",
+        "./node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.min.js",
+        "./node_modules/@swup/overlay-theme/dist/SwupOverlayTheme.min.js",
         "./node_modules/slick-carousel/slick/slick.min.js",
         "./node_modules/gsap/dist/gsap.min.js",
         "./libs/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js",
-        "./node_modules/aos/dist/aos.js",
-        "./node_modules/tilt.js/dest/tilt.jquery.js",
+        "./libs/VanillaTilt/vanilla-tilt.babel.min.js",
         "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
         "./node_modules/lazyload/lazyload.min.js"
     ])
@@ -32,7 +56,7 @@ gulp.task('vendors', function() {
         .pipe(gulp.dest('./assets/vendors/'));
 });
 
-gulp.task('iconfonts', function() {
+gulp.task('iconfonts', function () {
     let fontName = "rasimpro-icons";
     gulp.src('./icons/**/*.svg')
         .pipe(iconfontCss({
@@ -51,11 +75,19 @@ gulp.task('iconfonts', function() {
 
 gulp.task('styles', styles);
 
-gulp.task('default', function() {
+gulp.task('scripts', scripts);
+
+gulp.task('allScripts', allScripts);
+
+gulp.task('noReloadScript', noReloadScript);
+
+gulp.task('default', function () {
     server.init({
-        server: './'
+        server: './',
+        port: 8080,
     });
     gulp.watch('./scss/**/*.scss', styles);
-    gulp.watch('./assets/scripts/**/*.js').on('change', server.reload);
+    gulp.watch('./scripts/**/main.js', scripts);
+    gulp.watch('./scripts/**/no-reload-script.js', noReloadScript);
     gulp.watch('./*.html').on('change', server.reload);
 });

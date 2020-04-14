@@ -1,259 +1,5 @@
 "use strict";
 
-function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var IS_DEVICE_TOUCH = 'ontouchstart' in window || navigator.msMaxTouchPoints > 0;
-
-var TextScramble = /*#__PURE__*/function () {
-  function TextScramble(el) {
-    _classCallCheck(this, TextScramble);
-
-    this.el = el;
-    this.chars = '!<>-_\\/[]{}—=+*^?#________';
-    this.update = this.update.bind(this);
-  }
-
-  _createClass(TextScramble, [{
-    key: "setText",
-    value: function setText(newText) {
-      var _this = this;
-
-      var oldText = this.el.innerText;
-      var length = Math.max(oldText.length, newText.length);
-      var promise = new Promise(function (resolve) {
-        return _this.resolve = resolve;
-      });
-      this.queue = [];
-
-      for (var i = 0; i < length; i++) {
-        var from = oldText[i] || '';
-        var to = newText[i] || '';
-        var start = Math.floor(Math.random() * 40);
-        var end = start + Math.floor(Math.random() * 40);
-        this.queue.push({
-          from: from,
-          to: to,
-          start: start,
-          end: end
-        });
-      }
-
-      cancelAnimationFrame(this.frameRequest);
-      this.frame = 0;
-      this.update();
-      return promise;
-    }
-  }, {
-    key: "update",
-    value: function update() {
-      var output = '';
-      var complete = 0;
-
-      for (var i = 0, n = this.queue.length; i < n; i++) {
-        var _this$queue$i = this.queue[i],
-            from = _this$queue$i.from,
-            to = _this$queue$i.to,
-            start = _this$queue$i.start,
-            end = _this$queue$i.end,
-            _char = _this$queue$i["char"];
-
-        if (this.frame >= end) {
-          complete++;
-          output += to;
-        } else if (this.frame >= start) {
-          if (!_char || Math.random() < 0.28) {
-            _char = this.randomChar();
-            this.queue[i]["char"] = _char;
-          }
-
-          output += "<span class=\"dud\">".concat(_char, "</span>");
-        } else {
-          output += from;
-        }
-      }
-
-      this.el.innerHTML = output;
-
-      if (complete === this.queue.length) {
-        this.resolve();
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update);
-        this.frame++;
-      }
-    }
-  }, {
-    key: "randomChar",
-    value: function randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)];
-    }
-  }]);
-
-  return TextScramble;
-}();
-
-function ScramblingElement(DOMElement) {
-  var phrases = _toConsumableArray(DOMElement.attr("data-textInsteads").split(","));
-
-  var el = DOMElement[0];
-  var fx = new TextScramble(el);
-  var counter = 0;
-
-  var next = function next() {
-    fx.setText(phrases[counter]).then(function () {
-      setTimeout(next, 5000);
-    });
-    counter = (counter + 1) % phrases.length;
-  };
-
-  next();
-}
-
-function fadeRightTextLetterByLetter(DOMElement) {
-  var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "1";
-  var delay = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "0";
-  var textWrapper = DOMElement;
-  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-  var elements = textWrapper.querySelectorAll(":scope .letter");
-  var tlm = new TimelineMax();
-  tlm.staggerFrom(elements, 2, {
-    opacity: 0,
-    x: "70%",
-    stagger: {
-      amount: parseFloat(duration)
-    },
-    delay: parseFloat(delay)
-  });
-}
-
-function textBlockFragmentation(DOMElement) {
-  var rowsArr = [];
-  var spanElements = DOMElement.textContent.split(" ").map(function (el) {
-    var newSpan = document.createElement("span");
-    newSpan.innerText = el + " ";
-    return newSpan;
-  });
-  DOMElement.innerHTML = null;
-  spanElements.forEach(function (el) {
-    DOMElement.append(el);
-  });
-  var offsetTop = 0;
-  DOMElement.querySelectorAll(":scope span").forEach(function (el) {
-    var prop = 'line_' + el['offsetTop'];
-
-    if (!rowsArr[prop]) {
-      rowsArr[prop] = [];
-      rowsArr[prop].push(el);
-    } else {
-      rowsArr[prop].push(el);
-    }
-  });
-  DOMElement.innerHTML = null;
-
-  for (var row in rowsArr) {
-    var line = document.createElement("div");
-    line.classList.add("anim-row");
-
-    var _iterator = _createForOfIteratorHelper(rowsArr[row]),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var word = _step.value;
-        line.append(word);
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    line.innerHTML = line.textContent;
-    DOMElement.append(line);
-  }
-
-  return DOMElement;
-}
-
-function fadeDownText(DOMElement) {
-  var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "1";
-  var delay = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "0";
-  var textWrapper = DOMElement;
-  var elements = textBlockFragmentation(textWrapper).querySelectorAll(":scope .anim-row");
-  var tlm = new TimelineMax();
-  tlm.staggerFrom(elements, 1, {
-    opacity: 0,
-    y: "-150%",
-    stagger: {
-      amount: parseFloat(duration)
-    },
-    delay: parseFloat(delay)
-  });
-}
-
-function fadeDownBlock(DOMElement) {
-  var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "1";
-  var delay = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "0";
-  var textWrapper = DOMElement;
-  var tlm = new TimelineMax();
-  tlm.from(textWrapper, parseFloat(duration), {
-    y: "-50px",
-    opacity: 0,
-    scaleY: .7,
-    delay: parseFloat(delay)
-  });
-}
-
-function portfolioSlidering(goAllPortfolioBtn_element_center_original) {
-  // отсчёт от начала окна + центр экрана
-  var centerScreen = $([document.documentElement, document.body]).scrollTop() + $(window).height() / 2; // конец секции с портфолио
-
-  var wrapper_endpoints_Y = $(".portfolio__wrapper").offset().top + $(".portfolio__wrapper").height();
-
-  if (centerScreen >= goAllPortfolioBtn_element_center_original.y && centerScreen <= wrapper_endpoints_Y - $(".portfolio__wrapper .portfolio-item").height() / 2) {
-    if (!$(".go-all-portfolio").hasClass("fixing")) {
-      $(".go-all-portfolio").addClass("fixing");
-    }
-  } else {
-    if (centerScreen <= goAllPortfolioBtn_element_center_original.y) {
-      //over
-      if ($(".go-all-portfolio").hasClass("fixing")) {
-        $(".go-all-portfolio").removeClass("fixing");
-      }
-
-      if ($(".go-all-portfolio-wrapper").hasClass("end")) {
-        $(".go-all-portfolio-wrapper").removeClass("end");
-      }
-    } else if (centerScreen >= wrapper_endpoints_Y - $(".portfolio__wrapper .portfolio-item").height() / 2) {
-      //under
-      if ($(".go-all-portfolio").hasClass("fixing")) {
-        $(".go-all-portfolio").removeClass("fixing");
-      }
-
-      if (!$(".go-all-portfolio_wrapper").hasClass("end")) {
-        $(".go-all-portfolio-wrapper").addClass("end");
-      }
-    }
-  }
-}
-
 function toggleMenu() {
   console.log("toggle menu");
   var tlm = new TimelineMax();
@@ -818,8 +564,7 @@ function componentsInit() {
       dots: false,
       swipeToSlide: false,
       swipe: false,
-      touchMove: false,
-      pauseOnHover: false
+      touchMove: false
     });
   }
 
@@ -865,104 +610,25 @@ function componentsInit() {
   console.log("components init!");
 }
 
-$(document).ready(function () {
-  //  ресайз элементов при деформации окна
-  $(window).on("resize", function (e) {
-    onWindowDeformResize();
-  }); //  ресайз элементов при деформации окна
+var swup = new Swup({
+  plugins: [new SwupScriptsPlugin({
+    head: true,
+    body: true
+  }), new SwupOverlayTheme({
+    color: '#fefefe',
+    duration: 1000,
+    direction: 'to-right'
+  })]
+});
+swup.on('animationOutDone', function (event) {
+  window.scrollTo(0, 0);
 
-  $(window).on("orientationchange", function (e) {
-    onWindowDeformResize();
-  }); //  центр элемента для блока мини портфолио
-
-  var goAllPortfolioBtn_element_center_original = $(".go-all-portfolio").length ? {
-    x: $(".go-all-portfolio").offset().left + $(".go-all-portfolio").width() / 2,
-    y: $(".go-all-portfolio").offset().top + $(".go-all-portfolio").height() / 2
-  } : undefined;
-  $(window).on("scroll", function (e) {
-    // движ ссылки на архив - портфолио
-    if (goAllPortfolioBtn_element_center_original && $(".go-all-portfolio").length) {
-      portfolioSlidering(goAllPortfolioBtn_element_center_original);
-    }
-
-    $(".header-menu__wrapper.show").css({
-      "height": window.innerHeight
-    });
-  }); //  parallax effect on elements
-
-  $(window).on("mousemove", function (e) {
-    if ($(".parallaxing").length) {
-      var parallaxing_elements = $(".parallaxing");
-      var mousePos = {
-        x: e.pageX,
-        y: e.pageY
-      };
-      parallaxing_elements.each(function (index) {
-        var parallax_radius = parseInt($(this).attr("data-radius"));
-        var element_center = {
-          x: $(this).offset().left + $(this).width() / 2,
-          y: $(this).offset().top + $(this).height() / 2
-        };
-        var different = {
-          x: mousePos.x - element_center.x,
-          y: mousePos.y - element_center.y
-        };
-        var move = {
-          x: -1 * different.x / parallax_radius / 3,
-          y: -1 * different.y / parallax_radius / 3
-        };
-        gsap.to($(this), 1, {
-          x: move.x,
-          y: move.y
-        });
-      });
-    }
-  }); //  header-menu
-
-  $(".header-menu__label").on("click", function (e) {
+  if ($(".header-menu__wrapper").hasClass("show")) {
     toggleMenu();
-  }); //  footer-menu
-
-  $(".footer-menu__label").on("click", function (e) {
-    toggleMenu();
-  });
-  componentsInit();
+  }
+});
+swup.on('contentReplaced', function (event) {
   slidersInit();
-  var wayPointBigTitles = $(".split-text").waypoint({
-    handler: function handler(direction) {
-      if (direction == "down") {
-        fadeRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
-      } else {
-        HideRightTextLetterByLetter(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
-      }
-    },
-    offset: "125%"
-  });
-  var wayPointSimpleText = $(".split-block-rows").waypoint({
-    handler: function handler(direction) {
-      if (direction == "down") {
-        fadeDownText(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
-      } else {
-        fadeUpText(this.element);
-      }
-    },
-    offset: "115%"
-  });
-  var wayPointBlockDown = $(".fade-block-down").waypoint({
-    handler: function handler(direction) {
-      if (direction == "down") {
-        fadeDownBlock(this.element, $(this.element).data("split-duration"), $(this.element).data("split-delay"));
-      }
-    },
-    offset: "125%"
-  });
-  $(".cookie-accept .actions button").on("click", function (e) {
-    Cookies.set("acceptedCookie", 1, {
-      expires: 7,
-      path: "/"
-    });
-    $(".cookie-accept").css({
-      "display": "none"
-    });
-  });
+  onWindowDeformResize();
+  componentsInit();
 });

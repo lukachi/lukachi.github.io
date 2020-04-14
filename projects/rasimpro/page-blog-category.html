@@ -7,109 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rasim pro</title>
     <style>
-        .sk-cube-grid {
-            width: 40px;
-            height: 40px;
-            margin: 100px auto;
-        }
-
-        .sk-cube-grid .sk-cube {
-            width: 33%;
-            height: 33%;
-            background-color: #333;
-            float: left;
-            -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-        }
-
-        .sk-cube-grid .sk-cube1 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        .sk-cube-grid .sk-cube2 {
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-        }
-
-        .sk-cube-grid .sk-cube3 {
-            -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
-        }
-
-        .sk-cube-grid .sk-cube4 {
-            -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
-        }
-
-        .sk-cube-grid .sk-cube5 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        .sk-cube-grid .sk-cube6 {
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-        }
-
-        .sk-cube-grid .sk-cube7 {
-            -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-        }
-
-        .sk-cube-grid .sk-cube8 {
-            -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
-        }
-
-        .sk-cube-grid .sk-cube9 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        @-webkit-keyframes sk-cubeGridScaleDelay {
-            0%, 70%, 100% {
-                -webkit-transform: scale3D(1, 1, 1);
-                transform: scale3D(1, 1, 1);
-            }
-            35% {
-                -webkit-transform: scale3D(0, 0, 1);
-                transform: scale3D(0, 0, 1);
-            }
-        }
-
-        @keyframes sk-cubeGridScaleDelay {
-            0%, 70%, 100% {
-                -webkit-transform: scale3D(1, 1, 1);
-                transform: scale3D(1, 1, 1);
-            }
-            35% {
-                -webkit-transform: scale3D(0, 0, 1);
-                transform: scale3D(0, 0, 1);
-            }
+        .page-transition {
+            position: fixed;
+            z-index: 9;
+            bottom: 0;
+            left: -200%;
+            width: 150vw;
+            height: 150vw;
+            background: #FFFFFF;
         }
     </style>
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/scripts/test1.js"></script>
+    <script src="./assets/scripts/test2.js"></script>
+    <script src="./assets/scripts/test3.js"></script>
 </head>
 <body>
-<div class="preloader">
-    <div class="sk-cube-grid">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-    </div>
-</div>
+<div class="page-transition"></div>
 <header class="header section-outer" id="header">
     <div class="section-inner">
         <nav class="nav">
             <div class="logo">
-                <img src="./assets/images/logo.png" alt="">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
             </div>
             <div class="mobile-menu__phone">
                 <a href="#">
@@ -179,22 +100,24 @@
                                 </div>
                                 <ul class="header-menu__menu-list">
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Home">Home</a>
+                                        <a href="/index.html" class="item__link" data-text="Home">Home</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Portfolio">Portfolio</a>
+                                        <a href="/page-portfolio-archive.html" class="item__link"
+                                           data-text="Portfolio">Portfolio</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="./page-about.html" class="item__link" data-text="ABOUT ME">ABOUT ME</a>
+                                        <a href="/page-about.html" class="item__link" data-text="ABOUT ME">ABOUT ME</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="SERVICES">SERVICES</a>
+                                        <a href="/page-services-archive.html" class="item__link" data-text="SERVICES">SERVICES</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="blog">blog</a>
+                                        <a href="/page-blog-archive.html" class="item__link" data-text="blog">blog</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Contacts">Contacts</a>
+                                        <a href="/page-contacts.html" class="item__link"
+                                           data-text="Contacts">Contacts</a>
                                     </li>
                                 </ul>
                             </div>
@@ -246,8 +169,8 @@
         </nav>
     </div>
 </header>
-<main class="main-content section-outer">
-    <article class="main-content__article">
+<main class="main-content section-outer" id="swup">
+    <article class="main-content__article transition-overlay">
         <section class="welcome-screen-blog-category section-outer">
             <div class="section-inner">
                 <div class="breadcrumbs">
@@ -779,31 +702,29 @@
         <div class="section-inner">
             <div class="footer-menu">
                 <div class="footer-menu__label">
-                    menu
+                    <div class="label-text">menu</div>
                     <button type="button" class="footer-menu__burger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                        <i class="icon icon-burger"></i>
                     </button>
                 </div>
                 <ul class="footer-menu__menu-list">
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Home</a>
+                        <a href="/index.html" class="item__link">Home</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Portfolio</a>
+                        <a href="/page-portfolio-archive.html" class="item__link">Portfolio</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">ABOUT ME</a>
+                        <a href="/page-about.html" class="item__link">ABOUT ME</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">SERVICES</a>
+                        <a href="/page-services-archive.html" class="item__link">SERVICES</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Rasim's blog</a>
+                        <a href="/page-blog-archive.html" class="item__link">Rasim's blog</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Contacts</a>
+                        <a href="/page-contacts.html" class="item__link">Contacts</a>
                     </li>
                 </ul>
                 <button type="button" class="go-top__btn">
@@ -882,7 +803,27 @@
         </div>
     </div>
 </footer>
-<script src="./assets/vendors/vendors.js"></script>
-<script src="./assets/scripts/main.js"></script>
+<div class="cookie-accept">
+    <div class="text-wrapper">
+        <div class="title">we use cookies</div>
+        <div class="message">
+            to give you the best experience on our website. If you continue to use this site we will assume that you are
+            happy with it.
+        </div>
+    </div>
+    <div class="actions">
+        <button type="button" class="standard-btn">
+            <span class="btn-blink"></span>
+            <span class="btn-hover__bg"></span>
+            <span class="btn-text">got it</span>
+        </button>
+    </div>
+</div>
+<script src="./assets/vendors/vendors.js" data-swup-ignore-script></script>
+<script src="./assets/scripts/no-reload-script.js" data-swup-ignore-script></script>
+<script src="./assets/scripts/test4.js"></script>
+<script src="./assets/scripts/test5.js"></script>
+<script src="./assets/scripts/test6.js"></script>
+<script src="./assets/scripts/main.js" data-swup-ignore-script></script>
 </body>
 </html>

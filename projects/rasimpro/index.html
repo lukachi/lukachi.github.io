@@ -7,105 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rasim pro</title>
     <style>
-        .sk-cube-grid {
-            width: 40px;
-            height: 40px;
-            margin: 100px auto;
-        }
-
-        .sk-cube-grid .sk-cube {
-            width: 33%;
-            height: 33%;
-            background-color: #333;
-            float: left;
-            -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-        }
-
-        .sk-cube-grid .sk-cube1 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        .sk-cube-grid .sk-cube2 {
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-        }
-
-        .sk-cube-grid .sk-cube3 {
-            -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
-        }
-
-        .sk-cube-grid .sk-cube4 {
-            -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
-        }
-
-        .sk-cube-grid .sk-cube5 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        .sk-cube-grid .sk-cube6 {
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-        }
-
-        .sk-cube-grid .sk-cube7 {
-            -webkit-animation-delay: 0s;
-            animation-delay: 0s;
-        }
-
-        .sk-cube-grid .sk-cube8 {
-            -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
-        }
-
-        .sk-cube-grid .sk-cube9 {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-        }
-
-        @-webkit-keyframes sk-cubeGridScaleDelay {
-            0%, 70%, 100% {
-                -webkit-transform: scale3D(1, 1, 1);
-                transform: scale3D(1, 1, 1);
-            }
-            35% {
-                -webkit-transform: scale3D(0, 0, 1);
-                transform: scale3D(0, 0, 1);
-            }
-        }
-
-        @keyframes sk-cubeGridScaleDelay {
-            0%, 70%, 100% {
-                -webkit-transform: scale3D(1, 1, 1);
-                transform: scale3D(1, 1, 1);
-            }
-            35% {
-                -webkit-transform: scale3D(0, 0, 1);
-                transform: scale3D(0, 0, 1);
-            }
+        .page-transition {
+            position: fixed;
+            z-index: 9;
+            bottom: 0;
+            left: -200%;
+            width: 150vw;
+            height: 150vw;
+            background: #FFFFFF;
         }
     </style>
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <script src="./assets/scripts/test1.js"></script>
+    <script src="./assets/scripts/test2.js"></script>
+    <script src="./assets/scripts/test3.js"></script>
 </head>
 <body>
-<div class="preloader">
-    <div class="sk-cube-grid">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-    </div>
-</div>
+<div class="page-transition"></div>
 <header class="header section-outer" id="header">
     <div class="section-inner">
         <nav class="nav">
@@ -182,22 +100,24 @@
                                 </div>
                                 <ul class="header-menu__menu-list">
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Home">Home</a>
+                                        <a href="/index.html" class="item__link" data-text="Home">Home</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Portfolio">Portfolio</a>
+                                        <a href="/page-portfolio-archive.html" class="item__link"
+                                           data-text="Portfolio">Portfolio</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="./page-about.html" class="item__link" data-text="ABOUT ME">ABOUT ME</a>
+                                        <a href="/page-about.html" class="item__link" data-text="ABOUT ME">ABOUT ME</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="SERVICES">SERVICES</a>
+                                        <a href="/page-services-archive.html" class="item__link" data-text="SERVICES">SERVICES</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="blog">blog</a>
+                                        <a href="/page-blog-archive.html" class="item__link" data-text="blog">blog</a>
                                     </li>
                                     <li class="menu-list__item">
-                                        <a href="#" class="item__link" data-text="Contacts">Contacts</a>
+                                        <a href="/page-contacts.html" class="item__link"
+                                           data-text="Contacts">Contacts</a>
                                     </li>
                                 </ul>
                             </div>
@@ -249,12 +169,12 @@
         </nav>
     </div>
 </header>
-<main class="main-content section-outer">
-    <article class="main-content__article">
+<main class="main-content section-outer" id="swup">
+    <article class="main-content__article transition-overlay">
         <section class="first-screen section-outer">
             <div class="section-inner">
                 <div class="first-section__wrapper">
-                    <div class="first-screen__img-wrapper" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="first-screen__img-wrapper">
                         <div class="img-wrapper__bg parallaxing" data-radius="15px"></div>
                         <img src="./assets/images/rasim-photo.png" alt="rasim" class="front-img">
                         <div class="glitch glitch--style-1">
@@ -266,10 +186,10 @@
                         </div>
                     </div>
                     <div class="first-screen__text-wrapper">
-                        <div class="overtitle split-text" data-split-duration="1.5" data-split-delay="0">
+                        <div class="overtitle">
                             Hi, my name is RASIM NADZHAFOV and I provide
                         </div>
-                        <div class="title fade-block-down" data-split-duration="1.5" data-split-delay="1">
+                        <div class="title">
                             <div class="accent">
                                 Successful
                             </div>
@@ -280,10 +200,10 @@
                                 Development
                             </span>
                         </div>
-                        <div class="subtitle split-block-rows" data-split-duration="1.5" data-split-delay=".75">
+                        <div class="subtitle">
                             Multiple teams management. Each up to 50. Complex implementation of IT solutions
                         </div>
-                        <div class="video-popup__toggle" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+                        <div class="video-popup__toggle">
                             <button type="button" class="standard-btn">
                                 <span class="btn-blink"></span>
                                 <span class="btn-hover__bg"></span>
@@ -292,22 +212,19 @@
                             </button>
                         </div>
                         <div class="achievement__wrapper">
-                            <div class="achievement-item" data-aos="fade-up" data-aos-duration="1000"
-                                 data-aos-delay="2100">
+                            <div class="achievement-item">
                                 <span class="achievement-item__text">
                                     250+
                                 </span>
                                 <div class="achievement-item__title">Finished projects</div>
                             </div>
-                            <div class="achievement-item" data-aos="fade-up" data-aos-duration="1000"
-                                 data-aos-delay="2200">
+                            <div class="achievement-item">
                                 <span class="achievement-item__text">
                                     10
                                 </span>
                                 <div class="achievement-item__title">Years of successful work</div>
                             </div>
-                            <div class="achievement-item" data-aos="fade-up" data-aos-duration="1000"
-                                 data-aos-delay="2300">
+                            <div class="achievement-item">
                                 <span class="achievement-item__text">
                                     40%
                                 </span>
@@ -321,10 +238,10 @@
         <section class="portfolio section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title split-block-rows">
+                    <h2 class="title">
                         My portfolio
                     </h2>
-                    <span class="subtitle split-block-rows">
+                    <span class="subtitle">
                         Here you can see some examples of my work
                     </span>
                 </div>
@@ -332,7 +249,7 @@
                     <div class="go-all-portfolio-wrapper">
                         <a href="#" class="go-all-portfolio">Go to all works</a>
                     </div>
-                    <div class="portfolio-item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="portfolio-item">
                         <div class="portfolio-item__text-wrapper">
                             <div class="categories__wrapper">
                                 <a href="#" class="categories-item">
@@ -366,7 +283,7 @@
                                    preload></video>
                         </div>
                     </div>
-                    <div class="portfolio-item reverse" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="portfolio-item reverse">
                         <div class="portfolio-item__text-wrapper">
                             <div class="categories__wrapper">
                                 <a href="#" class="categories-item">
@@ -400,7 +317,7 @@
                                    preload></video>
                         </div>
                     </div>
-                    <div class="portfolio-item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="portfolio-item">
                         <div class="portfolio-item__text-wrapper">
                             <div class="categories__wrapper">
                                 <a href="#" class="categories-item">
@@ -435,7 +352,7 @@
                                    preload></video>
                         </div>
                     </div>
-                    <div class="portfolio-item reverse" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="portfolio-item reverse">
                         <div class="portfolio-item__text-wrapper">
                             <div class="categories__wrapper">
                                 <a href="#" class="categories-item">
@@ -464,8 +381,8 @@
                             </a>
                         </div>
                         <div class="portfolio-item__img-wrapper">
-                            <img class="lazy" src="./assets/images/thumb-img.gif"
-                                 data-src="./assets/images/portfolio-3.jpg" alt="">
+                            <img src="./assets/images/thumb-img.gif" data-src="./assets/images/portfolio-3.jpg" alt=""
+                                 class="lazy">
                         </div>
                     </div>
                 </div>
@@ -483,12 +400,12 @@
         <section class="mini-about section-outer">
             <div class="section-inner">
                 <div class="mini-about__wrapper">
-                    <h2 class="title split-text" data-split-duration=".5" data-split-delay="0">About me</h2>
-                    <div class="excerpt split-block-rows">
+                    <h2 class="title">About me</h2>
+                    <div class="excerpt">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim.
                     </div>
-                    <div class="actions" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="actions">
                         <a href="#" class="standard-btn">
                             <div class="btn-blink"></div>
                             <span class="btn-hover__bg"></span>
@@ -505,15 +422,15 @@
         <section class="specializations section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title split-block-rows">
+                    <h2 class="title">
                         My specialisations
                     </h2>
-                    <span class="subtitle split-block-rows">
+                    <span class="subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </span>
                 </div>
                 <div class="specializations__wrapper">
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-1.png" alt="">
@@ -530,7 +447,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-2.png" alt="">
@@ -547,7 +464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-3.png" alt="">
@@ -564,7 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-4.png" alt="">
@@ -581,7 +498,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-5.png" alt="">
@@ -598,7 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="specializations__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="specializations__item">
                         <div class="item-wrapper">
                             <div class="specializations__img">
                                 <img src="./assets/images/spec-6.png" alt="">
@@ -621,18 +538,18 @@
         <section class="reviews section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title split-text single" data-split-duration=".75" data-split-delay="0">
+                    <h2 class="title single">
                         reviews
                     </h2>
                 </div>
                 <div class="reviews__wrapper">
                     <div class="nav__wrapper">
-                        <h2 class="title-section split-text" data-split-duration=".75" data-split-delay="0">reviews</h2>
+                        <h2 class="title-section">reviews</h2>
                         <div class="slider-nav">
-                            <div class="nav-info" data-aos="fade-right" data-aos-duration="1000">You can scroll or drag
+                            <div class="nav-info">You can scroll or drag
                                 and drop
                             </div>
-                            <div class="actions" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="actions">
                                 <button type="button" class="slider-arrow arrow-prev">
                                     <span class="icon-wrapper">
                                         <i class="icon icon-arrow"></i>
@@ -649,7 +566,7 @@
                     </div>
                     <div class="slider-wrapper">
                         <div class="reviews-slider">
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                            <div class="slider-item">
                                 <div class="item-wrapper">
                                     <div class="img__wrapper">
                                         <img src="./assets/images/reviewer-1.jpg" alt="" class="lazy">
@@ -675,7 +592,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">
+                            <div class="slider-item">
                                 <div class="item-wrapper">
                                     <div class="img__wrapper">
                                         <img src="./assets/images/reviewer-2.jpg" alt="" class="lazy">
@@ -701,7 +618,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                            <div class="slider-item">
                                 <div class="item-wrapper">
                                     <div class="img__wrapper">
                                         <img src="./assets/images/reviewer-1.jpg" alt="" class="lazy">
@@ -735,12 +652,12 @@
         <section class="facts-about section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title split-block-rows">
+                    <h2 class="title">
                         Facts about me
                     </h2>
                 </div>
                 <div class="facts-about__wrapper">
-                    <div class="nav__wrapper" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="nav__wrapper">
                         <div class="img-wrapper">
                             <img src="./assets/images/rasim-facts.png" alt="">
                         </div>
@@ -765,7 +682,7 @@
                     </div>
                     <div class="slider-wrapper">
                         <div class="facts-about-slider">
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            <div class="slider-item">
                                 <div class="counter">
                                     01
                                 </div>
@@ -782,7 +699,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="slider-item">
                                 <div class="counter">
                                     02
                                 </div>
@@ -799,7 +716,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="slider-item">
                                 <div class="counter">
                                     03
                                 </div>
@@ -815,7 +732,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <div class="slider-item">
                                 <div class="counter">
                                     04
                                 </div>
@@ -831,7 +748,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <div class="slider-item">
                                 <div class="counter">
                                     05
                                 </div>
@@ -848,7 +765,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <div class="slider-item">
                                 <div class="counter">
                                     06
                                 </div>
@@ -865,7 +782,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                            <div class="slider-item">
                                 <div class="counter">
                                     07
                                 </div>
@@ -882,7 +799,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                            <div class="slider-item">
                                 <div class="counter">
                                     08
                                 </div>
@@ -899,7 +816,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                            <div class="slider-item">
                                 <div class="counter">
                                     09
                                 </div>
@@ -916,7 +833,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                            <div class="slider-item">
                                 <div class="counter">
                                     10
                                 </div>
@@ -933,7 +850,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+                            <div class="slider-item">
                                 <div class="counter">
                                     11
                                 </div>
@@ -949,7 +866,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                            <div class="slider-item">
                                 <div class="counter">
                                     12
                                 </div>
@@ -973,13 +890,13 @@
         <section class="recent-posts section-outer">
             <div class="section-inner">
                 <div class="section-title">
-                    <h2 class="title split-text" data-split-duration=".5" data-split-delay="0">blog</h2>
-                    <a href="#" class="all-posts__link" data-aos="fade-left" data-aos-duration="1500">
+                    <h2 class="title">blog</h2>
+                    <a href="#" class="all-posts__link">
                         go to all articles
                     </a>
                 </div>
                 <div class="recent-posts__wrapper">
-                    <div class="recent-post__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="recent-post__item">
                         <div class="date">
                             10.04.19
                         </div>
@@ -1006,7 +923,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="recent-post__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="recent-post__item">
                         <div class="date">
                             10.04.19
                         </div>
@@ -1033,7 +950,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="recent-post__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="recent-post__item">
                         <div class="date">
                             10.04.19
                         </div>
@@ -1081,11 +998,11 @@
         <section class="seo-block section-outer">
             <div class="section-inner">
                 <div class="seo-block__wrapper">
-                    <h2 class="title fade-block-down">
+                    <h2 class="title">
                         Lorem ipsum
                     </h2>
                     <div class="first-text">
-                        <div class="content fade-block-down">
+                        <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -1104,14 +1021,14 @@
                         </div>
                     </div>
                     <div class="seo-img__wrapper">
-                        <div class="seo-img__item" data-aos="fade-up" data-aos-duration="850" data-aos-delay="100">
+                        <div class="seo-img__item">
                             <img src="./assets/images/seo-img-1.jpg" alt="">
                         </div>
-                        <div class="seo-img__item" data-aos="fade-up" data-aos-duration="850" data-aos-delay="200">
+                        <div class="seo-img__item">
                             <img src="./assets/images/seo-img-2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="second-text" data-aos="fade-up" data-aos-duration="850">
+                    <div class="second-text">
                         <div class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -1208,22 +1125,22 @@
                 </div>
                 <ul class="footer-menu__menu-list">
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Home</a>
+                        <a href="/index.html" class="item__link">Home</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Portfolio</a>
+                        <a href="/page-portfolio-archive.html" class="item__link">Portfolio</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">ABOUT ME</a>
+                        <a href="/page-about.html" class="item__link">ABOUT ME</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">SERVICES</a>
+                        <a href="/page-services-archive.html" class="item__link">SERVICES</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Rasim's blog</a>
+                        <a href="/page-blog-archive.html" class="item__link">Rasim's blog</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href="#" class="item__link">Contacts</a>
+                        <a href="/page-contacts.html" class="item__link">Contacts</a>
                     </li>
                 </ul>
                 <button type="button" class="go-top__btn">
@@ -1318,7 +1235,11 @@
         </button>
     </div>
 </div>
-<script src="./assets/vendors/vendors.js"></script>
-<script src="./assets/scripts/main.js"></script>
+<script src="./assets/vendors/vendors.js" data-swup-ignore-script></script>
+<script src="./assets/scripts/no-reload-script.js" data-swup-ignore-script></script>
+<script src="./assets/scripts/test4.js"></script>
+<script src="./assets/scripts/test5.js"></script>
+<script src="./assets/scripts/test6.js"></script>
+<script src="./assets/scripts/main.js" data-swup-ignore-script></script>
 </body>
 </html>
