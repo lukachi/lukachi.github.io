@@ -49,7 +49,7 @@ gulp.task('vendors', function () {
         "./node_modules/gsap/dist/gsap.min.js",
         "./libs/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js",
         "./libs/VanillaTilt/vanilla-tilt.babel.min.js",
-        "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "./node_modules/smartphoto/js/smartphoto.min.js",
         "./node_modules/lazyload/lazyload.min.js"
     ])
         .pipe(concat('vendors.js'))
