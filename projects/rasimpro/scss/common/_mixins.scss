@@ -374,6 +374,18 @@
 	}
 }
 
+@keyframes img-glitching-shaking {
+	@for $i from 0 through 100 {
+		@if ($i % 2 == 0) {
+			@if (percentage($i / 100) <= 100) {
+				#{percentage($i / 100)} {
+					background-position: random(20)-10+px random(20)-10+px;
+				}
+			}
+		}
+	}
+}
+
 :root {
 	--g_color-text: #fff;
 	--g_color-bg: #000;
@@ -385,7 +397,7 @@
 	--g_gap-horizontal: 10px;
 	--g_gap-vertical: 5px;
 	--g_time-anim: 4s;
-	--g_delay-anim: 2s;
+	--g_delay-anim: 0;
 	--g_blend-mode-1: none;
 	--g_blend-mode-2: none;
 	--g_blend-mode-3: none;
@@ -398,15 +410,7 @@
 	--g_blend-color-5: transparent;
 }
 
-.glitch {
-	width: 100vw;
-	height: 100vh;
-	max-width: 100%;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+@mixin glitch-sample {
 
 	.glitch__item {
 		background-repeat: no-repeat;

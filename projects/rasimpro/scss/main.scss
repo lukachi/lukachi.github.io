@@ -660,10 +660,26 @@ img {
 
 		.front-img {
 			position: absolute;
-			max-width: 24vw;
+			width: 24vw;
+			height: 42.5vw;
 			left: 50%;
 			bottom: 0;
 			transform: translateX(-50%);
+
+			.glitch__item {
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				position: absolute;
+			}
+
+			&:hover {
+				@include glitch-sample;
+			}
 		}
 	}
 
@@ -6058,6 +6074,7 @@ img {
 		width: 100%;
 
 		.glitch {
+			@include glitch-sample;
 			transform: scale(1.2);
 			width: 100%;
 			height: 35vw;
