@@ -260,8 +260,12 @@ function toggleMenu() {
   var menu_wrapper = $(".header-menu__wrapper");
 
   if (menu_wrapper.hasClass("show")) {
-    tlm.to(menu_wrapper, .15, {
-      left: "500%"
+    tlm.fromTo(menu_wrapper, .05, {
+      left: "0"
+    }, {
+      left: "150%",
+      ease: Back.easeInOut,
+      delay: 0
     });
   } else {
     menu_wrapper.css({
@@ -278,10 +282,11 @@ function toggleMenu() {
       $(".header-menu__img-wrapper").text(img_expressions[0]);
     }
 
-    tlm.fromTo(menu_wrapper, .15, {
-      left: "500%"
+    tlm.fromTo(menu_wrapper, .5, {
+      left: "150%"
     }, {
-      left: "0"
+      left: "0",
+      ease: Back.easeInOut
     });
   }
 
@@ -749,36 +754,6 @@ function componentsInit() {
         width: container_width
       });
     }
-  } // filters on portfolio archive page
-
-
-  var checked_portfolio_cat = $(".portfolio-filter").length ? $('input[name="portfolio_category"]:checked').val() : undefined;
-
-  if ($(".portfolio-filter").length) {
-    $("section.portfolio").css({
-      "padding-top": $(".portfolio-filter").outerHeight()
-    });
-    $('input[name="portfolio_category"]').on("click", function (e) {
-      if ($(this).val().toString().includes(checked_portfolio_cat)) {
-        $(".filter-item:first-child").find('input[name="portfolio_category"]')[0].checked = true;
-      } else {
-        checked_portfolio_cat = $(this).val();
-      }
-    });
-
-    if ($(window).width() <= 525) {
-      var _item_margin2 = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
-
-      var _container_width2 = Array.from($(".filter-wrapper__container .filter-item")).map(function (el) {
-        return el.clientWidth + _item_margin2 * 3;
-      }).reduce(function (accumulator, currentValue) {
-        return accumulator + currentValue;
-      });
-
-      $(".filter-wrapper__container").css({
-        width: _container_width2
-      });
-    }
   } // services archive page marquee
 
 
@@ -817,20 +792,44 @@ function componentsInit() {
     rootMargin: "500px",
     threshold: .5
   });
+  var $isotope_grid = $(".portfolio-archive .portfolio__wrapper").isotope({
+    itemSelector: '.portfolio-item',
+    layoutMode: 'vertical'
+  }); // filters on portfolio archive page
 
-  if ($(".consultation-form").length) {
-    $(".consultation-popup").on("click", function (e) {
-      $(".consultation-form").toggleClass("show");
-      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+  var checked_portfolio_cat = $(".portfolio-filter").length ? $('input[name="portfolio_category"]:checked').val() : undefined;
+
+  if ($(".portfolio-filter").length) {
+    $("section.portfolio").css({
+      "padding-top": $(".portfolio-filter").outerHeight()
     });
-    $(".consultation-form .btn-close").on("click", function (e) {
-      $(".consultation-form").toggleClass("show");
-      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+    $('input[name="portfolio_category"]').on("click", function (e) {
+      if ($(this).val().toString().includes(checked_portfolio_cat)) {
+        $(".filter-item:first-child").find('input[name="portfolio_category"]')[0].checked = true;
+        $isotope_grid.isotope({
+          filter: $(".filter-item:first-child").find('input[name="portfolio_category"]')[0].value
+        });
+      } else {
+        checked_portfolio_cat = $(this).val();
+        $isotope_grid.isotope({
+          filter: "." + this.value
+        });
+      }
     });
-    $(".consultation-form .bg-close").on("click", function (e) {
-      $(".consultation-form").toggleClass("show");
-      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
-    });
+
+    if ($(window).width() <= 525) {
+      var _item_margin2 = parseFloat($(".filter-wrapper__container .filter-item").css("margin-right"));
+
+      var _container_width2 = Array.from($(".filter-wrapper__container .filter-item")).map(function (el) {
+        return el.clientWidth + _item_margin2 * 3;
+      }).reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+      });
+
+      $(".filter-wrapper__container").css({
+        width: _container_width2
+      });
+    }
   }
 
   console.log("components init!");
@@ -936,4 +935,34 @@ $(document).ready(function () {
       "display": "none"
     });
   });
+
+  if ($(".consultation-form").length) {
+    $(".consultation-popup").on("click", function (e) {
+      $(".consultation-form").toggleClass("show");
+      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+    });
+    $(".consultation-form .btn-close").on("click", function (e) {
+      $(".consultation-form").toggleClass("show");
+      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+    });
+    $(".consultation-form .bg-close").on("click", function (e) {
+      $(".consultation-form").toggleClass("show");
+      $(".consultation-form .consultation-form__wrapper").toggleClass("show");
+    });
+  }
+
+  if ($(".cstm-popup").length) {
+    $(".cstm-popup__trigger").on("click", function (e) {
+      $(".cstm-popup").toggleClass("show");
+      $(".cstm-popup .cstm-popup__wrapper").toggleClass("show");
+    });
+    $(".cstm-popup .btn-close").on("click", function (e) {
+      $(".cstm-popup").toggleClass("show");
+      $(".cstm-popup .cstm-popup__wrapper").toggleClass("show");
+    });
+    $(".cstm-popup .bg-close").on("click", function (e) {
+      $(".cstm-popup").toggleClass("show");
+      $(".cstm-popup .cstm-popup__wrapper").toggleClass("show");
+    });
+  }
 });

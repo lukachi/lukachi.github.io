@@ -24,6 +24,7 @@
     "@swup/overlay-theme": "^1.1.1",
     "@swup/scripts-plugin": "^1.1.0",
     "gsap": "^3.2.4",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
     "js-cookie": "^2.2.1",
     "lazyload": "^2.0.0-rc.2",

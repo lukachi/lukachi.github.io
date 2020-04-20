@@ -50,7 +50,9 @@ gulp.task('vendors', function () {
         "./libs/imakewebthings-waypoints-34d9f6d/lib/jquery.waypoints.min.js",
         "./libs/VanillaTilt/vanilla-tilt.babel.min.js",
         "./node_modules/smartphoto/js/smartphoto.min.js",
-        "./node_modules/lazyload/lazyload.min.js"
+        "./node_modules/lity/dist/lity.min.js",
+        "./node_modules/lazyload/lazyload.min.js",
+        "./node_modules/isotope-layout/dist/isotope.pkgd.min.js"
     ])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('./assets/vendors/'));
