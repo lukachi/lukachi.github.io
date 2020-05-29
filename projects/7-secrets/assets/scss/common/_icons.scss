@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "7-secrets-icons";
+	src: url('../fonts/7-secrets-icons/7-secrets-icons.eot');
+	src: url('../fonts/7-secrets-icons/7-secrets-icons.eot?#iefix') format('eot'),
+		url('../fonts/7-secrets-icons/7-secrets-icons.woff2') format('woff2'),
+		url('../fonts/7-secrets-icons/7-secrets-icons.woff') format('woff'),
+		url('../fonts/7-secrets-icons/7-secrets-icons.ttf') format('truetype'),
+		url('../fonts/7-secrets-icons/7-secrets-icons.svg#7-secrets-icons') format('svg');
+}
+
+.icon:before {
+	font-family: "7-secrets-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-calendar:before {
+	content: "\E001";
+}
+
+.icon-clock:before {
+	content: "\E002";
+}
+
+.icon-hourglass:before {
+	content: "\E003";
+}
+
+.icon-play-button:before {
+	content: "\E004";
+}
