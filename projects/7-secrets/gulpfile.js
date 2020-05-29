@@ -32,6 +32,7 @@ gulp.task('vendors', function () {
         "./node_modules/lity/dist/lity.min.js",
         "./node_modules/tilt.js/dest/tilt.jquery.min.js",
         "./node_modules/aos/dist/aos.js",
+        "./node_modules/slick-carousel/slick/slick.min.js",
     ])
         .pipe(concat('vendors.js'))
         .pipe(gulp.dest('./assets/vendors/'));

@@ -13,6 +13,7 @@
     "jquery": "^3.5.1",
     "lity": "^2.4.1",
     "reset-css": "^5.0.1",
+    "slick-carousel": "^1.8.1",
     "tilt.js": "^1.2.1"
   },
   "devDependencies": {
