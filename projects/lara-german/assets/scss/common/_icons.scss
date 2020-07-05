@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "lara-german-fonts";
+	src: url('../fonts/lara-german-fonts/lara-german-fonts.eot');
+	src: url('../fonts/lara-german-fonts/lara-german-fonts.eot?#iefix') format('eot'),
+		url('../fonts/lara-german-fonts/lara-german-fonts.woff2') format('woff2'),
+		url('../fonts/lara-german-fonts/lara-german-fonts.woff') format('woff'),
+		url('../fonts/lara-german-fonts/lara-german-fonts.ttf') format('truetype'),
+		url('../fonts/lara-german-fonts/lara-german-fonts.svg#lara-german-fonts') format('svg');
+}
+
+.icon:before {
+	font-family: "lara-german-fonts";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-angle:before {
+	content: "\E001";
+}
+
+.icon-arrow-top:before {
+	content: "\E002";
+}
+
+.icon-arrow:before {
+	content: "\E003";
+}
+
+.icon-phone:before {
+	content: "\E004";
+}
+
+.icon-telegram:before {
+	content: "\E005";
+}
+
+.icon-viber:before {
+	content: "\E006";
+}
+
+.icon-whatsapp:before {
+	content: "\E007";
+}
