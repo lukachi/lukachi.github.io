@@ -13,6 +13,23 @@ $(document).ready(function () {
         ]
     });
 
+    $(".plan__item").each(function (index, element) {
+        let content_height = $(this).find(".content .wrapper").outerHeight();
+        let static_height = $(this).find(".text-wrapper").outerHeight();
+
+        console.log("content: " + content_height + "; static: " + static_height);
+
+        if (content_height > (static_height + 50)) {
+            $(this).find(".toggle").css({
+                "display": "block"
+            });
+        } else {
+            $(this).find(".toggle").css({
+                "display": "none"
+            });
+        }
+    });
+
     $(".plan__nav .arrow-left").on("click", function (e) {
         $(".plan__wrapper").slick("slickPrev");
     });
@@ -22,7 +39,9 @@ $(document).ready(function () {
     });
 
     $(".plan__wrapper").on('afterChange', function () {
-        $(".plan__nav").fadeIn(300);
+        if (window.innerWidth > 525) {
+            $(".plan__nav").fadeIn(300);
+        }
         let index = $('.slick-current').attr("data-slick-index");
         const slider_length = $(".slick-dots li").length;
 
@@ -42,7 +61,9 @@ $(document).ready(function () {
     });
 
     $(".plan__wrapper").on('beforeChange', function () {
-        $(".plan__nav").fadeOut(100);
+        if (window.innerWidth > 525) {
+            $(".plan__nav").fadeOut(100);
+        }
     });
 
     $(".plan__item .toggle").on("click", function (e) {

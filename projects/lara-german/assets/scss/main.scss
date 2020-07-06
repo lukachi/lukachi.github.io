@@ -1647,7 +1647,7 @@ a {
 		padding: 20vw 0;
 
 		.section-title {
-			margin-bottom: 37vw;
+			margin-bottom: 20vw;
 		}
 	}
 
@@ -1693,17 +1693,15 @@ a {
 			left: auto;
 			width: 100%;
 			min-height: 0;
-			max-height: none;
 			border: .25vw solid #909AA6;
 			border-radius: 65px 0;
-			padding: 12vw 2.25vw 12vw 7.5vw;
+			padding: 12vw 2.25vw 18vw 7.5vw;
 
 			.content {
-				max-height: none;
+				max-height: 180vw;
 			}
 
 			&.show {
-				max-height: none;
 
 				.content {
 					max-height: none;
@@ -1726,7 +1724,9 @@ a {
 			}
 
 			.toggle {
-				display: none;
+				bottom: 8vw;
+				left: 8.5vw;
+				font-size: 4.65vw;
 			}
 
 		}
@@ -1739,12 +1739,13 @@ a {
 	.plan__nav {
 		display: flex;
 		align-items: center;
-		position: absolute;
-		top: -5.5%;
+		position: relative;
+		top: auto;
 		right: auto;
-		left: 50%;
-		transform: translate(-50%, 0);
+		left: auto;
+		transform: translate(0, 0);
 		width: 90%;
+		margin: 0 auto;
 
 		.guide {
 			font-size: 4vw;
