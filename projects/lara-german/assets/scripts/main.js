@@ -10,6 +10,7 @@ $(document).ready(function () {
     $(".plan__wrapper").slick("slickNext");
   });
   $(".plan__wrapper").on('afterChange', function () {
+    $(".plan__nav").fadeIn(300);
     let index = $('.slick-current').attr("data-slick-index");
     const slider_length = $(".slick-dots li").length;
 
@@ -27,6 +28,9 @@ $(document).ready(function () {
     if ($(".plan__wrapper .slick-dots").hasClass("hide")) {
       $(".plan__wrapper .slick-dots").toggleClass("hide");
     }
+  });
+  $(".plan__wrapper").on('beforeChange', function () {
+    $(".plan__nav").fadeOut(100);
   });
   $(".plan__item .toggle").on("click", function (e) {
     $(this).parent().toggleClass("show");
