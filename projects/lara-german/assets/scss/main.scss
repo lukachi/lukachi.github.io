@@ -1440,6 +1440,13 @@ a {
 				top: 50%;
 				transform: translate(85%, -50%);
 
+				&:hover {
+
+					&:after {
+						display: none;
+					}
+				}
+
 				img {
 					width: 37%;
 					margin-right: 4vw;
@@ -1751,7 +1758,6 @@ a {
 				height: 24vw;
 
 				.icon {
-					transform: translate(-50%, -50%) scale(1, -1);
 				}
 			}
 		}
