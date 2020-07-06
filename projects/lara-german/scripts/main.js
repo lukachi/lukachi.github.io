@@ -1,7 +1,16 @@
 $(document).ready(function () {
     $(".plan__wrapper").slick({
         dots: true,
-        arrows: false
+        arrows: false,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 525,
+                settings: {
+                    draggable: true
+                }
+            }
+        ]
     });
 
     $(".plan__nav .arrow-left").on("click", function (e) {
