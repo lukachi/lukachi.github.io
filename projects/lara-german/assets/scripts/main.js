@@ -71,4 +71,10 @@ $(document).ready(function () {
     // mirror: false, // whether elements should animate out while scrolling past them
 
   });
+  $(".buy-link").on("click", function (e) {
+    e.preventDefault();
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $(".price-list__wrapper").offset().top
+    }, 1000);
+  });
 });

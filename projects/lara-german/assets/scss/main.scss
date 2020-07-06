@@ -247,11 +247,13 @@ a {
 .buy-link {
 	position: relative;
 	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 500;
 	background: linear-gradient(180deg, rgba(180, 5, 10, 0) 0%, #A60307 100%), #C91D22;
 	box-shadow: 0 0 30px rgba(221, 0, 6, 0.5);
 	border-radius: 20px 5px;
 	padding: 1vw 4.5vw;
-	font-size: 1.15vw;
+	font-size: 1vw;
 	color: #ffffff;
 
 	&:hover {
@@ -328,8 +330,9 @@ a {
 			}
 
 			span {
+				text-transform: uppercase;
 				white-space: nowrap;
-				font-size: 1.15vw;
+				font-size: 1vw;
 			}
 		}
 	}
@@ -474,6 +477,7 @@ a {
 			text-align: center;
 			letter-spacing: 0.06em;
 			color: #EBEDEF;
+			z-index: -1;
 			opacity: 0.5;
 		}
 
@@ -839,6 +843,23 @@ a {
 		padding: 2vw 3vw;
 		font-size: 2vw;
 		font-weight: 600;
+	}
+
+	.price-link {
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 500;
+		background: linear-gradient(180deg, rgba(180, 5, 10, 0) 0%, #A60307 100%), #C91D22;
+		box-shadow: 0 0 30px rgba(221, 0, 6, 0.5);
+		border-radius: 20px 5px;
+		padding: 1vw 4.5vw;
+		font-size: 1vw;
+		color: #ffffff;
+
+		&:hover {
+			background: #A40004;
+		}
 	}
 
 	&.special {
@@ -1823,6 +1844,16 @@ a {
 		.price {
 			padding: 9vw 2vw 9vw 4vw;
 			font-size: 8vw;
+		}
+
+		.price-link {
+			display: inline-block;
+			white-space: nowrap;
+			background: linear-gradient(180deg, rgba(180, 5, 10, 0) 0%, #A60307 100%), #C91D22;
+			box-shadow: 0 0 30px rgba(221, 0, 6, 0.5);
+			border-radius: 20px 5px;
+			padding: 5vw 22.5vw;
+			font-size: 4.65vw;
 		}
 	}
 
