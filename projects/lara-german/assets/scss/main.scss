@@ -271,6 +271,7 @@ a {
 .first-screen__wrapper {
 	position: relative;
 	display: flex;
+	justify-content: flex-end;
 
 	.logo {
 		display: flex;
@@ -368,11 +369,11 @@ a {
 		justify-content: flex-end;
 		align-items: flex-start;
 		z-index: 1;
+		width: 75%;
 
 		img {
 			opacity: 0.97;
 			border-radius: 40px 0;
-			width: 75%;
 			transform: translateX(9%);
 		}
 	}
@@ -1156,7 +1157,8 @@ a {
 }
 
 #participation {
-	background: url("../images/bg-participation.jpg") no-repeat center center / cover;
+	//background: url("../images/bg-participation.jpg") no-repeat center center / cover;
+	background: transparent;
 
 	.section-inner {
 		min-height: 49vw;
