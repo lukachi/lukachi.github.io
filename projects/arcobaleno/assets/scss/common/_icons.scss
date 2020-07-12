@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "arcobaleno";
+	src: url('../fonts/arcobaleno/arcobaleno.eot');
+	src: url('../fonts/arcobaleno/arcobaleno.eot?#iefix') format('eot'),
+		url('../fonts/arcobaleno/arcobaleno.woff2') format('woff2'),
+		url('../fonts/arcobaleno/arcobaleno.woff') format('woff'),
+		url('../fonts/arcobaleno/arcobaleno.ttf') format('truetype'),
+		url('../fonts/arcobaleno/arcobaleno.svg#arcobaleno') format('svg');
+}
+
+.icon:before {
+	font-family: "arcobaleno";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-angle-left:before {
+	content: "\E001";
+}
+
+.icon-angle-right:before {
+	content: "\E002";
+}
+
+.icon-next:before {
+	content: "\E003";
+}
+
+.icon-return:before {
+	content: "\E004";
+}

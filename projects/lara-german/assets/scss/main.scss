@@ -324,15 +324,17 @@ a {
 			}
 
 			img {
+				display: block;
+				transition: .5s ease-in-out;
 				width: 25%;
 				margin-right: 1.2vw;
-				transition: .5s ease-in-out;
 			}
 
 			span {
 				text-transform: uppercase;
 				white-space: nowrap;
 				font-size: 1vw;
+				width: 75%;
 			}
 		}
 	}
@@ -586,6 +588,14 @@ a {
 	.text {
 		font-size: 1vw;
 		line-height: 181%;
+
+		.icon-pin {
+			display: inline-block;
+			transform: translateY(10%);
+			color: #ff0000;
+			font-size: 1.15vw;
+			margin-right: .5vw;
+		}
 	}
 }
 
@@ -912,6 +922,14 @@ a {
 	width: 100%;
 	font-size: 1vw;
 	line-height: 172%;
+
+	.icon-pin {
+		display: inline-block;
+		transform: translateY(10%);
+		color: #ff0000;
+		font-size: 1.15vw;
+		margin-right: .5vw;
+	}
 
 	&:not(:last-child) {
 		width: 34%;
@@ -1636,6 +1654,11 @@ a {
 
 		.text {
 			font-size: 4.65vw;
+
+			.icon-pin {
+				font-size: 4.65vw;
+				margin-right: 1.5vw;
+			}
 		}
 
 		.buy-link {
@@ -1879,6 +1902,11 @@ a {
 		border-radius: 60px 0;
 		width: 100%;
 		font-size: 4.65vw;
+
+		.icon-pin {
+			font-size: 4.65vw;
+			margin-right: 1.5vw;
+		}
 
 		&:not(:last-child) {
 			width: 100%;
