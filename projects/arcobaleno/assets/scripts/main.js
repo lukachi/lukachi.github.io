@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $(".menu-btn").on("click", function (e) {
+    $(".header__wrapper .nav").toggleClass("show");
+  });
   $(".anchor").on("click", function (e) {
     e.preventDefault();
     $([document.documentElement, document.body]).animate({
@@ -50,8 +53,5 @@ $(document).ready(function () {
   });
   $(".quiz-popup .popup-close").on("click", function (e) {
     $(".quiz-popup").toggleClass("show");
-  });
-  $(".menu-btn").on("click", function (e) {
-    $(".header__wrapper .nav").slideToggle();
   });
 });

@@ -1,11 +1,15 @@
 $(document).ready(function () {
+
+    $(".menu-btn").on("click", function (e) {
+        $(".header__wrapper .nav").toggleClass("show");
+    });
+
     $(".anchor").on("click", function (e) {
         e.preventDefault();
         $([document.documentElement, document.body]).animate({
             scrollTop: $($(this).attr("href").toString()).offset().top
         }, 1000);
     });
-
 
     $(".certificates__slider").slick({
         dots: true,
@@ -63,9 +67,5 @@ $(document).ready(function () {
 
     $(".quiz-popup .popup-close").on("click", function (e) {
         $(".quiz-popup").toggleClass("show");
-    });
-
-    $(".menu-btn").on("click", function (e) {
-        $(".header__wrapper .nav").slideToggle();
     });
 });
