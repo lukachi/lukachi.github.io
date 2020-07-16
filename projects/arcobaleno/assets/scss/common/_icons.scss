@@ -29,10 +29,22 @@
 	content: "\E002";
 }
 
-.icon-next:before {
+.icon-close:before {
 	content: "\E003";
 }
 
-.icon-return:before {
+.icon-correct:before {
 	content: "\E004";
+}
+
+.icon-hamburger:before {
+	content: "\E005";
+}
+
+.icon-next:before {
+	content: "\E006";
+}
+
+.icon-return:before {
+	content: "\E007";
 }
